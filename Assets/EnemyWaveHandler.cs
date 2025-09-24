@@ -19,19 +19,19 @@ public class EnemyWaveHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (enemyCount == 12)
+        if (enemyCount == 20)
         {
             Instantiate(enemyWave2prefab);
             enemyCount = enemyCount + 1;
         }
 
-        if (enemyCount == 17)
+        if (enemyCount == 25)
         {
             Instantiate(enemyWave3prefab);
             enemyCount = enemyCount + 1;
         }
 
-        if (enemyCount == 22)
+        if (enemyCount == 33)
         {
             Instantiate(enemyWave1prefab);
             enemyCount = enemyCount + 1;

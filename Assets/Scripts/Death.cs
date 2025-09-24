@@ -1,17 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class Death : MonoBehaviour
 {
-
+    public float speed;
     public float invul = 0;
     public float invulPeriod = 0;
+
+    public GameObject specialBulletPrefab;
 
     
 
     public int health;
-  
+
+    
 
     int correctLayer;
 
@@ -19,9 +25,13 @@ public class Death : MonoBehaviour
 
     public AudioSource Daudio;
 
+    public float fireDelay = 0.25f;
+    float cooldownTimer = 0;
+
 
     private void Start()
     {
+        
         correctLayer = gameObject.layer;
     }
 
@@ -33,11 +43,20 @@ public class Death : MonoBehaviour
             invul = 0.50f;
             gameObject.layer = 8;
 
+        
+
+        if (gameObject.tag == "SpecialBullet")
+        {
+            
+
+            specialBulletPrefab.transform.Rotate(0f, 0f, Random.Range(-90.0f, 90.0f));
+        }
 
 
-      
 
-        if (SpRend)
+
+
+            if (SpRend)
         {
             StartCoroutine(VisualIndicator(Color.red));
         }
@@ -49,9 +68,16 @@ public class Death : MonoBehaviour
       
     }
 
+  
+    
+
+
     private void Update()
     {
-        
+
+  var rebound = new Vector3(Random.Range(-10.0f, 10.0f), 0, Random.Range(-10.0f, 10.0f));
+
+
         if (invul <= 0)
         {
             gameObject.layer = correctLayer;

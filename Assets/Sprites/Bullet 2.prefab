@@ -26,11 +26,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.0016153614
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Color.r
-      value: 0.33638072
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_SortingLayer
@@ -229,6 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invul: 0
   invulPeriod: 0
+  specialBulletPrefab: {fileID: 0}
   health: 1
   SpRend: 0
   Daudio: {fileID: 0}

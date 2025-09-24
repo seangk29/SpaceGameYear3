@@ -130,7 +130,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
+  sbulletPrefab: {fileID: 1260864631553775174, guid: 021590689ccb57444a0c33dabf0374b5, type: 3}
   GunPos: {fileID: 0}
+  Paudio: {fileID: 0}
   fireDelay: 0.25
 --- !u!1 &2626984216487490369
 GameObject:
@@ -177,7 +179,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
+  sbulletPrefab: {fileID: 0}
   GunPos: {fileID: 2626984216487490369}
+  Paudio: {fileID: 0}
   fireDelay: 0.25
 --- !u!1 &3989967724537634395
 GameObject:
@@ -394,7 +398,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
+  sbulletPrefab: {fileID: 0}
   GunPos: {fileID: 7349128254652256917}
+  Paudio: {fileID: 0}
   fireDelay: 0.25
 --- !u!1 &8341140394077401211
 GameObject:
@@ -441,7 +447,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
+  sbulletPrefab: {fileID: 0}
   GunPos: {fileID: 8341140394077401211}
+  Paudio: {fileID: 0}
   fireDelay: 0.25
 --- !u!1 &9026510492449496208
 GameObject:
@@ -494,17 +502,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2b2a0a5d6833a408f1b9e8352898e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6
   rotationSpeed: 180
   PlayerShip: {fileID: 9027454843433731926}
   PlayerShipLeft: {fileID: 3989967724537634395}
   PlayerShipRight: {fileID: 4890238125698092447}
   PlayerShipDown: {fileID: 47835667239914885}
-  shipBoundary: 0.5
-  dodgeSpeed: 8
-  timer: 0
-  dodgeTimer: 0.25
-  Turning: 0
 --- !u!61 &7187380272206257109
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -589,8 +591,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invul: 0
   invulPeriod: 0.5
+  specialBulletPrefab: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
   health: 5
+  SpRend: 0
+  Daudio: {fileID: 0}
+  fireDelay: 0.25
 --- !u!1 &9027454843433731926
 GameObject:
   m_ObjectHideFlags: 0

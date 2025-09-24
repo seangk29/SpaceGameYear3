@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerShooting : MonoBehaviour
 {
     public GameObject bulletPrefab;
+    public GameObject SbulletPrefab;
     public GameObject GunPos;
 
     public AudioSource Paudio;
@@ -28,5 +29,18 @@ public class PlayerShooting : MonoBehaviour
 
 
         }
+
+
+        if (Input.GetKey(KeyCode.Mouse1) && cooldownTimer <= 0)
+        {
+            cooldownTimer = fireDelay;
+
+            
+
+            Instantiate(SbulletPrefab, transform.position, transform.rotation);
+
+
+        }
+
     }
 }
