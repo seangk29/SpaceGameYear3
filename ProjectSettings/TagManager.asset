@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - SpecialBullet
   layers:
   - Default
   - TransparentFX
@@ -47,4 +48,10 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 4021358571
+    locked: 0
+  - name: PowerUps
+    uniqueID: 3166111063
+    locked: 0
+  - name: Text
+    uniqueID: 1244128317
     locked: 0
