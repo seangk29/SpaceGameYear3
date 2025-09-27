@@ -8,10 +8,13 @@ public class PlayerShooting : MonoBehaviour
     public GameObject SbulletPrefab;
     public GameObject GunPos;
 
+
     public AudioSource Paudio;
-    
+    public AudioSource SPaudio;
+
 
     public float fireDelay = 0.25f;
+    public float SPfireDelay = 3f;
     float cooldownTimer = 0;
     
     // Update is called once per frame
@@ -33,9 +36,9 @@ public class PlayerShooting : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Mouse1) && cooldownTimer <= 0)
         {
-            cooldownTimer = fireDelay;
+            cooldownTimer = SPfireDelay;
 
-            
+            SPaudio.Play();
 
             Instantiate(SbulletPrefab, transform.position, transform.rotation);
 

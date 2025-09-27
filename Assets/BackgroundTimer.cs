@@ -5,6 +5,8 @@ using UnityEngine;
 public class BackgroundTimer : MonoBehaviour
 {
    public GameObject StarsBg;
+    public Transform BgSpawn;
+
 
     public float BgTimer = 0;
 
@@ -18,10 +20,10 @@ public class BackgroundTimer : MonoBehaviour
     {
         BgTimer += Time.deltaTime;
 
-        if (BgTimer >= 10)
+        if (BgTimer >= 15)
         {
             BgTimer = 0;
-            Instantiate(StarsBg);
+            Instantiate(StarsBg, BgSpawn);
             
         }
     }
