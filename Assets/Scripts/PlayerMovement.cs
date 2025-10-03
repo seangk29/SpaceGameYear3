@@ -14,8 +14,11 @@ public class PlayerMovement : MonoBehaviour
     public GameObject PlayerShipRight;
     public GameObject PlayerShipDown;
 
-   
-    
+    public void SpeedUpgrade()
+    {
+       moveSpeed = moveSpeed + 1;
+    }
+
     // Update is called once per frame
     void Update()
     {

@@ -69,7 +69,11 @@ public class Death : MonoBehaviour
     }
 
   
-    
+    public void HealthUpgrade()
+    {
+        health = health + 1;
+        Debug.Log("Choice");
+    }
 
 
     private void Update()

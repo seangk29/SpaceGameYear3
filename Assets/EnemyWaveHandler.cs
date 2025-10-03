@@ -7,6 +7,7 @@ public class EnemyWaveHandler : MonoBehaviour
     public GameObject enemyWave1prefab;
     public GameObject enemyWave2prefab;
     public GameObject enemyWave3prefab;
+    public GameObject TestOptions;
 
     public static int enemyCount;
 
@@ -30,11 +31,14 @@ public class EnemyWaveHandler : MonoBehaviour
             Instantiate(enemyWave3prefab);
             enemyCount = enemyCount + 1;
         }
-
-        if (enemyCount == 41)
+        
+        if (enemyCount == 56)
         {
-            Instantiate(enemyWave1prefab);
+            Instantiate(TestOptions);
             enemyCount = enemyCount + 1;
+            PlayerShooting.MakingChoice = true;
         }
+
+
     }
 }

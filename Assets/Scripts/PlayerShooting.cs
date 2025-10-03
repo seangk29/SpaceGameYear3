@@ -8,6 +8,7 @@ public class PlayerShooting : MonoBehaviour
     public GameObject SbulletPrefab;
     public GameObject GunPos;
 
+    public static bool MakingChoice = false;
 
     public AudioSource Paudio;
     public AudioSource SPaudio;
@@ -22,28 +23,33 @@ public class PlayerShooting : MonoBehaviour
     {
         cooldownTimer -= Time.deltaTime;
 
-        if(Input.GetKey(KeyCode.Mouse0) && cooldownTimer <= 0)
+       if (MakingChoice == false)
         {
-            cooldownTimer = fireDelay;
+            if (Input.GetKey(KeyCode.Mouse0) && cooldownTimer <= 0)
+            {
+                cooldownTimer = fireDelay;
 
-            Paudio.Play();
+                Paudio.Play();
 
-            Instantiate(bulletPrefab, transform.position, transform.rotation);
+                Instantiate(bulletPrefab, transform.position, transform.rotation);
 
 
+            }
+
+
+            if (Input.GetKey(KeyCode.Mouse1) && cooldownTimer <= 0)
+            {
+                cooldownTimer = SPfireDelay;
+
+                SPaudio.Play();
+
+                Instantiate(SbulletPrefab, transform.position, transform.rotation);
+
+
+            }
         }
-
-
-        if (Input.GetKey(KeyCode.Mouse1) && cooldownTimer <= 0)
-        {
-            cooldownTimer = SPfireDelay;
-
-            SPaudio.Play();
-
-            Instantiate(SbulletPrefab, transform.position, transform.rotation);
-
-
-        }
+        
+        
 
     }
 }
