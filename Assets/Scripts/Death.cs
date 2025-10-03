@@ -103,7 +103,7 @@ public class Death : MonoBehaviour
         GetComponent<SpriteRenderer>().color = Color.white;
     }
 
-    void Die()
+   public void Die()
     {
         
 

@@ -9,6 +9,8 @@ public class EnemyWaveHandler : MonoBehaviour
     public GameObject enemyWave3prefab;
     public GameObject TestOptions;
 
+    public GameObject player;
+
     public static int enemyCount;
 
     // Start is called before the first frame update
@@ -37,6 +39,7 @@ public class EnemyWaveHandler : MonoBehaviour
             Instantiate(TestOptions);
             enemyCount = enemyCount + 1;
             PlayerShooting.MakingChoice = true;
+            PlayerSpawner.numLives = PlayerSpawner.numLives + 1;
         }
 
 
