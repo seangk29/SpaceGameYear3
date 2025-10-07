@@ -15,9 +15,9 @@ public class Death : MonoBehaviour
 
     
 
-    public int health;
+    public int health = 3;
 
-    
+
 
     int correctLayer;
 
@@ -26,7 +26,7 @@ public class Death : MonoBehaviour
     public AudioSource Daudio;
 
     public float fireDelay = 0.25f;
-    float cooldownTimer = 0;
+  //  float cooldownTimer = 0;
 
 
     private void Start()
@@ -62,11 +62,21 @@ public class Death : MonoBehaviour
         }
        
         Daudio.Play();
-        
-     
 
-      
-    }
+
+
+
+
+
+        if (collider.gameObject.tag == "HealthPack")
+        {
+            health = health - 25;
+            PlayerSpawner.numLives = PlayerSpawner.numLives + 1;
+
+        }
+    
+
+}
 
   
     public void HealthUpgrade()
