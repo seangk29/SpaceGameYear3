@@ -13,10 +13,14 @@ public class EnemyWaveHandler : MonoBehaviour
 
     public static int enemyCount;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
         Instantiate(enemyWave1prefab);
+       
+        
     }
 
     // Update is called once per frame
@@ -40,6 +44,7 @@ public class EnemyWaveHandler : MonoBehaviour
             enemyCount = enemyCount + 1;
             PlayerShooting.MakingChoice = true;
             PlayerSpawner.numLives = PlayerSpawner.numLives + 1;
+           
         }
 
 

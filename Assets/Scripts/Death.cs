@@ -33,6 +33,13 @@ public class Death : MonoBehaviour
     {
         
         correctLayer = gameObject.layer;
+
+        if (gameObject.tag == "Player")
+        {
+            health = 3;
+            PlayerSpawner.numLives = 3;
+
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
