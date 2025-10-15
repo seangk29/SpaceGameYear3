@@ -39,7 +39,7 @@ public class Dodge : MonoBehaviour
         if (cooldownDodge >= 0.01)
         {
             
-            PlayerMovement.moveSpeed = 15;
+            //moveSpeed = 15;
 
 
         }
@@ -47,7 +47,7 @@ public class Dodge : MonoBehaviour
         if (cooldownDodge >= 0.25)
         {
 
-            PlayerMovement.moveSpeed = 4;
+           // moveSpeed = 4;
             cooldownDodge = 0;
             Dodging = false;
         }

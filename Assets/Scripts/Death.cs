@@ -11,8 +11,7 @@ public class Death : MonoBehaviour
     public float invul = 0;
     public float invulPeriod = 0;
 
-    public GameObject specialBulletPrefab;
-
+    
     
 
     public int health = 3;
@@ -37,6 +36,7 @@ public class Death : MonoBehaviour
         if (gameObject.tag == "Player")
         {
             health = 3;
+            
             PlayerSpawner.numLives = 3;
 
         }
@@ -52,12 +52,7 @@ public class Death : MonoBehaviour
 
         
 
-        if (gameObject.tag == "SpecialBullet")
-        {
-            
 
-            specialBulletPrefab.transform.Rotate(0f, 0f, Random.Range(-90.0f, 90.0f));
-        }
 
 
 
@@ -90,13 +85,14 @@ public class Death : MonoBehaviour
     {
         health = health + 1;
         Debug.Log("Choice");
+        
     }
 
 
     private void Update()
     {
 
-  var rebound = new Vector3(Random.Range(-10.0f, 10.0f), 0, Random.Range(-10.0f, 10.0f));
+        //var rebound = new Vector3(Random.Range(-10.0f, 10.0f), 0, Random.Range(-10.0f, 10.0f));
 
 
         if (invul <= 0)

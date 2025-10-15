@@ -8,9 +8,6 @@ public class MakingChoice : MonoBehaviour
     {
         PlayerShooting.MakingChoice = false;
 
-        if (PlayerShooting.MakingChoice == false)
-        {
-            DestroyImmediate(gameObject, true);
-        }
+        
     }
 }

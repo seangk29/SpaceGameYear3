@@ -9,6 +9,7 @@ public class PlayerShooting : MonoBehaviour
     public GameObject GunPos;
 
     public static bool MakingChoice = false;
+    
 
     public AudioSource Paudio;
     public AudioSource SPaudio;
@@ -17,7 +18,15 @@ public class PlayerShooting : MonoBehaviour
     public float fireDelay = 0.25f;
     public float SPfireDelay = 3f;
     float cooldownTimer = 0;
-    
+
+   public PlayerMovement scriptA;
+
+    public void Start()
+    {
+        PlayerMovement scriptA = GetComponent<PlayerMovement>();
+    }
+
+
     // Update is called once per frame
     void Update()
     {
@@ -37,8 +46,10 @@ public class PlayerShooting : MonoBehaviour
             }
 
 
-            if (Input.GetKey(KeyCode.Mouse1) && cooldownTimer <= 0)
+            if (Input.GetKey(KeyCode.Mouse1) && cooldownTimer <= 0 && scriptA.CanUseSpecial == true)
             {
+             
+
                 cooldownTimer = SPfireDelay;
 
                 SPaudio.Play();
