@@ -3863,7 +3863,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 499760321561217660}
@@ -4230,7 +4230,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 2101529980046541180}
@@ -4589,7 +4589,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 1598080620260988800}
@@ -4938,7 +4938,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 5440583696146590847}
@@ -5297,7 +5297,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 5770301140967488477}
@@ -5654,7 +5654,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 2635426750578144009}
@@ -6019,7 +6019,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 3486687598056508881}
@@ -6394,7 +6394,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 8681162775534583367}
@@ -6764,7 +6764,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 4712315723990494331}
@@ -7126,7 +7126,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 8732692876362481492}
@@ -7480,7 +7480,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 8126301363078669323}
@@ -7839,7 +7839,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 8575352913615023649}
@@ -8188,7 +8188,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 5783784130620942246}
@@ -8542,7 +8542,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 3209279931891968951}
@@ -8901,7 +8901,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 2560403601433441055}
@@ -9255,7 +9255,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 2909419772473123463}
@@ -9607,7 +9607,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 2919434537458352091}
@@ -9974,7 +9974,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 1438642780330264271}
@@ -10336,7 +10336,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 5352757087431522849}
@@ -10703,7 +10703,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 793944463043962114}
@@ -11055,7 +11055,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 8970410740773195369}
@@ -11422,7 +11422,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 4464104284646609434}
@@ -11776,7 +11776,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 721838750842469070}
@@ -12135,7 +12135,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 6663624809435328306}
@@ -12489,7 +12489,7 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 1
   Daudio: {fileID: 7257117223474848550}

@@ -11,8 +11,8 @@ public class Death : MonoBehaviour
     public float invul = 0;
     public float invulPeriod = 0;
 
-    
-    
+
+    public int shieldHealth = 3;
 
     public int health = 3;
 
@@ -35,20 +35,27 @@ public class Death : MonoBehaviour
 
         if (gameObject.tag == "Player")
         {
-            health = 3;
+           // health = 3;
             
-            PlayerSpawner.numLives = 3;
+            //PlayerSpawner.numLives = 3;
 
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+      
         
-        
+        if (shieldHealth <= 0)
+        {
             health--;
             invul = 0.50f;
             gameObject.layer = 8;
+        }
+
+        shieldHealth--;
+        invul = 0.50f;
+        gameObject.layer = 8;
 
         
 
@@ -58,11 +65,16 @@ public class Death : MonoBehaviour
 
 
 
-            if (SpRend)
+        if (SpRend && shieldHealth > 0)
+        {
+            StartCoroutine(VisualIndicator(Color.cyan));    
+        }
+
+        else if (SpRend)
         {
             StartCoroutine(VisualIndicator(Color.red));
         }
-       
+
         Daudio.Play();
 
 
@@ -86,6 +98,13 @@ public class Death : MonoBehaviour
         health = health + 1;
         Debug.Log("Choice");
         
+    }
+
+    public void ShieldUpgrade()
+    {
+        shieldHealth = shieldHealth + 1;
+        Debug.Log("Choice");
+
     }
 
 

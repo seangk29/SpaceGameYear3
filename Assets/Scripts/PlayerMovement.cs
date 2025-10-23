@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 4f;
     public float speedIndicator = 4f;
-    public float rotationSpeed = 180f;
+    public float rotationSpeed = 360f;
 
     public bool Dodging;
     public float cooldownDodge = 0f;
@@ -24,8 +24,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void SpeedUpgrade()
     {
-       moveSpeed = moveSpeed + 10f;
-       speedIndicator = speedIndicator + 10f;
+       moveSpeed = moveSpeed + 1f;
+       speedIndicator = speedIndicator + 1f;
     }
     public void EnableSpecial()
     {
@@ -38,9 +38,9 @@ public class PlayerMovement : MonoBehaviour
         if (gameObject.tag == "Player")
         {
 
-            CanUseSpecial = false;
-            moveSpeed = 4f;
-            speedIndicator = 4f;
+          //  CanUseSpecial = false;
+          //  moveSpeed = 4f;
+          //  speedIndicator = 4f;
 
         }
        
@@ -91,73 +91,69 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Translate(movement * moveSpeed * Time.deltaTime);
 
-     
 
-        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
+
+         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
+         {
+
+             PlayerShip.SetActive(true);
+             PlayerShipLeft.SetActive(false);
+             PlayerShipRight.SetActive(false);
+             PlayerShipDown.SetActive(false);
+         }
+         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift))
+         {
+
+
+             PlayerShip.SetActive(false);
+             PlayerShipLeft.SetActive(true);
+             PlayerShipRight.SetActive(false);
+             PlayerShipDown.SetActive(false);
+
+
+
+         }
+         if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
+         {
+
+
+             PlayerShip.SetActive(false);
+             PlayerShipLeft.SetActive(false);
+             PlayerShipRight.SetActive(true);
+             PlayerShipDown.SetActive(false);
+
+
+
+
+
+
+         }
+         if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.LeftShift))
+         {
+
+
+             PlayerShip.SetActive(false);
+             PlayerShipLeft.SetActive(false);
+             PlayerShipRight.SetActive(false);
+             PlayerShipDown.SetActive(true);
+
+
+
+
+         }
+
+
+
+        /*if (Input.GetKey(KeyCode.LeftShift))
         {
-
-            PlayerShip.SetActive(true);
-            PlayerShipLeft.SetActive(false);
-            PlayerShipRight.SetActive(false);
-            PlayerShipDown.SetActive(false);
-        }
-        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift))
-        {
-
-
-            PlayerShip.SetActive(false);
-            PlayerShipLeft.SetActive(true);
-            PlayerShipRight.SetActive(false);
-            PlayerShipDown.SetActive(false);
-
-
-
-        }
-        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
-        {
-
-
-            PlayerShip.SetActive(false);
-            PlayerShipLeft.SetActive(false);
-            PlayerShipRight.SetActive(true);
-            PlayerShipDown.SetActive(false);
-
-
-
-
-
-
-        }
-        if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.LeftShift))
-        {
-
-
-            PlayerShip.SetActive(false);
-            PlayerShipLeft.SetActive(false);
-            PlayerShipRight.SetActive(false);
-            PlayerShipDown.SetActive(true);
-
-
-
-
-        }
-
-
-
-     
+            RotatingShip();
+        }*/
 
     }
 
-   
 
 
-
-
-
-
-}
-
-    /*private void RotatingShip()
+   /* private void RotatingShip()
     {
         Quaternion rotation = transform.rotation;
         float z = rotation.eulerAngles.z;
@@ -166,8 +162,15 @@ public class PlayerMovement : MonoBehaviour
 
         transform.rotation = rotation;
 
-     
+
     }*/
+
+
+
+
+}
+
+  
 
 
 

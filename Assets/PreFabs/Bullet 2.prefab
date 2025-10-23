@@ -227,9 +227,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
   invul: 0
   invulPeriod: 0
-  specialBulletPrefab: {fileID: 0}
+  shieldHealth: 0
   health: 1
   SpRend: 0
   Daudio: {fileID: 0}
+  fireDelay: 0.25
