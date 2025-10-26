@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a975b0d1892a12a4088ccf2b10734528
+guid: c372e418e5a590748a3fa9ce6b78ddd7
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 144
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -72,7 +72,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -85,7 +85,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638971120577681122
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,38 +122,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Boss
+  - name: Dart Enemy 1
     originalName: 
-    pivot: {x: 0.49999997, y: -0.34532374}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 305
-      width: 222
-      height: 139
-    spriteID: d67a550936272834c8a20032286cd808
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 305}
-  - name: Frame_1
-    originalName: 
-    pivot: {x: 0.49999997, y: -0.30769232}
+    pivot: {x: 0.48275867, y: -0.026455028}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 222
-      height: 143
-    spriteID: efe844af87fcd69469537459cfdaed4a
+      width: 87
+      height: 378
+    spriteID: 05a497eacbc8d5449bc417b029699e26
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -162,18 +142,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Frame_2
+  spriteSheetImportData:
+  - name: Dart Enemy 1_0
     originalName: 
-    pivot: {x: 0.49999997, y: -0.31690142}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 155
-      width: 222
-      height: 142
-    spriteID: 94fa67d7609cb684182341181402aec0
+      y: 243
+      width: 87
+      height: 139
+    spriteID: cf80e16ff5ee9a64885d2c0c4f5f95b1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -181,19 +162,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 155}
-  - name: Frame_3
+    uvTransform: {x: 0, y: 0}
+  - name: Dart Enemy 1_1
     originalName: 
-    pivot: {x: 0.49999997, y: -0.31654677}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 234
+      x: 36
       y: 4
-      width: 222
-      height: 139
-    spriteID: 16ffbf36e7bf52548a63ad86f2a94d9c
+      width: 19
+      height: 227
+    spriteID: b6edccd2b52a02d46b3201613f5f9dce
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -201,81 +182,24 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 234, y: 4}
-  - name: Frame_4
-    originalName: 
-    pivot: {x: 0.49999997, y: -0.34532374}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 234
-      y: 151
-      width: 222
-      height: 139
-    spriteID: 1fa529eede92ec94db045c60f501f0ab
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 234, y: 151}
-  spriteSheetImportData: []
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: -104783759
-    name: Boss
+    guid: 264200
+    name: Dart Enemy 1
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: Dart Enemy 1
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 9
-        y: 48
-        width: 222
-        height: 139
-      spriteId: d67a550936272834c8a20032286cd808
-    - name: Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 9
-        y: 44
-        width: 222
-        height: 143
-      spriteId: efe844af87fcd69469537459cfdaed4a
-    - name: Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 9
-        y: 45
-        width: 222
-        height: 142
-      spriteId: 94fa67d7609cb684182341181402aec0
-    - name: Frame_3
-      frameIndex: 3
-      additiveSortOrder: 0
-      cellRect:
-        x: 9
-        y: 44
-        width: 222
-        height: 139
-      spriteId: 16ffbf36e7bf52548a63ad86f2a94d9c
-    - name: Frame_4
-      frameIndex: 4
-      additiveSortOrder: 0
-      cellRect:
-        x: 9
-        y: 48
-        width: 222
-        height: 139
-      spriteId: 1fa529eede92ec94db045c60f501f0ab
+        x: 30
+        y: 10
+        width: 87
+        height: 378
+      spriteId: 05a497eacbc8d5449bc417b029699e26
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -291,8 +215,32 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 240, y: 240}
-  previousTextureSize: {x: 512, y: 512}
+  canvasSize: {x: 144, y: 400}
+  previousTextureSize: {x: 128, y: 512}
