@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0667d67a8e8ca2d4ba85bc9a5d052681
+guid: 636310bdde5059a4cb4c3ddb4cb1e7bd
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -85,7 +85,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638919246553999080
+  platformSettingsDirtyTick: 638970978937902661
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,18 +122,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: NEW playership
+  - name: BossIdle
     originalName: 
-    pivot: {x: 0.5, y: -0.08333333}
+    pivot: {x: 0.5, y: -0.30769232}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 144
-      height: 144
-    spriteID: cd7182c35909ebd46ab12f99ead416a5
+      width: 1182
+      height: 143
+    spriteID: a680ff68a8c13a740a389ccb1571046e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,19 +141,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
-  - name: Frame_1
+    uvTransform: {x: -5, y: -40}
+  spriteSheetImportData:
+  - name: BossIdle_0
     originalName: 
-    pivot: {x: 0.5069445, y: -0.08333333}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 156
-      width: 144
-      height: 144
-    spriteID: b0043dc6b0f8d73428ce7e22fe4f38ca
+      y: 8
+      width: 222
+      height: 139
+    spriteID: 13dbb0374a2455241833f6315fbbbdf0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -161,19 +162,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 156}
-  - name: Frame_2
+    uvTransform: {x: 0, y: 0}
+  - name: BossIdle_1
     originalName: 
-    pivot: {x: 0.5069445, y: -0.08333333}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 308
-      width: 144
-      height: 144
-    spriteID: 5cf39e90ec8366949befc7fd0a259ab6
+      x: 244
+      y: 1
+      width: 222
+      height: 146
+    spriteID: c77ca2d2754a02749b4144f8378f23f1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -181,19 +182,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 308}
-  - name: Frame_3
+    uvTransform: {x: 0, y: 0}
+  - name: BossIdle_2
     originalName: 
-    pivot: {x: 0.5138889, y: -0.08333333}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 156
-      y: 4
-      width: 144
-      height: 144
-    spriteID: b9587d2615de7b74584f1fc7baa3e446
+      x: 484
+      y: 1
+      width: 222
+      height: 146
+    spriteID: 4bf8913b1879a334e901b262244d3b5c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -201,19 +202,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 156, y: 4}
-  - name: Frame_4
+    uvTransform: {x: 0, y: 0}
+  - name: BossIdle_3
     originalName: 
-    pivot: {x: 0.5, y: -0.08333333}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 156
-      y: 156
-      width: 144
-      height: 144
-    spriteID: 4517833e85d85a44e9cbd6dd0b0c28fb
+      x: 724
+      y: 1
+      width: 222
+      height: 142
+    spriteID: 09bacab70081f4f49b3086aaeac6515e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -221,61 +222,44 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 156, y: 156}
-  spriteSheetImportData: []
+    uvTransform: {x: 0, y: 0}
+  - name: BossIdle_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 964
+      y: 0
+      width: 222
+      height: 147
+    spriteID: be0115a56cbd32f43bbf70cfd4ad0391
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: -1162763987
-    name: NEW playership
+    guid: -429295287
+    name: BossIdle
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: BossIdle
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 11
-        y: 12
-        width: 144
-        height: 144
-      spriteId: cd7182c35909ebd46ab12f99ead416a5
-    - name: Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 10
-        y: 12
-        width: 144
-        height: 144
-      spriteId: b0043dc6b0f8d73428ce7e22fe4f38ca
-    - name: Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 10
-        y: 12
-        width: 144
-        height: 144
-      spriteId: 5cf39e90ec8366949befc7fd0a259ab6
-    - name: Frame_3
-      frameIndex: 3
-      additiveSortOrder: 0
-      cellRect:
-        x: 9
-        y: 12
-        width: 144
-        height: 144
-      spriteId: b9587d2615de7b74584f1fc7baa3e446
-    - name: Frame_4
-      frameIndex: 4
-      additiveSortOrder: 0
-      cellRect:
-        x: 11
-        y: 12
-        width: 144
-        height: 144
-      spriteId: 4517833e85d85a44e9cbd6dd0b0c28fb
+        x: 0
+        y: 0
+        width: 1200
+        height: 240
+      spriteId: a680ff68a8c13a740a389ccb1571046e
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -318,5 +302,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 166, y: 166}
-  previousTextureSize: {x: 512, y: 512}
+  canvasSize: {x: 1200, y: 240}
+  previousTextureSize: {x: 2048, y: 256}

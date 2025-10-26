@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0667d67a8e8ca2d4ba85bc9a5d052681
+guid: 992bea4285e34a949abb87e1d7f6769f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -85,7 +85,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638919246553999080
+  platformSettingsDirtyTick: 638970962448768106
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,7 +122,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: NEW playership
+  - name: NEW IDLE L playership
     originalName: 
     pivot: {x: 0.5, y: -0.08333333}
     alignment: 9
@@ -131,9 +131,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 144
+      width: 808
       height: 144
-    spriteID: cd7182c35909ebd46ab12f99ead416a5
+    spriteID: 9ded5192728757a43a00c3d10a783c31
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,59 +141,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
-  - name: Frame_1
+    uvTransform: {x: -7, y: -8}
+  spriteSheetImportData:
+  - name: NEW IDLE L playership_0
     originalName: 
-    pivot: {x: 0.5069445, y: -0.08333333}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 156
-      width: 144
-      height: 144
-    spriteID: b0043dc6b0f8d73428ce7e22fe4f38ca
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 156}
-  - name: Frame_2
-    originalName: 
-    pivot: {x: 0.5069445, y: -0.08333333}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 308
-      width: 144
-      height: 144
-    spriteID: 5cf39e90ec8366949befc7fd0a259ab6
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 308}
-  - name: Frame_3
-    originalName: 
-    pivot: {x: 0.5138889, y: -0.08333333}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 156
       y: 4
       width: 144
       height: 144
-    spriteID: b9587d2615de7b74584f1fc7baa3e446
+    spriteID: a0c36bb87910b3948908b7998423ac57
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -201,19 +162,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 156, y: 4}
-  - name: Frame_4
+    uvTransform: {x: 0, y: 0}
+  - name: NEW IDLE L playership_1
     originalName: 
-    pivot: {x: 0.5, y: -0.08333333}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 156
-      y: 156
-      width: 144
+      x: 169
+      y: 4
+      width: 154
       height: 144
-    spriteID: 4517833e85d85a44e9cbd6dd0b0c28fb
+    spriteID: d5c8cb66b6ab06e44853830b9742d648
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -221,61 +182,84 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 156, y: 156}
-  spriteSheetImportData: []
+    uvTransform: {x: 0, y: 0}
+  - name: NEW IDLE L playership_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 335
+      y: 4
+      width: 156
+      height: 144
+    spriteID: 67dfcc87fb0cbd54bba78a146bef6ed4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: NEW IDLE L playership_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 500
+      y: 4
+      width: 151
+      height: 144
+    spriteID: 4be8060d81aefae45907b04b89da3008
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: NEW IDLE L playership_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 4
+      width: 144
+      height: 144
+    spriteID: 3a25ba5c029e0464aa85a89a599cdf97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: -1162763987
-    name: NEW playership
+    guid: -227102443
+    name: NEW IDLE L playership
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: NEW IDLE L playership
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 11
-        y: 12
-        width: 144
-        height: 144
-      spriteId: cd7182c35909ebd46ab12f99ead416a5
-    - name: Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 10
-        y: 12
-        width: 144
-        height: 144
-      spriteId: b0043dc6b0f8d73428ce7e22fe4f38ca
-    - name: Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 10
-        y: 12
-        width: 144
-        height: 144
-      spriteId: 5cf39e90ec8366949befc7fd0a259ab6
-    - name: Frame_3
-      frameIndex: 3
-      additiveSortOrder: 0
-      cellRect:
-        x: 9
-        y: 12
-        width: 144
-        height: 144
-      spriteId: b9587d2615de7b74584f1fc7baa3e446
-    - name: Frame_4
-      frameIndex: 4
-      additiveSortOrder: 0
-      cellRect:
-        x: 11
-        y: 12
-        width: 144
-        height: 144
-      spriteId: 4517833e85d85a44e9cbd6dd0b0c28fb
+        x: 0
+        y: 0
+        width: 830
+        height: 166
+      spriteId: 9ded5192728757a43a00c3d10a783c31
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -318,5 +302,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 166, y: 166}
-  previousTextureSize: {x: 512, y: 512}
+  canvasSize: {x: 830, y: 166}
+  previousTextureSize: {x: 1024, y: 256}
