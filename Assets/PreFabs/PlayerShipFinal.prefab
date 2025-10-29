@@ -2302,6 +2302,7 @@ GameObject:
   - component: {fileID: 6061463734269326300}
   - component: {fileID: 5323057429700352014}
   - component: {fileID: 8019698685203556256}
+  - component: {fileID: 6109901522936877501}
   m_Layer: 6
   m_Name: PlayerShipFinal
   m_TagString: Player
@@ -2441,7 +2442,7 @@ MonoBehaviour:
   invul: 0
   invulPeriod: 0
   shieldHealth: 3
-  health: 4
+  health: 3
   SpRend: 0
   Daudio: {fileID: 5323057429700352014}
   fireDelay: 0.25
@@ -2553,6 +2554,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92690f3c977ae6042804ccbed32c3658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6109901522936877501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9036009820611157074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9126cf9efbd4a1c4f9342a831787297c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: {fileID: 6061463734269326300}
+  images: []
 --- !u!1001 &59767049634889980
 PrefabInstance:
   m_ObjectHideFlags: 0

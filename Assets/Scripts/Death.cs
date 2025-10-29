@@ -11,6 +11,7 @@ public class Death : MonoBehaviour
     public float invul = 0;
     public float invulPeriod = 0;
 
+    
 
     public int shieldHealth = 3;
 
@@ -125,6 +126,8 @@ public class Death : MonoBehaviour
         {
             Die();
         }
+
+
 
     }
 
