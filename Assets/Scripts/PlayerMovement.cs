@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 4f;
     public float speedIndicator = 4f;
-    public float rotationSpeed = 360f;
+ //   public float rotationSpeed = 360f;
 
     public bool Dodging;
     public float cooldownDodge = 0f;
@@ -93,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
          {
 
              PlayerShip.SetActive(true);
@@ -144,7 +144,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        /*if (Input.GetKey(KeyCode.LeftShift))
+       /* if (Input.GetKey(KeyCode.LeftShift))
         {
             RotatingShip();
         }*/
@@ -157,8 +157,8 @@ public class PlayerMovement : MonoBehaviour
     {
         Quaternion rotation = transform.rotation;
         float z = rotation.eulerAngles.z;
-        z -= Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
-        rotation = Quaternion.Euler(0, 0, z);
+        z -=  transform.position.x * rotationSpeed * Time.deltaTime;
+        rotation = Quaternion.Euler(0, 0, 90);
 
         transform.rotation = rotation;
 

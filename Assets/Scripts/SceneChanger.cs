@@ -8,6 +8,19 @@ public class SceneChanger : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+
+
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        Debug.Log("DHDHHFHD");
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            NextLevel();
+            Debug.Log("DHDHHFHD");
+        }
     }
 
     public void LoadScene(string sceneName)

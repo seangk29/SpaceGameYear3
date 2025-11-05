@@ -58,6 +58,7 @@ public class EnemyWaveHandler : MonoBehaviour
                     PlayerShooting.MakingChoice = true;
                     PlayerSpawner.numLives = PlayerSpawner.numLives + 1;
                     Debug.Log("Choice1!!!");
+                    enemyCount = 0;
                     return;
                 case 2:
                     Instantiate(Choice2);
@@ -65,6 +66,7 @@ public class EnemyWaveHandler : MonoBehaviour
                     PlayerShooting.MakingChoice = true;
                     PlayerSpawner.numLives = PlayerSpawner.numLives + 1;
                     Debug.Log("Choice2!!!");
+                    enemyCount = 0;
                     return;
                 case 3:
                     Instantiate(Choice3);
@@ -72,6 +74,7 @@ public class EnemyWaveHandler : MonoBehaviour
                     PlayerShooting.MakingChoice = true;
                     PlayerSpawner.numLives = PlayerSpawner.numLives + 1;
                     Debug.Log("Choice3!!!");
+                    enemyCount = 0;
                     return;
                 case 4:
                     Instantiate(Choice4);
@@ -79,6 +82,7 @@ public class EnemyWaveHandler : MonoBehaviour
                     PlayerShooting.MakingChoice = true;
                     PlayerSpawner.numLives = PlayerSpawner.numLives + 1;
                     Debug.Log("Choice4!!!");
+                    enemyCount = 0;
                     return;
                 case 5:
                     Instantiate(Choice5);
@@ -86,6 +90,7 @@ public class EnemyWaveHandler : MonoBehaviour
                     PlayerShooting.MakingChoice = true;
                     PlayerSpawner.numLives = PlayerSpawner.numLives + 1;
                     Debug.Log("Choice5!!!");
+                    enemyCount = 0;
                     return;
             }
 
