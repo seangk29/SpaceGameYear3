@@ -45,7 +45,10 @@ public class Death : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-      
+       if(gameObject.tag == "Interact")
+        {
+
+        }
         
         if (shieldHealth <= 0)
         {

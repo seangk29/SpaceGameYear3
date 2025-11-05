@@ -20,7 +20,7 @@ public class BackgroundTimer : MonoBehaviour
     {
         BgTimer += Time.deltaTime;
 
-        if (BgTimer >= 15)
+        if (BgTimer >= 60)
         {
             BgTimer = 0;
             Instantiate(StarsBg, BgSpawn);
