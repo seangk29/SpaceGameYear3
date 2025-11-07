@@ -21,32 +21,36 @@ public class EnemyWaveHandler : MonoBehaviour
 
     public static int enemyCount;
 
+    public int wave1Complete;
+    public int wave2Complete;
+    public int wave3Complete;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
         Instantiate(enemyWave1prefab);
-       
+        enemyCount = 0;
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (enemyCount == 23)
+        if (enemyCount == wave1Complete)
         {
             Instantiate(enemyWave2prefab);
             enemyCount = enemyCount + 1;
         }
 
-        if (enemyCount == 30)
+        if (enemyCount == wave2Complete)
         {
             Instantiate(enemyWave3prefab);
             enemyCount = enemyCount + 1;
         }
         
-        if (enemyCount == 56)
+        if (enemyCount == wave3Complete)
         {
             int randChoice = Random.Range(1, 6);
 

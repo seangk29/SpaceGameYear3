@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 4f;
     public float speedIndicator = 4f;
- //   public float rotationSpeed = 360f;
+    public float rotationSpeed = 360f;
 
     public bool Dodging;
     public float cooldownDodge = 0f;
@@ -144,7 +144,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-       /* if (Input.GetKey(KeyCode.LeftShift))
+       /* if (Input.GetKey(KeyCode.E))
         {
             RotatingShip();
         }*/
@@ -158,7 +158,7 @@ public class PlayerMovement : MonoBehaviour
         Quaternion rotation = transform.rotation;
         float z = rotation.eulerAngles.z;
         z -=  transform.position.x * rotationSpeed * Time.deltaTime;
-        rotation = Quaternion.Euler(0, 0, 90);
+        rotation = Quaternion.Euler(0, 0, z);
 
         transform.rotation = rotation;
 

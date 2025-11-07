@@ -1141,6 +1141,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerSpecialBullet
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: a39011be31d710e47aefd3e2fdca7fd5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: a39011be31d710e47aefd3e2fdca7fd5, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -1754,7 +1758,7 @@ MonoBehaviour:
   GunPos: {fileID: 1295181329}
   Eaudio: {fileID: 1295181331}
   timer: 0
-  timeToAttack: 3
+  timeToAttack: 6
   Fire: 0
 --- !u!1 &1384079491
 GameObject:
@@ -1836,7 +1840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68b60ae0855c73449b6549af14461b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotSpeed: 45
+  rotSpeed: 35
 --- !u!212 &1546331990
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2389,6 +2393,9 @@ MonoBehaviour:
   Choice4: {fileID: 0}
   Choice5: {fileID: 0}
   player: {fileID: 9036009820611157074, guid: fc9791c5414697b4a97d946b7511bd22, type: 3}
+  wave1Complete: 23
+  wave2Complete: 28
+  wave3Complete: 55
 --- !u!4 &1675822408
 Transform:
   m_ObjectHideFlags: 0
