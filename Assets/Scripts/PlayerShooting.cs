@@ -18,8 +18,9 @@ public class PlayerShooting : MonoBehaviour
     public float fireDelay = 0.25f;
     public float SPfireDelay = 3f;
     float cooldownTimer = 0;
+    float ScooldownTimer = 0;
 
-   public PlayerMovement scriptA;
+    public PlayerMovement scriptA;
 
     public void Start()
     {
@@ -32,7 +33,9 @@ public class PlayerShooting : MonoBehaviour
     {
         cooldownTimer -= Time.deltaTime;
 
-       if (MakingChoice == false)
+        ScooldownTimer -= Time.deltaTime;
+
+        if (MakingChoice == false)
         {
             if (Input.GetKey(KeyCode.Mouse0) && cooldownTimer <= 0)
             {
@@ -46,11 +49,11 @@ public class PlayerShooting : MonoBehaviour
             }
 
 
-            if (Input.GetKey(KeyCode.Mouse1) && cooldownTimer <= 0 && scriptA.CanUseSpecial == true)
+            if (Input.GetKey(KeyCode.Mouse1) && ScooldownTimer <= 0 && scriptA.CanUseSpecial == true)
             {
              
 
-                cooldownTimer = SPfireDelay;
+                ScooldownTimer = SPfireDelay;
 
                 SPaudio.Play();
 
