@@ -1710,7 +1710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
-  SbulletPrefab: {fileID: 1260864631553775174, guid: 4b41931a8f15f4841a1b9a9591b48d8a, type: 3}
+  SbulletPrefab: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
   GunPos: {fileID: 7671036059347274953}
   Paudio: {fileID: 4348079856546285672}
   SPaudio: {fileID: 7769170537270162356}
