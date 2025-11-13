@@ -395,7 +395,7 @@ MonoBehaviour:
   invul: 0
   invulPeriod: 0
   shieldHealth: 3
-  health: 50
+  health: 3
   SpRend: 1
   Daudio: {fileID: 4092512052659053887}
   fireDelay: 0.25
@@ -2562,7 +2562,7 @@ MonoBehaviour:
   cooldownDodge: 0
   Dtimer: 0
   dodgeSpeed: 15
-  CanUseSpecial: 1
+  CanUseSpecial: 0
   PlayerShip: {fileID: 3557184772885183120}
   PlayerShipLeft: {fileID: 4689112064267080821}
   PlayerShipRight: {fileID: 7566989587048313999}
@@ -2655,7 +2655,7 @@ MonoBehaviour:
   invul: 0
   invulPeriod: 0
   shieldHealth: 3
-  health: 3
+  health: 4
   SpRend: 0
   Daudio: {fileID: 5323057429700352014}
   fireDelay: 0.25
