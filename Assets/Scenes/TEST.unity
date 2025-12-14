@@ -736,7 +736,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &943594644
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1321,8 +1321,8 @@ MonoBehaviour:
   Choice5: {fileID: 0}
   player: {fileID: 9036009820611157074, guid: fc9791c5414697b4a97d946b7511bd22, type: 3}
   wave1Complete: 4
-  wave2Complete: 28
-  wave3Complete: 55
+  wave2Complete: 23
+  wave3Complete: 50
 --- !u!4 &1675822408
 Transform:
   m_ObjectHideFlags: 0

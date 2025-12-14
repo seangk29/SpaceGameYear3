@@ -9,12 +9,12 @@ public class PlayerSpawner : MonoBehaviour
 
     float respawnTimer;
 
-    public static int numLives = 50;
+    public static int numLives = 4;
     
     // Start is called before the first frame update
     void Start()
     {
-        //SpawnPlayer();
+        SpawnPlayer();
     }
 
     public void SpawnPlayer()

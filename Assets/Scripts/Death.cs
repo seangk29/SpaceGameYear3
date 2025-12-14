@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
-using UnityEditor.PackageManager;
+
+
 using UnityEngine;
 
 public class Death : MonoBehaviour
@@ -13,9 +13,9 @@ public class Death : MonoBehaviour
 
     
 
-    public int shieldHealth = 3;
+    public int shieldHealth;
 
-    public int health = 3;
+    public int health;
 
 
 
@@ -34,13 +34,7 @@ public class Death : MonoBehaviour
         
         correctLayer = gameObject.layer;
 
-        if (gameObject.tag == "Player")
-        {
-           // health = 3;
-            
-            //PlayerSpawner.numLives = 3;
-
-        }
+       
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -57,9 +51,14 @@ public class Death : MonoBehaviour
             gameObject.layer = 8;
         }
 
-        shieldHealth--;
-        invul = 0.50f;
-        gameObject.layer = 8;
+
+        if (shieldHealth > 0)
+        {
+            shieldHealth--;
+            invul = 0.50f; ;
+            gameObject.layer = 8;
+        }
+        
 
         
 
@@ -88,7 +87,7 @@ public class Death : MonoBehaviour
 
         if (collider.gameObject.tag == "HealthPack")
         {
-            health = health - 25;
+            health = health - 50;
             PlayerSpawner.numLives = PlayerSpawner.numLives + 1;
 
         }
@@ -100,6 +99,7 @@ public class Death : MonoBehaviour
     public void HealthUpgrade()
     {
         health = health + 1;
+        gameObject.GetComponentInChildren<Death> ();
         Debug.Log("Choice");
         
     }

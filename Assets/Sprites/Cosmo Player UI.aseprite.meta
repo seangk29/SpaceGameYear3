@@ -145,14 +145,14 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: Cosmo Player UI_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 27
-      y: 83
-      width: 21
+      x: 4
+      y: 43
+      width: 22
       height: 19
     spriteID: c8cbc31f795dc1c45b8707a49422ac01
     spriteBone: []
@@ -165,15 +165,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Cosmo Player UI_1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 84
-      y: 84
-      width: 48
-      height: 16
+      x: 27
+      y: 43
+      width: 22
+      height: 19
     spriteID: 8c673803eb6c35a4ba5fa817a5e05aeb
     spriteBone: []
     spriteOutline: []
@@ -185,14 +185,14 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Cosmo Player UI_2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 21
-      width: 22
+      x: 51
+      y: 43
+      width: 21
       height: 19
     spriteID: c806de8df812a154f94e9ed46cab2453
     spriteBone: []
@@ -205,15 +205,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Cosmo Player UI_3
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 27
-      y: 21
-      width: 22
-      height: 19
+      x: 53
+      y: 25
+      width: 95
+      height: 16
     spriteID: e716a8250efc8d94c81c55e55fc041ee
     spriteBone: []
     spriteOutline: []
@@ -230,11 +230,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 52
+      x: 5
       y: 4
-      width: 96
+      width: 48
       height: 16
-    spriteID: 743e4f2a81f3cbb41b51c88e8e867c1e
+    spriteID: 1714d42366fec0a4f8173c7476f5ab8c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -256,9 +256,9 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 32
+        y: 10
         width: 144
-        height: 98
+        height: 58
       spriteId: e17ebe0d0c2dd354bb4fbe7fec543f58
     linkedCells: []
     parentIndex: -1

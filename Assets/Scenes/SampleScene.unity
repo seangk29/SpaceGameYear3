@@ -674,11 +674,11 @@ Transform:
   m_GameObject: {fileID: 619394800}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.72999954, y: 2.921369, z: 0.068464085}
+  m_LocalPosition: {x: 13.96, y: -4.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 943594645}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &678500041
 GameObject:
@@ -933,7 +933,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &781378563
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1011,13 +1011,14 @@ GameObject:
   m_Component:
   - component: {fileID: 943594645}
   - component: {fileID: 943594644}
+  - component: {fileID: 943594646}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &943594644
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1126,10 +1127,21 @@ Transform:
   m_LocalPosition: {x: 14.69, y: -6.9713693, z: -0.068464085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 619394802}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &943594646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943594643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d728aed162ff7094b8c3d03965bd9e0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1062981804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2394,9 +2406,9 @@ MonoBehaviour:
   Choice4: {fileID: 0}
   Choice5: {fileID: 0}
   player: {fileID: 9036009820611157074, guid: fc9791c5414697b4a97d946b7511bd22, type: 3}
-  wave1Complete: 23
-  wave2Complete: 28
-  wave3Complete: 55
+  wave1Complete: 18
+  wave2Complete: 23
+  wave3Complete: 50
 --- !u!4 &1675822408
 Transform:
   m_ObjectHideFlags: 0
@@ -2735,7 +2747,7 @@ Transform:
   m_GameObject: {fileID: 2078337285}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.95, z: -0.1542356}
+  m_LocalPosition: {x: 13.3, y: -6.6, z: -0.1542356}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2763,7 +2775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3926255689242564778, guid: 21a4d2ade32557447897f1f8e6024291, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.23
+      value: -6.69
       objectReference: {fileID: 0}
     - target: {fileID: 3926255689242564778, guid: 21a4d2ade32557447897f1f8e6024291, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2809,6 +2821,7 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 781378564}
   - {fileID: 943594645}
+  - {fileID: 619394802}
   - {fileID: 6631349987103426172}
   - {fileID: 1675822408}
   - {fileID: 1384079493}
