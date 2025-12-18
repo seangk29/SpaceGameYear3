@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void SpeedUpgrade()
     {
-       moveSpeed = moveSpeed + 1f;
+       moveSpeed = moveSpeed + 0.2f;
        speedIndicator = speedIndicator + 1f;
     }
     public void EnableSpecial()
