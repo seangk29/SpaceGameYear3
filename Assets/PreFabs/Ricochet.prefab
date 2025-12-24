@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Name
-      value: SpecialBullet
+      value: Ricochet
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Layer
@@ -21,16 +21,28 @@ PrefabInstance:
       value: SpecialBullet
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
+      propertyPath: m_Size.x
+      value: 1.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
+      propertyPath: m_Size.y
+      value: 0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2239524536920753131, guid: 02f3bd3faac202843a3e1bb983415f13, type: 3}
+    - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Color.g
-      value: 0.89263904
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Color.r
@@ -46,15 +58,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.67939186
+      value: 0.20531814
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.07335455
+      value: 0.20531814
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.32658118
+      value: 0.20531814
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_LocalPosition.x
@@ -185,9 +197,9 @@ BoxCollider2D:
   m_Offset: {x: 0.000000014901161, y: 0.72}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.54, y: 1.44}
-    newSize: {x: 0.54, y: 1.44}
+    pivot: {x: 0.5, y: -0.37804878}
+    oldSize: {x: 1.12, y: 0.82}
+    newSize: {x: 1.12, y: 0.82}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
