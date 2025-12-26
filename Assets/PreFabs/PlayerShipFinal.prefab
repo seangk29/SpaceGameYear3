@@ -172,8 +172,12 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 3
+  maxShield: 0
   health: 4
+  canRegen: 0
   SpRend: 1
   Daudio: {fileID: 947021743936365863}
   fireDelay: 0.25
@@ -394,8 +398,12 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 30
+  canRegen: 0
   SpRend: 1
   Daudio: {fileID: 4092512052659053887}
   fireDelay: 0.25
@@ -910,8 +918,12 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 3
+  maxShield: 0
   health: 4
+  canRegen: 0
   SpRend: 1
   Daudio: {fileID: 9177758811738786386}
   fireDelay: 0.25
@@ -1182,7 +1194,7 @@ MonoBehaviour:
   SPaudio: {fileID: 7586701793076354417}
   fireDelay: 0.25
   SPfireDelay: 0.5
-  scriptA: {fileID: 5946322690500378483}
+  Special: {fileID: 5946322690500378483}
 --- !u!82 &3573525663387207421
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1547,8 +1559,12 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 3
+  maxShield: 0
   health: 4
+  canRegen: 0
   SpRend: 1
   Daudio: {fileID: 1467377791823043309}
   fireDelay: 0.25
@@ -1716,7 +1732,7 @@ MonoBehaviour:
   SPaudio: {fileID: 7769170537270162356}
   fireDelay: 0.25
   SPfireDelay: 1
-  scriptA: {fileID: 5946322690500378483}
+  Special: {fileID: 5946322690500378483}
 --- !u!82 &4348079856546285672
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2059,7 +2075,7 @@ MonoBehaviour:
   SPaudio: {fileID: 6765304227470628754}
   fireDelay: 0.25
   SPfireDelay: 0.5
-  scriptA: {fileID: 5946322690500378483}
+  Special: {fileID: 5946322690500378483}
 --- !u!82 &782560699595733572
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2305,7 +2321,7 @@ MonoBehaviour:
   SPaudio: {fileID: 2602936905597481853}
   fireDelay: 0.25
   SPfireDelay: 0.5
-  scriptA: {fileID: 5946322690500378483}
+  Special: {fileID: 5946322690500378483}
 --- !u!82 &3299595896317506627
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2515,6 +2531,7 @@ GameObject:
   - component: {fileID: 8019698685203556256}
   - component: {fileID: 6109901522936877501}
   - component: {fileID: 2128474471066485355}
+  - component: {fileID: 4027212950776653134}
   m_Layer: 6
   m_Name: PlayerShipFinal
   m_TagString: Player
@@ -2555,8 +2572,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2b2a0a5d6833a408f1b9e8352898e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  speedIndicator: 5
+  moveSpeed: 4
+  speedIndicator: 4
   rotationSpeed: 360
   Dodging: 1
   cooldownDodge: 0
@@ -2654,8 +2671,12 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0.5
-  shieldHealth: 5
+  shieldTimer: 0
+  regenShieldsTimer: 2
+  shieldHealth: 3
+  maxShield: 3
   health: 4
+  canRegen: 0
   SpRend: 0
   Daudio: {fileID: 5323057429700352014}
   fireDelay: 0.25
@@ -2817,6 +2838,24 @@ MonoBehaviour:
   shield4: {fileID: 3135648567586510122}
   shield5: {fileID: 1478192758954423675}
   shield6: {fileID: 2960148881859874018}
+--- !u!114 &4027212950776653134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9036009820611157074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d427b5d918f6e94f84f31d9d10eb960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spreadShot: {fileID: 1260864631553775174, guid: 4b41931a8f15f4841a1b9a9591b48d8a, type: 3}
+  ricochetShot: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+  currentSpecialPos1: {fileID: 1188533996794506909}
+  currentSpecialPos2: {fileID: 7739745485852572010}
+  currentSpecialPos3: {fileID: 6112183806146585590}
+  currentSpecialPos4: {fileID: 3054290766208163443}
 --- !u!1001 &59767049634889980
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ public class PlayerShooting : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public GameObject SbulletPrefab;
+
+
     public GameObject GunPos;
 
     public static bool MakingChoice = false;
@@ -20,11 +22,11 @@ public class PlayerShooting : MonoBehaviour
     float cooldownTimer = 0;
     float ScooldownTimer = 0;
 
-    public PlayerMovement scriptA;
+    public PlayerMovement Special;
 
     public void Start()
     {
-        PlayerMovement scriptA = GetComponent<PlayerMovement>();
+        PlayerMovement Special = GetComponent<PlayerMovement>();
     }
 
 
@@ -49,7 +51,7 @@ public class PlayerShooting : MonoBehaviour
             }
 
 
-            if (Input.GetKey(KeyCode.Mouse1) && ScooldownTimer <= 0 && scriptA.CanUseSpecial == true)
+            if (Input.GetKey(KeyCode.Mouse1) && ScooldownTimer <= 0 && Special.CanUseSpecial == true)
             {
              
 
@@ -63,7 +65,9 @@ public class PlayerShooting : MonoBehaviour
             }
         }
         
-        
+       
+
+
 
     }
 }

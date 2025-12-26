@@ -2033,8 +2033,12 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 3
   shieldHealth: 0
+  maxShield: 0
   health: 3
+  canRegen: 0
   SpRend: 1
   Daudio: {fileID: 1546331992}
   fireDelay: 0.25
@@ -2400,9 +2404,9 @@ MonoBehaviour:
   enemyWave1prefab: {fileID: 6746273965440130776, guid: b5663b0637ba37244a4c1836540508c2, type: 3}
   enemyWave2prefab: {fileID: 1696317364416253266, guid: 699ebdc707126404f994d4be46302764, type: 3}
   enemyWave3prefab: {fileID: 1696317364416253266, guid: 634e3320621cae645bf9ad126fc7d506, type: 3}
-  Choice1: {fileID: 7700481626308329569, guid: 0d446a63eb6466046ac5872475c8bb76, type: 3}
-  Choice2: {fileID: 7700481626308329569, guid: 39baeec2a3719c04fb2e00ef5da5b605, type: 3}
-  Choice3: {fileID: 0}
+  Choice1: {fileID: 7700481626308329569, guid: 95dee421315b50e40920b27db1771976, type: 3}
+  Choice2: {fileID: 7700481626308329569, guid: 95dee421315b50e40920b27db1771976, type: 3}
+  Choice3: {fileID: 7700481626308329569, guid: 95dee421315b50e40920b27db1771976, type: 3}
   Choice4: {fileID: 0}
   Choice5: {fileID: 0}
   player: {fileID: 9036009820611157074, guid: fc9791c5414697b4a97d946b7511bd22, type: 3}

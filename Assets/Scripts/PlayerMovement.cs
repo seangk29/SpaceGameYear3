@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject PlayerShipRight;
     public GameObject PlayerShipDown;
 
+  
+
     public void SpeedUpgrade()
     {
        moveSpeed = moveSpeed + 0.2f;

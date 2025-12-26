@@ -11,13 +11,15 @@ public class Death : MonoBehaviour
     public float invul = 0;
     public float invulPeriod = 0;
 
-    
+    public float shieldTimer;
+    public float regenShieldsTimer;
 
     public int shieldHealth;
+    public int maxShield;
 
     public int health;
 
-
+    public bool canRegen = false;
 
     int correctLayer;
 
@@ -39,10 +41,7 @@ public class Death : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-       if(gameObject.tag == "Interact")
-        {
-
-        }
+      
         
         if (shieldHealth <= 0)
         {
@@ -55,6 +54,8 @@ public class Death : MonoBehaviour
         if (shieldHealth > 0)
         {
             shieldHealth--;
+            shieldTimer = 0;
+            canRegen = true;
             invul = 0.50f; ;
             gameObject.layer = 8;
         }
@@ -107,6 +108,7 @@ public class Death : MonoBehaviour
     public void ShieldUpgrade()
     {
         shieldHealth = shieldHealth + 1;
+        maxShield = maxShield + 1;
         Debug.Log("Choice");
 
     }
@@ -130,7 +132,31 @@ public class Death : MonoBehaviour
             Die();
         }
 
+        if (gameObject.tag == "Player")
+        {
+            if (canRegen)
+            {
+                shieldTimer += Time.deltaTime;
 
+                if (shieldTimer >= regenShieldsTimer)
+                {
+                    shieldHealth = shieldHealth + 1;
+                    shieldTimer = 0;
+
+                    if (shieldHealth >= maxShield)
+                    {
+                        shieldTimer = 0;
+                        canRegen = false;
+                    }
+
+                }
+            }
+            
+           
+        }
+        
+        
+         
 
     }
 
