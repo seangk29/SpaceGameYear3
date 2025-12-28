@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1696317364416253266}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.913, y: 0.49, z: 0}
+  m_LocalPosition: {x: 20.49, y: 0.49, z: 0}
   m_LocalScale: {x: 0.8256777, y: 0.8256777, z: 0.8256777}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -456,9 +456,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 2
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 7992809064628789283}
   fireDelay: 0.25
 --- !u!50 &618839913173388548
@@ -810,9 +815,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 2
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 5847706278712417759}
   fireDelay: 0.25
 --- !u!50 &3677885704989616985

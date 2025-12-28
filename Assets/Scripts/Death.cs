@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using Unity.VisualScripting;
 
 
@@ -24,62 +25,63 @@ public class Death : MonoBehaviour
     int correctLayer;
 
     public bool SpRend;
+    public bool Combat;
 
     public AudioSource Daudio;
 
     public float fireDelay = 0.25f;
-  //  float cooldownTimer = 0;
+    //  float cooldownTimer = 0;
 
+
+    public EnemyWaveHandler Wave;
 
     private void Start()
     {
-        
+        Combat = true;
         correctLayer = gameObject.layer;
-
+        Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
        
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-      
+      if (Combat)
+        {
+            if (shieldHealth <= 0)
+            {
+                health--;
+                invul = 0.50f;
+                gameObject.layer = 8;
+            }
+
+
+            if (shieldHealth > 0)
+            {
+                shieldHealth--;
+                shieldTimer = 0;
+                canRegen = true;
+                invul = 0.50f; ;
+                gameObject.layer = 8;
+            }
+
+            if (SpRend && shieldHealth > 0)
+            {
+                StartCoroutine(VisualIndicator(Color.cyan));
+            }
+
+            else if (SpRend)
+            {
+                StartCoroutine(VisualIndicator(Color.red));
+            }
+
+            Daudio.Play();
+
+
+        }
         
-        if (shieldHealth <= 0)
-        {
-            health--;
-            invul = 0.50f;
-            gameObject.layer = 8;
-        }
-
-
-        if (shieldHealth > 0)
-        {
-            shieldHealth--;
-            shieldTimer = 0;
-            canRegen = true;
-            invul = 0.50f; ;
-            gameObject.layer = 8;
-        }
-        
+  
 
         
-
-
-
-
-
-
-
-        if (SpRend && shieldHealth > 0)
-        {
-            StartCoroutine(VisualIndicator(Color.cyan));    
-        }
-
-        else if (SpRend)
-        {
-            StartCoroutine(VisualIndicator(Color.red));
-        }
-
-        Daudio.Play();
 
 
 
@@ -154,9 +156,14 @@ public class Death : MonoBehaviour
             
            
         }
+
+
+      if (Wave.enemyCount >= Wave.wave3Complete)
+        {
+            Combat = false;
+        }
         
         
-         
 
     }
 
@@ -173,14 +180,19 @@ public class Death : MonoBehaviour
 
        if (gameObject.tag == "Enemy")
         {
-            EnemyWaveHandler.enemyCount = EnemyWaveHandler.enemyCount + 1;
+            Wave.enemyCount = Wave.enemyCount + 1;
             Debug.Log("Shot!");
-            Debug.Log(EnemyWaveHandler.enemyCount);
+            Debug.Log(Wave.enemyCount);
         }
 
         Destroy(gameObject);
 
     }
 
- 
+
+    public void ExitCombat()
+    {
+        Combat = false;
+    }
+
 }

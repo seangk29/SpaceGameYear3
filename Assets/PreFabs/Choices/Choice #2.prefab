@@ -412,6 +412,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 5906097877992930834, guid: 0f2a0557706908a4b915a92cca4428d3, type: 3}
+        m_TargetAssemblyTypeName: Death, Assembly-CSharp
+        m_MethodName: ExitCombat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &2646344185894334109
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,6 +747,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5906097877992930834, guid: 0f2a0557706908a4b915a92cca4428d3, type: 3}
+        m_TargetAssemblyTypeName: Death, Assembly-CSharp
+        m_MethodName: ExitCombat
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2506,6 +2530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0.2
+  Wave: {fileID: 0}
 --- !u!61 &3232408578882595211
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2566,11 +2591,17 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 3
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 0
+  Combat: 0
   Daudio: {fileID: 0}
   fireDelay: 0.25
+  Wave: {fileID: 0}
 --- !u!1 &8567045823535115604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2624,6 +2655,7 @@ MonoBehaviour:
   Choice4: {fileID: 7700481626308329569, guid: 0d446a63eb6466046ac5872475c8bb76, type: 3}
   Choice5: {fileID: 7700481626308329569}
   player: {fileID: 0}
+  enemyCount: 0
   wave1Complete: 0
   wave2Complete: 0
   wave3Complete: 0
@@ -2847,6 +2879,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5906097877992930834, guid: 0f2a0557706908a4b915a92cca4428d3, type: 3}
+        m_TargetAssemblyTypeName: Death, Assembly-CSharp
+        m_MethodName: ExitCombat
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

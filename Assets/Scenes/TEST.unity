@@ -1294,7 +1294,7 @@ GameObject:
   - component: {fileID: 1675822407}
   m_Layer: 0
   m_Name: EnemySpawner
-  m_TagString: Untagged
+  m_TagString: EnemySpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1320,6 +1320,7 @@ MonoBehaviour:
   Choice4: {fileID: 0}
   Choice5: {fileID: 0}
   player: {fileID: 9036009820611157074, guid: fc9791c5414697b4a97d946b7511bd22, type: 3}
+  enemyCount: 0
   wave1Complete: 4
   wave2Complete: 23
   wave3Complete: 50

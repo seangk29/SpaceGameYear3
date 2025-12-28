@@ -3863,9 +3863,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 7992809064628789283}
   fireDelay: 0.25
 --- !u!50 &618839913173388548
@@ -4238,9 +4243,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 5495192034368305353}
   fireDelay: 0.25
 --- !u!50 &1319947828362462593
@@ -4608,9 +4618,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 2841541488613968487}
   fireDelay: 0.25
 --- !u!50 &4609315207321154115
@@ -4973,9 +4988,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 7478835567331181620}
   fireDelay: 0.25
 --- !u!50 &1080264356023634548
@@ -5343,9 +5363,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 2742857773091732051}
   fireDelay: 0.25
 --- !u!50 &5441789671489013369
@@ -5713,9 +5738,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 3368734745574248186}
   fireDelay: 0.25
 --- !u!50 &1278485362387194849
@@ -6088,9 +6118,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 6849522060657681464}
   fireDelay: 0.25
 --- !u!50 &3448167457432649832
@@ -6453,9 +6488,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 4697430497376430016}
   fireDelay: 0.25
 --- !u!50 &2908223794175051218
@@ -6823,9 +6863,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 612778030158403908}
   fireDelay: 0.25
 --- !u!50 &8700225850748886409
@@ -7198,9 +7243,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 4224123399370412557}
   fireDelay: 0.25
 --- !u!50 &1146241672269276645
@@ -7568,9 +7618,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 5161947846089554208}
   fireDelay: 0.25
 --- !u!50 &3829740618794200311
@@ -7938,9 +7993,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 3746104219900130791}
   fireDelay: 0.25
 --- !u!50 &8760016709519839563
@@ -8303,9 +8363,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 3308014268884667427}
   fireDelay: 0.25
 --- !u!50 &7348971248243019944
@@ -8673,9 +8738,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 1167854706127536320}
   fireDelay: 0.25
 --- !u!50 &7426424002500524480
@@ -9043,9 +9113,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 5585912454104488609}
   fireDelay: 0.25
 --- !u!50 &8557044960944310478
@@ -9413,9 +9488,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 4278752432036898809}
   fireDelay: 0.25
 --- !u!50 &3411898209253532580
@@ -9788,9 +9868,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 8531537377424256415}
   fireDelay: 0.25
 --- !u!50 &611481718139659853
@@ -10158,9 +10243,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 5193752802161726174}
   fireDelay: 0.25
 --- !u!50 &6303693148186297549
@@ -10528,9 +10618,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 4245766048881988319}
   fireDelay: 0.25
 --- !u!50 &902980247185587
@@ -10893,9 +10988,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 5847706278712417759}
   fireDelay: 0.25
 --- !u!50 &3677885704989616985
@@ -11263,9 +11363,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 4843243179041557493}
   fireDelay: 0.25
 --- !u!50 &934424979128393030
@@ -11633,9 +11738,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 3011580343269081486}
   fireDelay: 0.25
 --- !u!50 &341314550831149009
@@ -12003,9 +12113,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 8445251786752348389}
   fireDelay: 0.25
 --- !u!50 &1590454279145504791
@@ -12373,9 +12488,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 4610867602842630504}
   fireDelay: 0.25
 --- !u!50 &2996089833276853258
@@ -12748,9 +12868,14 @@ MonoBehaviour:
   speed: 0
   invul: 0
   invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
   shieldHealth: 0
+  maxShield: 0
   health: 1
+  canRegen: 0
   SpRend: 1
+  Combat: 1
   Daudio: {fileID: 6496417606430417077}
   fireDelay: 0.25
 --- !u!50 &6179311050000461050

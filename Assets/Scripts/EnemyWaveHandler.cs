@@ -19,12 +19,14 @@ public class EnemyWaveHandler : MonoBehaviour
 
     public GameObject player;
 
-    public static int enemyCount;
+    public int enemyCount;
 
     public int wave1Complete;
     public int wave2Complete;
     public int wave3Complete;
 
+    
+    
 
 
     // Start is called before the first frame update
@@ -32,7 +34,8 @@ public class EnemyWaveHandler : MonoBehaviour
     {
         Instantiate(enemyWave1prefab);
         enemyCount = 0;
-        
+
+       
     }
 
     // Update is called once per frame
@@ -53,6 +56,7 @@ public class EnemyWaveHandler : MonoBehaviour
         if (enemyCount == wave3Complete)
         {
             int randChoice = Random.Range(1, 6);
+            
 
             switch (randChoice)
             {
@@ -62,7 +66,7 @@ public class EnemyWaveHandler : MonoBehaviour
                     PlayerShooting.MakingChoice = true;
                     PlayerSpawner.numLives = PlayerSpawner.numLives + 1;
                     Debug.Log("Choice1!!!");
-                    enemyCount = 0;
+                   //enemyCount = 0;
                     return;
                 case 2:
                     Instantiate(Choice2);
@@ -70,7 +74,7 @@ public class EnemyWaveHandler : MonoBehaviour
                     PlayerShooting.MakingChoice = true;
                     PlayerSpawner.numLives = PlayerSpawner.numLives + 1;
                     Debug.Log("Choice2!!!");
-                    enemyCount = 0;
+                    //enemyCount = 0;
                     return;
                 case 3:
                     Instantiate(Choice3);
@@ -78,7 +82,7 @@ public class EnemyWaveHandler : MonoBehaviour
                     PlayerShooting.MakingChoice = true;
                     PlayerSpawner.numLives = PlayerSpawner.numLives + 1;
                     Debug.Log("Choice3!!!");
-                    enemyCount = 0;
+                    //enemyCount = 0;
                     return;
                 case 4:
                     Instantiate(Choice4);
@@ -86,7 +90,7 @@ public class EnemyWaveHandler : MonoBehaviour
                     PlayerShooting.MakingChoice = true;
                     PlayerSpawner.numLives = PlayerSpawner.numLives + 1;
                     Debug.Log("Choice4!!!");
-                    enemyCount = 0;
+                    //enemyCount = 0;
                     return;
                 case 5:
                     Instantiate(Choice5);
@@ -94,7 +98,7 @@ public class EnemyWaveHandler : MonoBehaviour
                     PlayerShooting.MakingChoice = true;
                     PlayerSpawner.numLives = PlayerSpawner.numLives + 1;
                     Debug.Log("Choice5!!!");
-                    enemyCount = 0;
+                   // enemyCount = 0;
                     return;
             }
 
@@ -104,6 +108,8 @@ public class EnemyWaveHandler : MonoBehaviour
            
         }
 
-
     }
+
+
+    
 }

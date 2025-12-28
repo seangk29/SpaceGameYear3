@@ -5,8 +5,14 @@ using UnityEngine;
 public class SelfDestruct : MonoBehaviour
 {
     public float timer = 1f;
-    
-    
+
+    public EnemyWaveHandler Wave;
+
+
+    private void Start()
+    {
+        Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>(); 
+    }
     // Update is called once per frame
     void Update()
     {
@@ -18,9 +24,9 @@ public class SelfDestruct : MonoBehaviour
 
             if (gameObject.tag == "Enemy")
             {
-                EnemyWaveHandler.enemyCount = EnemyWaveHandler.enemyCount + 1;
+                Wave.enemyCount = Wave.enemyCount + 1;
               
-                Debug.Log(EnemyWaveHandler.enemyCount);
+                Debug.Log(Wave.enemyCount);
             }
         }
     }

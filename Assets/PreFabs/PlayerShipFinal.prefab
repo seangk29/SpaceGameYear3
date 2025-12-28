@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9053096517928969699}
   m_Layer: 6
   m_Name: ShipDown
-  m_TagString: Player
+  m_TagString: Player4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,8 +179,10 @@ MonoBehaviour:
   health: 4
   canRegen: 0
   SpRend: 1
+  Combat: 0
   Daudio: {fileID: 947021743936365863}
   fireDelay: 0.25
+  Wave: {fileID: 0}
 --- !u!82 &947021743936365863
 AudioSource:
   m_ObjectHideFlags: 0
@@ -310,7 +312,7 @@ GameObject:
   - component: {fileID: 4330658442321229124}
   m_Layer: 0
   m_Name: NEW playership
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -405,8 +407,10 @@ MonoBehaviour:
   health: 30
   canRegen: 0
   SpRend: 1
+  Combat: 0
   Daudio: {fileID: 4092512052659053887}
   fireDelay: 0.25
+  Wave: {fileID: 0}
 --- !u!61 &6425495460376143649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -651,7 +655,7 @@ GameObject:
   - component: {fileID: 1654672980381798677}
   m_Layer: 6
   m_Name: Ship
-  m_TagString: Player
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -763,7 +767,7 @@ GameObject:
   - component: {fileID: 585219089688366930}
   m_Layer: 6
   m_Name: ShipLeft
-  m_TagString: Untagged
+  m_TagString: Player3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -925,8 +929,10 @@ MonoBehaviour:
   health: 4
   canRegen: 0
   SpRend: 1
+  Combat: 0
   Daudio: {fileID: 9177758811738786386}
   fireDelay: 0.25
+  Wave: {fileID: 0}
 --- !u!82 &9177758811738786386
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1188,7 +1194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
-  SbulletPrefab: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+  SbulletPrefab: {fileID: 1260864631553775174, guid: 4b41931a8f15f4841a1b9a9591b48d8a, type: 3}
   GunPos: {fileID: 4968080818147679672}
   Paudio: {fileID: 3573525663387207421}
   SPaudio: {fileID: 7586701793076354417}
@@ -1404,7 +1410,7 @@ GameObject:
   - component: {fileID: 4366775313955181175}
   m_Layer: 6
   m_Name: ShipRight
-  m_TagString: Player
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1566,8 +1572,10 @@ MonoBehaviour:
   health: 4
   canRegen: 0
   SpRend: 1
+  Combat: 0
   Daudio: {fileID: 1467377791823043309}
   fireDelay: 0.25
+  Wave: {fileID: 0}
 --- !u!82 &1467377791823043309
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1726,7 +1734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
-  SbulletPrefab: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+  SbulletPrefab: {fileID: 1260864631553775174, guid: 4b41931a8f15f4841a1b9a9591b48d8a, type: 3}
   GunPos: {fileID: 7671036059347274953}
   Paudio: {fileID: 4348079856546285672}
   SPaudio: {fileID: 7769170537270162356}
@@ -2069,7 +2077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
-  SbulletPrefab: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+  SbulletPrefab: {fileID: 1260864631553775174, guid: 4b41931a8f15f4841a1b9a9591b48d8a, type: 3}
   GunPos: {fileID: 8646023804474444663}
   Paudio: {fileID: 782560699595733572}
   SPaudio: {fileID: 6765304227470628754}
@@ -2315,7 +2323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
-  SbulletPrefab: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+  SbulletPrefab: {fileID: 1260864631553775174, guid: 4b41931a8f15f4841a1b9a9591b48d8a, type: 3}
   GunPos: {fileID: 8830395866827833578}
   Paudio: {fileID: 3299595896317506627}
   SPaudio: {fileID: 2602936905597481853}
@@ -2677,9 +2685,11 @@ MonoBehaviour:
   maxShield: 3
   health: 4
   canRegen: 0
-  SpRend: 0
+  SpRend: 1
+  Combat: 0
   Daudio: {fileID: 5323057429700352014}
   fireDelay: 0.25
+  Wave: {fileID: 0}
 --- !u!82 &5323057429700352014
 AudioSource:
   m_ObjectHideFlags: 0

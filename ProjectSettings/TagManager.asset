@@ -7,6 +7,12 @@ TagManager:
   - Enemy
   - SpecialBullet
   - HealthPack
+  - Bullet
+  - Player1
+  - Player2
+  - Player3
+  - Player4
+  - EnemySpawner
   layers:
   - Default
   - TransparentFX
