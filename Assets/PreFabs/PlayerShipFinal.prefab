@@ -2587,7 +2587,7 @@ MonoBehaviour:
   cooldownDodge: 0
   Dtimer: 0
   dodgeSpeed: 15
-  CanUseSpecial: 1
+  CanUseSpecial: 0
   PlayerShip: {fileID: 3557184772885183120}
   PlayerShipLeft: {fileID: 4689112064267080821}
   PlayerShipRight: {fileID: 7566989587048313999}
