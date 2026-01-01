@@ -466,6 +466,7 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 7992809064628789283}
   fireDelay: 0.25
+  Wave: {fileID: 0}
 --- !u!50 &618839913173388548
 Rigidbody2D:
   serializedVersion: 4
@@ -728,7 +729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.75
+      value: -1.66
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -825,6 +826,7 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 5847706278712417759}
   fireDelay: 0.25
+  Wave: {fileID: 0}
 --- !u!50 &3677885704989616985
 Rigidbody2D:
   serializedVersion: 4

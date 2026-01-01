@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 2
+  Wave: {fileID: 0}
 --- !u!61 &2519588871795197990
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -248,12 +249,13 @@ MonoBehaviour:
   regenShieldsTimer: 0
   shieldHealth: 0
   maxShield: 0
-  health: 5
+  health: 10
   canRegen: 0
   SpRend: 0
-  Combat: 0
+  Combat: 1
   Daudio: {fileID: 0}
   fireDelay: 0.25
+  Wave: {fileID: 0}
 --- !u!82 &-4041147307535116102
 AudioSource:
   m_ObjectHideFlags: 0
@@ -264,9 +266,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 95fff1f1ba9467c4bbaef9213507bb4c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6f443d68e5320fc4dae72fd45ab058fd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

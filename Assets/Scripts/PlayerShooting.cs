@@ -13,8 +13,7 @@ public class PlayerShooting : MonoBehaviour
     public static bool MakingChoice = false;
     
 
-    public AudioSource Paudio;
-    public AudioSource SPaudio;
+    
 
 
     public float fireDelay = 0.25f;
@@ -43,7 +42,7 @@ public class PlayerShooting : MonoBehaviour
             {
                 cooldownTimer = fireDelay;
 
-                Paudio.Play();
+                
 
                 Instantiate(bulletPrefab, transform.position, transform.rotation);
 
@@ -57,7 +56,7 @@ public class PlayerShooting : MonoBehaviour
 
                 ScooldownTimer = SPfireDelay;
 
-                SPaudio.Play();
+                
 
                 Instantiate(SbulletPrefab, transform.position, transform.rotation);
 
