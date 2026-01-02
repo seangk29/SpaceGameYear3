@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject PlayerShipRight;
     public GameObject PlayerShipDown;
 
-  
+    float shipBoundaryRadius = 0.25f;
 
     public void SpeedUpgrade()
     {
@@ -47,6 +47,8 @@ public class PlayerMovement : MonoBehaviour
         }
        
     }
+
+   
 
     // Update is called once per frame
     void Update()
@@ -86,14 +88,40 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        //float horizontal = Input.GetAxis("Horizontal");
+        //float vertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(horizontal, vertical, 0);
+        Vector3 pos = transform.position;
 
-        transform.Translate(movement * moveSpeed * Time.deltaTime);
+        Vector3 velocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime, 0);
 
+        pos += velocity;
+        
 
+      if (pos.y + shipBoundaryRadius > Camera.main.orthographicSize)
+        {
+            pos.y = -Camera.main.orthographicSize - shipBoundaryRadius;
+        }
+
+        if (pos.y + shipBoundaryRadius < -Camera.main.orthographicSize)
+        {
+            pos.y = Camera.main.orthographicSize - shipBoundaryRadius;
+        }
+
+        float screenRatio = (float)Screen.width / (float)Screen.height;
+        float widthOrtho = Camera.main.orthographicSize * screenRatio;
+
+        if (pos.x + shipBoundaryRadius > widthOrtho)
+        {
+            pos.x = -widthOrtho - shipBoundaryRadius;
+        }
+
+        if (pos.x + shipBoundaryRadius < -widthOrtho)
+        {
+            pos.x = widthOrtho - shipBoundaryRadius;
+        }
+
+        transform.position = pos;
 
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
          {
