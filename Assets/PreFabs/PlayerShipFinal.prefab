@@ -1194,7 +1194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
-  SbulletPrefab: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+  SbulletPrefab: {fileID: 1260864631553775174, guid: 4b41931a8f15f4841a1b9a9591b48d8a, type: 3}
   GunPos: {fileID: 4968080818147679672}
   fireDelay: 0.25
   SPfireDelay: 0.5
@@ -1732,7 +1732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
-  SbulletPrefab: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+  SbulletPrefab: {fileID: 1260864631553775174, guid: 4b41931a8f15f4841a1b9a9591b48d8a, type: 3}
   GunPos: {fileID: 7671036059347274953}
   fireDelay: 0.25
   SPfireDelay: 1
@@ -2073,7 +2073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
-  SbulletPrefab: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+  SbulletPrefab: {fileID: 1260864631553775174, guid: 4b41931a8f15f4841a1b9a9591b48d8a, type: 3}
   GunPos: {fileID: 8646023804474444663}
   fireDelay: 0.25
   SPfireDelay: 0.5
@@ -2317,7 +2317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
-  SbulletPrefab: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+  SbulletPrefab: {fileID: 1260864631553775174, guid: 4b41931a8f15f4841a1b9a9591b48d8a, type: 3}
   GunPos: {fileID: 8830395866827833578}
   fireDelay: 0.25
   SPfireDelay: 0.5
@@ -2675,7 +2675,7 @@ MonoBehaviour:
   regenShieldsTimer: 2
   shieldHealth: 1
   maxShield: 1
-  health: 3
+  health: 4
   canRegen: 0
   SpRend: 1
   Combat: 0

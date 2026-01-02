@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 4f;
+    public float maxSpeed = 4f;
     public float speedIndicator = 4f;
     public float rotationSpeed = 360f;
 
@@ -24,9 +26,12 @@ public class PlayerMovement : MonoBehaviour
 
     float shipBoundaryRadius = 0.25f;
 
+    PlayerControls controls;
+    
     public void SpeedUpgrade()
     {
        moveSpeed = moveSpeed + 0.2f;
+        moveSpeed = maxSpeed + 0.2f;
        speedIndicator = speedIndicator + 1f;
     }
     public void EnableSpecial()
@@ -35,6 +40,24 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("should be able to use special bullets now");
     }
 
+
+    private void Awake()
+    {
+        controls = new PlayerControls();
+
+        controls.Gameplay.Move.performed += ctx => MovePlayer();
+        controls.Gameplay.Dash.performed += ctx => Dash();
+    }
+
+    void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Gameplay.Disable();
+    }
     private void Start()
     {
         if (gameObject.tag == "Player")
@@ -53,6 +76,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        MovePlayer();
+        Dash();
 
         Dtimer -= Time.deltaTime;
 
@@ -62,66 +87,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        if (Input.GetKey(KeyCode.Space) && Dtimer <= 0)
-        {
-            Dodging = true;
-
-            Dtimer = 2f;
-
-
-        }
-
-        if (cooldownDodge >= 0.01)
-        {
-
-            moveSpeed = dodgeSpeed;
-
-
-        }
-
-        if (cooldownDodge >= 0.25)
-        {
-
-            moveSpeed = speedIndicator;
-            cooldownDodge = 0;
-            Dodging = false;
-        }
-
-
         //float horizontal = Input.GetAxis("Horizontal");
         //float vertical = Input.GetAxis("Vertical");
-
-        Vector3 pos = transform.position;
-
-        Vector3 velocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime, 0);
-
-        pos += velocity;
-        
-
-      if (pos.y + shipBoundaryRadius > Camera.main.orthographicSize)
-        {
-            pos.y = -Camera.main.orthographicSize - shipBoundaryRadius;
-        }
-
-        if (pos.y + shipBoundaryRadius < -Camera.main.orthographicSize)
-        {
-            pos.y = Camera.main.orthographicSize - shipBoundaryRadius;
-        }
-
-        float screenRatio = (float)Screen.width / (float)Screen.height;
-        float widthOrtho = Camera.main.orthographicSize * screenRatio;
-
-        if (pos.x + shipBoundaryRadius > widthOrtho)
-        {
-            pos.x = -widthOrtho - shipBoundaryRadius;
-        }
-
-        if (pos.x + shipBoundaryRadius < -widthOrtho)
-        {
-            pos.x = widthOrtho - shipBoundaryRadius;
-        }
-
-        transform.position = pos;
 
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
          {
@@ -181,8 +148,67 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    public void Dash()
+    {
+        if (Input.GetKey(KeyCode.Space) && Dtimer <= 0 || controls.Gameplay.Dash.IsPressed() && Dtimer <= 0)
+        {
+            Dodging = true;
+
+            Dtimer = 2f;
 
 
+        }
+
+        if (cooldownDodge >= 0.01)
+        {
+
+            moveSpeed = dodgeSpeed;
+
+
+        }
+
+        if (cooldownDodge >= 0.25)
+        {
+
+            moveSpeed = maxSpeed;
+            cooldownDodge = 0;
+            Dodging = false;
+        }
+    }
+    public void MovePlayer()
+    {
+        Vector3 pos = transform.position;
+
+        Vector3 velocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 
+                           Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime, 0);
+
+        pos += velocity;
+
+        if (pos.y + shipBoundaryRadius > Camera.main.orthographicSize)
+        {
+            pos.y = -Camera.main.orthographicSize - shipBoundaryRadius;
+        }
+
+        if (pos.y + shipBoundaryRadius < -Camera.main.orthographicSize)
+        {
+            pos.y = Camera.main.orthographicSize - shipBoundaryRadius;
+        }
+
+        float screenRatio = (float)Screen.width / (float)Screen.height;
+        float widthOrtho = Camera.main.orthographicSize * screenRatio;
+
+        if (pos.x + shipBoundaryRadius > widthOrtho)
+        {
+            pos.x = -widthOrtho - shipBoundaryRadius;
+        }
+
+        if (pos.x + shipBoundaryRadius < -widthOrtho)
+        {
+            pos.x = widthOrtho - shipBoundaryRadius;
+        }
+
+        transform.position = pos;
+    }
    /* private void RotatingShip()
     {
         Quaternion rotation = transform.rotation;
