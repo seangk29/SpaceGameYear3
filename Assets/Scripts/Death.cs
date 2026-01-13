@@ -31,16 +31,25 @@ public class Death : MonoBehaviour
 
     public float fireDelay = 0.25f;
     //  float cooldownTimer = 0;
-
+   
 
     public EnemyWaveHandler Wave;
+    PlayerMovement move;
+    public PlayerData playerData;
+    public PlayerSpawner playerSpawn;
+   
 
     private void Start()
     {
         Combat = true;
         correctLayer = gameObject.layer;
         Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
+        move = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        playerSpawn = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerSpawner>();
        
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -75,6 +84,22 @@ public class Death : MonoBehaviour
             }
 
             Daudio.Play();
+
+            if(gameObject.tag == "Enemy")
+            {
+                playerData.score = playerData.score + 50;
+            }
+
+            if (gameObject.tag == "Player")
+            {
+                playerData.score = playerData.score - 50;
+            }
+
+            
+            
+
+
+
 
 
         }
@@ -122,13 +147,17 @@ public class Death : MonoBehaviour
         //var rebound = new Vector3(Random.Range(-10.0f, 10.0f), 0, Random.Range(-10.0f, 10.0f));
 
 
-        if (invul <= 0)
-        {
-            gameObject.layer = correctLayer;
+         if (invul <= 0)
+         {
+             gameObject.layer = correctLayer;
 
-        }
-        invul -= Time.deltaTime;
-        
+         }
+         invul -= Time.deltaTime;
+
+       
+
+
+
         if (health <= 0)
         {
             Die();
@@ -184,6 +213,9 @@ public class Death : MonoBehaviour
             Debug.Log("Shot!");
             Debug.Log(Wave.enemyCount);
         }
+
+       
+       
 
         Destroy(gameObject);
 

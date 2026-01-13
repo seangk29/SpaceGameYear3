@@ -138,6 +138,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  movingForward: 1
+  movingBackwards: 0
+  movingLeft: 0
+  movingRight: 0
 --- !u!114 &93562069747532519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,3 +254,5 @@ MonoBehaviour:
   Daudio: {fileID: 0}
   fireDelay: 0.25
   Wave: {fileID: 0}
+  playerData: {fileID: 0}
+  playerSpawn: {fileID: 0}

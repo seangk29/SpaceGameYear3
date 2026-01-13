@@ -70,7 +70,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 58
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -299,13 +299,15 @@ MonoBehaviour:
   regenShieldsTimer: 0
   shieldHealth: 0
   maxShield: 0
-  health: 1
+  health: 2
   canRegen: 0
   SpRend: 1
   Combat: 1
   Daudio: {fileID: 1179204053745780962}
   fireDelay: 0.25
   Wave: {fileID: 0}
+  playerData: {fileID: 0}
+  playerSpawn: {fileID: 0}
 --- !u!50 &5619876042499914957
 Rigidbody2D:
   serializedVersion: 4

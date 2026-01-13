@@ -288,7 +288,7 @@ MonoBehaviour:
   regenShieldsTimer: 0
   shieldHealth: 0
   maxShield: 0
-  health: 1
+  health: 2
   canRegen: 0
   SpRend: 1
   Combat: 1

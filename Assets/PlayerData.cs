@@ -12,6 +12,8 @@ public class PlayerData : MonoBehaviour
     public PlayerShooting currentSpecialPos3;
     public PlayerShooting currentSpecialPos4;
 
+    public int score = 0;
+
 
     private void Start()
     {
@@ -24,6 +26,11 @@ public class PlayerData : MonoBehaviour
         currentSpecialPos2.SbulletPrefab = spreadShot;
         currentSpecialPos3.SbulletPrefab = spreadShot;
         currentSpecialPos4.SbulletPrefab = spreadShot;
+
+        currentSpecialPos1.SPfireDelay = 1.5f;
+        currentSpecialPos2.SPfireDelay = 1.5f;
+        currentSpecialPos3.SPfireDelay = 1.5f;
+        currentSpecialPos4.SPfireDelay = 1.5f;
     }
 
     public void GetRichochetShot()
@@ -33,5 +40,12 @@ public class PlayerData : MonoBehaviour
         currentSpecialPos3.SbulletPrefab = ricochetShot;
         currentSpecialPos4.SbulletPrefab = ricochetShot;
 
+        currentSpecialPos1.SPfireDelay = 1f;
+        currentSpecialPos2.SPfireDelay = 1f;
+        currentSpecialPos3.SPfireDelay = 1f;
+        currentSpecialPos4.SPfireDelay = 1f;
+
     }
+
+
 }

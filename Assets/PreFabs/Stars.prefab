@@ -562,6 +562,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.5
+  movingForward: 1
+  movingBackwards: 0
+  movingLeft: 0
+  movingRight: 0
 --- !u!114 &678524008638461752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -576,6 +580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 60
   Wave: {fileID: 0}
+  selfDestruct: 1
 --- !u!1001 &22196768158002465
 PrefabInstance:
   m_ObjectHideFlags: 0

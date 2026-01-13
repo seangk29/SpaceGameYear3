@@ -7,22 +7,25 @@ public class PlayerSpawner : MonoBehaviour
     public GameObject playerPrefab;
     GameObject playerInstance;
 
- 
+   
 
     float respawnTimer;
 
-    public static int numLives = 4;
+    public static int numLives = 50;
+    public int lastLife = 4;
+
+   
     
     // Start is called before the first frame update
     void Start()
     {
         SpawnPlayer();
-
     }
 
     public void SpawnPlayer()
     {
         numLives--;
+       
         respawnTimer = 1;
         playerInstance = (GameObject)Instantiate(playerPrefab, transform.position, Quaternion.identity);
     }
@@ -42,6 +45,8 @@ public class PlayerSpawner : MonoBehaviour
             }
             
         }
+
+      
     }
 
 

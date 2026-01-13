@@ -70,7 +70,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 55
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -306,6 +306,8 @@ MonoBehaviour:
   Daudio: {fileID: 1153183559940581736}
   fireDelay: 0.25
   Wave: {fileID: 0}
+  playerData: {fileID: 0}
+  playerSpawn: {fileID: 0}
 --- !u!50 &8537215993647465551
 Rigidbody2D:
   serializedVersion: 4
@@ -404,6 +406,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.5
+  movingForward: 1
+  movingBackwards: 0
+  movingLeft: 0
+  movingRight: 0
 --- !u!82 &1153183559940581736
 AudioSource:
   m_ObjectHideFlags: 0

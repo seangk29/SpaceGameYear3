@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.ShaderGraph;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,8 +15,8 @@ public class PlayerShooting : MonoBehaviour
     
     public float fireDelay = 0.25f;
     public float SPfireDelay = 3f;
-    float cooldownTimer = 0;
-    float ScooldownTimer = 0;
+    public float cooldownTimer = 0;
+    public float ScooldownTimer = 0;
 
    
     

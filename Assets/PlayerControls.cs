@@ -29,12 +29,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Move"",
-                    ""type"": ""PassThrough"",
+                    ""type"": ""Value"",
                     ""id"": ""0dc8d86b-5456-4207-8714-8256808c69d3"",
                     ""expectedControlType"": ""Vector3"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
                     ""name"": ""Shoot (Standard)"",
@@ -62,6 +62,51 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ChangeDirection"",
+                    ""type"": ""Button"",
+                    ""id"": ""3c8a721c-5abc-435b-860a-7863767ee05a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ChangeRight"",
+                    ""type"": ""Button"",
+                    ""id"": ""d8c86c71-2363-40e2-9d60-951617ba7cdd"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ChangeLeft"",
+                    ""type"": ""Button"",
+                    ""id"": ""3644d888-30ac-49f7-bfde-41fd9dea999d"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ChangeDown"",
+                    ""type"": ""Button"",
+                    ""id"": ""46c6f1c1-4744-4188-985c-06142205b371"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ChangeUp"",
+                    ""type"": ""Button"",
+                    ""id"": ""895f2493-473e-4ecf-b324-e2bd584c05e1"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -77,9 +122,97 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
+                    ""name"": ""3D Vector"",
+                    ""id"": ""6380c122-c1f5-4600-adbd-61929c7749d2"",
+                    ""path"": ""3DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""55b76601-dd9b-4213-a5aa-102f86eb9f38"",
+                    ""path"": ""<Gamepad>/dpad/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""6103477e-deab-4f4e-a89a-4db067830285"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""31aa97d9-b1d9-43a7-86b6-5ac6480edec3"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""40eb4be5-0c96-414e-ab67-fcc266bb8391"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""forward"",
+                    ""id"": ""b5269e81-c8fc-4c59-b3ca-c64ff09f0b62"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""backward"",
+                    ""id"": ""d0b6e357-64c6-4d36-94aa-36c42f7dce50"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": """",
                     ""id"": ""5aadec10-b36f-4063-93f7-a0c13eec83cd"",
                     ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot (Standard)"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ad2ae267-aef0-4aca-9495-464d4cef41cd"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -100,12 +233,100 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""ac845e0b-f863-46b2-a7d4-9177c52dd196"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot (Special)"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""f05fdf11-8ed0-4e14-b763-65ea0d867d34"",
                     ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""458fa548-2338-4911-8e9a-968f5cfe109f"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""33de95c6-2c92-4e20-a7c5-6e773e368223"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChangeDirection"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7c60b613-15ca-4d84-90ee-45eb62c4c7c6"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChangeRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9926a148-1b38-416b-aa31-32185a101a2e"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChangeRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6bc96646-8376-4cc1-b49e-c0ca4ec8868e"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChangeLeft"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4f79c45f-d710-440c-9fc8-5ba4d9ac3de3"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChangeDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d1b2f9a0-4322-4ba1-b397-8eb877725e20"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChangeUp"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -120,6 +341,11 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Gameplay_ShootStandard = m_Gameplay.FindAction("Shoot (Standard)", throwIfNotFound: true);
         m_Gameplay_ShootSpecial = m_Gameplay.FindAction("Shoot (Special)", throwIfNotFound: true);
         m_Gameplay_Dash = m_Gameplay.FindAction("Dash", throwIfNotFound: true);
+        m_Gameplay_ChangeDirection = m_Gameplay.FindAction("ChangeDirection", throwIfNotFound: true);
+        m_Gameplay_ChangeRight = m_Gameplay.FindAction("ChangeRight", throwIfNotFound: true);
+        m_Gameplay_ChangeLeft = m_Gameplay.FindAction("ChangeLeft", throwIfNotFound: true);
+        m_Gameplay_ChangeDown = m_Gameplay.FindAction("ChangeDown", throwIfNotFound: true);
+        m_Gameplay_ChangeUp = m_Gameplay.FindAction("ChangeUp", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -190,6 +416,11 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_ShootStandard;
     private readonly InputAction m_Gameplay_ShootSpecial;
     private readonly InputAction m_Gameplay_Dash;
+    private readonly InputAction m_Gameplay_ChangeDirection;
+    private readonly InputAction m_Gameplay_ChangeRight;
+    private readonly InputAction m_Gameplay_ChangeLeft;
+    private readonly InputAction m_Gameplay_ChangeDown;
+    private readonly InputAction m_Gameplay_ChangeUp;
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
@@ -198,6 +429,11 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         public InputAction @ShootStandard => m_Wrapper.m_Gameplay_ShootStandard;
         public InputAction @ShootSpecial => m_Wrapper.m_Gameplay_ShootSpecial;
         public InputAction @Dash => m_Wrapper.m_Gameplay_Dash;
+        public InputAction @ChangeDirection => m_Wrapper.m_Gameplay_ChangeDirection;
+        public InputAction @ChangeRight => m_Wrapper.m_Gameplay_ChangeRight;
+        public InputAction @ChangeLeft => m_Wrapper.m_Gameplay_ChangeLeft;
+        public InputAction @ChangeDown => m_Wrapper.m_Gameplay_ChangeDown;
+        public InputAction @ChangeUp => m_Wrapper.m_Gameplay_ChangeUp;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -219,6 +455,21 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Dash.started += instance.OnDash;
             @Dash.performed += instance.OnDash;
             @Dash.canceled += instance.OnDash;
+            @ChangeDirection.started += instance.OnChangeDirection;
+            @ChangeDirection.performed += instance.OnChangeDirection;
+            @ChangeDirection.canceled += instance.OnChangeDirection;
+            @ChangeRight.started += instance.OnChangeRight;
+            @ChangeRight.performed += instance.OnChangeRight;
+            @ChangeRight.canceled += instance.OnChangeRight;
+            @ChangeLeft.started += instance.OnChangeLeft;
+            @ChangeLeft.performed += instance.OnChangeLeft;
+            @ChangeLeft.canceled += instance.OnChangeLeft;
+            @ChangeDown.started += instance.OnChangeDown;
+            @ChangeDown.performed += instance.OnChangeDown;
+            @ChangeDown.canceled += instance.OnChangeDown;
+            @ChangeUp.started += instance.OnChangeUp;
+            @ChangeUp.performed += instance.OnChangeUp;
+            @ChangeUp.canceled += instance.OnChangeUp;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -235,6 +486,21 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Dash.started -= instance.OnDash;
             @Dash.performed -= instance.OnDash;
             @Dash.canceled -= instance.OnDash;
+            @ChangeDirection.started -= instance.OnChangeDirection;
+            @ChangeDirection.performed -= instance.OnChangeDirection;
+            @ChangeDirection.canceled -= instance.OnChangeDirection;
+            @ChangeRight.started -= instance.OnChangeRight;
+            @ChangeRight.performed -= instance.OnChangeRight;
+            @ChangeRight.canceled -= instance.OnChangeRight;
+            @ChangeLeft.started -= instance.OnChangeLeft;
+            @ChangeLeft.performed -= instance.OnChangeLeft;
+            @ChangeLeft.canceled -= instance.OnChangeLeft;
+            @ChangeDown.started -= instance.OnChangeDown;
+            @ChangeDown.performed -= instance.OnChangeDown;
+            @ChangeDown.canceled -= instance.OnChangeDown;
+            @ChangeUp.started -= instance.OnChangeUp;
+            @ChangeUp.performed -= instance.OnChangeUp;
+            @ChangeUp.canceled -= instance.OnChangeUp;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -258,5 +524,10 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnShootStandard(InputAction.CallbackContext context);
         void OnShootSpecial(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+        void OnChangeDirection(InputAction.CallbackContext context);
+        void OnChangeRight(InputAction.CallbackContext context);
+        void OnChangeLeft(InputAction.CallbackContext context);
+        void OnChangeDown(InputAction.CallbackContext context);
+        void OnChangeUp(InputAction.CallbackContext context);
     }
 }

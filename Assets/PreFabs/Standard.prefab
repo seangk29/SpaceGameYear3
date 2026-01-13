@@ -135,6 +135,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  movingForward: 1
+  movingBackwards: 0
+  movingLeft: 0
+  movingRight: 0
 --- !u!114 &93562069747532519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +251,8 @@ MonoBehaviour:
   Daudio: {fileID: 0}
   fireDelay: 0.25
   Wave: {fileID: 0}
+  playerData: {fileID: 0}
+  playerSpawn: {fileID: 0}
 --- !u!82 &-4041147307535116102
 AudioSource:
   m_ObjectHideFlags: 0
@@ -265,7 +271,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 70
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

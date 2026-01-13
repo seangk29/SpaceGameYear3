@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     float shipBoundaryRadius = 0.25f;
 
     PlayerControls controls;
+
+   
     
     public void SpeedUpgrade()
     {
@@ -60,14 +62,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Start()
     {
-        if (gameObject.tag == "Player")
-        {
-
-          //  CanUseSpecial = false;
-          //  moveSpeed = 4f;
-          //  speedIndicator = 4f;
-
-        }
+        
        
     }
 
@@ -90,7 +85,8 @@ public class PlayerMovement : MonoBehaviour
         //float horizontal = Input.GetAxis("Horizontal");
         //float vertical = Input.GetAxis("Vertical");
 
-        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift) 
+            || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeUp.IsPressed())
          {
 
              PlayerShip.SetActive(true);
@@ -98,7 +94,8 @@ public class PlayerMovement : MonoBehaviour
              PlayerShipRight.SetActive(false);
              PlayerShipDown.SetActive(false);
          }
-         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift))
+         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift) 
+            || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeLeft.IsPressed())
          {
 
 
@@ -110,7 +107,8 @@ public class PlayerMovement : MonoBehaviour
 
 
          }
-         if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
+         if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift) 
+            || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeRight.IsPressed())
          {
 
 
@@ -125,7 +123,8 @@ public class PlayerMovement : MonoBehaviour
 
 
          }
-         if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.LeftShift))
+         if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.LeftShift) 
+            || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeDown.IsPressed())
          {
 
 
@@ -153,7 +152,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && Dtimer <= 0 || controls.Gameplay.Dash.IsPressed() && Dtimer <= 0)
         {
             Dodging = true;
-
+            
             Dtimer = 2f;
 
 
@@ -173,6 +172,7 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed = maxSpeed;
             cooldownDodge = 0;
             Dodging = false;
+           
         }
     }
     public void MovePlayer()

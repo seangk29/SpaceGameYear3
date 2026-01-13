@@ -8,6 +8,8 @@ public class SelfDestruct : MonoBehaviour
 
     public EnemyWaveHandler Wave;
 
+    public bool selfDestruct = true;
+
 
     private void Start()
     {
@@ -16,18 +18,22 @@ public class SelfDestruct : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer -= Time.deltaTime;
-
-        if(timer <= 0)
+        if (selfDestruct)
         {
-            Destroy(gameObject);
+            timer -= Time.deltaTime;
 
-            if (gameObject.tag == "Enemy")
+            if (timer <= 0)
             {
-                Wave.enemyCount = Wave.enemyCount + 1;
-              
-                Debug.Log(Wave.enemyCount);
+                Destroy(gameObject);
+
+                if (gameObject.tag == "Enemy")
+                {
+                    Wave.enemyCount = Wave.enemyCount + 1;
+
+                    Debug.Log(Wave.enemyCount);
+                }
             }
         }
+        
     }
 }

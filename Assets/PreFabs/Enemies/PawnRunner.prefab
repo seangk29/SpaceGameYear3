@@ -157,7 +157,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_Name
-      value: Pawn
+      value: PawnRunner
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_Layer
@@ -288,13 +288,15 @@ MonoBehaviour:
   regenShieldsTimer: 0
   shieldHealth: 0
   maxShield: 0
-  health: 1
+  health: 2
   canRegen: 0
   SpRend: 1
   Combat: 1
   Daudio: {fileID: 438396559003372571}
   fireDelay: 0.25
   Wave: {fileID: 0}
+  playerData: {fileID: 0}
+  playerSpawn: {fileID: 0}
 --- !u!50 &368140736554769287
 Rigidbody2D:
   serializedVersion: 4
@@ -393,6 +395,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  movingForward: 1
+  movingBackwards: 0
+  movingLeft: 0
+  movingRight: 0
 --- !u!82 &438396559003372571
 AudioSource:
   m_ObjectHideFlags: 0
