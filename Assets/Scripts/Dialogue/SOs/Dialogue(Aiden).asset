@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e82745c8fbc5d0b49a445aa993baf045, type: 3}
   m_Name: Dialogue(Aiden)
   m_EditorClassIdentifier: 
-  speakerName: ISLA
-  playerName: COSMO
+  speakerName: 
+  playerName: 
   paragraphs:
-  - I'm a dialogue box
-  - I'm also a dialogue box
-  - I am THE dialogue box
-  - alright buddy whatever you say
+  - 'COSMO: I''m the game.'
+  - 'ISLA: I''m also in the game.
+
+'
+  - 'COSMO: YEEEPIEEE MY WIFE IS ALIVE'
+  - 'ISLA: But you won''t be for long!!'
+  - 'COSMO: ...'
+  - 'COSMO: What?'
