@@ -2485,6 +2485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0.2
   Wave: {fileID: 0}
+  selfDestruct: 1
 --- !u!61 &3232408578882595211
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2556,6 +2557,8 @@ MonoBehaviour:
   Daudio: {fileID: 0}
   fireDelay: 0.25
   Wave: {fileID: 0}
+  playerData: {fileID: 0}
+  playerSpawn: {fileID: 0}
 --- !u!1 &8982630702562221203
 GameObject:
   m_ObjectHideFlags: 0

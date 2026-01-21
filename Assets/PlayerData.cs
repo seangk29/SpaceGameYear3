@@ -6,6 +6,7 @@ public class PlayerData : MonoBehaviour
 {
     public GameObject spreadShot;
     public GameObject ricochetShot;
+    public GameObject explodeShot;
 
     public PlayerShooting currentSpecialPos1;
     public PlayerShooting currentSpecialPos2;
@@ -39,6 +40,20 @@ public class PlayerData : MonoBehaviour
         currentSpecialPos2.SbulletPrefab = ricochetShot;
         currentSpecialPos3.SbulletPrefab = ricochetShot;
         currentSpecialPos4.SbulletPrefab = ricochetShot;
+
+        currentSpecialPos1.SPfireDelay = 1f;
+        currentSpecialPos2.SPfireDelay = 1f;
+        currentSpecialPos3.SPfireDelay = 1f;
+        currentSpecialPos4.SPfireDelay = 1f;
+
+    }
+
+    public void GetExplodeShot()
+    {
+        currentSpecialPos1.SbulletPrefab = explodeShot;
+        currentSpecialPos2.SbulletPrefab = explodeShot;
+        currentSpecialPos3.SbulletPrefab = explodeShot;
+        currentSpecialPos4.SbulletPrefab = explodeShot;
 
         currentSpecialPos1.SPfireDelay = 1f;
         currentSpecialPos2.SPfireDelay = 1f;
