@@ -9,17 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 52154a88a45fb4a499954f2a3a3be7af
   - enabled: 1
+    path: Assets/Scenes/Dialogue Test.unity
+    guid: 3e83159f7442bcc479b0b6fe93314a4c
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/TEST.unity
-    guid: 91945450a2f73ec41b492d1702ec3d28
+    guid: 132ddf41638b7014db8f0ee46ea2b2c1
   - enabled: 1
     path: Assets/Scenes/TEST 2.unity
-    guid: eeb7fbf3a1849bd4592b19bee0ec54aa
+    guid: f734c414c4ce8cd44be9c621ad696cd2
   - enabled: 1
     path: Assets/Scenes/TEST 3.unity
-    guid: 42c9d311b9ebc8f42adf74f91be5409f
+    guid: 84ee40f0d0680764db537916e13978ed
   - enabled: 1
     path: Assets/Scenes/BOSS 1.unity
     guid: f3a4a7cb211ca664293983136d2c7002

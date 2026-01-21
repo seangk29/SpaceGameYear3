@@ -124,15 +124,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Isla Mo
     originalName: 
-    pivot: {x: 0.4961832, y: 0}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 131
-      height: 139
+      width: 144
+      height: 144
     spriteID: ab0e123cb852f6643859e012a9d4eb9e
     spriteBone: []
     spriteOutline: []
@@ -155,10 +155,10 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 7
+        x: 0
         y: 0
-        width: 131
-        height: 139
+        width: 144
+        height: 144
       spriteId: ab0e123cb852f6643859e012a9d4eb9e
     linkedCells: []
     parentIndex: -1
