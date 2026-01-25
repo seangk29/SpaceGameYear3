@@ -14,20 +14,25 @@ public class MusicLoop : MonoBehaviour
     public AudioClip newClip;
 
     public int audioToggle;
-
     public int count = 0;
+
+    public bool changingTrack;
 
     void PlayScheduledClip()
     {
         audioSources[audioToggle].clip = currentClip;   
         audioSources[audioToggle].PlayScheduled(goalTime);
 
-        musicDuration = (double)currentClip.samples / currentClip.frequency;
+        musicDuration = clipDuration;//(double)currentClip.samples / currentClip.frequency;
         goalTime = goalTime + musicDuration;
 
         audioToggle = 1 - audioToggle;
 
-        count = count + 1;  
+       if (changingTrack)
+        {
+            count = count + 1;
+        }
+   
     }
 
     private void Awake()

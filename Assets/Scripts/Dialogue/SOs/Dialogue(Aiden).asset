@@ -15,11 +15,16 @@ MonoBehaviour:
   speakerName: 
   playerName: 
   paragraphs:
-  - 'COSMO: I''m the game.'
-  - 'ISLA: I''m also in the game.
+  - "COSMO: Come in \u2018Bastion One\u2019 do you copy? "
+  - 'BASTION ONE: Copy!
 
 '
-  - 'COSMO: YEEEPIEEE MY WIFE IS ALIVE'
-  - 'ISLA: But you won''t be for long!!'
-  - 'COSMO: ...'
-  - 'COSMO: What?'
+  - "COSMO: Let\u2019s not forget how important this mission is. We must eradicate
+    these bugs before they have the chance to get their filth all over our home."
+  - "BAXTER: It doesn\u2019t matter. We\u2019ll crush them either way. "
+  - 'BASTION ONE: Yeah!!!'
+  - "COSMO: Settle down, while it\u2019s true we are the best, knowing is half the
+    battle."
+  - "PHOENIX: Are we approaching the location of the signal we picked up? I\u2019m
+    not seeing anything. "
+  - 'HOLT: I think I see-'
