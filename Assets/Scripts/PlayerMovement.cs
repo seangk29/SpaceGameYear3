@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -28,7 +29,19 @@ public class PlayerMovement : MonoBehaviour
 
     PlayerControls controls;
 
-   
+    public GameObject afterImagePrefab;
+    public bool emitting;
+    public float interval = 0.2f;
+    public bool ShipUp;
+    public bool ShipDown;
+    public bool ShipLeft;
+    public bool ShipRight;
+
+    public GameObject SpriteUp;
+    public GameObject SpriteDown;
+    public GameObject SpriteLeft;
+    public GameObject SpriteRight;
+
     
     public void SpeedUpgrade()
     {
@@ -66,7 +79,17 @@ public class PlayerMovement : MonoBehaviour
        
     }
 
-   
+    IEnumerator EmitAfterImages()
+    {
+        while (emitting)
+        {
+            SpawnAfterImage();
+            yield return new WaitForSecondsRealtime(0.075f);
+        
+            
+
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -78,6 +101,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Dodging)
         {
+            
             cooldownDodge += Time.deltaTime;
         }
 
@@ -93,7 +117,12 @@ public class PlayerMovement : MonoBehaviour
              PlayerShipLeft.SetActive(false);
              PlayerShipRight.SetActive(false);
              PlayerShipDown.SetActive(false);
-         }
+
+            ShipUp = true;
+            ShipDown = false;
+            ShipLeft = false;
+            ShipRight = false;
+        }
          if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift) 
             || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeLeft.IsPressed())
          {
@@ -104,9 +133,12 @@ public class PlayerMovement : MonoBehaviour
              PlayerShipRight.SetActive(false);
              PlayerShipDown.SetActive(false);
 
+            ShipUp = false;
+            ShipDown = false;
+            ShipLeft = true;
+            ShipRight = false;
 
-
-         }
+        }
          if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift) 
             || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeRight.IsPressed())
          {
@@ -118,11 +150,14 @@ public class PlayerMovement : MonoBehaviour
              PlayerShipDown.SetActive(false);
 
 
+            ShipUp = false;
+            ShipDown = false;
+            ShipLeft = false;
+            ShipRight = true;
 
 
 
-
-         }
+        }
          if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.LeftShift) 
             || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeDown.IsPressed())
          {
@@ -133,10 +168,13 @@ public class PlayerMovement : MonoBehaviour
              PlayerShipRight.SetActive(false);
              PlayerShipDown.SetActive(true);
 
+            ShipUp = false;
+            ShipDown = true;
+            ShipLeft = false;
+            ShipRight = false;
 
 
-
-         }
+        }
 
 
 
@@ -147,14 +185,48 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    
+
+
+    void SpawnAfterImage()
+    {
+        if (ShipUp)
+        {
+            afterImagePrefab = SpriteUp;
+           
+        }
+
+        if (ShipDown)
+        {
+            afterImagePrefab = SpriteDown;
+           
+        }
+
+        if (ShipLeft)
+        {
+            afterImagePrefab = SpriteLeft;
+        }
+            
+        if (ShipRight)
+        {
+            afterImagePrefab = SpriteRight;
+
+        }
+
+        GameObject renderer = Instantiate(afterImagePrefab, transform.position, transform.rotation);
+        renderer.transform.localScale = transform.localScale;
+    }
     public void Dash()
     {
         if (Input.GetKey(KeyCode.Space) && Dtimer <= 0 || controls.Gameplay.Dash.IsPressed() && Dtimer <= 0)
         {
             Dodging = true;
-            
-            Dtimer = 2f;
+            emitting = true;
 
+            Dtimer = 2f;
+            
+            StartCoroutine(EmitAfterImages());
+          
 
         }
 
@@ -172,7 +244,9 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed = maxSpeed;
             cooldownDodge = 0;
             Dodging = false;
-           
+            emitting = false;
+
+          
         }
     }
     public void MovePlayer()
