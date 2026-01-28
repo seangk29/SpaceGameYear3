@@ -5,7 +5,7 @@ using UnityEngine;
 public class GeneralGlorgus : MonoBehaviour
 {
 
-    Death boss;
+    BossHealth boss;
     MoveForward moving;
     SelfDestruct self;
     public BossSpawner bossy;
@@ -33,7 +33,8 @@ public class GeneralGlorgus : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        boss = GetComponent<Death>();
+        // change to boss health
+        boss = GetComponent<BossHealth>();
         moving = GetComponent<MoveForward>();
         self = GetComponent<SelfDestruct>();
         bossy = GetComponent<BossSpawner>();

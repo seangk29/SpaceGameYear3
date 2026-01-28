@@ -3,11 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Unity.VisualScripting;
-
-
 using UnityEngine;
 
-public class Death : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
     public float speed;
     public float invul = 0;
@@ -32,30 +30,22 @@ public class Death : MonoBehaviour
 
     public float fireDelay = 0.25f;
     //  float cooldownTimer = 0;
-   
 
-    public EnemyWaveHandler Wave;
-    PlayerMovement move;
-    public PlayerData playerData;
     public PlayerSpawner playerSpawn;
-   
+    public EnemyWaveHandler Wave;
 
     private void Start()
     {
         Combat = true;
         correctLayer = gameObject.layer;
-        Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
-        move = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+       Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
         playerSpawn = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerSpawner>();
-       
-
 
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-      if (Combat)
+        if (Combat)
         {
             if (shieldHealth <= 0)
             {
@@ -63,7 +53,6 @@ public class Death : MonoBehaviour
                 invul = 0.50f;
                 gameObject.layer = 8;
             }
-
 
             if (shieldHealth > 0)
             {
@@ -84,38 +73,21 @@ public class Death : MonoBehaviour
                 StartCoroutine(VisualIndicator(Color.red));
             }
 
-            //Daudio.Play();
-
-            if(gameObject.tag == "Enemy")
-            {
-                playerData.score = playerData.score + 50;
-            }
-
-            if (gameObject.tag == "Player")
-            {
-                playerData.score = playerData.score - 50;
-            }
-
+            Daudio.Play();
         }
-
 
         if (collider.gameObject.tag == "HealthPack")
         {
             health = health - 50;
             playerSpawn.numLives = playerSpawn.numLives + 1;
-
         }
-    
+    }
 
-}
-
-  
     public void HealthUpgrade()
     {
         health = health + 1;
-        gameObject.GetComponentInChildren<Death> ();
+        gameObject.GetComponentInChildren<PlayerHealth>();
         Debug.Log("Choice");
-        
     }
 
     public void ShieldUpgrade()
@@ -126,23 +98,19 @@ public class Death : MonoBehaviour
 
     }
 
-
     private void Update()
     {
-         if (invul <= 0)
-         {
-             gameObject.layer = correctLayer;
-
-         }
-         invul -= Time.deltaTime;
+        if (invul <= 0)
+        {
+            gameObject.layer = correctLayer;
+        }
+        invul -= Time.deltaTime;
 
         if (health <= 0)
         {
             Die();
         }
 
-        if (gameObject.tag == "Player")
-        {
             if (canRegen)
             {
                 shieldTimer += Time.deltaTime;
@@ -157,52 +125,30 @@ public class Death : MonoBehaviour
                         shieldTimer = 0;
                         canRegen = false;
                     }
-
                 }
             }
-            
-           
-        }
 
-
-      if (Wave.enemyCount >= Wave.wave3Complete)
+        if (Wave.enemyCount >= Wave.wave3Complete)
         {
             Combat = false;
         }
-        
-        
 
     }
 
-    private IEnumerator VisualIndicator (Color color)
+    private IEnumerator VisualIndicator(Color color)
     {
         GetComponent<SpriteRenderer>().color = color;
         yield return new WaitForSeconds(0.15f);
         GetComponent<SpriteRenderer>().color = Color.white;
     }
 
-   public void Die()
+    public void Die()
     {
-        
-
-       if (gameObject.tag == "Enemy")
-        {
-            Wave.enemyCount = Wave.enemyCount + 1;
-            Debug.Log("Shot!");
-            Debug.Log(Wave.enemyCount);
-        }
-
-       
-       
-
         Destroy(gameObject);
-
     }
-
 
     public void ExitCombat()
     {
         Combat = false;
     }
-
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ExplodeShot : MonoBehaviour
 {
 
-    public Death explode;
+    public PlayerHealth explode;
 
     public GameObject explodeBullet;
   
@@ -13,7 +13,8 @@ public class ExplodeShot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        explode = GetComponent<Death>();
+        // change to player
+        explode = GetComponent<PlayerHealth>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

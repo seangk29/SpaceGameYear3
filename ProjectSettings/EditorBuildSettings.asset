@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Dialogue Test.unity
     guid: 3e83159f7442bcc479b0b6fe93314a4c
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Hub.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/TEST.unity
@@ -32,5 +32,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BOSS 1.unity
     guid: f3a4a7cb211ca664293983136d2c7002
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: a229f16f52b4e3043ba86dd1c65043ef
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: a996dc94a93c9aa4cb392ff5b57d73f7, type: 3}

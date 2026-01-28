@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerSpawner : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class PlayerSpawner : MonoBehaviour
 
     float respawnTimer;
 
-    public static int numLives = 50;
+    [SerializeField]public int numLives = 1;
     public int lastLife = 4;
 
    
@@ -35,17 +36,20 @@ public class PlayerSpawner : MonoBehaviour
     {
         if (playerInstance == null && numLives > 0)
         {
-        
-           
+
+
             respawnTimer -= Time.deltaTime;
 
             if (respawnTimer <= 0)
             {
                 SpawnPlayer();
             }
-            
-        }
 
+        }
+        if (playerInstance == null && numLives == 0)
+        {
+            SceneManager.LoadScene("Hub");
+        }
       
     }
 

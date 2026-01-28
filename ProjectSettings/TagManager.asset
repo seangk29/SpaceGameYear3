@@ -17,6 +17,7 @@ TagManager:
   - PlayerData
   - GameOver
   - ExplodeShot
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX

@@ -158,9 +158,9 @@ GameObject:
   - component: {fileID: 4955428841079203062}
   - component: {fileID: 4507556650367909750}
   - component: {fileID: 6614370567053663911}
-  - component: {fileID: 3476645512824030354}
   - component: {fileID: 947021743936365863}
   - component: {fileID: 9053096517928969699}
+  - component: {fileID: 2811111442703987740}
   m_Layer: 6
   m_Name: ShipDown
   m_TagString: Player4
@@ -303,34 +303,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9142941, y: 0.5180485}
   m_EdgeRadius: 0
---- !u!114 &3476645512824030354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425730782382259083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 3
-  maxShield: 0
-  health: 4
-  canRegen: 0
-  SpRend: 1
-  Combat: 0
-  Daudio: {fileID: 947021743936365863}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!82 &947021743936365863
 AudioSource:
   m_ObjectHideFlags: 0
@@ -442,6 +414,33 @@ MonoBehaviour:
   Dodging: 0
   cooldownDodge: 1
   Dtimer: 0
+--- !u!114 &2811111442703987740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425730782382259083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db97ab5e57c8a1540af9c3ee6a72dd63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  invul: 0
+  invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
+  shieldHealth: 0
+  maxShield: 0
+  health: 300
+  canRegen: 0
+  SpRend: 1
+  Combat: 0
+  Daudio: {fileID: 947021743936365863}
+  fireDelay: 0.25
+  playerSpawn: {fileID: 0}
+  Wave: {fileID: 0}
 --- !u!1 &1667372856028613701
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,12 +719,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5716058410977164265}
   - component: {fileID: 3063520082507629364}
-  - component: {fileID: 8899913114563549560}
   - component: {fileID: 6425495460376143649}
   - component: {fileID: 4092512052659053887}
   - component: {fileID: 7422697933036058719}
   - component: {fileID: 125169855869528775}
   - component: {fileID: 4330658442321229124}
+  - component: {fileID: 1052168599787172306}
   m_Layer: 6
   m_Name: NEW playership
   m_TagString: Player1
@@ -801,34 +800,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8899913114563549560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2913796824387255504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 30
-  canRegen: 0
-  SpRend: 1
-  Combat: 0
-  Daudio: {fileID: 4092512052659053887}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!61 &6425495460376143649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1019,6 +990,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 360
+--- !u!114 &1052168599787172306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913796824387255504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db97ab5e57c8a1540af9c3ee6a72dd63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  invul: 0
+  invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
+  shieldHealth: 0
+  maxShield: 0
+  health: 300
+  canRegen: 0
+  SpRend: 1
+  Combat: 0
+  Daudio: {fileID: 4092512052659053887}
+  fireDelay: 0.25
+  playerSpawn: {fileID: 0}
+  Wave: {fileID: 0}
 --- !u!1 &3327284902683556773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,9 +1178,9 @@ GameObject:
   - component: {fileID: 7778986672384402142}
   - component: {fileID: 695172220001646205}
   - component: {fileID: 2398410077204817191}
-  - component: {fileID: 2447949127965253535}
   - component: {fileID: 9177758811738786386}
   - component: {fileID: 585219089688366930}
+  - component: {fileID: 5608318492573568615}
   m_Layer: 6
   m_Name: ShipLeft
   m_TagString: Player3
@@ -1325,34 +1323,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5363951, y: 0.90797424}
   m_EdgeRadius: 0
---- !u!114 &2447949127965253535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4689112064267080821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 3
-  maxShield: 0
-  health: 4
-  canRegen: 0
-  SpRend: 1
-  Combat: 0
-  Daudio: {fileID: 9177758811738786386}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!82 &9177758811738786386
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1464,6 +1434,33 @@ MonoBehaviour:
   Dodging: 0
   cooldownDodge: 1
   Dtimer: 0
+--- !u!114 &5608318492573568615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4689112064267080821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db97ab5e57c8a1540af9c3ee6a72dd63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  invul: 0
+  invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
+  shieldHealth: 0
+  maxShield: 0
+  health: 300
+  canRegen: 0
+  SpRend: 1
+  Combat: 0
+  Daudio: {fileID: 9177758811738786386}
+  fireDelay: 0.25
+  playerSpawn: {fileID: 0}
+  Wave: {fileID: 0}
 --- !u!1 &4805046748181273822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,9 +2020,9 @@ GameObject:
   - component: {fileID: 1911032767432079806}
   - component: {fileID: 7965513026882996820}
   - component: {fileID: 2738169781630571936}
-  - component: {fileID: 508748820378485700}
   - component: {fileID: 1467377791823043309}
   - component: {fileID: 4366775313955181175}
+  - component: {fileID: 6734951610417537966}
   m_Layer: 6
   m_Name: ShipRight
   m_TagString: Player2
@@ -2168,34 +2165,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.60306966, y: 0.8643415}
   m_EdgeRadius: 0
---- !u!114 &508748820378485700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7566989587048313999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 3
-  maxShield: 0
-  health: 4
-  canRegen: 0
-  SpRend: 1
-  Combat: 0
-  Daudio: {fileID: 1467377791823043309}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!82 &1467377791823043309
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2307,6 +2276,33 @@ MonoBehaviour:
   Dodging: 0
   cooldownDodge: 1
   Dtimer: 0
+--- !u!114 &6734951610417537966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7566989587048313999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db97ab5e57c8a1540af9c3ee6a72dd63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  invul: 0
+  invulPeriod: 0
+  shieldTimer: 0
+  regenShieldsTimer: 0
+  shieldHealth: 0
+  maxShield: 0
+  health: 300
+  canRegen: 0
+  SpRend: 1
+  Combat: 0
+  Daudio: {fileID: 1467377791823043309}
+  fireDelay: 0.25
+  playerSpawn: {fileID: 0}
+  Wave: {fileID: 0}
 --- !u!1 &7671036059347274953
 GameObject:
   m_ObjectHideFlags: 0
@@ -3288,12 +3284,12 @@ GameObject:
   - component: {fileID: 5946322690500378483}
   - component: {fileID: 5797167362837029770}
   - component: {fileID: 810581488059285666}
-  - component: {fileID: 6061463734269326300}
   - component: {fileID: 5323057429700352014}
   - component: {fileID: 8019698685203556256}
   - component: {fileID: 6109901522936877501}
   - component: {fileID: 2128474471066485355}
   - component: {fileID: 4027212950776653134}
+  - component: {fileID: 1469651522427813453}
   m_Layer: 6
   m_Name: PlayerShipFinal
   m_TagString: Player
@@ -3430,34 +3426,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6061463734269326300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9036009820611157074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 3
-  shieldTimer: 0
-  regenShieldsTimer: 2
-  shieldHealth: 1
-  maxShield: 1
-  health: 3
-  canRegen: 0
-  SpRend: 1
-  Combat: 0
-  Daudio: {fileID: 5323057429700352014}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!82 &5323057429700352014
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3578,7 +3546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9126cf9efbd4a1c4f9342a831787297c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: {fileID: 6061463734269326300}
+  HP: {fileID: 1469651522427813453}
   health1: {fileID: 6597043777099574761}
   health2: {fileID: 4670132158450318113}
   health3: {fileID: 855553462830971727}
@@ -3609,7 +3577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d811d1a20dabc5a4d81914fb84b14fa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Shield: {fileID: 6061463734269326300}
+  Shield: {fileID: 1469651522427813453}
   shield1: {fileID: 2126160733227896513}
   shield2: {fileID: 6216746770932223945}
   shield3: {fileID: 3034193492946033525}
@@ -3636,6 +3604,33 @@ MonoBehaviour:
   currentSpecialPos3: {fileID: 6112183806146585590}
   currentSpecialPos4: {fileID: 3054290766208163443}
   score: 0
+--- !u!114 &1469651522427813453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9036009820611157074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db97ab5e57c8a1540af9c3ee6a72dd63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  invul: 0
+  invulPeriod: 3
+  shieldTimer: 0
+  regenShieldsTimer: 2
+  shieldHealth: 1
+  maxShield: 1
+  health: 3
+  canRegen: 0
+  SpRend: 1
+  Combat: 1
+  Daudio: {fileID: 5323057429700352014}
+  fireDelay: 0.25
+  playerSpawn: {fileID: 0}
+  Wave: {fileID: 0}
 --- !u!1001 &59767049634889980
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -250,9 +250,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5972872358549863192}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5619876042499914957}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       insertIndex: -1
@@ -269,6 +266,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7860216263291286792}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2073229548222069124}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
 --- !u!4 &3720345959820945944 stripped
 Transform:
@@ -280,32 +280,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
   m_PrefabInstance: {fileID: 6842330333423572245}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5972872358549863192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4489148195869835901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 2
-  canRegen: 0
-  SpRend: 1
-  Combat: 1
-  Daudio: {fileID: 1179204053745780962}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
 --- !u!50 &5619876042499914957
 Rigidbody2D:
   serializedVersion: 4
@@ -404,6 +378,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  movingForward: 0
+  movingBackwards: 0
+  movingLeft: 0
+  movingRight: 0
 --- !u!82 &1179204053745780962
 AudioSource:
   m_ObjectHideFlags: 0
@@ -521,3 +499,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2073229548222069124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4489148195869835901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a65cf8b36d6d7b641aa6b0305693ef50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2
+  canRegen: 0
+  SpRend: 1
+  Combat: 1
+  Daudio: {fileID: 1179204053745780962}
+  fireDelay: 0.25
+  Wave: {fileID: 0}
