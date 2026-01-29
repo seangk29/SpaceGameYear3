@@ -41,7 +41,7 @@ public class EnemyHealth : MonoBehaviour
         if (Combat)
         {
 
-            if (collider.gameObject.tag == "Bullet")
+            if (collider.gameObject.tag == "Bullet" || collider.gameObject.tag == "ExplodeShot")
             {
                 health--;
             }

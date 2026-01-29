@@ -2549,6 +2549,7 @@ MonoBehaviour:
   wave1Complete: 3
   wave2Complete: 26
   wave3Complete: 54
+  spawn: {fileID: 6631349987103426173}
 --- !u!4 &1675822408
 Transform:
   m_ObjectHideFlags: 0
@@ -2949,11 +2950,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8592981165356098803, guid: 21a4d2ade32557447897f1f8e6024291, type: 3}
+      propertyPath: numLives
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21a4d2ade32557447897f1f8e6024291, type: 3}
+--- !u!114 &6631349987103426173 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8592981165356098803, guid: 21a4d2ade32557447897f1f8e6024291, type: 3}
+  m_PrefabInstance: {fileID: 6631349987103426172}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c5aced4bddc7b49b5e9830c6921c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

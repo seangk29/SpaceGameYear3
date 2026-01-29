@@ -375,6 +375,17 @@ MonoBehaviour:
   timer: 2
   Wave: {fileID: 0}
   selfDestruct: 1
+--- !u!114 &438395816 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8592981165356098803, guid: 21a4d2ade32557447897f1f8e6024291, type: 3}
+  m_PrefabInstance: {fileID: 6631349987103426172}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c5aced4bddc7b49b5e9830c6921c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &508844998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2824,7 +2835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1675822407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2850,7 +2861,7 @@ MonoBehaviour:
   wave1Complete: 22
   wave2Complete: 30
   wave3Complete: 58
-  spawn: {fileID: 0}
+  spawn: {fileID: 438395816}
 --- !u!4 &1675822408
 Transform:
   m_ObjectHideFlags: 0
@@ -3137,7 +3148,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2022046813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3341,6 +3352,10 @@ PrefabInstance:
     - target: {fileID: 8592981165356098803, guid: 21a4d2ade32557447897f1f8e6024291, type: 3}
       propertyPath: LastLife
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592981165356098803, guid: 21a4d2ade32557447897f1f8e6024291, type: 3}
+      propertyPath: numLives
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

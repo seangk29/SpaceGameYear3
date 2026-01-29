@@ -194,22 +194,27 @@ public class PlayerMovement : MonoBehaviour
         {
             afterImagePrefab = SpriteUp;
            
+
         }
 
         if (ShipDown)
         {
             afterImagePrefab = SpriteDown;
-           
+            
+
         }
 
         if (ShipLeft)
         {
             afterImagePrefab = SpriteLeft;
+           
         }
             
         if (ShipRight)
         {
             afterImagePrefab = SpriteRight;
+
+            
 
         }
 
