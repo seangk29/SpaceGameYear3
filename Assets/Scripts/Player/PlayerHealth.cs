@@ -38,7 +38,7 @@ public class PlayerHealth : MonoBehaviour
     {
         Combat = true;
         correctLayer = gameObject.layer;
-       Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
+        Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
         playerSpawn = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerSpawner>();
 
     }
@@ -128,10 +128,15 @@ public class PlayerHealth : MonoBehaviour
                 }
             }
 
-        if (Wave.enemyCount >= Wave.wave3Complete)
+        if (Wave != null)
         {
-            Combat = false;
+            if (Wave.enemyCount >= Wave.wave3Complete)
+            {
+                Combat = false;
+            }
         }
+        else
+            return;
 
     }
 
