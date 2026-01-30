@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.Build.Content;
 using UnityEngine;
 
 public class CardManager : MonoBehaviour
@@ -106,11 +105,11 @@ public class CardManager : MonoBehaviour
         }
 
         // try and actually apply upgrade? itd be awesome if 
-        switch (selectedCard)
+        /*switch (selectedCard)
         {
             case CardEffect.HpIncrease:
                 return;
-        }
+        }*/
 
         GameManager.Instance.changeState(GameManager.GameState.Playing);
     }

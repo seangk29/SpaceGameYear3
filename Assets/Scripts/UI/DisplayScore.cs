@@ -18,6 +18,6 @@ public class DisplayScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreTMP.text = "SCORE: " + player.score;
+        scoreTMP.text = "S.C.O.R.E.: " + player.score;
     }
 }
