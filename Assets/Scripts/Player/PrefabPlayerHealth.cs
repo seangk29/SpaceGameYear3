@@ -17,7 +17,8 @@ public class PlayerHealth : MonoBehaviour
     public int shieldHealth;
     public int maxShield;
 
-    public int health;
+    public int health;  
+    public int maxHealth;
 
     public bool canRegen = false;
 
@@ -36,6 +37,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
+        maxHealth = health;
         Combat = true;
         correctLayer = gameObject.layer;
         Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
@@ -83,17 +85,18 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void HealthUpgrade()
-    {
-        health = health + 1;
+    public void HealthUpgrade(int value)
+     {
+        health = health + value;
+        maxHealth = maxHealth + value;
         gameObject.GetComponentInChildren<PlayerHealth>();
-        Debug.Log("Choice");
+        Debug.Log("shouldve upgraded health");
     }
 
-    public void ShieldUpgrade()
+    public void ShieldUpgrade(int value)
     {
-        shieldHealth = shieldHealth + 1;
-        maxShield = maxShield + 1;
+        shieldHealth = shieldHealth + value;
+        maxShield = maxShield + value;
         Debug.Log("Choice");
 
     }

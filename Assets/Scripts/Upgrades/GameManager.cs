@@ -6,7 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    int currentLevel = 0;
+    public int currentLevel = 0;
     GameState currentState;
     public event Action<GameState> OnStateChanged;
 
@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     // this part is just for testing
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Backspace))
         {
             changeState(GameState.CardSelection);
             currentLevel++;

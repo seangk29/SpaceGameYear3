@@ -15,6 +15,7 @@ MonoBehaviour:
   cardImage: {fileID: 2733241868513160400, guid: dbf1d6698ef2f4b4f96cebb4cb28d854, type: 3}
   cardText: +3 HP
   effectType: 0
-  effectValue: 1
+  effectString: {fileID: 0}
+  effectValue: 3
   isUnique: 0
   unlockLevel: 3

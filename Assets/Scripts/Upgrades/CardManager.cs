@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using static GameManager;
 
 public class CardManager : MonoBehaviour
 {
@@ -38,6 +39,22 @@ public class CardManager : MonoBehaviour
         {
             GameManager.Instance.OnStateChanged += HandleGameStateChanged;
         }
+    }
+
+    private void Update()
+    {
+        Instance = this;
+
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnStateChanged += HandleGameStateChanged;
+        }
+
+        /*if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            RandomizeNewCards();
+            Debug.Log("bbbbbb");
+        }*/
     }
 
     private void OnDisable()
@@ -104,12 +121,25 @@ public class CardManager : MonoBehaviour
             alreadySelectedCards.Add(selectedCard);
         }
 
-        // try and actually apply upgrade? itd be awesome if 
-        /*switch (selectedCard)
+        var selectedCardType = selectedCard.effectType;
+        var selectedCardValue = selectedCard.effectValue;
+
+        // try and actually apply upgrade? itd be awesome if it works
+       switch (selectedCardType)
         {
             case CardEffect.HpIncrease:
-                return;
-        }*/
+                PlayerHealth.HealthUpgrade(selectedCardValue);
+                break;
+            case CardEffect.ShieldIncrease:
+                //upgrade
+                break;
+            case CardEffect.ShieldRegenIncrease:
+                //upgrade
+                break;
+            case CardEffect.SpeedIncrease:
+                //upgrade
+                break;
+        }
 
         GameManager.Instance.changeState(GameManager.GameState.Playing);
     }

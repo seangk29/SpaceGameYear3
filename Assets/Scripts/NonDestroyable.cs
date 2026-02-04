@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NonDestroyable : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class NonDestroyable : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
+
     }
 
 }
