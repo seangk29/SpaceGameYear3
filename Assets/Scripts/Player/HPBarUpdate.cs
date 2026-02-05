@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class hpBarUpdate : MonoBehaviour
 {
-    public PlayerHealth HP;
+    public ActivePlayerHealth HP;
 
 
     //public Image[] images;
@@ -19,7 +19,7 @@ public class hpBarUpdate : MonoBehaviour
     void Start()
     {
         // change to player health
-        PlayerHealth HP = GetComponent<PlayerHealth>();
+        ActivePlayerHealth HP = GetComponent<ActivePlayerHealth>();
 
 
 

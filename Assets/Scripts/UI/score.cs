@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class score : MonoBehaviour
 {
-    public PlayerData playerData;
+    PlayerData playerData;
 
     // Start is called before the first frame update
     void Start()

@@ -434,6 +434,7 @@ MonoBehaviour:
   shieldHealth: 0
   maxShield: 0
   health: 300
+  maxHealth: 0
   canRegen: 0
   SpRend: 1
   Combat: 0
@@ -441,6 +442,7 @@ MonoBehaviour:
   fireDelay: 0.25
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
+  playerStats: {fileID: 0}
 --- !u!1 &1667372856028613701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1013,7 @@ MonoBehaviour:
   shieldHealth: 0
   maxShield: 0
   health: 300
+  maxHealth: 0
   canRegen: 0
   SpRend: 1
   Combat: 0
@@ -1018,6 +1021,7 @@ MonoBehaviour:
   fireDelay: 0.25
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
+  playerStats: {fileID: 0}
 --- !u!1 &3327284902683556773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1347,6 +1351,7 @@ MonoBehaviour:
   shieldHealth: 0
   maxShield: 0
   health: 300
+  maxHealth: 0
   canRegen: 0
   SpRend: 1
   Combat: 0
@@ -1354,6 +1359,7 @@ MonoBehaviour:
   fireDelay: 0.25
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
+  playerStats: {fileID: 0}
 --- !u!1 &4805046748181273822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2189,6 +2195,7 @@ MonoBehaviour:
   shieldHealth: 0
   maxShield: 0
   health: 300
+  maxHealth: 0
   canRegen: 0
   SpRend: 1
   Combat: 0
@@ -2196,6 +2203,7 @@ MonoBehaviour:
   fireDelay: 0.25
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
+  playerStats: {fileID: 0}
 --- !u!1 &7671036059347274953
 GameObject:
   m_ObjectHideFlags: 0
@@ -3174,6 +3182,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8727848638913848864}
+  - component: {fileID: 1469651522427813453}
   - component: {fileID: 5946322690500378483}
   - component: {fileID: 5797167362837029770}
   - component: {fileID: 810581488059285666}
@@ -3182,7 +3191,6 @@ GameObject:
   - component: {fileID: 6109901522936877501}
   - component: {fileID: 2128474471066485355}
   - component: {fileID: 4027212950776653134}
-  - component: {fileID: 1469651522427813453}
   m_Layer: 6
   m_Name: PlayerShipFinal
   m_TagString: Player
@@ -3211,6 +3219,35 @@ Transform:
   - {fileID: 8454891412058048668}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1469651522427813453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9036009820611157074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db97ab5e57c8a1540af9c3ee6a72dd63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  invul: 0
+  invulPeriod: 3
+  shieldTimer: 0
+  regenShieldsTimer: 2
+  shieldHealth: 1
+  maxShield: 1
+  health: 3
+  maxHealth: 0
+  canRegen: 0
+  SpRend: 1
+  Combat: 1
+  Daudio: {fileID: 5323057429700352014}
+  fireDelay: 0.25
+  playerSpawn: {fileID: 0}
+  Wave: {fileID: 0}
+  playerStats: {fileID: 0}
 --- !u!114 &5946322690500378483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3497,33 +3534,6 @@ MonoBehaviour:
   currentSpecialPos3: {fileID: 6112183806146585590}
   currentSpecialPos4: {fileID: 3054290766208163443}
   score: 0
---- !u!114 &1469651522427813453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9036009820611157074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db97ab5e57c8a1540af9c3ee6a72dd63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 3
-  shieldTimer: 0
-  regenShieldsTimer: 2
-  shieldHealth: 1
-  maxShield: 1
-  health: 3
-  canRegen: 0
-  SpRend: 1
-  Combat: 1
-  Daudio: {fileID: 5323057429700352014}
-  fireDelay: 0.25
-  playerSpawn: {fileID: 0}
-  Wave: {fileID: 0}
 --- !u!1001 &59767049634889980
 PrefabInstance:
   m_ObjectHideFlags: 0

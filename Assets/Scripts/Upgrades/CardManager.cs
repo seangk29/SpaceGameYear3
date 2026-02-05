@@ -25,11 +25,11 @@ public class CardManager : MonoBehaviour
 
     public static CardManager Instance;
 
-    public static PlayerHealth PlayerHealth;
+    public static PermaPlayerStats PermaPlayerStats;
 
     private void Start()
     {
-        PlayerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        PermaPlayerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
     }
     private void Awake()
     {
@@ -41,9 +41,8 @@ public class CardManager : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        Instance = this;
 
         if (GameManager.Instance != null)
         {
@@ -128,7 +127,7 @@ public class CardManager : MonoBehaviour
        switch (selectedCardType)
         {
             case CardEffect.HpIncrease:
-                PlayerHealth.HealthUpgrade(selectedCardValue);
+                PermaPlayerStats.MaxHealthUpgrade(selectedCardValue);
                 break;
             case CardEffect.ShieldIncrease:
                 //upgrade

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ShieldBarUpdate : MonoBehaviour
 {
-    public PlayerHealth Shield;
+    public ActivePlayerHealth Shield;
 
 
     //public Image[] images;
@@ -19,7 +19,7 @@ public class ShieldBarUpdate : MonoBehaviour
     void Start()
     {
         // change to player health
-        PlayerHealth Shield = GetComponent<PlayerHealth>();
+        ActivePlayerHealth Shield = GetComponent<ActivePlayerHealth>();
 
 
 

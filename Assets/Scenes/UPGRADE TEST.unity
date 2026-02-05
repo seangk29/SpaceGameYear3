@@ -765,7 +765,7 @@ GameObject:
   - component: {fileID: 631784485}
   - component: {fileID: 631784484}
   - component: {fileID: 631784483}
-  - component: {fileID: 631784486}
+  - component: {fileID: 631784487}
   m_Layer: 0
   m_Name: PlayerData
   m_TagString: PlayerData
@@ -814,13 +814,13 @@ Transform:
   m_GameObject: {fileID: 631784482}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.497423, y: 0.015264824, z: -0.07988811}
+  m_LocalPosition: {x: -5.92, y: 0.015264824, z: -0.07988811}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &631784486
+--- !u!114 &631784487
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -829,25 +829,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 631784482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db97ab5e57c8a1540af9c3ee6a72dd63, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fda49f3e07128b4c9d571460fdcae1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 0
-  maxHealth: 0
-  canRegen: 0
-  SpRend: 0
-  Combat: 0
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  playerSpawn: {fileID: 0}
-  Wave: {fileID: 0}
+  activePlayerHealth: {fileID: 0}
+  health: 3
+  maxHealth: 3
+  shield: 1
+  maxShield: 1
 --- !u!1 &637187845
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class ActivePlayerHealth : MonoBehaviour
 {
     public float speed;
     public float invul = 0;
@@ -35,13 +35,23 @@ public class PlayerHealth : MonoBehaviour
     public PlayerSpawner playerSpawn;
     public EnemyWaveHandler Wave;
 
+    public PermaPlayerStats playerStats;
+
     private void Start()
     {
-        maxHealth = health;
-        Combat = true;
-        correctLayer = gameObject.layer;
+
         Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
         playerSpawn = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerSpawner>();
+        playerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
+
+        maxHealth = playerStats.maxHealth;
+        health = maxHealth;
+
+        maxShield = playerStats.maxShield;
+        shieldHealth = maxShield;
+
+        Combat = true;
+        correctLayer = gameObject.layer;
 
     }
 
@@ -89,7 +99,7 @@ public class PlayerHealth : MonoBehaviour
      {
         health = health + value;
         maxHealth = maxHealth + value;
-        gameObject.GetComponentInChildren<PlayerHealth>();
+        gameObject.GetComponentInChildren<ActivePlayerHealth>();
         Debug.Log("shouldve upgraded health");
     }
 
