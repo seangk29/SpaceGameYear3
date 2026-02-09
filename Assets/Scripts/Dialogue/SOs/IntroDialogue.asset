@@ -10,10 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e82745c8fbc5d0b49a445aa993baf045, type: 3}
-  m_Name: Dialogue(Aiden)
+  m_Name: IntroDialogue
   m_EditorClassIdentifier: 
-  speakerName: 
-  playerName: 
+  speakerName: Bastion One
+  playerName: Cosmo
+  speakerClip:
+  - {fileID: 8300000, guid: 35de1d319aa63ab42ad5d2cc0c01cac4, type: 3}
+  - {fileID: 8300000, guid: 45dac73d5e945d749bb0abd58a407f73, type: 3}
+  - {fileID: 8300000, guid: 325e1a1968324fb4f9603204d366855b, type: 3}
+  - {fileID: 8300000, guid: 437c3ae505f5abe408ccc78554f9a154, type: 3}
+  - {fileID: 8300000, guid: 188cb9458944bf24d8638614ee75d299, type: 3}
+  - {fileID: 8300000, guid: 7088c361191ccce49976cae2565a2e1f, type: 3}
+  - {fileID: 8300000, guid: de36aeae0f1370f40841d0eee9fd8204, type: 3}
+  - {fileID: 8300000, guid: 6bc656f336236054b817f802be4a3771, type: 3}
   paragraphs:
   - "COSMO: Come in \u2018Bastion One\u2019 do you copy? "
   - 'BASTION ONE: Copy!

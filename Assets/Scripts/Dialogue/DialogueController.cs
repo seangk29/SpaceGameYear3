@@ -5,24 +5,29 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
 using UnityEngine.UI;
+using System.Linq;
 
 public class DialogueController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI npcNameText;
     [SerializeField] private TextMeshProUGUI playerNameText;
     [SerializeField] private TextMeshProUGUI npcDialogueText;
+    [SerializeField] private AudioSource playerVoice;
+    [SerializeField] private GameObject playerVoiceObject;
+    [SerializeField] private AudioClip[] playerClips;
     [SerializeField] private float typeSpeed;
     [SerializeField] private GameObject player;
     public Image npc;
     public Image playerSprite;
 
 
-    private Queue<string> paragraphs = new Queue<string>();
+    [SerializeField] private Queue<string> paragraphs = new Queue<string>();
 
     //public PlayerMovement move;
 
     private bool convoEnded;
     private bool isTyping;
+    private int counter = -1;
 
     private string p;
     private const float MAX_TYPE_TIME = 0.1F;
@@ -64,17 +69,59 @@ public class DialogueController : MonoBehaviour
         }
 
 
+
         if (!isTyping)
         {
             p = paragraphs.Dequeue();
-
-            typeDialogueRoutine = StartCoroutine(typeDialogueText(p));
-
+            counter++;
+            playerVoiceObject.SetActive(true);
+            typeDialogueRoutine = StartCoroutine(typeDialogueText(p));   
         }
         else
         {
+            //playerVoice.Stop();
+            playerVoiceObject.SetActive(false);
             FinishParagraphEarly();
-   
+        }
+
+
+        switch (counter)
+        {
+            case 0:
+                playerVoice.clip = playerClips[counter];
+                playerVoice.Play();
+                break;
+            case 1:
+                playerVoice.clip = playerClips[counter];
+                playerVoice.Play();
+                break;
+            case 2:
+                playerVoice.clip = playerClips[counter];
+                playerVoice.Play();
+                break;
+            case 3:
+                playerVoice.clip = playerClips[counter];
+                playerVoice.Play();
+                break;
+            case 4:
+                playerVoice.clip = playerClips[counter];
+                playerVoice.Play();
+                break;
+            case 5:
+                playerVoice.clip = playerClips[counter];
+                playerVoice.Play();
+                break;
+            case 6:
+                playerVoice.clip = playerClips[counter];
+                playerVoice.Play();
+                break;
+            case 7:
+                playerVoice.clip = playerClips[counter];
+                playerVoice.Play();
+                break;
+            default:
+                playerVoice.clip = null;
+                break;
         }
 
 
@@ -93,16 +140,18 @@ public class DialogueController : MonoBehaviour
         gameObject.SetActive(true);
         }
 
-        
-
         npcNameText.text = dialogueText.speakerName;
         playerNameText.text = dialogueText.playerName;
+        playerClips = dialogueText.speakerClip;
+
 
         //Adds the text to the Queue
         for (int i = 0; i < dialogueText.paragraphs.Length; i++)
         {
             paragraphs.Enqueue(dialogueText.paragraphs[i]);
         }
+
+
 
     }
 
@@ -117,6 +166,8 @@ public class DialogueController : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+
+        playerVoice.Stop();
 
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
 
@@ -153,6 +204,7 @@ public class DialogueController : MonoBehaviour
         StopCoroutine(typeDialogueRoutine);
         npcDialogueText.maxVisibleCharacters = p.Length;
         isTyping = false;
+        playerVoice.Stop();
     }
 
 

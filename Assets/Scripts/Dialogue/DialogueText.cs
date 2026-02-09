@@ -11,6 +11,7 @@ public class DialogueText : ScriptableObject
 
     public string speakerName;
     public string playerName;
+    public AudioClip[] speakerClip;
 
     [TextArea(5, 10)]
     public string[] paragraphs;
