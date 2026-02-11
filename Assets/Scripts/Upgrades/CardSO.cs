@@ -40,5 +40,9 @@ public enum CardEffect
     HpIncrease,
     ShieldIncrease,
     ShieldRegenIncrease,
-    SpeedIncrease
+    SpeedIncrease,
+    SpreadUnlock,
+    RicochetUnlock,
+    ExplodeUnlock,
+    SpecialUpgrade
 }

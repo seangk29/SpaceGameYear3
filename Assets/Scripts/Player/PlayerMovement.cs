@@ -8,6 +8,8 @@ using UnityEngine.Rendering.Universal;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public PermaPlayerStats playerStats;
+
     public float moveSpeed = 4f;
     public float maxSpeed = 4f;
     public float speedIndicator = 4f;
@@ -62,6 +64,10 @@ public class PlayerMovement : MonoBehaviour
 
         controls.Gameplay.Move.performed += ctx => MovePlayer();
         controls.Gameplay.Dash.performed += ctx => Dash();
+
+        playerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
+        moveSpeed = playerStats.maxSpeed;
+        CanUseSpecial = playerStats.canUseSpecial;
     }
 
     void OnEnable()

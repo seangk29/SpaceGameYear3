@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerData : MonoBehaviour
 {
+    public PermaPlayerStats playerStats;
+    public string activeSpecial;
+
     public GameObject spreadShot;
     public GameObject ricochetShot;
     public GameObject explodeShot;
@@ -19,6 +22,27 @@ public class PlayerData : MonoBehaviour
     private void Start()
     {
         PlayerShooting currentSpecial = GetComponent<PlayerShooting>();
+
+        playerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
+
+        if (playerStats.canUseSpecial)
+        {
+            Debug.Log("aaaaaa");
+            activeSpecial = playerStats.activeSpecial;
+
+            switch (activeSpecial)
+            {
+                case "Spread":
+                    GetSpreadShot();
+                    break;
+                case "Ricochet":
+                    GetRichochetShot();
+                    break;
+                case "Explode":
+                    GetExplodeShot();
+                    break;
+            }
+        }
     }
 
     public void GetSpreadShot()
@@ -32,6 +56,7 @@ public class PlayerData : MonoBehaviour
         currentSpecialPos2.SPfireDelay = 1.5f;
         currentSpecialPos3.SPfireDelay = 1.5f;
         currentSpecialPos4.SPfireDelay = 1.5f;
+        activeSpecial = "Spread";
     }
 
     public void GetRichochetShot()
@@ -45,6 +70,7 @@ public class PlayerData : MonoBehaviour
         currentSpecialPos2.SPfireDelay = 1f;
         currentSpecialPos3.SPfireDelay = 1f;
         currentSpecialPos4.SPfireDelay = 1f;
+        activeSpecial = "Ricochet";
 
     }
 
@@ -59,6 +85,7 @@ public class PlayerData : MonoBehaviour
         currentSpecialPos2.SPfireDelay = 1f;
         currentSpecialPos3.SPfireDelay = 1f;
         currentSpecialPos4.SPfireDelay = 1f;
+        activeSpecial = "Explode";
 
     }
 

@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
-  m_Name: ShieldIncrease
+  m_Name: SpecialDamage
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 5452427022452458885, guid: 687f07bc4a35a7b4588f59fc3ffe300c, type: 3}
-  cardText: Shield +1
-  effectType: 2
-  effectValue: 1
+  cardImage: {fileID: 0}
+  cardText: 'Increase Special: Spread Damage'
+  effectType: 5
+  effectString: {fileID: 0}
+  effectValue: 3
   isUnique: 0
-  unlockLevel: 0
+  unlockLevel: 5

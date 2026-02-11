@@ -3231,7 +3231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db97ab5e57c8a1540af9c3ee6a72dd63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 0.02
   invul: 0
   invulPeriod: 3
   shieldTimer: 0
@@ -3260,7 +3260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2b2a0a5d6833a408f1b9e8352898e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  moveSpeed: 10
   maxSpeed: 4
   speedIndicator: 4
   rotationSpeed: 360

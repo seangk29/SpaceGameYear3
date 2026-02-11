@@ -164,14 +164,13 @@ public class Death : MonoBehaviour
            
         }
 
-
-      if (Wave.enemyCount >= Wave.wave3Complete)
+        if (Wave != null)
         {
-            Combat = false;
+            if (Wave.enemyCount >= Wave.wave3Complete)
+            {
+                Combat = false;
+            }
         }
-        
-        
-
     }
 
     private IEnumerator VisualIndicator (Color color)

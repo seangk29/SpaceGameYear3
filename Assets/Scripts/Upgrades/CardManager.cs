@@ -130,13 +130,22 @@ public class CardManager : MonoBehaviour
                 PermaPlayerStats.MaxHealthUpgrade(selectedCardValue);
                 break;
             case CardEffect.ShieldIncrease:
-                //upgrade
+                PermaPlayerStats.MaxShieldUpgrade(selectedCardValue);
                 break;
             case CardEffect.ShieldRegenIncrease:
                 //upgrade
                 break;
             case CardEffect.SpeedIncrease:
-                //upgrade
+                PermaPlayerStats.MaxSpeedUpgrade(selectedCardValue);
+                break;
+            case CardEffect.SpreadUnlock:
+                PermaPlayerStats.spreadUnlock();
+                break;
+            case CardEffect.RicochetUnlock:
+                PermaPlayerStats.ricochetUnlock();
+                break;
+            case CardEffect.ExplodeUnlock:
+                PermaPlayerStats.explodeUnlock();
                 break;
         }
 

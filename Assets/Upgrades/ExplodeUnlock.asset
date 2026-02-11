@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
-  m_Name: SpeedIncrease
+  m_Name: ExplodeUnlock
   m_EditorClassIdentifier: 
-  cardImage: {fileID: -4785656388619445238, guid: 687f07bc4a35a7b4588f59fc3ffe300c, type: 3}
-  cardText: Speed +1
-  effectType: 3
+  cardImage: {fileID: -2361790495134753000, guid: deca441533155d14db6cda2d9e621f10, type: 3}
+  cardText: 'Unlock Special: Explode'
+  effectType: 6
   effectString: {fileID: 0}
-  effectValue: 1
-  isUnique: 0
-  unlockLevel: 0
+  effectValue: 0
+  isUnique: 1
+  unlockLevel: 3
