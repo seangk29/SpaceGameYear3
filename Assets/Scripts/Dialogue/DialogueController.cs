@@ -12,9 +12,14 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI npcNameText;
     [SerializeField] private TextMeshProUGUI playerNameText;
     [SerializeField] private TextMeshProUGUI npcDialogueText;
+
     [SerializeField] private AudioSource playerVoice;
     [SerializeField] private GameObject playerVoiceObject;
     [SerializeField] private AudioClip[] playerClips;
+
+    [SerializeField] private Image playerImage;
+    [SerializeField] private Sprite[] playerSprites;
+
     [SerializeField] private float typeSpeed;
     [SerializeField] private GameObject player;
     public Image npc;
@@ -89,34 +94,42 @@ public class DialogueController : MonoBehaviour
         {
             case 0:
                 playerVoice.clip = playerClips[counter];
+                playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             case 1:
                 playerVoice.clip = playerClips[counter];
+                playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             case 2:
                 playerVoice.clip = playerClips[counter];
+                playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             case 3:
                 playerVoice.clip = playerClips[counter];
+                playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             case 4:
                 playerVoice.clip = playerClips[counter];
+                playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             case 5:
-                playerVoice.clip = playerClips[counter];
+                playerVoice.clip = playerClips[counter]; 
+                playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             case 6:
                 playerVoice.clip = playerClips[counter];
+                playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             case 7:
                 playerVoice.clip = playerClips[counter];
+                playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             default:
@@ -143,6 +156,7 @@ public class DialogueController : MonoBehaviour
         npcNameText.text = dialogueText.speakerName;
         playerNameText.text = dialogueText.playerName;
         playerClips = dialogueText.speakerClip;
+        playerSprites = dialogueText.sprites;
 
 
         //Adds the text to the Queue

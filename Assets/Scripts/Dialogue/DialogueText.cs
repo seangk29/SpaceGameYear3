@@ -1,3 +1,4 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class DialogueText : ScriptableObject
     public string speakerName;
     public string playerName;
     public AudioClip[] speakerClip;
+    public Sprite[] sprites;
 
     [TextArea(5, 10)]
     public string[] paragraphs;

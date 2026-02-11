@@ -23,6 +23,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7088c361191ccce49976cae2565a2e1f, type: 3}
   - {fileID: 8300000, guid: de36aeae0f1370f40841d0eee9fd8204, type: 3}
   - {fileID: 8300000, guid: 6bc656f336236054b817f802be4a3771, type: 3}
+  sprites:
+  - {fileID: 2543192724016724221, guid: 08bb4f73637a9d540903814b9bf3692e, type: 3}
+  - {fileID: -4785656388619445238, guid: 687f07bc4a35a7b4588f59fc3ffe300c, type: 3}
+  - {fileID: -2959936546265915197, guid: 579bdee35b9e1eb48849a0b719ed245f, type: 3}
+  - {fileID: 3567258947319990041, guid: deca441533155d14db6cda2d9e621f10, type: 3}
+  - {fileID: -516185406570346511, guid: 5b7d30b9a4126cd468259a8b4f08fa2b, type: 3}
+  - {fileID: 2733241868513160400, guid: dbf1d6698ef2f4b4f96cebb4cb28d854, type: 3}
+  - {fileID: 1880696031944839962, guid: d9a14ec960a89204dbae7fe853a73bc1, type: 3}
+  - {fileID: 4180949317170676475, guid: 687f07bc4a35a7b4588f59fc3ffe300c, type: 3}
   paragraphs:
   - "COSMO: Come in \u2018Bastion One\u2019 do you copy? "
   - 'BASTION ONE: Copy!
