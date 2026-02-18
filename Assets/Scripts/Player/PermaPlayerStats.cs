@@ -28,7 +28,19 @@ public class PermaPlayerStats : MonoBehaviour
         if (activePlayerHealth == null)
         {
             activePlayerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<ActivePlayerHealth>();
+        }
+        else
+            return;
+
+        if (playerMovement == null)
+        {
             playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        }
+        else
+            return;
+
+        if (playerData == null)
+        {
             playerData = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerData>();
         }
         else

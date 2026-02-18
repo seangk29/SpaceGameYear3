@@ -26,10 +26,15 @@ public class CardManager : MonoBehaviour
     public static CardManager Instance;
 
     public static PermaPlayerStats PermaPlayerStats;
+    public static PlayerMovement move;
+    public static PlayerShooting shoot;
 
     private void Start()
     {
         PermaPlayerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
+        move = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        shoot = GameObject.FindGameObjectWithTag("GunPos").GetComponent<PlayerShooting>();
+
     }
     private void Awake()
     {
@@ -155,10 +160,14 @@ public class CardManager : MonoBehaviour
     public void ShowCardSelection()
     { 
         cardSelectionUI.SetActive(true);
+        move.enabled = false;
+        shoot.enabled = false;
     }
 
     public void HideCardSelection()
     {
         cardSelectionUI.SetActive(false);
+        move.enabled = true;
+        shoot.enabled = true;
     }
 }

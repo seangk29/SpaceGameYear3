@@ -24,6 +24,12 @@ public class EnemyHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Wave == null)
+        {
+            Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
+        }
+
         if (health <= 0)
         {
             Die();
@@ -43,6 +49,7 @@ public class EnemyHealth : MonoBehaviour
 
             if (collider.gameObject.tag == "Bullet" || collider.gameObject.tag == "ExplodeShot")
             {
+                Daudio.Play();
                 health--;
             }
 
@@ -51,7 +58,6 @@ public class EnemyHealth : MonoBehaviour
                 StartCoroutine(VisualIndicator(Color.red));
             }
 
-            Daudio.Play();
 
         }
     }

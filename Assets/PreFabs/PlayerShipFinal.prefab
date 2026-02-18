@@ -1000,7 +1000,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2913796824387255504}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db97ab5e57c8a1540af9c3ee6a72dd63, type: 3}
   m_Name: 
@@ -1480,7 +1480,7 @@ GameObject:
   - component: {fileID: 7586701793076354417}
   m_Layer: 6
   m_Name: GunPos (1)
-  m_TagString: Untagged
+  m_TagString: GunPos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2218,7 +2218,7 @@ GameObject:
   - component: {fileID: 7769170537270162356}
   m_Layer: 6
   m_Name: GunPos
-  m_TagString: Untagged
+  m_TagString: GunPos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2695,7 +2695,7 @@ GameObject:
   - component: {fileID: 6765304227470628754}
   m_Layer: 6
   m_Name: GunPos (1)
-  m_TagString: Untagged
+  m_TagString: GunPos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2941,7 +2941,7 @@ GameObject:
   - component: {fileID: 2602936905597481853}
   m_Layer: 6
   m_Name: GunPos (2)
-  m_TagString: Untagged
+  m_TagString: GunPos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3260,6 +3260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2b2a0a5d6833a408f1b9e8352898e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerStats: {fileID: 0}
   moveSpeed: 10
   maxSpeed: 4
   speedIndicator: 4
@@ -3273,7 +3274,7 @@ MonoBehaviour:
   PlayerShipLeft: {fileID: 4689112064267080821}
   PlayerShipRight: {fileID: 7566989587048313999}
   PlayerShipDown: {fileID: 1425730782382259083}
-  afterImagePrefab: {fileID: 0}
+  afterImagePrefab: {fileID: 3120131613522761200, guid: dcae81ad93318f4429588c844a8a97cc, type: 3}
   emitting: 0
   interval: 0.2
   ShipUp: 1
@@ -3526,6 +3527,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d427b5d918f6e94f84f31d9d10eb960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerStats: {fileID: 0}
+  activeSpecial: 
   spreadShot: {fileID: 1260864631553775174, guid: 4b41931a8f15f4841a1b9a9591b48d8a, type: 3}
   ricochetShot: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
   explodeShot: {fileID: 1260864631553775174, guid: af5722c7079a6ed429f874e380444ecd, type: 3}

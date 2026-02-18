@@ -18,6 +18,7 @@ TagManager:
   - GameOver
   - ExplodeShot
   - EnemyBullet
+  - GunPos
   layers:
   - Default
   - TransparentFX

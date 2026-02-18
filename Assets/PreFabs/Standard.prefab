@@ -255,7 +255,7 @@ MonoBehaviour:
   canRegen: 0
   SpRend: 0
   Combat: 1
-  Daudio: {fileID: 0}
+  Daudio: {fileID: -4041147307535116102}
   fireDelay: 0.25
   Wave: {fileID: 0}
   playerData: {fileID: 0}
@@ -402,13 +402,15 @@ MonoBehaviour:
   shieldHealth: 0
   maxShield: 0
   health: 1
+  maxHealth: 0
   canRegen: 0
   SpRend: 0
   Combat: 1
-  Daudio: {fileID: 0}
+  Daudio: {fileID: -4041147307535116102}
   fireDelay: 0.25
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
+  playerStats: {fileID: 0}
 --- !u!114 &159638689342375902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,4 +423,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e21a911bf5f38904d96fc7051c01492e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerData: {fileID: 0}

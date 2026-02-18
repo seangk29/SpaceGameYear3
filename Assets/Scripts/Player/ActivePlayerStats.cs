@@ -155,9 +155,9 @@ public class ActivePlayerHealth : MonoBehaviour
 
     private IEnumerator VisualIndicator(Color color)
     {
-        GetComponent<SpriteRenderer>().color = color;
+        GetComponentInChildren<SpriteRenderer>().color = color;
         yield return new WaitForSeconds(0.15f);
-        GetComponent<SpriteRenderer>().color = Color.white;
+        GetComponentInChildren<SpriteRenderer>().color = Color.white;
     }
 
     public void Die()
