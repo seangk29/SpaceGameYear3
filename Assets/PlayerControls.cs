@@ -107,6 +107,33 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UI Left"",
+                    ""type"": ""Button"",
+                    ""id"": ""cd8b7d62-27d2-48cb-b54f-daa405d5d9f9"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UI Right"",
+                    ""type"": ""Button"",
+                    ""id"": ""5cf6c51b-01dd-43dd-92cf-f6c485a62851"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UI Accept"",
+                    ""type"": ""Button"",
+                    ""id"": ""a670fd0a-7d2c-4f83-badc-977d06fbee44"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -329,6 +356,61 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""ChangeUp"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ef9a1e98-4ae9-4b2b-a0cb-d9b9bdafada8"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UI Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f595857b-d168-4136-9ca8-d105b83889c6"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UI Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""aada370e-b335-4aee-bac5-caed25187520"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UI Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""82e05031-48a7-4874-a2f3-d2ec705988ca"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UI Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""31ff0821-799e-4d42-9a48-3f5a24907603"",
+                    ""path"": ""<XInputController>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UI Accept"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -346,6 +428,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Gameplay_ChangeLeft = m_Gameplay.FindAction("ChangeLeft", throwIfNotFound: true);
         m_Gameplay_ChangeDown = m_Gameplay.FindAction("ChangeDown", throwIfNotFound: true);
         m_Gameplay_ChangeUp = m_Gameplay.FindAction("ChangeUp", throwIfNotFound: true);
+        m_Gameplay_UILeft = m_Gameplay.FindAction("UI Left", throwIfNotFound: true);
+        m_Gameplay_UIRight = m_Gameplay.FindAction("UI Right", throwIfNotFound: true);
+        m_Gameplay_UIAccept = m_Gameplay.FindAction("UI Accept", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -421,6 +506,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_ChangeLeft;
     private readonly InputAction m_Gameplay_ChangeDown;
     private readonly InputAction m_Gameplay_ChangeUp;
+    private readonly InputAction m_Gameplay_UILeft;
+    private readonly InputAction m_Gameplay_UIRight;
+    private readonly InputAction m_Gameplay_UIAccept;
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
@@ -434,6 +522,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         public InputAction @ChangeLeft => m_Wrapper.m_Gameplay_ChangeLeft;
         public InputAction @ChangeDown => m_Wrapper.m_Gameplay_ChangeDown;
         public InputAction @ChangeUp => m_Wrapper.m_Gameplay_ChangeUp;
+        public InputAction @UILeft => m_Wrapper.m_Gameplay_UILeft;
+        public InputAction @UIRight => m_Wrapper.m_Gameplay_UIRight;
+        public InputAction @UIAccept => m_Wrapper.m_Gameplay_UIAccept;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -470,6 +561,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @ChangeUp.started += instance.OnChangeUp;
             @ChangeUp.performed += instance.OnChangeUp;
             @ChangeUp.canceled += instance.OnChangeUp;
+            @UILeft.started += instance.OnUILeft;
+            @UILeft.performed += instance.OnUILeft;
+            @UILeft.canceled += instance.OnUILeft;
+            @UIRight.started += instance.OnUIRight;
+            @UIRight.performed += instance.OnUIRight;
+            @UIRight.canceled += instance.OnUIRight;
+            @UIAccept.started += instance.OnUIAccept;
+            @UIAccept.performed += instance.OnUIAccept;
+            @UIAccept.canceled += instance.OnUIAccept;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -501,6 +601,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @ChangeUp.started -= instance.OnChangeUp;
             @ChangeUp.performed -= instance.OnChangeUp;
             @ChangeUp.canceled -= instance.OnChangeUp;
+            @UILeft.started -= instance.OnUILeft;
+            @UILeft.performed -= instance.OnUILeft;
+            @UILeft.canceled -= instance.OnUILeft;
+            @UIRight.started -= instance.OnUIRight;
+            @UIRight.performed -= instance.OnUIRight;
+            @UIRight.canceled -= instance.OnUIRight;
+            @UIAccept.started -= instance.OnUIAccept;
+            @UIAccept.performed -= instance.OnUIAccept;
+            @UIAccept.canceled -= instance.OnUIAccept;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -529,5 +638,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnChangeLeft(InputAction.CallbackContext context);
         void OnChangeDown(InputAction.CallbackContext context);
         void OnChangeUp(InputAction.CallbackContext context);
+        void OnUILeft(InputAction.CallbackContext context);
+        void OnUIRight(InputAction.CallbackContext context);
+        void OnUIAccept(InputAction.CallbackContext context);
     }
 }

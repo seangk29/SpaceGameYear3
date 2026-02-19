@@ -19,6 +19,9 @@ TagManager:
   - ExplodeShot
   - EnemyBullet
   - GunPos
+  - card1
+  - card2
+  - card3
   layers:
   - Default
   - TransparentFX
