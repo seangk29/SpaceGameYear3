@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     public enum GameState
     {
         Playing,
-
+        
         CardSelection
     }
 }

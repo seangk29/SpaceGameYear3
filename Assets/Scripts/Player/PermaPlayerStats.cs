@@ -23,6 +23,9 @@ public class PermaPlayerStats : MonoBehaviour
     public string activeSpecial;
     public bool canUseSpecial;
 
+    public int damage;
+    public int specialDamage;
+
     private void Update()
     {
         if (activePlayerHealth == null)
@@ -75,6 +78,12 @@ public class PermaPlayerStats : MonoBehaviour
         maxSpeed = maxSpeed + value;
         gameObject.GetComponentInChildren<PlayerMovement>();
         Debug.Log("Speed upgraded");
+    }
+
+    public void damageUpgrade(int value)
+    {
+        damage += value;
+        Debug.Log("Standard Damage Upgraded");
     }
 
     public void spreadUnlock()

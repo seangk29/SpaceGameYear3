@@ -152,6 +152,9 @@ public class CardManager : MonoBehaviour
             case CardEffect.ExplodeUnlock:
                 PermaPlayerStats.explodeUnlock();
                 break;
+            case CardEffect.DamageUpgrade:
+                PermaPlayerStats.damageUpgrade(selectedCardValue);
+                break;
         }
 
         GameManager.Instance.changeState(GameManager.GameState.Playing);

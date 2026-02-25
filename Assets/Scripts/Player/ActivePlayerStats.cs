@@ -29,7 +29,7 @@ public class ActivePlayerHealth : MonoBehaviour
 
     public AudioSource Daudio;
 
-    public float fireDelay = 0.25f;
+    // public float fireDelay = 0.25f;
     //  float cooldownTimer = 0;
 
     public PlayerSpawner playerSpawn;

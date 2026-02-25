@@ -50,7 +50,7 @@ public class EnemyHealth : MonoBehaviour
             if (collider.gameObject.tag == "Bullet" || collider.gameObject.tag == "ExplodeShot")
             {
                 Daudio.Play();
-                health--;
+                health -= collider.GetComponent<BulletData>().damage;
             }
 
             if (SpRend)

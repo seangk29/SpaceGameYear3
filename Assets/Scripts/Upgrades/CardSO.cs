@@ -44,5 +44,6 @@ public enum CardEffect
     SpreadUnlock,
     RicochetUnlock,
     ExplodeUnlock,
-    SpecialUpgrade
+    SpecialUpgrade,
+    DamageUpgrade
 }
