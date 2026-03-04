@@ -439,7 +439,6 @@ MonoBehaviour:
   SpRend: 1
   Combat: 0
   Daudio: {fileID: 947021743936365863}
-  fireDelay: 0.25
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
   playerStats: {fileID: 0}
@@ -1018,7 +1017,6 @@ MonoBehaviour:
   SpRend: 1
   Combat: 0
   Daudio: {fileID: 4092512052659053887}
-  fireDelay: 0.25
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
   playerStats: {fileID: 0}
@@ -1356,7 +1354,6 @@ MonoBehaviour:
   SpRend: 1
   Combat: 0
   Daudio: {fileID: 9177758811738786386}
-  fireDelay: 0.25
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
   playerStats: {fileID: 0}
@@ -2200,7 +2197,6 @@ MonoBehaviour:
   SpRend: 1
   Combat: 0
   Daudio: {fileID: 1467377791823043309}
-  fireDelay: 0.25
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
   playerStats: {fileID: 0}
@@ -3235,7 +3231,7 @@ MonoBehaviour:
   invul: 0
   invulPeriod: 3
   shieldTimer: 0
-  regenShieldsTimer: 2
+  regenShieldsTimer: 7
   shieldHealth: 1
   maxShield: 1
   health: 3
@@ -3244,7 +3240,6 @@ MonoBehaviour:
   SpRend: 1
   Combat: 1
   Daudio: {fileID: 5323057429700352014}
-  fireDelay: 0.25
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
   playerStats: {fileID: 0}

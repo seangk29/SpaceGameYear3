@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: ShieldRegenIncrease
   m_EditorClassIdentifier: 
   cardImage: {fileID: 3935590018073937188, guid: 687f07bc4a35a7b4588f59fc3ffe300c, type: 3}
-  cardText: Shield Regen +1
-  effectType: 3
+  cardText: Shield Regen -1
+  effectType: 2
+  effectString: {fileID: 0}
   effectValue: 1
   isUnique: 0
   unlockLevel: 0

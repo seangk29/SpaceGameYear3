@@ -50,6 +50,8 @@ public class ActivePlayerHealth : MonoBehaviour
         maxShield = playerStats.maxShield;
         shieldHealth = maxShield;
 
+        regenShieldsTimer = playerStats.regenShieldTimer;
+
         Combat = true;
         correctLayer = gameObject.layer;
 

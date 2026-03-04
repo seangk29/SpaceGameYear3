@@ -17,6 +17,9 @@ public class PermaPlayerStats : MonoBehaviour
     public int shield;
     public int maxShield;
 
+    public int regenShieldTimer;
+    public int baseRegenShieldTimer;
+
     public int speed;
     public int maxSpeed;
 
@@ -55,7 +58,7 @@ public class PermaPlayerStats : MonoBehaviour
         activePlayerHealth.health = activePlayerHealth.health + value;
         maxHealth = maxHealth + value;
         gameObject.GetComponentInChildren<ActivePlayerHealth>();
-        Debug.Log("shouldve upgraded health");
+        Debug.Log("Max Health Upgraded");
     }
 
     public void MaxShieldUpgrade(int value)
@@ -66,10 +69,17 @@ public class PermaPlayerStats : MonoBehaviour
 
     }
 
+    public void ShieldRegenUpgrade(int value)
+    {
+        activePlayerHealth.regenShieldsTimer = activePlayerHealth.regenShieldsTimer - value;
+        regenShieldTimer = regenShieldTimer - value;
+        Debug.Log("Shield Regen Upgraded");
+    }
+
     public void heal(int value)
     {
         activePlayerHealth.health= activePlayerHealth.health + value;
-        Debug.Log("healed");
+        Debug.Log("Healed");
     }
 
     public void MaxSpeedUpgrade(int value)

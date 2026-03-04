@@ -138,7 +138,7 @@ public class CardManager : MonoBehaviour
                 PermaPlayerStats.MaxShieldUpgrade(selectedCardValue);
                 break;
             case CardEffect.ShieldRegenIncrease:
-                //upgrade
+                PermaPlayerStats.ShieldRegenUpgrade(selectedCardValue);
                 break;
             case CardEffect.SpeedIncrease:
                 PermaPlayerStats.MaxSpeedUpgrade(selectedCardValue);

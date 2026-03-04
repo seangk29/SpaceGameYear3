@@ -9,6 +9,9 @@ public class PauseMenu : MonoBehaviour
     public static bool gameIsPaused;
 
     public GameObject pMenu;
+    public GameObject confirmHubMenu;
+    public GameObject confirmMenu;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -38,9 +41,35 @@ public class PauseMenu : MonoBehaviour
         pMenu.SetActive(false);
     }
 
-    public void Exit(string MainMenu)
+    public void Hub()
+    {
+        confirmHubMenu.SetActive(true);
+    }
+
+    public void ConfirmHubExit()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadSceneAsync(MainMenu);
+        SceneManager.LoadSceneAsync("Hub");
+    }
+
+    public void DenyHubExit()
+    {
+        confirmHubMenu.SetActive(false);
+    }
+
+    public void ConfirmExit()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadSceneAsync("MainMenu");
+    }
+
+    public void DenyExit()
+    {
+        confirmMenu.SetActive(false);
+    }
+
+    public void Exit()
+    {
+        confirmMenu.SetActive(true);
     }
 }
