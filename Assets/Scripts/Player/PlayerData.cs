@@ -16,6 +16,8 @@ public class PlayerData : MonoBehaviour
     public PlayerShooting currentSpecialPos3;
     public PlayerShooting currentSpecialPos4;
 
+    public int bossCount;
+
     public int score = 0;
 
 

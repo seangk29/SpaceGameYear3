@@ -3,17 +3,24 @@ using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool gameIsPaused;
 
+    public PlayerShooting shooting;
     public GameObject pMenu;
     public GameObject confirmHubMenu;
     public GameObject confirmMenu;
 
+
+
     private void Update()
     {
+        shooting = GameObject.FindGameObjectWithTag("GunPos").GetComponent<PlayerShooting>();
+
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             gameIsPaused = !gameIsPaused;
@@ -27,11 +34,13 @@ public class PauseMenu : MonoBehaviour
         if (gameIsPaused)
         {
             Time.timeScale = 0f;
+            shooting.enabled = false;
         }
         else
         {
             Time.timeScale = 1f;
             pMenu.SetActive(false);
+            shooting.enabled = true;
         }
     }
 
