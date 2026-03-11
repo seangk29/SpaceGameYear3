@@ -9,9 +9,6 @@ public class DialogueText : ScriptableObject
     //This makes the SO's for where the dialogue data is held.
 
 
-
-    public string speakerName;
-    public string playerName;
     public AudioClip[] speakerClip;
     public Sprite[] sprites;
 

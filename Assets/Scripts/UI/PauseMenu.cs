@@ -81,4 +81,10 @@ public class PauseMenu : MonoBehaviour
     {
         confirmMenu.SetActive(true);
     }
+
+    public void Retry()
+    {
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+    }
+
 }

@@ -1143,6 +1143,7 @@ MonoBehaviour:
   currentSpecialPos2: {fileID: 0}
   currentSpecialPos3: {fileID: 0}
   currentSpecialPos4: {fileID: 0}
+  bossCount: 0
   score: 0
 --- !u!114 &631784484
 MonoBehaviour:
@@ -3254,6 +3255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd8bb060698c274383f9091e286dbcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shooting: {fileID: 0}
   pMenu: {fileID: 1649145093}
   confirmHubMenu: {fileID: 0}
   confirmMenu: {fileID: 0}
@@ -3303,8 +3305,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f9709d5f2c973744be33cf1c15b3382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcNameText: {fileID: 134699801}
-  playerNameText: {fileID: 961468639}
   npcDialogueText: {fileID: 1957618097}
   playerVoice: {fileID: 582516070}
   playerVoiceObject: {fileID: 582516068}
@@ -3312,9 +3312,9 @@ MonoBehaviour:
   playerImage: {fileID: 927057107}
   playerSprites: []
   typeSpeed: 3
-  player: {fileID: 92843919}
   npc: {fileID: 927057107}
   playerSprite: {fileID: 961735925}
+  move: {fileID: 0}
 --- !u!224 &1647872070
 RectTransform:
   m_ObjectHideFlags: 0

@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class PlayerSpawner : MonoBehaviour
 {
     public GameObject playerPrefab;
+    public GameObject deathScreen;
     GameObject playerInstance;
-
    
 
     float respawnTimer;
@@ -29,6 +29,7 @@ public class PlayerSpawner : MonoBehaviour
        
         respawnTimer = 1;
         playerInstance = (GameObject)Instantiate(playerPrefab, transform.position, Quaternion.identity);
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
@@ -48,7 +49,8 @@ public class PlayerSpawner : MonoBehaviour
         }
         if (playerInstance == null && numLives == 0)
         {
-            SceneManager.LoadScene("Hub");
+            Time.timeScale = 0f;
+            deathScreen.SetActive(true);
         }
       
     }

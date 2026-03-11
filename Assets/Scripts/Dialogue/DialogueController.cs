@@ -9,8 +9,6 @@ using System.Linq;
 
 public class DialogueController : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI npcNameText;
-    [SerializeField] private TextMeshProUGUI playerNameText;
     [SerializeField] private TextMeshProUGUI npcDialogueText;
 
     [SerializeField] private AudioSource playerVoice;
@@ -21,7 +19,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private Sprite[] playerSprites;
 
     [SerializeField] private float typeSpeed;
-    [SerializeField] private GameObject player;
+ 
     public Image npc;
     public Image playerSprite;
 
@@ -39,34 +37,36 @@ public class DialogueController : MonoBehaviour
 
     private Coroutine typeDialogueRoutine;
 
+    public PlayerMovement move;
+
 
     private void Start()
     {
        // player = GameObject.FindGameObjectWithTag("Player");
-        //move = GameObject.Find("Player").GetComponent<PlayerMovement>();
+        move = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
 
 
     public void ShowNextParagraph(DialogueText dialogueText)
     {
         //This finds the player and gets access to movement component.
+        move = GameObject.Find("Player").GetComponent<PlayerMovement>();
 
 
-        
 
         if (paragraphs.Count == 0)
         {
             if (!convoEnded)
             {
                 startConvo(dialogueText);
-                //move.enabled = false;
+                move.enabled = false;
             }
 
             else if (convoEnded && !isTyping)
             {
                 
                 endConvo();
-               // move.enabled = true;
+                move.enabled = true;
                 return;
             }
 
@@ -153,8 +153,6 @@ public class DialogueController : MonoBehaviour
         gameObject.SetActive(true);
         }
 
-        npcNameText.text = dialogueText.speakerName;
-        playerNameText.text = dialogueText.playerName;
         playerClips = dialogueText.speakerClip;
         playerSprites = dialogueText.sprites;
 
