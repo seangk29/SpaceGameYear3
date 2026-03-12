@@ -22,6 +22,8 @@ TagManager:
   - card1
   - card2
   - card3
+  - Skippy
+  - Nicos
   layers:
   - Default
   - TransparentFX
