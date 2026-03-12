@@ -4,12 +4,23 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
-using UnityEngine.UI;
-using System.Linq;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
+using UnityEngine.UIElements;
 
 public class DialogueController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI npcDialogueText;
+    [SerializeField] private float typeSpeed;
+    [SerializeField] private GameObject player;
+
+    private Queue<string> paragraphs = new Queue<string>();
+    public bool convoEnded;
+    private bool isTyping;
+
+    private string p;
+    private const float MAX_TYPE_TIME = 0.1F;
+
+    private Coroutine typeDialogueRoutine;
 
     [SerializeField] private AudioSource playerVoice;
     [SerializeField] private GameObject playerVoiceObject;
@@ -18,55 +29,31 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private Image playerImage;
     [SerializeField] private Sprite[] playerSprites;
 
-    [SerializeField] private float typeSpeed;
- 
+    private int counter = -1;
     public Image npc;
     public Image playerSprite;
 
-
-    [SerializeField] private Queue<string> paragraphs = new Queue<string>();
-
-    //public PlayerMovement move;
-
-    private bool convoEnded;
-    private bool isTyping;
-    private int counter = -1;
-
-    private string p;
-    private const float MAX_TYPE_TIME = 0.1F;
-
-    private Coroutine typeDialogueRoutine;
-
-    public PlayerMovement move;
-
-
-    private void Start()
-    {
-       // player = GameObject.FindGameObjectWithTag("Player");
-        move = GameObject.Find("Player").GetComponent<PlayerMovement>();
-    }
-
-
+    //public GameObject skipsShop;
     public void ShowNextParagraph(DialogueText dialogueText)
     {
         //This finds the player and gets access to movement component.
-        move = GameObject.Find("Player").GetComponent<PlayerMovement>();
-
-
+         // PlayerMovement move = GameObject.Find("Player").GetComponent<PlayerMovement>();
+         
+        
 
         if (paragraphs.Count == 0)
         {
             if (!convoEnded)
             {
                 startConvo(dialogueText);
-                move.enabled = false;
+              //  move.enabled = false;
             }
 
             else if (convoEnded && !isTyping)
             {
                 
                 endConvo();
-                move.enabled = true;
+               // move.enabled = true;
                 return;
             }
 
@@ -74,21 +61,17 @@ public class DialogueController : MonoBehaviour
         }
 
 
-
         if (!isTyping)
         {
             p = paragraphs.Dequeue();
-            counter++;
-            playerVoiceObject.SetActive(true);
-            typeDialogueRoutine = StartCoroutine(typeDialogueText(p));   
-        }
-        else
-        {
-            //playerVoice.Stop();
-            playerVoiceObject.SetActive(false);
-            FinishParagraphEarly();
+
+            typeDialogueRoutine = StartCoroutine(typeDialogueText(p));
         }
 
+        else
+        {
+            FinishParagraphEarly();
+        }
 
         switch (counter)
         {
@@ -118,7 +101,7 @@ public class DialogueController : MonoBehaviour
                 playerVoice.Play();
                 break;
             case 5:
-                playerVoice.clip = playerClips[counter]; 
+                playerVoice.clip = playerClips[counter];
                 playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
@@ -136,6 +119,7 @@ public class DialogueController : MonoBehaviour
                 playerVoice.clip = null;
                 break;
         }
+
 
 
         if (paragraphs.Count == 0)
@@ -163,8 +147,6 @@ public class DialogueController : MonoBehaviour
             paragraphs.Enqueue(dialogueText.paragraphs[i]);
         }
 
-
-
     }
 
     //This hides the UI and allows for the conversation to end
@@ -178,10 +160,6 @@ public class DialogueController : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-
-        playerVoice.Stop();
-
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
 
 
     }
@@ -216,7 +194,6 @@ public class DialogueController : MonoBehaviour
         StopCoroutine(typeDialogueRoutine);
         npcDialogueText.maxVisibleCharacters = p.Length;
         isTyping = false;
-        playerVoice.Stop();
     }
 
 

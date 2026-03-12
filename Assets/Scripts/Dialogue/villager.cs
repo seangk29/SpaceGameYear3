@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-//using UnityEditor.SearchService;
+using UnityEditor.SearchService;
 using UnityEngine;
 
 
@@ -11,12 +11,11 @@ public class Enemy : NPC, Talkable
 
     [SerializeField] private DialogueText dialogueText;
     [SerializeField] private DialogueController dialogueController;
-
+    
 
     public override void interact()
     {
         talk(dialogueText);
-        
     }
 
     public void talk(DialogueText dialogueText)

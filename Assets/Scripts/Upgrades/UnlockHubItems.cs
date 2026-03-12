@@ -5,7 +5,6 @@ using UnityEngine;
 public class UnlockHubItems : MonoBehaviour
 {
     public GameObject Nicos;
-    public GameObject nicosLocation;
     public PlayerData counter;
     public bool spawned = false;
     public int bossCounts;
@@ -25,7 +24,7 @@ public class UnlockHubItems : MonoBehaviour
         if (bossCounts >= 3 && spawned == false)
         {
             spawned = true;
-            Instantiate(Nicos, nicosLocation.transform.position, Quaternion.identity);
+            Nicos.SetActive(true);
         }
     }
 
