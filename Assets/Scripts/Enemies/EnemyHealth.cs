@@ -18,27 +18,27 @@ public class EnemyHealth : MonoBehaviour
     {
         Combat = true;
        // correctLayer = gameObject.layer;
-        Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
+        //Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Wave == null)
+        /*if (Wave == null)
         {
             Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
-        }
+        }*/
 
         if (health <= 0)
         {
             Die();
         }
 
-        if (Wave.enemyCount >= Wave.wave3Complete)
+        /*if (Wave.enemyCount >= Wave.wave3Complete)
         {
             Combat = false;
-        }
+        }*/
     }
 
 
@@ -72,9 +72,9 @@ public class EnemyHealth : MonoBehaviour
     {
         if (gameObject.tag == "Enemy")
         {
-            Wave.enemyCount = Wave.enemyCount + 1;
+            //Wave.enemyCount = Wave.enemyCount + 1;
             Debug.Log("Shot!");
-            Debug.Log(Wave.enemyCount);
+            //Debug.Log(Wave.enemyCount);
         }
 
         Destroy(gameObject);

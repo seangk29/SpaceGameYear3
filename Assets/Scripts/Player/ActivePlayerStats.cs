@@ -40,7 +40,7 @@ public class ActivePlayerHealth : MonoBehaviour
     private void Start()
     {
 
-        Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
+        //Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
         playerSpawn = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerSpawner>();
         playerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
 
@@ -143,7 +143,7 @@ public class ActivePlayerHealth : MonoBehaviour
                 }
             }
 
-        if (Wave != null)
+        /*if (Wave != null)
         {
             if (Wave.enemyCount >= Wave.wave3Complete)
             {
@@ -151,7 +151,7 @@ public class ActivePlayerHealth : MonoBehaviour
             }
         }
         else
-            return;
+            return;*/
 
     }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class BulletData : MonoBehaviour
 {
@@ -22,6 +23,11 @@ public class BulletData : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             health -= 1;
+        }
+
+        if (collision.gameObject.tag == "Border")
+        {
+            Destroy(gameObject);
         }
     }
 

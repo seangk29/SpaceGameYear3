@@ -10,7 +10,9 @@ public class WavesSO : ScriptableObject
 {
     public string waveName;
 
-    public GameObject wave;
+    public GameObject wavePrefab;
 
     public int numOfEnemies;
+
+    public bool selectedRecently;
 }

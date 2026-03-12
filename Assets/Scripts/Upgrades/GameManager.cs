@@ -23,6 +23,11 @@ public class GameManager : MonoBehaviour
             changeState(GameState.CardSelection);
             currentLevel++;
         }
+
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            changeState(GameState.WaveGenerate);
+        }
     }
 
     public int GetCurrentLevel()
