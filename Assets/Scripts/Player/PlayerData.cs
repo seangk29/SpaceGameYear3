@@ -19,6 +19,7 @@ public class PlayerData : MonoBehaviour
     public int bossCount;
 
     public int score = 0;
+    public int spaceMoney = 0;
 
 
     private void Start()

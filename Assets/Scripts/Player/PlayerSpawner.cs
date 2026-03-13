@@ -8,6 +8,7 @@ public class PlayerSpawner : MonoBehaviour
     public GameObject playerPrefab;
     public GameObject deathScreen;
     GameObject playerInstance;
+    public PlayerData playerData;
    
 
     float respawnTimer;
@@ -51,6 +52,9 @@ public class PlayerSpawner : MonoBehaviour
         {
             Time.timeScale = 0f;
             deathScreen.SetActive(true);
+            playerData.spaceMoney = playerData.score;
+            playerData.score = 0;
+
         }
       
     }
