@@ -12,12 +12,16 @@ public class EnemyHealth : MonoBehaviour
     public AudioSource Daudio;
     public float fireDelay = 0.25f;
     public EnemyWaveHandler Wave;
+    public PlayerData playerData;
+
 
     // Start is called before the first frame update
     private void Start()
     {
         Combat = true;
-       // correctLayer = gameObject.layer;
+        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+
+        //correctLayer = gameObject.layer;
         //Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
     }
 
@@ -50,7 +54,9 @@ public class EnemyHealth : MonoBehaviour
             if (collider.gameObject.tag == "Bullet" || collider.gameObject.tag == "ExplodeShot")
             {
                 Daudio.Play();
+                playerData.score = playerData.score + 50;
                 health -= collider.GetComponent<BulletData>().damage;
+
             }
 
             if (SpRend)

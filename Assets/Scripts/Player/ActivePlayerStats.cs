@@ -34,7 +34,7 @@ public class ActivePlayerHealth : MonoBehaviour
 
     public PlayerSpawner playerSpawn;
     public EnemyWaveHandler Wave;
-
+    public PlayerData playerData;
     public PermaPlayerStats playerStats;
 
     private void Start()
@@ -43,6 +43,7 @@ public class ActivePlayerHealth : MonoBehaviour
         //Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
         playerSpawn = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerSpawner>();
         playerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
+        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
 
         maxHealth = playerStats.maxHealth;
         health = maxHealth;
@@ -59,6 +60,18 @@ public class ActivePlayerHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        if (collider.gameObject.tag == "Enemy")
+        {
+            playerData.score -= 50;
+            health -= 1;
+        }
+
+        if (collider.gameObject.tag == "EnemyBullet")
+        {
+            playerData.score -= 50;
+            health -= collider.GetComponent<EnemyBulletData>().damage;
+        }
+
         if (Combat)
         {
             if (shieldHealth <= 0)
