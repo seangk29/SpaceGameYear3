@@ -15,14 +15,18 @@ public class NewWaveManager : MonoBehaviour
     public WavesSO currentWave;
     public int enemiesKilled;
     public int waveNumber;
+    public int oldWaveNumber;
     public int maxWaves;
 
     // Currently randomized cards go here
-    GameObject waveOne, waveTwo, waveThree;
+    GameObject spawnWave;
 
     List<WavesSO> alreadySelectedWaves = new List<WavesSO>();
 
+    public List<WavesSO> randomizedWaves = new List<WavesSO>();
+
     public static NewWaveManager Instance;
+    GameManager.GameState state;
 
     private void Awake()
     {
@@ -32,6 +36,8 @@ public class NewWaveManager : MonoBehaviour
         {
             GameManager.Instance.OnStateChanged += HandleGameStateChanged;
         }
+        waveNumber = 0;
+        oldWaveNumber = 0;
     }
 
     private void FixedUpdate()
@@ -42,17 +48,27 @@ public class NewWaveManager : MonoBehaviour
             GameManager.Instance.OnStateChanged += HandleGameStateChanged;
         }
 
-        if (currentWave.numOfEnemies >= enemiesKilled)
+        if (currentWave != null)
         {
-            waveNumber += 1;
-            Debug.Log("yay");
-
-            if (waveNumber >= maxWaves)
+            if (currentWave.numOfEnemies <= enemiesKilled)
             {
-                Debug.Log("win");
+                waveNumber += 1;
+                enemiesKilled = 0;
+                Debug.Log("yay");
+
+                if (waveNumber >= maxWaves)
+                {
+                    Debug.Log("win");
+                }
             }
         }
 
+        if (randomizedWaves.Count == 3 && oldWaveNumber < waveNumber)
+        {
+            oldWaveNumber = waveNumber;
+            currentWave = randomizedWaves[waveNumber];
+            spawnWave = InstantiateCard(randomizedWaves[waveNumber].wavePrefab, wavePosition);
+        }
     }
 
     private void OnDisable()
@@ -72,11 +88,11 @@ public class NewWaveManager : MonoBehaviour
     }
     public void RandomizeNewWaves()
     {
-        if (waveOne != null) Destroy(waveOne);
+        /*if (waveOne != null) Destroy(waveOne);
         if (waveTwo != null) Destroy(waveTwo);
-        if (waveThree != null) Destroy(waveThree);
+        if (waveThree != null) Destroy(waveThree);*/
 
-        List<WavesSO> randomizedWaves = new List<WavesSO>();
+        //List<WavesSO> randomizedWaves = new List<WavesSO>();
         List<WavesSO> availableWaves = new List<WavesSO>(Waves);
 
         while (randomizedWaves.Count < 3)
@@ -86,21 +102,34 @@ public class NewWaveManager : MonoBehaviour
             {
                 if (randomWave.selectedRecently != true)
                 {
-                    randomWave.selectedRecently = true;
                     randomizedWaves.Add(randomWave);
+                    randomWave.selectedRecently = true;
                 }
                 else
                 { 
                     // should loop back to the start of while? hopefully
+                    randomWave.selectedRecently = false;
                     return;
                 }
             }
         }
 
-        waveNumber = 0;
+        while (randomizedWaves.Count > 3)
+        {
+            randomizedWaves.Remove(randomizedWaves[4]);
+        }
+
+        while (randomizedWaves.Count == 3 && oldWaveNumber <= waveNumber)
+        {
+            oldWaveNumber = waveNumber;
+            currentWave = randomizedWaves[waveNumber];
+            spawnWave = InstantiateCard(randomizedWaves[waveNumber].wavePrefab, wavePosition);
+        }
+
+        /*waveNumber = 0;
 
         currentWave = randomizedWaves[waveNumber];
-        //waveOne = InstantiateCard(randomizedWaves[0].wavePrefab, wavePosition);
+        spawnWave = InstantiateCard(randomizedWaves[waveNumber].wavePrefab, wavePosition);*/
     }
 
     GameObject InstantiateCard(GameObject wavePrefab, Transform position)
@@ -108,6 +137,7 @@ public class NewWaveManager : MonoBehaviour
         GameObject waveGO = Instantiate(wavePrefab, position.position, Quaternion.identity, position);
         //Card card = waveGO.GetComponent<Card>();
         //card.Setup(wavesSO);
+        GameManager.Instance.changeState(GameManager.GameState.Playing);
         return waveGO;
     }
 }

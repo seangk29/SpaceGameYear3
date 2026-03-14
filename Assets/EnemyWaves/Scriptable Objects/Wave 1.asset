@@ -15,3 +15,4 @@ MonoBehaviour:
   waveName: Wave 1
   wavePrefab: {fileID: 6746273965440130776, guid: b5663b0637ba37244a4c1836540508c2, type: 3}
   numOfEnemies: 22
+  selectedRecently: 0

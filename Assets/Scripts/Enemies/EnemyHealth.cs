@@ -13,6 +13,7 @@ public class EnemyHealth : MonoBehaviour
     public float fireDelay = 0.25f;
     public EnemyWaveHandler Wave;
     public PlayerData playerData;
+    public NewWaveManager NewWave;
 
 
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class EnemyHealth : MonoBehaviour
     {
         Combat = true;
         playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        NewWave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<NewWaveManager>();
 
         //correctLayer = gameObject.layer;
         //Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
@@ -83,6 +85,8 @@ public class EnemyHealth : MonoBehaviour
             //Debug.Log(Wave.enemyCount);
         }
 
+        NewWave.enemiesKilled = NewWave.enemiesKilled + 1;
         Destroy(gameObject);
+        
     }
 }
