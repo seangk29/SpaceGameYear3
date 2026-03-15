@@ -2061,10 +2061,14 @@ MonoBehaviour:
   maxHealth: 3
   shield: 1
   maxShield: 1
+  regenShieldTimer: 0
+  baseRegenShieldTimer: 0
   speed: 4
   maxSpeed: 4
   activeSpecial: 
   canUseSpecial: 0
+  damage: 0
+  specialDamage: 0
 --- !u!114 &1383394145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2086,7 +2090,9 @@ MonoBehaviour:
   currentSpecialPos2: {fileID: 0}
   currentSpecialPos3: {fileID: 0}
   currentSpecialPos4: {fileID: 0}
+  bossCount: 0
   score: 0
+  spaceMoney: 0
 --- !u!114 &1383394146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2461,7 +2467,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dd8bb060698c274383f9091e286dbcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shooting: {fileID: 0}
   pMenu: {fileID: 1649145093}
+  confirmHubMenu: {fileID: 0}
+  confirmMenu: {fileID: 0}
 --- !u!4 &1646957903
 Transform:
   m_ObjectHideFlags: 0
