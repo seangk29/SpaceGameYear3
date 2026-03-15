@@ -145,7 +145,7 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: DashAfterImage_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -165,15 +165,15 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: DashAfterImage_1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 158
-      y: 156
-      width: 144
-      height: 143
+      x: 192
+      y: 154
+      width: 78
+      height: 72
     spriteID: 9840bafd4f76031418a775cac6a68474
     spriteBone: []
     spriteOutline: []
@@ -185,7 +185,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: DashAfterImage_2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -205,7 +205,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: DashAfterImage_3
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:

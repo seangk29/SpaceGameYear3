@@ -75,7 +75,7 @@ public class HUD : MonoBehaviour
 
     public void KillsUpdate()
     {
-        killsTMP.text = "K.I.L.L.S.: " + playerData.kills;
+        killsTMP.text = "KILLS: " + playerData.kills;
     }
 
     public void TimerUpdate()
@@ -88,7 +88,7 @@ public class HUD : MonoBehaviour
         seconds = Mathf.FloorToInt(time - minutes * 60);
         miliseconds = (time - seconds) * 100;
 
-        timerTMP.text = string.Format("T.I.M.E.: {0:00}:{1:00}:{2:00}", minutes, seconds, miliseconds);
+        timerTMP.text = string.Format("TIME: {0:00}:{1:00}:{2:00}", minutes, seconds, miliseconds);
     }
 
 }
