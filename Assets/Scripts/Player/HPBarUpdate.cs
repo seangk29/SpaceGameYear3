@@ -10,7 +10,7 @@ public class hpBarUpdate : MonoBehaviour
 
     //public Image[] images;
 
-     public Image health1, health2, health3, health4, health5, health6, health7, health8, health9, health10, health11, health12, health13, health14, health15, health16, health17, health18;
+    public Image health1, health2, health3, health4, health5, health6, health7, health8, health9, health10, health11, health12, health13, health14, health15, health16, health17, health18;
 
 
 

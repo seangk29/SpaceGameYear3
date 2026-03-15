@@ -32,8 +32,6 @@ public class CardManager : MonoBehaviour
     private void Start()
     {
         PermaPlayerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
-        move = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        shoot = GameObject.FindGameObjectWithTag("GunPos").GetComponent<PlayerShooting>();
 
     }
     private void Awake()
@@ -52,6 +50,16 @@ public class CardManager : MonoBehaviour
         if (GameManager.Instance != null)
         {
             GameManager.Instance.OnStateChanged += HandleGameStateChanged;
+        }
+
+        if (shoot == null)
+        {
+            shoot = GameObject.FindGameObjectWithTag("GunPos").GetComponent<PlayerShooting>();
+        }
+
+        if (move == null)
+        {
+            move = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         }
 
         /*if (Input.GetKeyDown(KeyCode.Backspace))

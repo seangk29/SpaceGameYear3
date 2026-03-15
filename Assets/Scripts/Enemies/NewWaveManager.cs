@@ -26,7 +26,6 @@ public class NewWaveManager : MonoBehaviour
     public List<WavesSO> randomizedWaves = new List<WavesSO>();
 
     public static NewWaveManager Instance;
-    GameManager.GameState state;
 
     private void Awake()
     {
@@ -58,6 +57,7 @@ public class NewWaveManager : MonoBehaviour
 
                 if (waveNumber >= maxWaves)
                 {
+                    GameManager.Instance.changeState(GameManager.GameState.CardSelection);
                     Debug.Log("win");
                 }
             }
@@ -97,7 +97,7 @@ public class NewWaveManager : MonoBehaviour
 
         while (randomizedWaves.Count < 3)
         {
-            WavesSO randomWave = availableWaves[Random.Range(0, availableWaves.Count)];
+            WavesSO randomWave = availableWaves[Random.Range(0, maxWaves)];
             if (!randomizedWaves.Contains(randomWave))
             {
                 if (randomWave.selectedRecently != true)
@@ -114,9 +114,9 @@ public class NewWaveManager : MonoBehaviour
             }
         }
 
-        while (randomizedWaves.Count > 3)
+        while (randomizedWaves.Count > maxWaves)
         {
-            randomizedWaves.Remove(randomizedWaves[4]);
+            randomizedWaves.Remove(randomizedWaves[maxWaves + 1]);
         }
 
         while (randomizedWaves.Count == 3 && oldWaveNumber <= waveNumber)

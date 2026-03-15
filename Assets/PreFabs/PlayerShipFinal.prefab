@@ -441,6 +441,7 @@ MonoBehaviour:
   Daudio: {fileID: 947021743936365863}
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
+  playerData: {fileID: 0}
   playerStats: {fileID: 0}
 --- !u!1 &1667372856028613701
 GameObject:
@@ -742,7 +743,7 @@ Transform:
   m_GameObject: {fileID: 2913796824387255504}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.037, z: 0}
+  m_LocalPosition: {x: 0, y: -0.29, z: 0}
   m_LocalScale: {x: 0.4965375, y: 0.4965375, z: 0.4965375}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -837,7 +838,7 @@ BoxCollider2D:
   m_Offset: {x: 0.11506489, y: 0.5589798}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: -0.08333333}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -1019,6 +1020,7 @@ MonoBehaviour:
   Daudio: {fileID: 4092512052659053887}
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
+  playerData: {fileID: 0}
   playerStats: {fileID: 0}
 --- !u!1 &3327284902683556773
 GameObject:
@@ -1356,6 +1358,7 @@ MonoBehaviour:
   Daudio: {fileID: 9177758811738786386}
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
+  playerData: {fileID: 0}
   playerStats: {fileID: 0}
 --- !u!1 &4805046748181273822
 GameObject:
@@ -1375,7 +1378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1358787842789956768
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2199,6 +2202,7 @@ MonoBehaviour:
   Daudio: {fileID: 1467377791823043309}
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
+  playerData: {fileID: 0}
   playerStats: {fileID: 0}
 --- !u!1 &7671036059347274953
 GameObject:
@@ -3243,6 +3247,7 @@ MonoBehaviour:
   Daudio: {fileID: 5323057429700352014}
   playerSpawn: {fileID: 0}
   Wave: {fileID: 0}
+  playerData: {fileID: 0}
   playerStats: {fileID: 0}
 --- !u!114 &5946322690500378483
 MonoBehaviour:
@@ -3535,6 +3540,7 @@ MonoBehaviour:
   bossCount: 0
   score: 0
   spaceMoney: 0
+  kills: 0
 --- !u!114 &6471710731014124954
 MonoBehaviour:
   m_ObjectHideFlags: 0

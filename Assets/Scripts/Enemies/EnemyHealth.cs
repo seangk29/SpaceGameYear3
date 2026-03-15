@@ -66,6 +66,11 @@ public class EnemyHealth : MonoBehaviour
                 StartCoroutine(VisualIndicator(Color.red));
             }
 
+            if (collider.gameObject.tag == "Border")
+            {
+                NewWave.enemiesKilled = NewWave.enemiesKilled + 1;
+                Destroy(gameObject);
+            }
 
         }
     }
@@ -86,6 +91,7 @@ public class EnemyHealth : MonoBehaviour
         }
 
         NewWave.enemiesKilled = NewWave.enemiesKilled + 1;
+        playerData.kills = playerData.kills + 1;
         Destroy(gameObject);
         
     }

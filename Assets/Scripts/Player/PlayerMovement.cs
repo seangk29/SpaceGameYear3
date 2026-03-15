@@ -119,6 +119,8 @@ public class PlayerMovement : MonoBehaviour
             || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeUp.IsPressed())
          {
 
+            //PlayerShip.transform.rotation = Quaternion.identity.;
+
              PlayerShip.SetActive(true);
              PlayerShipLeft.SetActive(false);
              PlayerShipRight.SetActive(false);
