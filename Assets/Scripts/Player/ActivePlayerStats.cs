@@ -156,6 +156,11 @@ public class ActivePlayerHealth : MonoBehaviour
                 }
             }
 
+        if (playerData == null)
+        {
+            playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        }
+
         /*if (Wave != null)
         {
             if (Wave.enemyCount >= Wave.wave3Complete)

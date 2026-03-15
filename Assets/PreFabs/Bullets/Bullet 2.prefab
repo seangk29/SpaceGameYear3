@@ -121,9 +121,6 @@ PrefabInstance:
       addedObject: {fileID: -6227107382320862468}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -5760961817895737585}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2279351476708032448}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -269,26 +266,6 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   playerSpawn: {fileID: 0}
---- !u!114 &-5760961817895737585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260864631553775174}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a65cf8b36d6d7b641aa6b0305693ef50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: -5010350254068612684}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
 --- !u!114 &2279351476708032448
 MonoBehaviour:
   m_ObjectHideFlags: 0

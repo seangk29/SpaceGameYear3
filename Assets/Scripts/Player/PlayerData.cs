@@ -20,6 +20,7 @@ public class PlayerData : MonoBehaviour
 
     public int score = 0;
     public int spaceMoney = 0;
+    public int kills = 0;
 
 
     private void Start()
