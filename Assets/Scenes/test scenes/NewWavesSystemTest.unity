@@ -1464,6 +1464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 765958279}
   - component: {fileID: 765958278}
+  - component: {fileID: 765958280}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1500,6 +1501,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1303106772}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &765958280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765958277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74e3c0571b76d8b478fe589fbaffdae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 765958278}
+  cardManager: {fileID: 1653525500}
+  newWaveManager: {fileID: 348620699}
 --- !u!1 &781378562
 GameObject:
   m_ObjectHideFlags: 0
@@ -3746,7 +3762,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653525499}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85a64530b02c2b34bbfcb6e6c187166e, type: 3}
   m_Name: 
@@ -3768,6 +3784,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 96f4fe768f240844fbeb53c3385e1685, type: 2}
   - {fileID: 11400000, guid: 5d5229b729a39b54796c141022d9bd8e, type: 2}
   - {fileID: 11400000, guid: c98153a10385dc5439e5da7044142958, type: 2}
+  selectedCardType: 0
+  selectedCardValue: 0
 --- !u!4 &1653525501
 Transform:
   m_ObjectHideFlags: 0

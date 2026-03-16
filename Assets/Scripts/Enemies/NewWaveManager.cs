@@ -31,10 +31,11 @@ public class NewWaveManager : MonoBehaviour
     {
         Instance = this;
 
-        if (GameManager.Instance != null)
+        /*if (GameManager.Instance != null)
         {
             GameManager.Instance.OnStateChanged += HandleGameStateChanged;
-        }
+        }*/
+
         waveNumber = 0;
         oldWaveNumber = 0;
     }
@@ -42,10 +43,10 @@ public class NewWaveManager : MonoBehaviour
     private void FixedUpdate()
     {
 
-        if (GameManager.Instance != null)
+        /*if (GameManager.Instance != null)
         {
             GameManager.Instance.OnStateChanged += HandleGameStateChanged;
-        }
+        }*/
 
         if (currentWave != null)
         {
@@ -67,25 +68,26 @@ public class NewWaveManager : MonoBehaviour
         {
             oldWaveNumber = waveNumber;
             currentWave = randomizedWaves[waveNumber];
-            spawnWave = InstantiateCard(randomizedWaves[waveNumber].wavePrefab, wavePosition);
+            spawnWave = InstantiateWave(randomizedWaves[waveNumber].wavePrefab, wavePosition);
         }
     }
 
-    private void OnDisable()
+    /*private void OnDisable()
     {
         if (GameManager.Instance != null)
         {
             GameManager.Instance.OnStateChanged -= HandleGameStateChanged;
         }
-    }
+    }*/
 
-    private void HandleGameStateChanged(GameManager.GameState state)
+    /*private void HandleGameStateChanged(GameManager.GameState state)
     {
         if (state == GameManager.GameState.WaveGenerate)
         {
             RandomizeNewWaves();
         }
-    }
+    }*/
+
     public void RandomizeNewWaves()
     {
         /*if (waveOne != null) Destroy(waveOne);
@@ -123,7 +125,7 @@ public class NewWaveManager : MonoBehaviour
         {
             oldWaveNumber = waveNumber;
             currentWave = randomizedWaves[waveNumber];
-            spawnWave = InstantiateCard(randomizedWaves[waveNumber].wavePrefab, wavePosition);
+            spawnWave = InstantiateWave(randomizedWaves[waveNumber].wavePrefab, wavePosition);
         }
 
         /*waveNumber = 0;
@@ -132,11 +134,9 @@ public class NewWaveManager : MonoBehaviour
         spawnWave = InstantiateCard(randomizedWaves[waveNumber].wavePrefab, wavePosition);*/
     }
 
-    GameObject InstantiateCard(GameObject wavePrefab, Transform position)
+    GameObject InstantiateWave(GameObject wavePrefab, Transform position)
     {
         GameObject waveGO = Instantiate(wavePrefab, position.position, Quaternion.identity, position);
-        //Card card = waveGO.GetComponent<Card>();
-        //card.Setup(wavesSO);
         GameManager.Instance.changeState(GameManager.GameState.Playing);
         return waveGO;
     }

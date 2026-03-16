@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/test scenes/NewWavesSystemTest.unity
+    guid: b8e4d613b337e1d478ccddb330df32a0
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 52154a88a45fb4a499954f2a3a3be7af
   - enabled: 1

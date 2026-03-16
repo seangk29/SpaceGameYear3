@@ -28,29 +28,34 @@ public class CardManager : MonoBehaviour
     public static PermaPlayerStats PermaPlayerStats;
     public static PlayerMovement move;
     public static PlayerShooting shoot;
+    public static ApplyUpgrades applyUpgrades;
+
+    public CardEffect selectedCardType;
+    public int selectedCardValue;
 
     private void Start()
     {
         PermaPlayerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
+        applyUpgrades = GetComponent<ApplyUpgrades>();
 
     }
     private void Awake()
     {
         Instance = this;
 
-        if (GameManager.Instance != null)
+        /*if (GameManager.Instance != null)
         {
             GameManager.Instance.OnStateChanged += HandleGameStateChanged;
-        }
+        }*/
     }
 
     private void FixedUpdate()
     {
 
-        if (GameManager.Instance != null)
+        /*if (GameManager.Instance != null)
         {
             GameManager.Instance.OnStateChanged += HandleGameStateChanged;
-        }
+        }*/
 
         if (shoot == null)
         {
@@ -69,22 +74,23 @@ public class CardManager : MonoBehaviour
         }*/
     }
 
-    private void OnDisable()
+    /*private void OnDisable()
     {
         if (GameManager.Instance != null)
         {
             GameManager.Instance.OnStateChanged -= HandleGameStateChanged;
         }
-    }
+    }*/
 
-    private void HandleGameStateChanged(GameManager.GameState state)
+    /*private void HandleGameStateChanged(GameManager.GameState state)
     {
         if (state == GameManager.GameState.CardSelection)
         {
             RandomizeNewCards();
         }
-    }
-    void RandomizeNewCards()
+    }*/
+
+    public void RandomizeNewCards()
     {
         if (cardOne != null) Destroy(cardOne);
         if (cardTwo != null) Destroy(cardTwo);
@@ -133,11 +139,14 @@ public class CardManager : MonoBehaviour
             alreadySelectedCards.Add(selectedCard);
         }
 
-        var selectedCardType = selectedCard.effectType;
-        var selectedCardValue = selectedCard.effectValue;
+        selectedCardType = selectedCard.effectType;
+        selectedCardValue = selectedCard.effectValue;
+
+
+        applyUpgrades.getUpgrade(selectedCardType, selectedCardValue);
 
         // try and actually apply upgrade? itd be awesome if it works
-       switch (selectedCardType)
+       /*switch (selectedCardType)
         {
             case CardEffect.HpIncrease:
                 PermaPlayerStats.MaxHealthUpgrade(selectedCardValue);
@@ -163,7 +172,7 @@ public class CardManager : MonoBehaviour
             case CardEffect.DamageUpgrade:
                 PermaPlayerStats.damageUpgrade(selectedCardValue);
                 break;
-        }
+        }*/
 
         GameManager.Instance.changeState(GameManager.GameState.Playing);
     }
@@ -171,14 +180,12 @@ public class CardManager : MonoBehaviour
     public void ShowCardSelection()
     { 
         cardSelectionUI.SetActive(true);
-        move.enabled = false;
-        shoot.enabled = false;
+        applyUpgrades.disableMove();
     }
 
     public void HideCardSelection()
     {
         cardSelectionUI.SetActive(false);
-        move.enabled = true;
-        shoot.enabled = true;
+        applyUpgrades.enableMove();
     }
 }
