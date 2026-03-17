@@ -90,8 +90,8 @@ public class EnemyHealth : MonoBehaviour
             //Debug.Log(Wave.enemyCount);
         }
 
-        NewWave.enemiesKilled = NewWave.enemiesKilled + 1;
-        playerData.kills = playerData.kills + 1;
+        NewWave.enemiesKilled += 1; //NewWave.enemiesKilled + 1;
+        playerData.kills += 1; //playerData.kills + 1;
         Destroy(gameObject);
         
     }

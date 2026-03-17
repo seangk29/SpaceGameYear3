@@ -43,19 +43,19 @@ public class CardManager : MonoBehaviour
     {
         Instance = this;
 
-        /*if (GameManager.Instance != null)
+        if (GameManager.Instance != null)
         {
             GameManager.Instance.OnStateChanged += HandleGameStateChanged;
-        }*/
+        }
     }
 
     private void FixedUpdate()
     {
 
-        /*if (GameManager.Instance != null)
+        if (GameManager.Instance != null)
         {
             GameManager.Instance.OnStateChanged += HandleGameStateChanged;
-        }*/
+        }
 
         if (shoot == null)
         {
@@ -74,42 +74,46 @@ public class CardManager : MonoBehaviour
         }*/
     }
 
-    /*private void OnDisable()
+    private void OnDisable()
     {
         if (GameManager.Instance != null)
         {
             GameManager.Instance.OnStateChanged -= HandleGameStateChanged;
         }
-    }*/
+    }
 
-    /*private void HandleGameStateChanged(GameManager.GameState state)
+    private void HandleGameStateChanged(GameManager.GameState state)
     {
         if (state == GameManager.GameState.CardSelection)
         {
             RandomizeNewCards();
         }
-    }*/
+    }
 
     public void RandomizeNewCards()
     {
+        // kill upgrade objects if theyre already there
         if (cardOne != null) Destroy(cardOne);
         if (cardTwo != null) Destroy(cardTwo);
         if (cardThree != null) Destroy(cardThree);
 
         List<CardSO> randomizedCards = new List<CardSO>();
-
         List<CardSO> availableCards = new List<CardSO>(Upgrades);
+
+        // filtering upgrades
         availableCards.RemoveAll(card =>
             card.isUnique && alreadySelectedCards.Contains(card)
             || card.unlockLevel > GameManager.Instance.GetCurrentLevel()
         );
 
+        // if theres less than 3 available cards. dont think this should ever happen now. you never know.
         if (availableCards.Count < 3)
         {
             Debug.Log("not enough available cards");
             return;
         }
 
+        // randomising upgrades
         while (randomizedCards.Count < 3)
         {
             CardSO randomCard = availableCards[Random.Range(0, availableCards.Count)];
@@ -119,11 +123,13 @@ public class CardManager : MonoBehaviour
             }
         }
 
+        // instantiate upgrade cards
         cardOne = InstantiateCard(randomizedCards[0], cardPositionOne);
         cardTwo = InstantiateCard(randomizedCards[1], cardPositionTwo);
         cardThree = InstantiateCard(randomizedCards[2], cardPositionThree);
     }
 
+    // instantiating upgrade cards but for real
     GameObject InstantiateCard(CardSO cardSO, Transform position)
     {
         GameObject cardGO = Instantiate(cardPrefab, position.position, Quaternion.identity, position);
@@ -132,6 +138,8 @@ public class CardManager : MonoBehaviour
         return cardGO;
     }
 
+    // selecting the card some of this is written 100% by me but it works in its own scene which makes
+    // the memory overflow issue weird
     public void SelectCard(CardSO selectedCard)
     {
         if (!alreadySelectedCards.Contains(selectedCard))
@@ -143,10 +151,10 @@ public class CardManager : MonoBehaviour
         selectedCardValue = selectedCard.effectValue;
 
 
-        applyUpgrades.getUpgrade(selectedCardType, selectedCardValue);
+        //applyUpgrades.getUpgrade(selectedCardType, selectedCardValue);
 
-        // try and actually apply upgrade? itd be awesome if it works
-       /*switch (selectedCardType)
+        // try and actually apply upgrade
+       switch (selectedCardType)
         {
             case CardEffect.HpIncrease:
                 PermaPlayerStats.MaxHealthUpgrade(selectedCardValue);
@@ -172,20 +180,26 @@ public class CardManager : MonoBehaviour
             case CardEffect.DamageUpgrade:
                 PermaPlayerStats.damageUpgrade(selectedCardValue);
                 break;
-        }*/
+        }
 
+        // change state back to playing
         GameManager.Instance.changeState(GameManager.GameState.Playing);
     }
 
+    // these two are self explanatory
     public void ShowCardSelection()
     { 
         cardSelectionUI.SetActive(true);
-        applyUpgrades.disableMove();
+        //applyUpgrades.disableMove();
+        move.enabled = false;
+        shoot.enabled = false;
     }
 
     public void HideCardSelection()
     {
         cardSelectionUI.SetActive(false);
-        applyUpgrades.enableMove();
+        //applyUpgrades.enableMove();
+        move.enabled = true;
+        shoot.enabled = true;
     }
 }

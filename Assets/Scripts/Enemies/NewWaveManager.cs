@@ -18,7 +18,6 @@ public class NewWaveManager : MonoBehaviour
     public int oldWaveNumber;
     public int maxWaves;
 
-    // Currently randomized cards go here
     GameObject spawnWave;
 
     List<WavesSO> alreadySelectedWaves = new List<WavesSO>();
@@ -31,11 +30,14 @@ public class NewWaveManager : MonoBehaviour
     {
         Instance = this;
 
-        /*if (GameManager.Instance != null)
+        if (GameManager.Instance != null)
         {
             GameManager.Instance.OnStateChanged += HandleGameStateChanged;
-        }*/
+        }
+    }
 
+    private void Start()
+    {
         waveNumber = 0;
         oldWaveNumber = 0;
     }
@@ -43,53 +45,61 @@ public class NewWaveManager : MonoBehaviour
     private void FixedUpdate()
     {
 
-        /*if (GameManager.Instance != null)
+        if (GameManager.Instance != null)
         {
             GameManager.Instance.OnStateChanged += HandleGameStateChanged;
-        }*/
+        }
 
+        // if the wave actually exists
         if (currentWave != null)
         {
+            // if youve killed all enemies in the wave
+            // change current wave number to the next one
+            // reset enemies killed in that wave
             if (currentWave.numOfEnemies <= enemiesKilled)
             {
                 waveNumber += 1;
                 enemiesKilled = 0;
+                currentWave = null;
+                spawningWave();
                 Debug.Log("yay");
 
-                if (waveNumber >= maxWaves)
+                // if youve cleared all the waves then give upgrade selection
+                if (waveNumber == maxWaves)
                 {
                     GameManager.Instance.changeState(GameManager.GameState.CardSelection);
                     Debug.Log("win");
                 }
             }
         }
-
-        if (randomizedWaves.Count == 3 && oldWaveNumber < waveNumber)
+        
+        /*if (randomizedWaves.Count == 3 && oldWaveNumber < waveNumber)
         {
             oldWaveNumber = waveNumber;
             currentWave = randomizedWaves[waveNumber];
             spawnWave = InstantiateWave(randomizedWaves[waveNumber].wavePrefab, wavePosition);
-        }
+        }*/
     }
 
-    /*private void OnDisable()
+    private void OnDisable()
     {
         if (GameManager.Instance != null)
         {
             GameManager.Instance.OnStateChanged -= HandleGameStateChanged;
         }
-    }*/
+    }
 
-    /*private void HandleGameStateChanged(GameManager.GameState state)
+    private void HandleGameStateChanged(GameManager.GameState state)
     {
         if (state == GameManager.GameState.WaveGenerate)
         {
             RandomizeNewWaves();
         }
-    }*/
+    }
 
     public void RandomizeNewWaves()
     {
+        // dont think this thing does much
         /*if (waveOne != null) Destroy(waveOne);
         if (waveTwo != null) Destroy(waveTwo);
         if (waveThree != null) Destroy(waveThree);*/
@@ -97,11 +107,16 @@ public class NewWaveManager : MonoBehaviour
         //List<WavesSO> randomizedWaves = new List<WavesSO>();
         List<WavesSO> availableWaves = new List<WavesSO>(Waves);
 
+
+        // randomising waves and putting them into the randomised list
         while (randomizedWaves.Count < 3)
         {
             WavesSO randomWave = availableWaves[Random.Range(0, maxWaves)];
             if (!randomizedWaves.Contains(randomWave))
             {
+                // this whole selected recently thing confuses me like it edits the
+                // so's even after the debugging is over
+                // i think it works. this was just kinda to stop back to back same waves.
                 if (randomWave.selectedRecently != true)
                 {
                     randomizedWaves.Add(randomWave);
@@ -116,17 +131,31 @@ public class NewWaveManager : MonoBehaviour
             }
         }
 
+        // i dont think this actually does anything but also it doesnt break anything soooo if it aint broke dont fix it yknow
+        // except it is broke dw about it
         while (randomizedWaves.Count > maxWaves)
         {
             randomizedWaves.Remove(randomizedWaves[maxWaves + 1]);
         }
 
-        while (randomizedWaves.Count == 3 && oldWaveNumber <= waveNumber)
+
+        // spawn wave if theres enough waves to spawn
+        // dont think the while statement works lemme try it
+
+        spawningWave();
+
+        /*if (randomizedWaves.Count == 3 && oldWaveNumber <= waveNumber)
         {
             oldWaveNumber = waveNumber;
             currentWave = randomizedWaves[waveNumber];
             spawnWave = InstantiateWave(randomizedWaves[waveNumber].wavePrefab, wavePosition);
-        }
+        }*/
+
+        /*else
+        {
+            Debug.Log("uhhhh work please");
+            return;
+        }*/
 
         /*waveNumber = 0;
 
@@ -134,6 +163,20 @@ public class NewWaveManager : MonoBehaviour
         spawnWave = InstantiateCard(randomizedWaves[waveNumber].wavePrefab, wavePosition);*/
     }
 
+    public void spawningWave()
+    {
+        if (currentWave == null)
+        {
+            if (randomizedWaves.Count == maxWaves && oldWaveNumber <= waveNumber && waveNumber < maxWaves)
+            {
+                oldWaveNumber = waveNumber;
+                currentWave = randomizedWaves[waveNumber];
+                spawnWave = InstantiateWave(randomizedWaves[waveNumber].wavePrefab, wavePosition);
+            }
+        }
+    }
+
+    // spawn the wave
     GameObject InstantiateWave(GameObject wavePrefab, Transform position)
     {
         GameObject waveGO = Instantiate(wavePrefab, position.position, Quaternion.identity, position);
