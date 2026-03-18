@@ -27,14 +27,14 @@ public class BossHealth : MonoBehaviour
     //  float cooldownTimer = 0;
    
 
-    public EnemyWaveHandler Wave;
+    //public EnemyWaveHandler Wave;
    
 
     private void Start()
     {
         Combat = true;
         correctLayer = gameObject.layer;
-        Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
+        //Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -81,9 +81,9 @@ public class BossHealth : MonoBehaviour
     {
         if (gameObject.tag == "Enemy")
         {
-            Wave.enemyCount = Wave.enemyCount + 1;
+            //Wave.enemyCount = Wave.enemyCount + 1;
             Debug.Log("Shot!");
-            Debug.Log(Wave.enemyCount);
+            //Debug.Log(Wave.enemyCount);
         }
 
         Destroy(gameObject);

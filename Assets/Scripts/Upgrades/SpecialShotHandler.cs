@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerData : MonoBehaviour
+public class SpecialShotHandler : MonoBehaviour
 {
     public PermaPlayerStats playerStats;
     public string activeSpecial;
@@ -16,14 +16,7 @@ public class PlayerData : MonoBehaviour
     public PlayerShooting currentSpecialPos3;
     public PlayerShooting currentSpecialPos4;
 
-    public int bossCount;
-
-    public int score = 0;
-    public int spaceMoney = 0;
-    public int kills = 0;
-
-
-    /*private void Start()
+    private void Start()
     {
         PlayerShooting currentSpecial = GetComponent<PlayerShooting>();
 
@@ -91,7 +84,5 @@ public class PlayerData : MonoBehaviour
         currentSpecialPos4.SPfireDelay = 1f;
         activeSpecial = "Explode";
 
-    }*/
-
-
+    }
 }

@@ -12,7 +12,7 @@ public class ActivePlayerHealth : MonoBehaviour
     public float invulPeriod = 0;
 
     public float shieldTimer;
-    public float regenShieldsTimer;
+    public float regenShieldsTimer = 2;
 
     public int shieldHealth;
     public int maxShield;
@@ -26,6 +26,7 @@ public class ActivePlayerHealth : MonoBehaviour
 
     public bool SpRend;
     public bool Combat;
+    public bool dodging;
 
     public AudioSource Daudio;
 
@@ -56,20 +57,50 @@ public class ActivePlayerHealth : MonoBehaviour
         Combat = true;
         correctLayer = gameObject.layer;
 
+        dodging = false;
+
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Enemy")
+        if (collider.gameObject.tag == "Enemy" && dodging == false)
         {
-            playerData.score -= 50;
-            health -= 1;
+            if (shieldHealth <= 0)
+            {
+                playerData.score -= 50;
+                health -= 1;
+                invul = 0.50f;
+                gameObject.layer = 8;
+            }
+
+            if (shieldHealth > 0)
+            {
+                shieldHealth--;
+                shieldTimer = 0;
+                canRegen = true;
+                invul = 0.50f; ;
+                gameObject.layer = 8;
+            }
         }
 
-        if (collider.gameObject.tag == "EnemyBullet")
+        if (collider.gameObject.tag == "EnemyBullet" && dodging == false)
         {
-            playerData.score -= 50;
-            health -= collider.GetComponent<EnemyBulletData>().damage;
+            if (shieldHealth <= 0)
+            {
+                playerData.score -= 50;
+                health -= collider.GetComponent<EnemyBulletData>().damage;
+                invul = 0.50f;
+                gameObject.layer = 8;
+            }
+
+            if (shieldHealth > 0)
+            {
+                shieldHealth--;
+                shieldTimer = 0;
+                canRegen = true;
+                invul = 0.50f; ;
+                gameObject.layer = 8;
+            }
         }
 
         if (Combat)
@@ -128,6 +159,7 @@ public class ActivePlayerHealth : MonoBehaviour
 
     private void Update()
     {
+
         if (invul <= 0)
         {
             gameObject.layer = correctLayer;

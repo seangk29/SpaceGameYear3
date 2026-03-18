@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 1
-  damage: 2
+  damage: 1
   fireDelay: 0.25
   Combat: 1
   Daudio: {fileID: -5010350254068612684}

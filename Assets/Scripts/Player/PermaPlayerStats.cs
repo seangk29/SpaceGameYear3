@@ -9,7 +9,7 @@ public class PermaPlayerStats : MonoBehaviour
     // For stuff like max health, different to the one thats on the player object that actually updates.
     public ActivePlayerHealth activePlayerHealth;
     public PlayerMovement playerMovement;
-    public PlayerData playerData;
+    public SpecialShotHandler specialShotHandler;
 
     public int health;
     public int maxHealth;
@@ -28,6 +28,7 @@ public class PermaPlayerStats : MonoBehaviour
 
     public int damage;
     public int specialDamage;
+    public int spBulletHealth;
 
     private void Update()
     {
@@ -45,9 +46,9 @@ public class PermaPlayerStats : MonoBehaviour
         else
             return;
 
-        if (playerData == null)
+        if (specialShotHandler == null)
         {
-            playerData = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerData>();
+            specialShotHandler = GameObject.FindGameObjectWithTag("Player").GetComponent<SpecialShotHandler>();
         }
         else
             return;
@@ -96,9 +97,22 @@ public class PermaPlayerStats : MonoBehaviour
         Debug.Log("Standard Damage Upgraded");
     }
 
+    public void spDmgUpgrade(int value)
+    { 
+        specialDamage += value;
+        Debug.Log("Special Damage Upgraded");
+    }
+
+    public void spBulletHPUpgrade(int value)
+    { 
+        spBulletHealth += value;
+        Debug.Log("Special Bullet HP Upgraded");
+    }
+
+
     public void spreadUnlock()
     {
-        playerData.GetSpreadShot();
+        specialShotHandler.GetSpreadShot();
         playerMovement.CanUseSpecial = true;
         canUseSpecial = true;
         activeSpecial = "Spread";
@@ -107,7 +121,7 @@ public class PermaPlayerStats : MonoBehaviour
 
     public void ricochetUnlock()
     {
-        playerData.GetRichochetShot();
+        specialShotHandler.GetRichochetShot();
         playerMovement.CanUseSpecial = true;
         canUseSpecial = true;
         activeSpecial = "Richochet";
@@ -116,7 +130,7 @@ public class PermaPlayerStats : MonoBehaviour
 
     public void explodeUnlock()
     {
-        playerData.GetExplodeShot();
+        specialShotHandler.GetExplodeShot();
         playerMovement.CanUseSpecial = true;
         canUseSpecial = true;
         activeSpecial = "Explode";

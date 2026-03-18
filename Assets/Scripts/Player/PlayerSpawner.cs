@@ -50,8 +50,8 @@ public class PlayerSpawner : MonoBehaviour
         }
         if (playerInstance == null && numLives == 0)
         {
-            Time.timeScale = 0f;
             deathScreen.SetActive(true);
+            Time.timeScale = 0f;
             playerData.spaceMoney = playerData.score;
             playerData.score = 0;
 

@@ -7,7 +7,7 @@ public class BulletData : MonoBehaviour
 {
     public int baseDamage;
     public int damage;
-
+    public bool special;
     public int health;
 
     public PermaPlayerStats playerStats;
@@ -15,7 +15,16 @@ public class BulletData : MonoBehaviour
     private void Start()
     {
         playerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
-        damage = playerStats.damage;
+        if (special)
+        {
+            damage = playerStats.specialDamage;
+            health = playerStats.spBulletHealth;
+        }
+        else
+        {
+            damage = playerStats.damage;
+            health = 1;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

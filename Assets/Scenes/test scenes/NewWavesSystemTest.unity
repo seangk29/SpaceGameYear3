@@ -222,13 +222,21 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1803798da011b5e4989ce5044436e8e9, type: 2}
   - {fileID: 11400000, guid: a59f84b08a37cde478a0becf615a8eac, type: 2}
   - {fileID: 11400000, guid: a664e41c6f00b2f4eacf93c871b6f6f8, type: 2}
+  - {fileID: 11400000, guid: c081f7ebf2247ce4caf64ecd04e1b9f0, type: 2}
+  - {fileID: 11400000, guid: 973cc55b6d6c88c43b361a81562d3b36, type: 2}
+  - {fileID: 11400000, guid: e1064c7968d0dac4896cf3aceea3ecc9, type: 2}
+  - {fileID: 11400000, guid: ab43a0cff62462247b2fb51c580603a6, type: 2}
   wavePosition: {fileID: 348620700}
   currentWave: {fileID: 0}
   enemiesKilled: 0
   waveNumber: 0
   oldWaveNumber: 0
-  maxWaves: 3
-  randomizedWaves: []
+  maxWaves: 5
+  finalizedWaves:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &348620700
 Transform:
   m_ObjectHideFlags: 0
@@ -238,7 +246,7 @@ Transform:
   m_GameObject: {fileID: 348620698}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.97, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -818,7 +826,7 @@ Transform:
   m_GameObject: {fileID: 522783416}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.63, y: -6.53, z: 0}
+  m_LocalPosition: {x: -35.1, y: -6.53, z: 0}
   m_LocalScale: {x: 1, y: 12.213, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1352,7 +1360,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 29.33, y: 1, z: 1}
+  m_LocalScale: {x: 81.2441, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1119583731}
@@ -1908,7 +1916,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2daa2c1fb6f0e944dacd8a4b1c407f49, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3e3191487a5ada845a741964593b881a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
@@ -2987,12 +2995,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activePlayerHealth: {fileID: 0}
   playerMovement: {fileID: 0}
-  playerData: {fileID: 1383394145}
-  health: 3
-  maxHealth: 3
+  specialShotHandler: {fileID: 0}
+  health: 5
+  maxHealth: 5
   shield: 1
   maxShield: 1
-  regenShieldTimer: 0
+  regenShieldTimer: 2
   baseRegenShieldTimer: 0
   speed: 4
   maxSpeed: 4
@@ -3000,6 +3008,7 @@ MonoBehaviour:
   canUseSpecial: 0
   damage: 1
   specialDamage: 2
+  spBulletHealth: 1
 --- !u!114 &1383394145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3182,7 +3191,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -13.055292, z: 0}
-  m_LocalScale: {x: 22.35, y: 1, z: 1}
+  m_LocalScale: {x: 80.907, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1119583731}
@@ -3213,7 +3222,7 @@ Transform:
   m_GameObject: {fileID: 1496156595}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.69, y: -6.42, z: 0}
+  m_LocalPosition: {x: 37.1, y: -6.42, z: 0}
   m_LocalScale: {x: 1, y: 12.213, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3768,6 +3777,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 96f4fe768f240844fbeb53c3385e1685, type: 2}
   - {fileID: 11400000, guid: 5d5229b729a39b54796c141022d9bd8e, type: 2}
   - {fileID: 11400000, guid: c98153a10385dc5439e5da7044142958, type: 2}
+  - {fileID: 11400000, guid: 5aeead8a0b7b18e42b704cb59a222c5d, type: 2}
+  - {fileID: 11400000, guid: ee7272ef21222d346be5ab436af83811, type: 2}
   selectedCardType: 0
   selectedCardValue: 0
 --- !u!4 &1653525501
@@ -3812,7 +3823,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2daa2c1fb6f0e944dacd8a4b1c407f49, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3e3191487a5ada845a741964593b881a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
@@ -4420,7 +4431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2022046813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4435,11 +4446,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalTime: 0
   musicDuration: 0
-  clipDuration: 64.3
+  clipDuration: 90.3
   audioSources:
   - {fileID: 1653780534}
   - {fileID: 885060153}
-  currentClip: {fileID: 8300000, guid: 2daa2c1fb6f0e944dacd8a4b1c407f49, type: 3}
+  currentClip: {fileID: 8300000, guid: 3e3191487a5ada845a741964593b881a, type: 3}
   newClip: {fileID: 8300000, guid: 3e3191487a5ada845a741964593b881a, type: 3}
   audioToggle: 0
   count: 0

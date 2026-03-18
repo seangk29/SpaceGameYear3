@@ -22,7 +22,7 @@ public class NewWaveManager : MonoBehaviour
 
     List<WavesSO> alreadySelectedWaves = new List<WavesSO>();
 
-    public List<WavesSO> randomizedWaves = new List<WavesSO>();
+    public List<WavesSO> finalizedWaves = new List<WavesSO>();
 
     public static NewWaveManager Instance;
 
@@ -93,6 +93,8 @@ public class NewWaveManager : MonoBehaviour
     {
         if (state == GameManager.GameState.WaveGenerate)
         {
+            waveNumber = 0;
+            oldWaveNumber = 0;
             RandomizeNewWaves();
         }
     }
@@ -104,12 +106,12 @@ public class NewWaveManager : MonoBehaviour
         if (waveTwo != null) Destroy(waveTwo);
         if (waveThree != null) Destroy(waveThree);*/
 
-        //List<WavesSO> randomizedWaves = new List<WavesSO>();
+        List<WavesSO> randomizedWaves = new List<WavesSO>();
         List<WavesSO> availableWaves = new List<WavesSO>(Waves);
 
 
         // randomising waves and putting them into the randomised list
-        while (randomizedWaves.Count < 3)
+        while (randomizedWaves.Count < maxWaves)
         {
             WavesSO randomWave = availableWaves[Random.Range(0, maxWaves)];
             if (!randomizedWaves.Contains(randomWave))
@@ -120,12 +122,12 @@ public class NewWaveManager : MonoBehaviour
                 if (randomWave.selectedRecently != true)
                 {
                     randomizedWaves.Add(randomWave);
-                    randomWave.selectedRecently = true;
+                    //randomWave.selectedRecently = true;
                 }
                 else
                 { 
                     // should loop back to the start of while? hopefully
-                    randomWave.selectedRecently = false;
+                    //randomWave.selectedRecently = false;
                     return;
                 }
             }
@@ -138,6 +140,7 @@ public class NewWaveManager : MonoBehaviour
             randomizedWaves.Remove(randomizedWaves[maxWaves + 1]);
         }
 
+        finalizedWaves = randomizedWaves;
 
         // spawn wave if theres enough waves to spawn
         // dont think the while statement works lemme try it
@@ -167,11 +170,11 @@ public class NewWaveManager : MonoBehaviour
     {
         if (currentWave == null)
         {
-            if (randomizedWaves.Count == maxWaves && oldWaveNumber <= waveNumber && waveNumber < maxWaves)
+            if (finalizedWaves.Count == maxWaves && oldWaveNumber <= waveNumber && waveNumber < maxWaves)
             {
                 oldWaveNumber = waveNumber;
-                currentWave = randomizedWaves[waveNumber];
-                spawnWave = InstantiateWave(randomizedWaves[waveNumber].wavePrefab, wavePosition);
+                currentWave = finalizedWaves[waveNumber];
+                spawnWave = InstantiateWave(finalizedWaves[waveNumber].wavePrefab, wavePosition);
             }
         }
     }

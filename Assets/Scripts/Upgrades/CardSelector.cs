@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.ShaderGraph;
 using UnityEngine;
 using UnityEngine.InputSystem.LowLevel;
 
@@ -30,9 +31,8 @@ public class CardSelector : MonoBehaviour
             if (currentHovered <= 0) currentHovered = 3;
             if (currentHovered >= 4) currentHovered = 1;
 
-            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.Joystick1Button6)) currentHovered += 1; /*|| controls.Gameplay.UILeft.IsPressed()) currentHovered += 1*/
-            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.Joystick1Button7)) currentHovered -= 1; /*|| controls.Gameplay.UIRight.IsPressed()) currentHovered -= 1*/
-
+            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.Joystick1Button6)) currentHovered += 1; /*|| controls.Gameplay.UILeft.IsPressed()) currentHovered += 1;*/
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.Joystick1Button7)) currentHovered -= 1; /*|| controls.Gameplay.UIRight.IsPressed()) currentHovered -= 1;*/
 
 
             if (card1 == null && card2 == null && card3 == null)

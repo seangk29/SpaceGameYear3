@@ -9,6 +9,7 @@ using UnityEngine.Rendering.Universal;
 public class PlayerMovement : MonoBehaviour
 {
     public PermaPlayerStats playerStats;
+    public ActivePlayerHealth activePlayer;
 
     public float moveSpeed = 4f;
     public float maxSpeed = 4f;
@@ -234,6 +235,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && Dtimer <= 0 || controls.Gameplay.Dash.IsPressed() && Dtimer <= 0)
         {
             Dodging = true;
+            activePlayer.dodging = true;
             emitting = true;
 
             Dtimer = 2f;
@@ -257,6 +259,7 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed = maxSpeed;
             cooldownDodge = 0;
             Dodging = false;
+            activePlayer.dodging = false;
             emitting = false;
 
           

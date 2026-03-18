@@ -180,6 +180,12 @@ public class CardManager : MonoBehaviour
             case CardEffect.DamageUpgrade:
                 PermaPlayerStats.damageUpgrade(selectedCardValue);
                 break;
+            case CardEffect.SpecialUpgrade:
+                PermaPlayerStats.spDmgUpgrade(selectedCardValue);
+                break;
+            case CardEffect.SPBulHP:
+                PermaPlayerStats.spBulletHPUpgrade(selectedCardValue);
+                break;
         }
 
         // change state back to playing

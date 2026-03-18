@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
-  m_Name: RicochetUnlock
+  m_Name: SpBulHP
   m_EditorClassIdentifier: 
-  cardImage: {fileID: -2239524536920753131, guid: 02f3bd3faac202843a3e1bb983415f13, type: 3}
-  cardText: 'Unlock Special: Ricochet'
-  effectType: 5
+  cardImage: {fileID: 0}
+  cardText: Special Shot HP+1
+  effectType: 9
   effectString: {fileID: 0}
-  effectValue: 0
-  isUnique: 1
+  effectValue: 1
+  isUnique: 0
   unlockLevel: 3

@@ -9,13 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
-  m_Name: SpecialDamage
+  m_Script: {fileID: 11500000, guid: 5d93d6c8584f0bf41905aecf6498815b, type: 3}
+  m_Name: Wave J1
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 0}
-  cardText: 'Increase Special: Spread Damage'
-  effectType: 7
-  effectString: {fileID: 0}
-  effectValue: 3
-  isUnique: 0
-  unlockLevel: 3
+  waveName: Wave J1
+  wavePrefab: {fileID: 1696317364416253266, guid: 1766abb575ddaca46bbe59bb68f386fe, type: 3}
+  numOfEnemies: 60
+  selectedRecently: 0
