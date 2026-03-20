@@ -33,6 +33,9 @@ public class CardManager : MonoBehaviour
     public CardEffect selectedCardType;
     public int selectedCardValue;
 
+   
+
+
     private void Start()
     {
         PermaPlayerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
@@ -87,6 +90,7 @@ public class CardManager : MonoBehaviour
         if (state == GameManager.GameState.CardSelection)
         {
             RandomizeNewCards();
+         
         }
     }
 
@@ -114,19 +118,25 @@ public class CardManager : MonoBehaviour
         }
 
         // randomising upgrades
-        while (randomizedCards.Count < 3)
+       //while (randomizedCards.Count < 3)
+       for (int i = 0; i < 3; i++) 
         {
+        //    Debug.Log("Joanne - 3"); // I THINK THE PROBLEM IS HERE?
             CardSO randomCard = availableCards[Random.Range(0, availableCards.Count)];
             if (!randomizedCards.Contains(randomCard))
             {
                 randomizedCards.Add(randomCard);
             }
+          
         }
 
-        // instantiate upgrade cards
-        cardOne = InstantiateCard(randomizedCards[0], cardPositionOne);
-        cardTwo = InstantiateCard(randomizedCards[1], cardPositionTwo);
-        cardThree = InstantiateCard(randomizedCards[2], cardPositionThree);
+        if (randomizedCards.Count == 3)
+        {
+            // instantiate upgrade cards
+            cardOne = InstantiateCard(randomizedCards[0], cardPositionOne);
+            cardTwo = InstantiateCard(randomizedCards[1], cardPositionTwo);
+            cardThree = InstantiateCard(randomizedCards[2], cardPositionThree);
+        }
     }
 
     // instantiating upgrade cards but for real

@@ -231,7 +231,7 @@ MonoBehaviour:
   enemiesKilled: 0
   waveNumber: 0
   oldWaveNumber: 0
-  maxWaves: 5
+  maxWaves: 2
   finalizedWaves:
   - {fileID: 0}
   - {fileID: 0}

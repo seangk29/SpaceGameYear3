@@ -92,8 +92,8 @@ public class PlayerMovement : MonoBehaviour
         {
             SpawnAfterImage();
             yield return new WaitForSecondsRealtime(0.075f);
-        
-            
+
+
 
         }
     }
