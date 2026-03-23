@@ -163,6 +163,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 463123164527221943, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463123164527221943, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 463123164527221943, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463123164527221943, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463123164527221943, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463123164527221943, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463123164527221943, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 493873378634037699, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2770,7 +2798,7 @@ Transform:
   m_GameObject: {fileID: 1303106770}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9214819, y: -0.3559164, z: 0.038440835}
+  m_LocalPosition: {x: 0.9214819, y: -1.17, z: 0.038440835}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2973,7 +3001,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.043715555}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.59687, y: 0.59687, z: 0.59687}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

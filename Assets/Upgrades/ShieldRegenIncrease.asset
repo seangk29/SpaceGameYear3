@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
   m_Name: ShieldRegenIncrease
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 3935590018073937188, guid: 687f07bc4a35a7b4588f59fc3ffe300c, type: 3}
-  cardText: Shield Regen Time -1
+  cardImage: {fileID: 7265725182813928288, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
+  cardText: ---Shield Regen Time -1---
   effectType: 2
   effectString: {fileID: 0}
   effectValue: 1

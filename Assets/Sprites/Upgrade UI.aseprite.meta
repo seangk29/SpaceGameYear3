@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ff8b70ec0539b3b4693f182b0f279e12
+guid: 84b5e29c136925e4ab2cc2dca0be08f3
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 144
+    spritePixelsToUnits: 35
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -72,7 +72,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -85,7 +85,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639098893460936774
+  platformSettingsDirtyTick: 639098923494968167
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,18 +122,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Stars
+  - name: Upgrade UI
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.71428573, y: -3.1212122}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1920
-      height: 1440
-    spriteID: f2fb15bb0c5190f49842a466acabe3de
+      width: 84
+      height: 33
+    spriteID: 02c3c6e94db7a064e9bcee04fa14e6b7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,24 +142,104 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  spriteSheetImportData: []
+  spriteSheetImportData:
+  - name: Upgrade UI_0
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 13
+      width: 25
+      height: 22
+    spriteID: f9115e3c5d0dc6c49b83c23fb6511506
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Upgrade UI_1
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 13
+      width: 24
+      height: 23
+    spriteID: d8dffe108d1881147b74973bf5f11a09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Upgrade UI_2
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 6
+      width: 32
+      height: 33
+    spriteID: 94572b928a9db6e47b6eae1857d311a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Upgrade UI_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 4
+      width: 17
+      height: 40
+    spriteID: 7ec504b4dcaa3754f881a89a38bb3e1e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: -1436209293
-    name: Stars
+    guid: 464245784
+    name: Upgrade UI
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Stars
+    - name: Upgrade UI
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 0
-        width: 1920
-        height: 1440
-      spriteId: f2fb15bb0c5190f49842a466acabe3de
+        y: 93
+        width: 110
+        height: 40
+      spriteId: 02c3c6e94db7a064e9bcee04fa14e6b7
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -202,5 +282,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 1920, y: 1440}
-  previousTextureSize: {x: 2048, y: 2048}
+  canvasSize: {x: 144, y: 144}
+  previousTextureSize: {x: 128, y: 64}

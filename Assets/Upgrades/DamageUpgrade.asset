@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
   m_Name: DamageUpgrade
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 1387938505793899080, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-  cardText: Standard Bullet Damage +1
+  cardImage: {fileID: -5775198449053020412, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
+  cardText: ---Standard Bullet Damage +1---
   effectType: 8
   effectString: {fileID: 0}
   effectValue: 1
