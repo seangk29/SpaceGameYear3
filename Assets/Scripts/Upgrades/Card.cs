@@ -7,7 +7,9 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
     [SerializeField] SpriteRenderer cardImageRenderer;
+    [SerializeField] TextMeshPro cardHeaderRenderer;
     [SerializeField] TextMeshPro cardTextRenderer;
+    [SerializeField] TextMeshPro cardDescRenderer;
 
     public GameObject currentlySelectedIndicator;
     public bool currentlySelected;
@@ -21,7 +23,10 @@ public class Card : MonoBehaviour
     { 
         cardInfo = card;
         cardImageRenderer.sprite = card.cardImage;
+        cardHeaderRenderer.text = card.headerText;
         cardTextRenderer.text = card.cardText;
+        cardDescRenderer.text = card.descText;
+
         //controls = new PlayerControls();
         //controls.Gameplay.Enable();
     }

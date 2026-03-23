@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: HpIncrease
   m_EditorClassIdentifier: 
   cardImage: {fileID: 4377600898735781149, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
+  headerText: --- HEALTH ---
   cardText: +1 HP
+  descText: 
   effectType: 0
   effectString: {fileID: 0}
   effectValue: 1

@@ -53,7 +53,7 @@ public class EnemyHealth : MonoBehaviour
         if (Combat)
         {
 
-            if (collider.gameObject.tag == "Bullet" || collider.gameObject.tag == "ExplodeShot")
+            if (collider.gameObject.tag == "Bullet" || collider.gameObject.tag == "SpecialBullet")
             {
                 Daudio.Play();
                 playerData.score = playerData.score + 50;

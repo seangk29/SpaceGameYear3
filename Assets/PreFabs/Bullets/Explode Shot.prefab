@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: SpecialBullet
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Sprite
@@ -849,7 +849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseDamage: 0
-  damage: 0
+  damage: 2
   special: 1
   health: 0
   playerStats: {fileID: 0}

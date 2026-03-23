@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: SpreadUnlock
   m_EditorClassIdentifier: 
   cardImage: {fileID: 7259352414129167302, guid: 346622abcc2390c488c6341239340dae, type: 3}
+  headerText: --- SPREAD ---
   cardText: 'Unlock Special: Spread'
+  descText: 
   effectType: 4
   effectString: {fileID: 0}
   effectValue: 0

@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: SpecialDamage
   m_EditorClassIdentifier: 
   cardImage: {fileID: 0}
+  headerText: --- SPECIAL ---
   cardText: 'Increase Special: Spread Damage'
+  descText: 
   effectType: 7
   effectString: {fileID: 0}
   effectValue: 3

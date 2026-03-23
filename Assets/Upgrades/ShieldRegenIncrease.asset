@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: ShieldRegenIncrease
   m_EditorClassIdentifier: 
   cardImage: {fileID: 7265725182813928288, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
+  headerText: --- SHIELD ---
   cardText: ---Shield Regen Time -1---
+  descText: 
   effectType: 2
   effectString: {fileID: 0}
   effectValue: 1

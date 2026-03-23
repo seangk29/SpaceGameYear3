@@ -16,7 +16,9 @@ public class CardSO : ScriptableObject
     public Sprite cardImage;
 
     // text that shows up like "+1 HP" or "+1 damage" etc
+    public string headerText;
     public string cardText;
+    public string descText;
 
     // what the upgrade actually does
     public CardEffect effectType;

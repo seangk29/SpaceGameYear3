@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: SpBulHP
   m_EditorClassIdentifier: 
   cardImage: {fileID: 0}
+  headerText: --- SPECIAL ---
   cardText: Special Shot HP+1
+  descText: 
   effectType: 9
   effectString: {fileID: 0}
   effectValue: 1

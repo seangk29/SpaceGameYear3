@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: ExtraHpIncrease
   m_EditorClassIdentifier: 
   cardImage: {fileID: 2733241868513160400, guid: dbf1d6698ef2f4b4f96cebb4cb28d854, type: 3}
+  headerText: --- HEALTH ---
   cardText: +3 HP
+  descText: 
   effectType: 0
   effectString: {fileID: 0}
   effectValue: 3
