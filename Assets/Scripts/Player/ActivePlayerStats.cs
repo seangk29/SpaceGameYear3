@@ -105,9 +105,8 @@ public class ActivePlayerHealth : MonoBehaviour
 
         if (Combat)
         {
-            if (shieldHealth <= 0)
+            /*if (shieldHealth <= 0)
             {
-                health--;
                 invul = 0.50f;
                 gameObject.layer = 8;
             }
@@ -119,7 +118,7 @@ public class ActivePlayerHealth : MonoBehaviour
                 canRegen = true;
                 invul = 0.50f; ;
                 gameObject.layer = 8;
-            }
+            }*/
 
             if (SpRend && shieldHealth > 0)
             {

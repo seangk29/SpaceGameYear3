@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.InteropServices;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class PermaPlayerStats : MonoBehaviour
 {
     // For stuff like max health, different to the one thats on the player object that actually updates.
+
     public ActivePlayerHealth activePlayerHealth;
     public PlayerMovement playerMovement;
     public SpecialShotHandler specialShotHandler;
@@ -29,7 +31,31 @@ public class PermaPlayerStats : MonoBehaviour
     public int damage;
     public int specialDamage;
     public int spBulletHealth;
+    Scene scene;
 
+
+    //all this enable disable scene load part does is check if its the main menu
+    //or the quit scene
+    //and deletes all player data for that run
+    //i mean it SHOULD do that i hope it does
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Main Menu")
+            Destroy(gameObject);
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    // the rest should all be self explanatory
+    // its just functions that get called to upgrade stats
     private void Update()
     {
         if (activePlayerHealth == null)

@@ -52,6 +52,9 @@ public class GameManager : MonoBehaviour
             case GameState.CardSelection:
                 CardManager.Instance.ShowCardSelection();
                 break;
+            case GameState.NextArea:
+                CardManager.Instance.HideCardSelection();
+                break;
         }
     }
 
@@ -61,6 +64,8 @@ public class GameManager : MonoBehaviour
         
         CardSelection,
 
-        WaveGenerate
+        WaveGenerate,
+
+        NextArea
     }
 }

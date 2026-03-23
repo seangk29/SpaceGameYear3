@@ -16,6 +16,10 @@ public class CardManager : MonoBehaviour
     [SerializeField] Transform cardPositionTwo;
     [SerializeField] Transform cardPositionThree;
 
+    public GameObject cardGO1;
+    public GameObject cardGO2;
+    public GameObject cardGO3;
+
     [SerializeField] List<CardSO> Upgrades;
 
     // Currently randomized cards go here
@@ -32,8 +36,6 @@ public class CardManager : MonoBehaviour
 
     public CardEffect selectedCardType;
     public int selectedCardValue;
-
-   
 
 
     private void Start()
@@ -55,10 +57,10 @@ public class CardManager : MonoBehaviour
     private void FixedUpdate()
     {
 
-        if (GameManager.Instance != null)
+        /*if (GameManager.Instance != null)
         {
             GameManager.Instance.OnStateChanged += HandleGameStateChanged;
-        }
+        }*/
 
         if (shoot == null)
         {
@@ -69,12 +71,6 @@ public class CardManager : MonoBehaviour
         {
             move = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         }
-
-        /*if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            RandomizeNewCards();
-            Debug.Log("bbbbbb");
-        }*/
     }
 
     private void OnDisable()
@@ -97,9 +93,10 @@ public class CardManager : MonoBehaviour
     public void RandomizeNewCards()
     {
         // kill upgrade objects if theyre already there
-        if (cardOne != null) Destroy(cardOne);
-        if (cardTwo != null) Destroy(cardTwo);
-        if (cardThree != null) Destroy(cardThree);
+        // dont need this anymore actually but if its needed in future here you go
+        //if (cardOne != null) Destroy(cardOne);
+        //if (cardTwo != null) Destroy(cardTwo);
+        //if (cardThree != null) Destroy(cardThree);
 
         List<CardSO> randomizedCards = new List<CardSO>();
         List<CardSO> availableCards = new List<CardSO>(Upgrades);
@@ -118,10 +115,10 @@ public class CardManager : MonoBehaviour
         }
 
         // randomising upgrades
-       //while (randomizedCards.Count < 3)
-       for (int i = 0; i < 3; i++) 
+       while (randomizedCards.Count < 3)
+       //for (int i = 0; i < 4; i++) 
         {
-        //    Debug.Log("Joanne - 3"); // I THINK THE PROBLEM IS HERE?
+            Debug.Log("Joanne - 3"); // I THINK THE PROBLEM IS HERE?
             CardSO randomCard = availableCards[Random.Range(0, availableCards.Count)];
             if (!randomizedCards.Contains(randomCard))
             {
@@ -130,19 +127,16 @@ public class CardManager : MonoBehaviour
           
         }
 
-        if (randomizedCards.Count == 3)
-        {
             // instantiate upgrade cards
-            cardOne = InstantiateCard(randomizedCards[0], cardPositionOne);
-            cardTwo = InstantiateCard(randomizedCards[1], cardPositionTwo);
-            cardThree = InstantiateCard(randomizedCards[2], cardPositionThree);
-        }
+            cardOne = InstantiateCard(randomizedCards[0], cardPositionOne, cardGO1);
+            cardTwo = InstantiateCard(randomizedCards[1], cardPositionTwo, cardGO2);
+            cardThree = InstantiateCard(randomizedCards[2], cardPositionThree, cardGO3);
     }
 
     // instantiating upgrade cards but for real
-    GameObject InstantiateCard(CardSO cardSO, Transform position)
+    GameObject InstantiateCard(CardSO cardSO, Transform position, GameObject cardGO)
     {
-        GameObject cardGO = Instantiate(cardPrefab, position.position, Quaternion.identity, position);
+        //GameObject cardGO = Instantiate(cardPrefab, position.position, Quaternion.identity, position);
         Card card = cardGO.GetComponent<Card>();
         card.Setup(cardSO);
         return cardGO;
@@ -199,7 +193,7 @@ public class CardManager : MonoBehaviour
         }
 
         // change state back to playing
-        GameManager.Instance.changeState(GameManager.GameState.Playing);
+        GameManager.Instance.changeState(GameManager.GameState.NextArea);
     }
 
     // these two are self explanatory

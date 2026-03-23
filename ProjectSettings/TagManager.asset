@@ -24,6 +24,7 @@ TagManager:
   - card3
   - Skippy
   - Nicos
+  - GameMg
   layers:
   - Default
   - TransparentFX
