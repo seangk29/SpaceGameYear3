@@ -15,7 +15,7 @@ MonoBehaviour:
   cardImage: {fileID: -2361790495134753000, guid: deca441533155d14db6cda2d9e621f10, type: 3}
   headerText: --- SPECIAL ---
   cardText: 'Unlock Special: Explode'
-  descText: 
+  descText: WOO
   effectType: 6
   effectString: {fileID: 0}
   effectValue: 0

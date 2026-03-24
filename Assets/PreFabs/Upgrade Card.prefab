@@ -360,7 +360,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardImageRenderer: {fileID: 3200509731921969619}
-  cardTextRenderer: {fileID: 7119432049769375379}
+  cardHeaderRenderer: {fileID: 7119432049769375379}
+  cardTextRenderer: {fileID: 3867306367435716949}
+  cardDescRenderer: {fileID: 3636454662241285773}
   currentlySelectedIndicator: {fileID: 9189694796128784570}
   currentlySelected: 0
 --- !u!61 &4471898082380142203
@@ -435,7 +437,7 @@ RectTransform:
   m_GameObject: {fileID: 3649727925881380334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1.71}
-  m_LocalScale: {x: 0.6291243, y: 2.0772111, z: 0.6291243}
+  m_LocalScale: {x: 0.8381823, y: 2.7674682, z: 0.8381823}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1863055442654974140}
@@ -860,7 +862,7 @@ RectTransform:
   m_GameObject: {fileID: 8961181689777661445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1.71}
-  m_LocalScale: {x: 0.6291243, y: 2.0772111, z: 0.6291243}
+  m_LocalScale: {x: 0.47787023, y: 2.3982682, z: 0.47787023}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 564578576591285764}
@@ -965,7 +967,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 19
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -995,7 +997,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.20239091, y: -0.010579482, z: -0.3219901, w: 0}
+  m_margin: {x: -0.20239091, y: -0.010579482, z: -0.3219901, w: 0.05876234}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0

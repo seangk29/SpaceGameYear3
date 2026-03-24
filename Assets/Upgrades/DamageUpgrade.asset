@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardImage: {fileID: -5775198449053020412, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
   headerText: --- DAMAGE ---
-  cardText: ---Standard Bullet Damage +1---
-  descText: 
+  cardText: 'Receive +1 SB Damage '
+  descText: Cosmo's STANDARD BULLET damage increases by ONE.
   effectType: 8
   effectString: {fileID: 0}
   effectValue: 1

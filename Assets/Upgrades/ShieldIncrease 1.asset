@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardImage: {fileID: 227497761842265811, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
   headerText: --- SHIELD ---
-  cardText: Shield +1
-  descText: 
+  cardText: Receive +1 Shield
+  descText: Cosmo's SHIELDS increase by ONE.
   effectType: 1
   effectString: {fileID: 0}
   effectValue: 1

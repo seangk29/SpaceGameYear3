@@ -15,7 +15,7 @@ MonoBehaviour:
   cardImage: {fileID: 0}
   headerText: --- SPECIAL ---
   cardText: 'Increase Special: Spread Damage'
-  descText: 
+  descText: WOO
   effectType: 7
   effectString: {fileID: 0}
   effectValue: 3

@@ -15,7 +15,7 @@ MonoBehaviour:
   cardImage: {fileID: -2239524536920753131, guid: 02f3bd3faac202843a3e1bb983415f13, type: 3}
   headerText: --- SPECIAL ---
   cardText: 'Unlock Special: Ricochet'
-  descText: 
+  descText: WEE
   effectType: 5
   effectString: {fileID: 0}
   effectValue: 0
