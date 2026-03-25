@@ -1308,6 +1308,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &665358684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 665358685}
+  m_Layer: 0
+  m_Name: Cards Off Screen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &665358685
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665358684}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -28.44, y: 11.51, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1093818909}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &693720648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2389,6 +2420,7 @@ Transform:
   - {fileID: 1354793778}
   - {fileID: 1130287821}
   - {fileID: 1248669272}
+  - {fileID: 665358685}
   m_Father: {fileID: 1303106772}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1119583730
@@ -2462,7 +2494,7 @@ Transform:
   m_GameObject: {fileID: 1130287820}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.7, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2584,7 +2616,7 @@ Transform:
   m_GameObject: {fileID: 1248669271}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: 0}
+  m_LocalPosition: {x: 5, y: -1.7, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2842,7 +2874,7 @@ Transform:
   m_GameObject: {fileID: 1354793777}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: 0}
+  m_LocalPosition: {x: -5, y: -1.7, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3016,11 +3048,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 184194701463657721, guid: 48c9134200c779844bba73e4a1dc8bae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -64.3
       objectReference: {fileID: 0}
     - target: {fileID: 184194701463657721, guid: 48c9134200c779844bba73e4a1dc8bae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 184194701463657721, guid: 48c9134200c779844bba73e4a1dc8bae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3569,6 +3601,7 @@ MonoBehaviour:
   cardPositionOne: {fileID: 1354793778}
   cardPositionTwo: {fileID: 1130287821}
   cardPositionThree: {fileID: 1248669272}
+  cardsOffScreenPos: {fileID: 665358685}
   cardGO1: {fileID: 1038943919}
   cardGO2: {fileID: 1739848555}
   cardGO3: {fileID: 528566503}
@@ -3954,11 +3987,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 184194701463657721, guid: 48c9134200c779844bba73e4a1dc8bae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -64.3
       objectReference: {fileID: 0}
     - target: {fileID: 184194701463657721, guid: 48c9134200c779844bba73e4a1dc8bae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 184194701463657721, guid: 48c9134200c779844bba73e4a1dc8bae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4031,11 +4064,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 184194701463657721, guid: 48c9134200c779844bba73e4a1dc8bae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -64.3
       objectReference: {fileID: 0}
     - target: {fileID: 184194701463657721, guid: 48c9134200c779844bba73e4a1dc8bae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 184194701463657721, guid: 48c9134200c779844bba73e4a1dc8bae, type: 3}
       propertyPath: m_LocalPosition.z

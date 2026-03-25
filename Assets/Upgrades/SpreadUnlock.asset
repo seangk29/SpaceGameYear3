@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
   m_Name: SpreadUnlock
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 7259352414129167302, guid: 346622abcc2390c488c6341239340dae, type: 3}
+  cardImage: {fileID: -8672847384898897545, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
   headerText: --- SPREAD ---
-  cardText: 'Unlock Special: Spread'
-  descText: WEE
+  cardText: 'Receive Special Shot: Spread'
+  descText: Obtain a SPECIAL SHOT that fires a spread of bullets to hit a number
+    of ENEMY ships.
   effectType: 4
   effectString: {fileID: 0}
   effectValue: 0

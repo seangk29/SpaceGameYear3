@@ -1647,6 +1647,7 @@ GameObject:
   - component: {fileID: 631784485}
   - component: {fileID: 631784484}
   - component: {fileID: 631784483}
+  - component: {fileID: 631784486}
   m_Layer: 0
   m_Name: PlayerData
   m_TagString: PlayerData
@@ -1706,6 +1707,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &631784486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631784482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fda49f3e07128b4c9d571460fdcae1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activePlayerHealth: {fileID: 0}
+  playerMovement: {fileID: 0}
+  specialShotHandler: {fileID: 0}
+  health: 3
+  maxHealth: 3
+  shield: 1
+  maxShield: 0
+  regenShieldTimer: 0
+  baseRegenShieldTimer: 0
+  speed: 0
+  maxSpeed: 0
+  activeSpecial: 
+  canUseSpecial: 0
+  damage: 0
+  specialDamage: 0
+  spBulletHealth: 0
 --- !u!1 &645577427
 GameObject:
   m_ObjectHideFlags: 0
@@ -3555,7 +3584,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcDialogueText: {fileID: 1835879279}
   typeSpeed: 3
-  player: {fileID: 0}
   convoEnded: 0
   playerVoice: {fileID: 1755215302}
   playerVoiceObject: {fileID: 1755215300}

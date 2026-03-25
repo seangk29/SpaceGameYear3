@@ -8,7 +8,7 @@ public abstract class NPC : MonoBehaviour, Interactable
 {
     [SerializeField] GameObject interOBJ;
 
-    private Transform PlayerTrans;
+    [SerializeField] private Transform PlayerTrans;
 
 
     private const float Distance = 2f;
@@ -23,6 +23,13 @@ public abstract class NPC : MonoBehaviour, Interactable
     // Update is called once per frame
     void Update()
     {
+
+        if (PlayerTrans == null)
+        {
+            PlayerTrans = GameObject.FindGameObjectWithTag("Player").transform;
+        }
+
+
         //This is used to let the game have a set distance required for the player talk to the NPC.
 
 

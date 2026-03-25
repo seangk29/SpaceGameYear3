@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_TagString
-      value: SpecialBullet
+      value: Bullet
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Sprite
@@ -823,7 +823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explode: {fileID: 1544686008070617430}
-  explodeBullet: {fileID: 7548812303564185471, guid: b75a54cb8956f3a4fb5af7d15afa1a94, type: 3}
+  explodeBullet: {fileID: 7548812303564185471, guid: baee6f6ca01e1d345bb9a936a5a241c6, type: 3}
 --- !u!114 &8184764838285053590
 MonoBehaviour:
   m_ObjectHideFlags: 0

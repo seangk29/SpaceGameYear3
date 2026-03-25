@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
   m_Name: ExplodeUnlock
   m_EditorClassIdentifier: 
-  cardImage: {fileID: -2361790495134753000, guid: deca441533155d14db6cda2d9e621f10, type: 3}
+  cardImage: {fileID: 7843752175946602825, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
   headerText: --- SPECIAL ---
   cardText: 'Unlock Special: Explode'
   descText: WOO

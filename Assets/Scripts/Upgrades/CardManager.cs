@@ -16,6 +16,8 @@ public class CardManager : MonoBehaviour
     [SerializeField] Transform cardPositionTwo;
     [SerializeField] Transform cardPositionThree;
 
+    public Transform cardsOffScreenPos;
+
     public GameObject cardGO1;
     public GameObject cardGO2;
     public GameObject cardGO3;
@@ -42,6 +44,7 @@ public class CardManager : MonoBehaviour
     {
         PermaPlayerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
         applyUpgrades = GetComponent<ApplyUpgrades>();
+
 
     }
     private void Awake()
@@ -198,8 +201,11 @@ public class CardManager : MonoBehaviour
 
     // these two are self explanatory
     public void ShowCardSelection()
-    { 
-        cardSelectionUI.SetActive(true);
+    {
+        cardGO1.transform.position = cardPositionOne.transform.position;
+        cardGO2.transform.position = cardPositionTwo.transform.position;
+        cardGO3.transform.position = cardPositionThree.transform.position;
+        //cardSelectionUI.SetActive(true);
         //applyUpgrades.disableMove();
         move.enabled = false;
         shoot.enabled = false;
@@ -207,7 +213,11 @@ public class CardManager : MonoBehaviour
 
     public void HideCardSelection()
     {
-        cardSelectionUI.SetActive(false);
+        //cardSelectionUI.SetActive(false);
+        // moves upgrade cards off screen
+        cardGO1.transform.position = cardsOffScreenPos.transform.position;
+        cardGO2.transform.position = cardsOffScreenPos.transform.position;
+        cardGO3.transform.position = cardsOffScreenPos.transform.position;
         //applyUpgrades.enableMove();
         move.enabled = true;
         shoot.enabled = true;

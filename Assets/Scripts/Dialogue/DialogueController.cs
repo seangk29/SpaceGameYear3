@@ -10,7 +10,7 @@ public class DialogueController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI npcDialogueText;
     [SerializeField] private float typeSpeed;
-    [SerializeField] private GameObject player;
+    //[SerializeField] private GameObject player;
 
     private Queue<string> paragraphs = new Queue<string>();
     public bool convoEnded;
