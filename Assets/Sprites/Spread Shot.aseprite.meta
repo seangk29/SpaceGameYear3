@@ -124,7 +124,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Spread Shot
     originalName: 
-    pivot: {x: 0.5, y: -1.4047619}
+    pivot: {x: 0.53571427, y: -1.4523809}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -155,8 +155,8 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 16
-        y: 59
+        x: 12
+        y: 61
         width: 112
         height: 42
       spriteId: 7fa72ede373884540a6c8716aa039159

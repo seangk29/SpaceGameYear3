@@ -2056,7 +2056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activePlayerHealth: {fileID: 0}
   playerMovement: {fileID: 0}
-  playerData: {fileID: 1383394145}
+  specialShotHandler: {fileID: 0}
   health: 3
   maxHealth: 3
   shield: 1
@@ -2067,8 +2067,9 @@ MonoBehaviour:
   maxSpeed: 4
   activeSpecial: 
   canUseSpecial: 0
-  damage: 0
-  specialDamage: 0
+  damage: 1
+  specialDamage: 2
+  spBulletHealth: 3
 --- !u!114 &1383394145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2093,6 +2094,7 @@ MonoBehaviour:
   bossCount: 0
   score: 0
   spaceMoney: 0
+  kills: 0
 --- !u!114 &1383394146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2870,7 +2872,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1675822407
 MonoBehaviour:
   m_ObjectHideFlags: 0

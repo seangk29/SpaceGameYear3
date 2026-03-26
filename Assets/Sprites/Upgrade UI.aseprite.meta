@@ -290,10 +290,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 8
-      y: 7
-      width: 50
-      height: 38
+      x: 154
+      y: 50
+      width: 36
+      height: 40
     spriteID: 8e8dcef0db4f2bf4f99f2a77e6584521
     spriteBone: []
     spriteOutline: []
@@ -310,9 +310,9 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 65
-      y: 6
-      width: 34
+      x: 8
+      y: 7
+      width: 50
       height: 38
     spriteID: 8ba86af0b7329ea42ba35d1c4f5c1f43
     spriteBone: []
@@ -330,10 +330,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 4
-      width: 42
-      height: 39
+      x: 65
+      y: 6
+      width: 34
+      height: 38
     spriteID: d6e7332b9c149ef43b8f771cdd918626
     spriteBone: []
     spriteOutline: []
@@ -345,6 +345,26 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_10
     originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 4
+      width: 42
+      height: 39
+    spriteID: d5cf205b287073c47b0723bea0746429
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Upgrade UI_11
+    originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,7 +374,7 @@ ScriptedImporter:
       y: 6
       width: 34
       height: 34
-    spriteID: d5cf205b287073c47b0723bea0746429
+    spriteID: a511ed7de618d1048bbca240705e7da6
     spriteBone: []
     spriteOutline: []
     vertices: []

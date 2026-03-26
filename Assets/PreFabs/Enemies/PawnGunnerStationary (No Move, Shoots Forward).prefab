@@ -27,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6999490566376191939}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.0123232175, w: 0.99992406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.72, z: 0}
   m_LocalScale: {x: 5.5231075, y: 5.5231075, z: 5.523107}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3720345959820945944}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.412}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3246155490488225277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,7 +171,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_Name
-      value: PawnGunnerStationary
+      value: PawnGunnerStationary (No Move, Shoots Forward)
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_Layer
@@ -518,3 +518,5 @@ MonoBehaviour:
   Daudio: {fileID: 1179204053745780962}
   fireDelay: 0.25
   Wave: {fileID: 0}
+  playerData: {fileID: 0}
+  NewWave: {fileID: 0}

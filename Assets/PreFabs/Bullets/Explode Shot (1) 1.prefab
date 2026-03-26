@@ -278,7 +278,7 @@ MonoBehaviour:
   regenShieldsTimer: 0
   shieldHealth: 0
   maxShield: 0
-  health: 1
+  health: 4
   canRegen: 0
   SpRend: 0
   Combat: 1
@@ -436,7 +436,7 @@ MonoBehaviour:
   baseDamage: 0
   damage: 2
   special: 1
-  health: 0
+  health: 4
   playerStats: {fileID: 0}
 --- !u!1001 &1260738195931805919
 PrefabInstance:
@@ -460,7 +460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_TagString
-      value: ExplodeShot
+      value: Bullet
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Sprite
@@ -566,6 +566,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8061926235293685438}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8974323180722954580}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
 --- !u!1 &8198651276720336823 stripped
 GameObject:
@@ -826,6 +829,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fire: {fileID: 1819131263843486627}
+--- !u!114 &8974323180722954580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8198651276720336823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c32973fbf2b77ba42bedbc82d19765fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 2
+  damage: 0
+  special: 1
+  health: 3
+  playerStats: {fileID: 0}
 --- !u!4 &8947121296436643794 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
@@ -853,7 +873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_TagString
-      value: ExplodeShot
+      value: Bullet
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Sprite
@@ -959,6 +979,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7989470401652361164}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 524737059445469602}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
 --- !u!4 &31834877621062397 stripped
 Transform:
@@ -1224,3 +1247,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fire: {fileID: 6606199007125574692}
+--- !u!114 &524737059445469602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980908582387442328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c32973fbf2b77ba42bedbc82d19765fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 0
+  damage: 2
+  special: 1
+  health: 3
+  playerStats: {fileID: 0}

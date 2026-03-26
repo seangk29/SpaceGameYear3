@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
   m_Name: SpBulHP
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 0}
+  cardImage: {fileID: -2490178017332163790, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
   headerText: --- SPECIAL ---
   cardText: Receive +1 Special Shot HP
-  descText: WEE
+  descText: The SPECIAL shot bullet increases durability by ONE.
   effectType: 9
   effectString: {fileID: 0}
   effectValue: 1

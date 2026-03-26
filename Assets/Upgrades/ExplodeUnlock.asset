@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
   m_Name: ExplodeUnlock
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 7843752175946602825, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
+  cardImage: {fileID: -1289087625317749971, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
   headerText: --- SPECIAL ---
-  cardText: 'Unlock Special: Explode'
-  descText: WOO
+  cardText: 'Receive Special Shot: Explode'
+  descText: Cosmo's SPECIAL shot becomes a bullet that creates TWO projectiles when
+    DESTROYED.
   effectType: 6
   effectString: {fileID: 0}
   effectValue: 0
