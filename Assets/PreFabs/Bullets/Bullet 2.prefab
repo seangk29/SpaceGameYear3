@@ -30,15 +30,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Color.b
-      value: 0.16060515
+      value: 0.2392157
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Color.g
-      value: 0.16060515
+      value: 0.2392157
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_Color.r
-      value: 0.82641506
+      value: 0.81568635
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       propertyPath: m_SortingLayer
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7a038e063aec8749893f1290707b40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 5
+  timer: 8
   Wave: {fileID: 0}
   selfDestruct: 1
 --- !u!61 &2519588871795197990

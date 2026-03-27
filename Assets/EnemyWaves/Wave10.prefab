@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7304137277556495504}
   m_Layer: 7
-  m_Name: Wave7
+  m_Name: Wave10
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,21 +29,18 @@ Transform:
   m_LocalScale: {x: 0.8256777, y: 0.8256777, z: 0.8256777}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4254931029043167711}
-  - {fileID: 7965220321461973328}
-  - {fileID: 6937023978871267299}
-  - {fileID: 5720906990949568955}
-  - {fileID: 3629483758427601223}
-  - {fileID: 963654318992607100}
-  - {fileID: 3006523293412799848}
-  - {fileID: 1163020081535713399}
-  - {fileID: 7307057430117854153}
   - {fileID: 2897333963168493764}
+  - {fileID: 8883092487691437026}
+  - {fileID: 287923380510777324}
   - {fileID: 8051167916783718425}
+  - {fileID: 4157842108235247613}
+  - {fileID: 9206428453724125289}
   - {fileID: 4896083519072158209}
+  - {fileID: 6063928077892319909}
+  - {fileID: 3634095723941663870}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &144069901597774687
+--- !u!1001 &130521096656060006
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -51,13 +48,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7304137277556495504}
     m_Modifications:
+    - target: {fileID: 3246155490488225277, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: timeToAttack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -65,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.38268343
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.x
@@ -77,7 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.92387956
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -89,85 +90,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 135
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_Name
-      value: PawnGunnerStationary (10)
+      value: PawnGunnerStationary (29)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
---- !u!4 &3629483758427601223 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-  m_PrefabInstance: {fileID: 144069901597774687}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &625401983046003655
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 7304137277556495504}
-    m_Modifications:
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8
+    - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.38268343
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.92387956
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 135
-      objectReference: {fileID: 0}
-    - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_Name
-      value: PawnGunnerStationary (9)
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
---- !u!4 &4254931029043167711 stripped
+--- !u!4 &3634095723941663870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-  m_PrefabInstance: {fileID: 625401983046003655}
+  m_PrefabInstance: {fileID: 130521096656060006}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1880257181813661552
+--- !u!1001 &725868638060021221
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -175,13 +138,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7304137277556495504}
     m_Modifications:
+    - target: {fileID: 3246155490488225277, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: timeToAttack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -189,7 +156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.38268325
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.x
@@ -197,11 +164,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.9238796
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -213,21 +180,45 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 225
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_Name
-      value: PawnGunnerStationary (6)
+      value: PawnGunnerStationary (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
---- !u!4 &3006523293412799848 stripped
+--- !u!4 &4157842108235247613 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-  m_PrefabInstance: {fileID: 1880257181813661552}
+  m_PrefabInstance: {fileID: 725868638060021221}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1987273894464772828
 PrefabInstance:
@@ -237,9 +228,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7304137277556495504}
     m_Modifications:
+    - target: {fileID: 3246155490488225277, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: timeToAttack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -281,6 +276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PawnGunnerStationary (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -291,69 +290,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
   m_PrefabInstance: {fileID: 1987273894464772828}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2558803708149951087
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 7304137277556495504}
-    m_Modifications:
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.38268325
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.9238796
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 225
-      objectReference: {fileID: 0}
-    - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_Name
-      value: PawnGunnerStationary (7)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
---- !u!4 &1163020081535713399 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-  m_PrefabInstance: {fileID: 2558803708149951087}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4539281593591442788
+--- !u!1001 &3485709396782102004
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -367,69 +304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.38268343
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.92387956
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 135
-      objectReference: {fileID: 0}
-    - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_Name
-      value: PawnGunnerStationary (11)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
---- !u!4 &963654318992607100 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-  m_PrefabInstance: {fileID: 4539281593591442788}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &6044974735242229243
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 7304137277556495504}
-    m_Modifications:
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -465,19 +340,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_Name
-      value: PawnGunnerStationary (16)
+      value: PawnGunnerStationary (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
---- !u!4 &6937023978871267299 stripped
+--- !u!4 &287923380510777324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-  m_PrefabInstance: {fileID: 6044974735242229243}
+  m_PrefabInstance: {fileID: 3485709396782102004}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6252879698345476561
+--- !u!1001 &5252964621788506618
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -487,11 +366,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -499,7 +378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.38268325
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.x
@@ -507,11 +386,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.9238796
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -523,21 +402,115 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 225
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_Name
-      value: PawnGunnerStationary (8)
+      value: PawnGunnerStationary (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
---- !u!4 &7307057430117854153 stripped
+--- !u!4 &8883092487691437026 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-  m_PrefabInstance: {fileID: 6252879698345476561}
+  m_PrefabInstance: {fileID: 5252964621788506618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5504136614976787057
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7304137277556495504}
+    m_Modifications:
+    - target: {fileID: 3246155490488225277, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: timeToAttack
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_Name
+      value: PawnGunnerStationary (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+--- !u!4 &9206428453724125289 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+  m_PrefabInstance: {fileID: 5504136614976787057}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6636665792958413313
 PrefabInstance:
@@ -547,9 +520,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7304137277556495504}
     m_Modifications:
+    - target: {fileID: 3246155490488225277, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: timeToAttack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -591,6 +568,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PawnGunnerStationary (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -621,7 +602,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
   m_PrefabInstance: {fileID: 6636665792958413313}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6713590916123810632
+--- !u!1001 &7459707578669732029
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -629,13 +610,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7304137277556495504}
     m_Modifications:
+    - target: {fileID: 3246155490488225277, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: timeToAttack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -655,7 +640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7071068
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -667,21 +652,45 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_Name
-      value: PawnGunnerStationary (15)
+      value: PawnGunnerStationary (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
---- !u!4 &7965220321461973328 stripped
+--- !u!4 &6063928077892319909 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-  m_PrefabInstance: {fileID: 6713590916123810632}
+  m_PrefabInstance: {fileID: 7459707578669732029}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8093866785488447513
 PrefabInstance:
@@ -691,9 +700,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7304137277556495504}
     m_Modifications:
+    - target: {fileID: 3246155490488225277, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: timeToAttack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -735,6 +748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PawnGunnerStationary (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6365765484472221252, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -764,66 +781,4 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
   m_PrefabInstance: {fileID: 8093866785488447513}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &8990852164888230819
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 7304137277556495504}
-    m_Modifications:
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4489148195869835901, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-      propertyPath: m_Name
-      value: PawnGunnerStationary (17)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
---- !u!4 &5720906990949568955 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3720345959820945944, guid: 09caf07e8a7ea624db8184608bfa9fa7, type: 3}
-  m_PrefabInstance: {fileID: 8990852164888230819}
   m_PrefabAsset: {fileID: 0}
