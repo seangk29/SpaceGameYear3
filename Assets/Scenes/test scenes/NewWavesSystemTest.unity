@@ -541,14 +541,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a664e41c6f00b2f4eacf93c871b6f6f8, type: 2}
   - {fileID: 11400000, guid: c081f7ebf2247ce4caf64ecd04e1b9f0, type: 2}
   - {fileID: 11400000, guid: 973cc55b6d6c88c43b361a81562d3b36, type: 2}
-  - {fileID: 11400000, guid: e1064c7968d0dac4896cf3aceea3ecc9, type: 2}
+  - {fileID: 11400000, guid: e310c5c2be5455040ad52674b5da1937, type: 2}
   - {fileID: 11400000, guid: d5654edbd4ada7b4daccd3961cd1298b, type: 2}
+  - {fileID: 11400000, guid: 81be3029618f4d84cba6f6e814ecfd6f, type: 2}
+  - {fileID: 11400000, guid: 229d14ad4b6724f42863e0e9a283626e, type: 2}
   wavePosition: {fileID: 348620700}
   currentWave: {fileID: 0}
   enemiesKilled: 0
   waveNumber: 0
   oldWaveNumber: 0
-  maxWaves: 5
+  maxWaves: 3
   finalizedWaves:
   - {fileID: 0}
   - {fileID: 0}

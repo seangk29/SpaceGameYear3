@@ -40,6 +40,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1873849069114099174}
     m_Modifications:
+    - target: {fileID: 54062413169036229, guid: ffea7ac9d394af245b66eaf3f849af1d, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3720345959820945944, guid: ffea7ac9d394af245b66eaf3f849af1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -83,6 +87,10 @@ PrefabInstance:
     - target: {fileID: 4489148195869835901, guid: ffea7ac9d394af245b66eaf3f849af1d, type: 3}
       propertyPath: m_Name
       value: GroupOfPawnsSpin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489148195869835901, guid: ffea7ac9d394af245b66eaf3f849af1d, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

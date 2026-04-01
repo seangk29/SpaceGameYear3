@@ -145,76 +145,16 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: Cosmo Main Menu_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 19
-      y: 79
-      width: 121
-      height: 53
-    spriteID: 6ed1eb7f332b3da4fb8e82405510bf39
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Cosmo Main Menu_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 41
-      width: 68
-      height: 38
-    spriteID: 029f6f168e3a6634baba550de99c518b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Cosmo Main Menu_2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 56
       y: 4
-      width: 65
-      height: 38
-    spriteID: 917f189ba36e75e449237232e281cba0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Cosmo Main Menu_3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 114
-      y: 16
-      width: 25
-      height: 31
-    spriteID: 48b66976c6bf3d14488e7a4710309102
+      width: 121
+      height: 53
+    spriteID: 6ed1eb7f332b3da4fb8e82405510bf39
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -235,10 +175,10 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 1
-        y: 1
-        width: 136
-        height: 128
+        x: 16
+        y: 76
+        width: 121
+        height: 53
       spriteId: 22b8fc5d3ea5a3144900a1860d2d6447
     linkedCells: []
     parentIndex: -1
@@ -283,4 +223,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 144, y: 144}
-  previousTextureSize: {x: 256, y: 256}
+  previousTextureSize: {x: 256, y: 64}
