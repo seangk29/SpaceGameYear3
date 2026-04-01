@@ -1887,6 +1887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interOBJ: {fileID: 1762034108}
+  PlayerTrans: {fileID: 0}
   dialogueText: {fileID: 11400000, guid: 9acd7712969079d418a18b560a1d9598, type: 2}
   dialogueController: {fileID: 1276082600}
 --- !u!61 &713310131
@@ -4720,6 +4721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interOBJ: {fileID: 336781616}
+  PlayerTrans: {fileID: 0}
   dialogueText: {fileID: 11400000, guid: 9acd7712969079d418a18b560a1d9598, type: 2}
   dialogueController: {fileID: 1276082600}
 --- !u!1 &1690784146
@@ -5476,9 +5478,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shooting: {fileID: 0}
-  pMenu: {fileID: 0}
-  confirmHubMenu: {fileID: 0}
-  confirmMenu: {fileID: 0}
+  pMenu: {fileID: 599042921}
+  confirmHubMenu: {fileID: 836449646}
+  confirmMenu: {fileID: 17117760}
 --- !u!4 &1970894171
 Transform:
   m_ObjectHideFlags: 0

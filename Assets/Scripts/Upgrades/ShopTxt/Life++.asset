@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Life++
   m_EditorClassIdentifier: 
   conTxt: MAX LIFES
-  upgradeTxt: 
+  upgradeTxt: THIS IS THE MAX LIVES UPGRADE THIS WILL INCREASE YOUR MAX LIVES

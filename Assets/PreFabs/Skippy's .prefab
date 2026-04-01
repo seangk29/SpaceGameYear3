@@ -121,7 +121,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5023700371905181386}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5081064802379610618}
+        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+        m_MethodName: spBulletCooldownUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1089851948980943487
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7953633132869414191
 RectTransform:
   m_ObjectHideFlags: 0
@@ -947,7 +959,7 @@ GameObject:
   - component: {fileID: 6162664091405388944}
   - component: {fileID: 7101036774144293528}
   m_Layer: 5
-  m_Name: Upgrade1
+  m_Name: UpgradeTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1190,7 +1202,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7451642076295160327}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5081064802379610618}
+        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+        m_MethodName: bulletUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4169652640794241092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,7 +1228,7 @@ GameObject:
   - component: {fileID: 345337797638480818}
   - component: {fileID: 2959527501291187345}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: No
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1311,7 +1335,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 345337797638480818}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5081064802379610618}
+        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+        m_MethodName: denyUpgrades
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4346660412638034684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,7 +1678,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 45051361896759794}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5081064802379610618}
+        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+        m_MethodName: lifeUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5024191392343995970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,7 +1812,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 439186042925064866}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5081064802379610618}
+        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+        m_MethodName: shieldCooldown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5237643009861442907
 GameObject:
   m_ObjectHideFlags: 0
@@ -1881,6 +1941,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1997337239192441676}
+  - component: {fileID: 5081064802379610618}
   m_Layer: 5
   m_Name: UpgButtons
   m_TagString: Untagged
@@ -1915,6 +1976,32 @@ RectTransform:
   m_AnchoredPosition: {x: 308, y: -412.5}
   m_SizeDelta: {x: 1207.2141, y: 249.7699}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5081064802379610618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6317529604577647634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe27aa6a58c5a104897e79ecf8487cff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background: {fileID: 1599676481519192807}
+  conTxt: {fileID: 9175307315948316341}
+  upgTxt: {fileID: 7101036774144293528}
+  shopText:
+  - {fileID: 11400000, guid: 758b8cebafe140c4b86a791394544f24, type: 2}
+  - {fileID: 11400000, guid: 53fa6fe8272e82741bfbc4ca1980778f, type: 2}
+  - {fileID: 11400000, guid: 60df0908dd86d6f4b8d413ea05d603bb, type: 2}
+  - {fileID: 11400000, guid: 1aaea98d7b429534380cc45d428ce14f, type: 2}
+  - {fileID: 11400000, guid: 4a2e4e0fb49bd624188533a4c7ef2990, type: 2}
+  - {fileID: 11400000, guid: 60064b80263ee5841938fd95b621ef8b, type: 2}
+  - {fileID: 11400000, guid: a1d435a144de97e41afddc8869c9a083, type: 2}
+  - {fileID: 11400000, guid: 8b66c590184879440aa5ed90ad11a13b, type: 2}
+  indic: 0
+  PermaPlayerStats: {fileID: 0}
 --- !u!1 &6520080383644225054
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,7 +2468,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2663361458078161472}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5081064802379610618}
+        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+        m_MethodName: shieldUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7101753076652196693
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,7 +2494,7 @@ GameObject:
   - component: {fileID: 6050072277329622361}
   - component: {fileID: 616775965706651430}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Yes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2502,7 +2601,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6050072277329622361}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5081064802379610618}
+        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+        m_MethodName: confirmUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7332961128649849935
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,7 +2810,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 276450173084412067}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5081064802379610618}
+        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+        m_MethodName: speedUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7829801963190488842
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,7 +2944,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1289285770992608435}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5081064802379610618}
+        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+        m_MethodName: spBulletHpUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7880230469475517023
 GameObject:
   m_ObjectHideFlags: 0
@@ -3763,7 +3898,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7811655456602458049}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5081064802379610618}
+        m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
+        m_MethodName: healthUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8697379389807569752
 GameObject:
   m_ObjectHideFlags: 0

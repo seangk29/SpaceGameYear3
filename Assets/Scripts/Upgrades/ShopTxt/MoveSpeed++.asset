@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: MoveSpeed++
   m_EditorClassIdentifier: 
   conTxt: MOVE SPEED
-  upgradeTxt: 
+  upgradeTxt: THIS IS THE MOVE SPEED UPGRADE THIS WILL INCREASE YOUR MAX SPEED

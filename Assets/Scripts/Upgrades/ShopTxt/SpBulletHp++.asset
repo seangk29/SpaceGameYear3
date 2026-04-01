@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: SpBulletHp++
   m_EditorClassIdentifier: 
   conTxt: SP BULLET HEALTH
-  upgradeTxt: 
+  upgradeTxt: THIS IS THE SPECIAL BULLET HEALTH UPGRADE THIS WILL INCREASE THE MAX
+    BULLETS HEALTH

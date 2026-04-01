@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: BulletDmg++
   m_EditorClassIdentifier: 
   conTxt: BULLET DAMAGE
-  upgradeTxt: 
+  upgradeTxt: THIS IS THE DAMAGE UPGRADE THIS WILL INCREASE YOUR BULLET DAMAGE

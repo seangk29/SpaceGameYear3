@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Shield++
   m_EditorClassIdentifier: 
   conTxt: MAX SHIELDS
-  upgradeTxt: 
+  upgradeTxt: THIS IS THE SHIELD UPGRADE THIS WILL INCREASE YOUR MAX SHIELD
