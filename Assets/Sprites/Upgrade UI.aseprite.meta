@@ -310,10 +310,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 8
-      y: 7
-      width: 50
-      height: 38
+      x: 199
+      y: 50
+      width: 36
+      height: 40
     spriteID: 8ba86af0b7329ea42ba35d1c4f5c1f43
     spriteBone: []
     spriteOutline: []
@@ -330,9 +330,9 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 65
-      y: 6
-      width: 34
+      x: 8
+      y: 7
+      width: 50
       height: 38
     spriteID: d6e7332b9c149ef43b8f771cdd918626
     spriteBone: []
@@ -350,10 +350,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 104
-      y: 4
-      width: 42
-      height: 39
+      x: 65
+      y: 6
+      width: 34
+      height: 38
     spriteID: d5cf205b287073c47b0723bea0746429
     spriteBone: []
     spriteOutline: []
@@ -365,7 +365,27 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_11
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 4
+      width: 42
+      height: 39
+    spriteID: a511ed7de618d1048bbca240705e7da6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Upgrade UI_12
+    originalName: 
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -374,7 +394,27 @@ ScriptedImporter:
       y: 6
       width: 34
       height: 34
-    spriteID: a511ed7de618d1048bbca240705e7da6
+    spriteID: 9a70ff2f85d340b4083dd9b81f5b6d4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Upgrade UI_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 203
+      y: 8
+      width: 39
+      height: 38
+    spriteID: 771fcffdedb51a84a82d3fbc1a7c905f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -397,7 +437,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 1
-        width: 187
+        width: 238
         height: 132
       spriteId: 02c3c6e94db7a064e9bcee04fa14e6b7
     linkedCells: []
@@ -442,5 +482,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 200, y: 144}
+  canvasSize: {x: 250, y: 144}
   previousTextureSize: {x: 256, y: 256}

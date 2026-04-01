@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class NextAreaTP : MonoBehaviour
 {
-    GameManager gameManager;
+    public GameManager gameManager;
+    public GameObject OnScreen;
+    public GameObject OffScreen;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         if (GameManager.Instance != null)
         {
@@ -31,19 +33,25 @@ public class NextAreaTP : MonoBehaviour
     private void HandleGameStateChanged(GameManager.GameState state)
     {
         if (state == GameManager.GameState.NextArea)
+        //if (gameManager.currentState == GameManager.GameState.NextArea)
         {
-            gameObject.SetActive(true);
-
+            Debug.Log("on screen");
+            gameObject.transform.position = OnScreen.transform.position;
         }
-        else { gameObject.SetActive(false); }
+        else { gameObject.transform.position = OffScreen.transform.position;
+            Debug.Log("off screen");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2" || collision.gameObject.tag == "Player3" || collision.gameObject.tag == "Player4" )
         {
+            Debug.Log("player collided");
+
             if (gameManager.currentLevel == 10)
             {
+                Debug.Log("it would load boss here");
                 SceneManager.LoadScene("BOSS1");
             }
             else
@@ -51,6 +59,6 @@ public class NextAreaTP : MonoBehaviour
                 Debug.Log("it would load here");
                 SceneManager.LoadScene("NoPDGameplay");
             }
-        }
+       }
     }
 }

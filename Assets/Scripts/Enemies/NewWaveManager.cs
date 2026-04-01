@@ -113,7 +113,7 @@ public class NewWaveManager : MonoBehaviour
         // randomising waves and putting them into the randomised list
         while (randomizedWaves.Count < maxWaves)
         {
-            WavesSO randomWave = availableWaves[Random.Range(0, maxWaves)];
+            WavesSO randomWave = availableWaves[Random.Range(0, availableWaves.Count)];
             if (!randomizedWaves.Contains(randomWave))
             {
                 // this whole selected recently thing confuses me like it edits the

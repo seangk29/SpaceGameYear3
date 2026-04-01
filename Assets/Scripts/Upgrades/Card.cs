@@ -18,6 +18,12 @@ public class Card : MonoBehaviour
 
     PlayerControls controls;
     CardSelector cardSelector;
+    GameManager gameManager;
+
+    private void Awake()
+    {
+        gameManager = GameObject.FindGameObjectWithTag("GameMg").GetComponent<GameManager>();
+    }
 
     public void Setup(CardSO card)
     { 
@@ -38,8 +44,11 @@ public class Card : MonoBehaviour
         else
             currentlySelectedIndicator.SetActive(false);
 
-        if (currentlySelected && Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button0)/* || currentlySelected && controls.Gameplay.UIAccept.IsPressed()*/)
-            OnSelect();
+        if (gameManager.currentState == GameManager.GameState.CardSelection)
+        {
+            if (currentlySelected && Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button0)/* || currentlySelected && controls.Gameplay.UIAccept.IsPressed()*/)
+                OnSelect();
+        }
     }
 
     public void OnMouseDown()

@@ -13,19 +13,27 @@ public class ActivateShops : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+            shops = GameObject.Find("Player").GetComponent<FindShop>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        shops = GameObject.Find("Player").GetComponent<FindShop>();
 
-        if (controller.convoEnded == true && shops.CompareTag("Skippy"))
+
+        if (shops == null)
+        {
+            shops = GameObject.Find("Player").GetComponent<FindShop>();
+        }
+        else
+            return;
+
+        if (controller.convoEnded == true && shops.npcShopable.CompareTag("Skippy"))
         {
             skipsShop.SetActive(true);
         }
-        else if (controller.convoEnded == true && shops.CompareTag("Nicos"))
+        else if (controller.convoEnded == true && shops.npcShopable.CompareTag("Nicos"))
         {
             nicosShop.SetActive(true);
         }
