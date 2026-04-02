@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5e56b6367e9aadd4ab2a358a25a2b560
+guid: 2041ca8289a170647a7513a050a848ff
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -122,7 +122,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Costello Mo
+  - name: Skippy
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -133,7 +133,7 @@ ScriptedImporter:
       y: 4
       width: 144
       height: 144
-    spriteID: 2ff22712a49910047be127464ffe89c6
+    spriteID: 93dc7996f6b5bf84a8dc9c0414e6e0f8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -145,13 +145,13 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1712223933
-    name: Costello Mo
+    guid: -653248686
+    name: Skippy
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Costello Mo
+    - name: Skippy - Copy
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -159,7 +159,7 @@ ScriptedImporter:
         y: 0
         width: 144
         height: 144
-      spriteId: 2ff22712a49910047be127464ffe89c6
+      spriteId: 93dc7996f6b5bf84a8dc9c0414e6e0f8
     linkedCells: []
     parentIndex: -1
   platformSettings:
