@@ -423,6 +423,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6484933390814340696, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484933390814340696, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7536240902080345780, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 5
@@ -542,6 +550,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c081f7ebf2247ce4caf64ecd04e1b9f0, type: 2}
   - {fileID: 11400000, guid: 973cc55b6d6c88c43b361a81562d3b36, type: 2}
   - {fileID: 11400000, guid: e310c5c2be5455040ad52674b5da1937, type: 2}
+  - {fileID: 11400000, guid: 6d482b071946b1041a3e001e04bba004, type: 2}
   - {fileID: 11400000, guid: d5654edbd4ada7b4daccd3961cd1298b, type: 2}
   - {fileID: 11400000, guid: 81be3029618f4d84cba6f6e814ecfd6f, type: 2}
   - {fileID: 11400000, guid: 229d14ad4b6724f42863e0e9a283626e, type: 2}

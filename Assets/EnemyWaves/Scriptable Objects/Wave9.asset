@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveName: Wave 9
   wavePrefab: {fileID: 7486200845691951626, guid: 7b881ca8df37e9441a4fca3e04ad248b, type: 3}
-  numOfEnemies: 7
+  numOfEnemies: 9
   selectedRecently: 0
