@@ -21,6 +21,7 @@ public class CardSelector : MonoBehaviour
     private void Awake()
     {
         //controls = new PlayerControls();
+        gameManager = GameObject.FindGameObjectWithTag("GameMg").GetComponentInChildren<GameManager>();
     }
 
     private void Update()

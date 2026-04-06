@@ -19,6 +19,7 @@ public class NewWaveManager : MonoBehaviour
     public int maxWaves;
 
     GameObject spawnWave;
+    public GameObject currentWaveGO;
 
     List<WavesSO> alreadySelectedWaves = new List<WavesSO>();
 
@@ -58,6 +59,8 @@ public class NewWaveManager : MonoBehaviour
             // reset enemies killed in that wave
             if (currentWave.numOfEnemies <= enemiesKilled)
             {
+                //currentWaveGO.SetActive(false);
+                Destroy(currentWaveGO);
                 waveNumber += 1;
                 enemiesKilled = 0;
                 currentWave = null;
@@ -175,6 +178,7 @@ public class NewWaveManager : MonoBehaviour
                 oldWaveNumber = waveNumber;
                 currentWave = finalizedWaves[waveNumber];
                 spawnWave = InstantiateWave(finalizedWaves[waveNumber].wavePrefab, wavePosition);
+                currentWaveGO = GameObject.FindGameObjectWithTag("EnemyWave");
             }
         }
     }
@@ -184,6 +188,7 @@ public class NewWaveManager : MonoBehaviour
     {
         GameObject waveGO = Instantiate(wavePrefab, position.position, Quaternion.identity, position);
         GameManager.Instance.changeState(GameManager.GameState.Playing);
+        currentWaveGO = GameObject.FindGameObjectWithTag("EnemyWave");
         return waveGO;
     }
 }

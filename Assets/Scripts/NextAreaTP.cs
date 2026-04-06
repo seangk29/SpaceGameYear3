@@ -52,12 +52,12 @@ public class NextAreaTP : MonoBehaviour
             if (gameManager.currentLevel == 10)
             {
                 Debug.Log("it would load boss here");
-                SceneManager.LoadScene("BOSS1");
+                SceneManager.LoadSceneAsync("BOSS1");
             }
             else
             {
                 Debug.Log("it would load here");
-                SceneManager.LoadScene("NoPDGameplay");
+                SceneManager.LoadSceneAsync("NoPDGameplay");
             }
        }
     }

@@ -25,6 +25,7 @@ TagManager:
   - Skippy
   - Nicos
   - GameMg
+  - EnemyWave
   layers:
   - Default
   - TransparentFX
