@@ -66,6 +66,8 @@ public class GameManager : MonoBehaviour
 
         WaveGenerate,
 
-        NextArea
+        NextArea,
+
+        BossDefeated
     }
 }

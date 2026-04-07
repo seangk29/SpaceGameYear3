@@ -32,4 +32,46 @@ public class SceneChanger : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Retry()
+    {
+        SceneManager.LoadSceneAsync("ResetStats");
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadSceneAsync("Main Menu");
+    }
+
+
+
+
+    // all this is for reseting stats on retry
+    void OnEnable()
+    {
+        Debug.Log("OnEnable called");
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    
+    void OnDisable()
+    {
+        Debug.Log("OnDisable");
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    // called third
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "ResetStats")
+        {
+            StartCoroutine(resetTimer());
+        }
+    }
+
+    IEnumerator resetTimer()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        SceneManager.LoadSceneAsync("Hub");
+    }
 }

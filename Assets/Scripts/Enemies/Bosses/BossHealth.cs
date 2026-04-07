@@ -24,6 +24,9 @@ public class BossHealth : MonoBehaviour
     public AudioSource Daudio;
 
     public float fireDelay = 0.25f;
+
+    PlayerData playerData;
+    GameManager gameManager;
     //  float cooldownTimer = 0;
    
 
@@ -32,6 +35,10 @@ public class BossHealth : MonoBehaviour
 
     private void Start()
     {
+
+        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        gameManager = GameObject.FindGameObjectWithTag("GameMg").GetComponent<GameManager>();
+
         Combat = true;
         correctLayer = gameObject.layer;
         //Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
@@ -47,7 +54,15 @@ public class BossHealth : MonoBehaviour
                 StartCoroutine(VisualIndicator(Color.red));
             }
 
+            //Daudio.Play();
+
+        }
+
+        if (collider.gameObject.tag == "Bullet" || collider.gameObject.tag == "SpecialBullet")
+        {
             Daudio.Play();
+            playerData.score = playerData.score + 50;
+            health -= collider.GetComponent<BulletData>().damage;
 
         }
     }
@@ -63,6 +78,8 @@ public class BossHealth : MonoBehaviour
 
          }
          invul -= Time.deltaTime;
+
+
 
         if (health <= 0)
         {
@@ -85,7 +102,7 @@ public class BossHealth : MonoBehaviour
             Debug.Log("Shot!");
             //Debug.Log(Wave.enemyCount);
         }
-
+        GameManager.Instance.changeState(GameManager.GameState.BossDefeated);
         Destroy(gameObject);
     }
 

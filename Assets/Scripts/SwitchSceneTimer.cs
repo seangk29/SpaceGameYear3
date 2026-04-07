@@ -24,7 +24,8 @@ public class SwitchSceneTimer : MonoBehaviour
 
         if (timer >= 80)
         {
-           changer.NextLevel();
+            //changer.NextLevel();
+            SceneManager.LoadSceneAsync("Hub");
         }
     }
 }

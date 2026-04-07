@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ActivePlayerHealth : MonoBehaviour
 {
@@ -213,7 +214,8 @@ public class ActivePlayerHealth : MonoBehaviour
 
     public void Die()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        SceneManager.LoadSceneAsync("Retry");
     }
 
     public void ExitCombat()

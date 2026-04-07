@@ -26,7 +26,7 @@ public class PersistScript : MonoBehaviour
         Debug.Log("OnSceneLoaded: " + scene.name);
         Debug.Log(mode);
 
-        if (scene.name == "MainMenu" /*or deletescene*/)
+        if (scene.name == "MainMenu" || scene.name == "ResetStats" || scene.name == "Ending"/*and quitscene*/)
         {
             Destroy(gameObject);
         }
@@ -50,6 +50,4 @@ public class PersistScript : MonoBehaviour
         yield return new WaitForSecondsRealtime(3);
         GameManager.Instance.changeState(GameManager.GameState.WaveGenerate);
     }
-
-
 }

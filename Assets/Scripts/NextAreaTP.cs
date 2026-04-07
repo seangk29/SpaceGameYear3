@@ -32,7 +32,7 @@ public class NextAreaTP : MonoBehaviour
 
     private void HandleGameStateChanged(GameManager.GameState state)
     {
-        if (state == GameManager.GameState.NextArea)
+        if (state == GameManager.GameState.NextArea || state == GameManager.GameState.BossDefeated)
         //if (gameManager.currentState == GameManager.GameState.NextArea)
         {
             Debug.Log("on screen");
@@ -48,16 +48,23 @@ public class NextAreaTP : MonoBehaviour
         if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2" || collision.gameObject.tag == "Player3" || collision.gameObject.tag == "Player4" )
         {
             Debug.Log("player collided");
-
-            if (gameManager.currentLevel == 10)
+            if (gameManager.currentState == GameManager.GameState.BossDefeated)
             {
-                Debug.Log("it would load boss here");
-                SceneManager.LoadSceneAsync("BOSS1");
+                // load ending scene
+                SceneManager.LoadSceneAsync("Ending");
             }
             else
             {
-                Debug.Log("it would load here");
-                SceneManager.LoadSceneAsync("NoPDGameplay");
+                if (gameManager.currentLevel == 10)
+                {
+                    Debug.Log("it would load boss here");
+                    SceneManager.LoadSceneAsync("BOSS 1");
+                }
+                else
+                {
+                    Debug.Log("it would load here");
+                    SceneManager.LoadSceneAsync("NoPDGameplay");
+                }
             }
        }
     }
