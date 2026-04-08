@@ -22,11 +22,14 @@ public class GeneralGlorgus : MonoBehaviour
 
     public bool Phase1;
     public bool Phase2;
+    public bool Phase3;
     public bool startPosPhase2;
+    public bool startPosPhase3;
 
     public GameObject GunPos;
 
-    public int phase1complete = 50;
+    public int phase1complete;
+    public int phase2complete;
 
 
 
@@ -128,10 +131,57 @@ public class GeneralGlorgus : MonoBehaviour
                     movingTimer = 0;
                 }
 
-           
-            
+            if (boss.health <= phase2complete)
+            {
+                //moving.movingBackwards = true;
+                //self.selfDestruct = true;
+                //bossy.BossCount = bossy.BossCount + 1;
 
-           
+                Phase3 = true;
+                Phase2 = false;
+                Phase1 = false;
+                startPosPhase3 = true;
+
+            }
+
+
+
+        }
+
+     if (Phase3)
+        {
+            if (startPosPhase3)
+            {
+
+                Vector3 pos = transform.position;
+
+                pos = new Vector3(-7, 3, 0);
+
+                transform.position = pos;
+
+                Quaternion rot = transform.rotation;
+
+                rot = Quaternion.Euler(0, 0, -90);
+
+                transform.rotation = rot;
+
+                moving.movingForward = false;
+                moving.movingBackwards = false;
+                moving.movingRight = false;
+                moving.movingLeft = false;
+                movingTimer = 0;
+
+            }
+
+
+            movingTimer += Time.deltaTime;
+
+            if (movingTimer >= timeToMove)
+            {
+                moving.movingBackwards = true;
+                startPosPhase3 = false;
+            }
+
         }
 
     }
