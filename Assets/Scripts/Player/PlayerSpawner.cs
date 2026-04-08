@@ -52,8 +52,6 @@ public class PlayerSpawner : MonoBehaviour
         {
             deathScreen.SetActive(true);
             Time.timeScale = 0f;
-            playerData.spaceMoney = playerData.score;
-            playerData.score = 0;
 
         }
       

@@ -120,13 +120,13 @@ public class ShopButtons : MonoBehaviour
         switch(indic)
         {
             case 1:
-                if (PlayerData.spaceMoney >= 200)
-                {
+               // if (PlayerData.spaceMoney >= 200)
+               // {
                     RLPermData.maxHealth++;
                     RLPermData.health++;
-                    PlayerData.spaceMoney = PlayerData.spaceMoney - 200;
-                }
-                else notEnough.SetActive(true);
+                    //PlayerData.spaceMoney = PlayerData.spaceMoney - 200;
+                //}
+                //else notEnough.SetActive(true);
             break;
             case 2:
                 RLPermData.maxShield++;

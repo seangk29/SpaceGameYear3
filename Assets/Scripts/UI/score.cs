@@ -17,11 +17,13 @@ public class score : MonoBehaviour
         if (gameObject.tag == "Enemy")
         {
             playerData.score = playerData.score + 50;
+           
         }
 
         if (gameObject.tag == "Player")
         {
-            playerData.score = playerData.score - 50;
+            playerData.score = playerData.score - 50; 
+         
         }
     }
 }

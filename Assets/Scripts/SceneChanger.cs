@@ -40,7 +40,7 @@ public class SceneChanger : MonoBehaviour
 
     public void Menu()
     {
-        SceneManager.LoadSceneAsync("Main Menu");
+        SceneManager.LoadSceneAsync("MainMenu");
     }
 
 
