@@ -583,7 +583,6 @@ MonoBehaviour:
   - {fileID: 6423168841741246466}
   shield: []
   time: 0
-  miliseconds: 0
 --- !u!1 &4372150613559837283
 GameObject:
   m_ObjectHideFlags: 0
