@@ -13,7 +13,7 @@ public class ActivateShops : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-            shops = GameObject.Find("Player").GetComponent<FindShop>();
+            shops = GameObject.FindGameObjectWithTag("Player").GetComponent<FindShop>();
 
     }
 
