@@ -12,6 +12,7 @@ public class PermaPlayerStats : MonoBehaviour
     public ActivePlayerHealth activePlayerHealth;
     public PlayerMovement playerMovement;
     public SpecialShotHandler specialShotHandler;
+    public RLPermData rlPermData;
 
     public int health;
     public int maxHealth;
@@ -33,6 +34,8 @@ public class PermaPlayerStats : MonoBehaviour
     public int spBulletHealth;
     Scene scene;
 
+    public bool checkObject = false;
+
 
     //all this enable disable scene load part does is check if its the main menu
     //or the quit scene
@@ -43,10 +46,47 @@ public class PermaPlayerStats : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "Main Menu")
-            Destroy(gameObject);
+        if (scene.name == "Start Gameplay")
+        {
+            resetStats();
+            checkObject = false;
+        }
+
+        if (scene.name == "NoPDGameplay" || scene.name == "BOSS 1" || scene.name == "Hub" || scene.name == "PostGameplayHub")
+        {
+            checkObject = true;
+        }
+        else
+            checkObject = false;
+    }
+
+    private void Update()
+    {
+        if (checkObject)
+        {
+            if (activePlayerHealth == null)
+            {
+                activePlayerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<ActivePlayerHealth>();
+            }
+            else
+                return;
+
+            if (playerMovement == null)
+            {
+                playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+            }
+            else
+                return;
+
+            if (specialShotHandler == null)
+            {
+                specialShotHandler = GameObject.FindGameObjectWithTag("Player").GetComponent<SpecialShotHandler>();
+            }
+            else
+                return;
+        }
     }
 
     void OnDisable()
@@ -56,29 +96,6 @@ public class PermaPlayerStats : MonoBehaviour
 
     // the rest should all be self explanatory
     // its just functions that get called to upgrade stats
-    private void Update()
-    {
-        if (activePlayerHealth == null)
-        {
-            activePlayerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<ActivePlayerHealth>();
-        }
-        else
-            return;
-
-        if (playerMovement == null)
-        {
-            playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        }
-        else
-            return;
-
-        if (specialShotHandler == null)
-        {
-            specialShotHandler = GameObject.FindGameObjectWithTag("Player").GetComponent<SpecialShotHandler>();
-        }
-        else
-            return;
-    }
 
     public void MaxHealthUpgrade(int value)
     {
@@ -161,5 +178,17 @@ public class PermaPlayerStats : MonoBehaviour
         canUseSpecial = true;
         activeSpecial = "Explode";
         Debug.Log("Explode Shot Unlocked");
+    }
+
+    public void resetStats()
+    { 
+        rlPermData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<RLPermData>();
+        maxHealth = rlPermData.maxHealth;
+        maxShield = rlPermData.maxShield;
+        baseRegenShieldTimer = rlPermData.baseRegenShieldTimer;
+        maxSpeed = rlPermData.maxSpeed;
+        damage = rlPermData.damage;
+        specialDamage = rlPermData.specialDamage;
+        spBulletHealth = rlPermData.spBulletHealth;
     }
 }

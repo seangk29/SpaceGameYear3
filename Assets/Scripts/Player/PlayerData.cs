@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerData : MonoBehaviour
 {
@@ -22,6 +23,28 @@ public class PlayerData : MonoBehaviour
     public int spaceMoney = 0;
     public int kills = 0;
 
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "ResetStats" || scene.name == "Retry")
+            resetStats();
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    public void resetStats()
+    { 
+        kills = 0;
+        score = 0;
+    }
 
     /*private void Start()
     {

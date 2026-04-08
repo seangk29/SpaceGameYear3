@@ -20,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
     private void Start()
     {
         Combat = true;
-        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
         NewWave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<NewWaveManager>();
 
         //correctLayer = gameObject.layer;

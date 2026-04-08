@@ -50,5 +50,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ResetStats.unity
     guid: 8a9ff6249e2267c48919576d6e847af4
+  - enabled: 1
+    path: Assets/Scenes/PostGameplayHub.unity
+    guid: ac5294a9e10012e49a7ebb98e9eba1b6
+  - enabled: 1
+    path: Assets/Scenes/Start Gameplay.unity
+    guid: e8ef45c22010e3148a2539aa53bea2b9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: a996dc94a93c9aa4cb392ff5b57d73f7, type: 3}

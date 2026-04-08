@@ -45,7 +45,7 @@ public class ActivePlayerHealth : MonoBehaviour
         //Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
         playerSpawn = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerSpawner>();
         playerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
-        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
 
         maxHealth = playerStats.maxHealth;
         health = maxHealth;
@@ -190,7 +190,7 @@ public class ActivePlayerHealth : MonoBehaviour
 
         if (playerData == null)
         {
-            playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+            playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
         }
 
         /*if (Wave != null)

@@ -67,11 +67,21 @@ public class SceneChanger : MonoBehaviour
         {
             StartCoroutine(resetTimer());
         }
+        if (scene.name == "Start Gameplay")
+        { 
+            StartCoroutine(startTimer());
+        }
     }
 
     IEnumerator resetTimer()
     {
         yield return new WaitForSecondsRealtime(1);
-        SceneManager.LoadSceneAsync("Hub");
+        SceneManager.LoadSceneAsync("PostGameplayHub");
+    }
+
+    IEnumerator startTimer()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        SceneManager.LoadSceneAsync("NoPDGameplay");
     }
 }

@@ -12,7 +12,7 @@ public class DisplayMoney : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        player = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
     }
 
     // Update is called once per frame

@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.CardSelection:
                 CardManager.Instance.ShowCardSelection();
+                currentLevel++;
                 break;
             case GameState.NextArea:
                 CardManager.Instance.HideCardSelection();

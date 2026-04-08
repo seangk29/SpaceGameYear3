@@ -9,7 +9,7 @@ public class score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

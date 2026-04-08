@@ -23,7 +23,7 @@ public class HUD : MonoBehaviour
 
     private void Start()
     {
-        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
     }
 
     private void Update()
@@ -34,7 +34,7 @@ public class HUD : MonoBehaviour
         }
         if (playerData == null)
         {
-            playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+            playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
         }
 
         HPBarUpdate();

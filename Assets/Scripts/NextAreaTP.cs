@@ -60,6 +60,11 @@ public class NextAreaTP : MonoBehaviour
                     Debug.Log("it would load boss here");
                     SceneManager.LoadSceneAsync("BOSS 1");
                 }
+                if (gameManager.currentLevel == 0)
+                {
+                    Debug.Log("start gameplay");
+                    SceneManager.LoadSceneAsync("Start Gameplay");
+                }
                 else
                 {
                     Debug.Log("it would load here");

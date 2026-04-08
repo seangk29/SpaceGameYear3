@@ -16,6 +16,7 @@ public class ShopButtons : MonoBehaviour
 
     public PermaPlayerStats PermaPlayerStats;
     public PlayerData PlayerData;
+    public RLPermData RLPermData;
 
     public GameObject skippysUI;
 
@@ -29,8 +30,9 @@ public class ShopButtons : MonoBehaviour
 
     private void Start()
     {
-        PermaPlayerStats = GameObject.Find("PlayerData").GetComponent<PermaPlayerStats>();
-        PlayerData = GameObject.Find("PlayerData").GetComponent<PlayerData>();
+        //PermaPlayerStats = GameObject.Find("PlayerData").GetComponent<PermaPlayerStats>();
+        RLPermData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<RLPermData>();
+        PlayerData = GameObject.Find("RLPermData").GetComponent<PlayerData>();
     }
 
 
@@ -120,37 +122,37 @@ public class ShopButtons : MonoBehaviour
             case 1:
                 if (PlayerData.spaceMoney >= 200)
                 {
-                    PermaPlayerStats.maxHealth++;
-                    PermaPlayerStats.health++;
+                    RLPermData.maxHealth++;
+                    RLPermData.health++;
                     PlayerData.spaceMoney = PlayerData.spaceMoney - 200;
                 }
                 else notEnough.SetActive(true);
             break;
             case 2:
-                PermaPlayerStats.maxShield++;
-                PermaPlayerStats.shield++;
+                RLPermData.maxShield++;
+                RLPermData.shield++;
                 break;
             case 3:
-                PermaPlayerStats.regenShieldTimer++;
+                RLPermData.regenShieldTimer++;
                 break;
             case 4:
-                PermaPlayerStats.damage++;
+                RLPermData.damage++;
                 break;
             case 5:
-                PermaPlayerStats.maxSpeed++;
-                PermaPlayerStats.speed++;
+                RLPermData.maxSpeed++;
+                RLPermData.speed++;
                 break;
             case 6:
-                PermaPlayerStats.spBulletHealth++;
+                RLPermData.spBulletHealth++;
 
                 break;
             case 7:
-                PermaPlayerStats.maxSpeed++;
-                PermaPlayerStats.speed++;
+                RLPermData.maxSpeed++;
+                RLPermData.speed++;
                 break;
             case 8:
-                PermaPlayerStats.maxSpeed++;
-                PermaPlayerStats.speed++;
+                RLPermData.maxSpeed++;
+                RLPermData.speed++;
                 break;
 
 

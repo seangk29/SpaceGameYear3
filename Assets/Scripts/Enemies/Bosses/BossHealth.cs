@@ -36,7 +36,7 @@ public class BossHealth : MonoBehaviour
     private void Start()
     {
 
-        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
         gameManager = GameObject.FindGameObjectWithTag("GameMg").GetComponent<GameManager>();
 
         Combat = true;

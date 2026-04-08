@@ -21,7 +21,7 @@ public class UnlockHubItems : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        counter = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        counter = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
         bossCounts = counter.bossCount;
     }
 

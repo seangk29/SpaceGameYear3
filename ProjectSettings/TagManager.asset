@@ -26,6 +26,7 @@ TagManager:
   - Nicos
   - GameMg
   - EnemyWave
+  - RLPermData
   layers:
   - Default
   - TransparentFX
