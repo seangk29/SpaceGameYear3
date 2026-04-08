@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
 using UnityEngine.UIElements;
+using UnityEngine.InputSystem.XR;
 
 public class DialogueController : MonoBehaviour
 {
@@ -32,13 +33,40 @@ public class DialogueController : MonoBehaviour
     public Image npc;
     public Image playerSprite;
 
-    //public GameObject skipsShop;
+    public FindShop shops;
+
+    public GameObject skipsShop;
+    public GameObject nicosShop;
+
+    public bool skipBool = false;
+
+    public bool nicoBool = false;
+
+    void Start()
+    {
+        shops = GameObject.FindGameObjectWithTag("Player").GetComponent<FindShop>();
+    }
+
+     void Update()
+    {
+        if (shops == null)
+        {
+            shops = GameObject.Find("Player").GetComponent<FindShop>();
+        }
+        else
+            return;
+
+
+
+    }
+
+
     public void ShowNextParagraph(DialogueText dialogueText)
     {
         //This finds the player and gets access to movement component.
          // PlayerMovement move = GameObject.Find("Player").GetComponent<PlayerMovement>();
          
-        
+
 
         if (paragraphs.Count == 0)
         {
@@ -160,6 +188,17 @@ public class DialogueController : MonoBehaviour
             gameObject.SetActive(false);
         }
 
+        if (shops.npcShopable.CompareTag("Skippy"))
+        {
+            skipsShop.SetActive(true);
+            skipBool = true;
+        }
+
+        if (shops.npcShopable.CompareTag("Nicos"))
+        {
+            nicosShop.SetActive(true);
+            nicoBool = true;
+        }
 
     }
 

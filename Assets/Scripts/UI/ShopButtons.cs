@@ -15,10 +15,22 @@ public class ShopButtons : MonoBehaviour
     public int indic;
 
     public PermaPlayerStats PermaPlayerStats;
+    public PlayerData PlayerData;
+
+    public GameObject skippysUI;
+
+    public GameObject notEnough;
+
+    public UnlockHubItems unlock;
+
+    public DialogueController controller;
+
+    
 
     private void Start()
     {
         PermaPlayerStats = GameObject.Find("PlayerData").GetComponent<PermaPlayerStats>();
+        PlayerData = GameObject.Find("PlayerData").GetComponent<PlayerData>();
     }
 
 
@@ -86,14 +98,33 @@ public class ShopButtons : MonoBehaviour
         indic = 8;
     }
 
+    public void exitShop()
+    {
+        skippysUI.SetActive(false);
+        controller.skipBool = false;
+        unlock.skips.SetActive(true);
+        unlock.paus.shooting.enabled = true;
+    }
+
+    public void notEnoughMoolaa()
+    {
+        notEnough.SetActive(false);
+    }
+
+
     public void confirmUpgrade()
     {
 
         switch(indic)
         {
             case 1:
-                PermaPlayerStats.maxHealth++;
-                PermaPlayerStats.health++;
+                if (PlayerData.spaceMoney >= 200)
+                {
+                    PermaPlayerStats.maxHealth++;
+                    PermaPlayerStats.health++;
+                    PlayerData.spaceMoney = PlayerData.spaceMoney - 200;
+                }
+                else notEnough.SetActive(true);
             break;
             case 2:
                 PermaPlayerStats.maxShield++;

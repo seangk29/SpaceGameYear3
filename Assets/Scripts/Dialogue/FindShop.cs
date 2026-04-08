@@ -5,7 +5,11 @@ using UnityEngine;
 
 public class FindShop : MonoBehaviour
 {
+
+
     public GameObject npcShopable;
+
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -18,4 +22,5 @@ public class FindShop : MonoBehaviour
             npcShopable = collision.gameObject;
         }
     }
+
 }

@@ -9,6 +9,15 @@ public class UnlockHubItems : MonoBehaviour
     public bool spawned = false;
     public int bossCounts;
 
+    public PauseMenu paus;
+
+    public DialogueController control;
+
+    public GameObject skips;
+
+    public GameObject nics;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +35,18 @@ public class UnlockHubItems : MonoBehaviour
             spawned = true;
             Nicos.SetActive(true);
         }
+
+        if (control.skipBool == true)
+        {
+            skips.SetActive(false);
+            paus.shooting.enabled = false;
+        }
+
+        if (control.nicoBool == true)
+        {
+            nics.SetActive(false);
+        }
+
     }
 
 
