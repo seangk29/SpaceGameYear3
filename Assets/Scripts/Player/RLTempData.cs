@@ -64,8 +64,8 @@ public class PermaPlayerStats : MonoBehaviour
 
     private void Update()
     {
-        if (checkObject)
-        {
+        /*if (checkObject)
+        {*/
             if (activePlayerHealth == null)
             {
                 activePlayerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<ActivePlayerHealth>();
@@ -86,7 +86,7 @@ public class PermaPlayerStats : MonoBehaviour
             }
             else
                 return;
-        }
+        //
     }
 
     void OnDisable()
@@ -187,6 +187,8 @@ public class PermaPlayerStats : MonoBehaviour
         maxShield = rlPermData.maxShield;
         baseRegenShieldTimer = rlPermData.baseRegenShieldTimer;
         maxSpeed = rlPermData.maxSpeed;
+        playerMovement.maxSpeed = rlPermData.maxSpeed;
+        playerMovement.moveSpeed = rlPermData.maxSpeed;
         damage = rlPermData.damage;
         specialDamage = rlPermData.specialDamage;
         spBulletHealth = rlPermData.spBulletHealth;

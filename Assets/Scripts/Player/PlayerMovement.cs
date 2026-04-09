@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
         controls.Gameplay.Dash.performed += ctx => Dash();
 
         playerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
-        moveSpeed = playerStats.maxSpeed;
+        //moveSpeed = playerStats.maxSpeed;
         CanUseSpecial = playerStats.canUseSpecial;
     }
 

@@ -51,28 +51,36 @@ public class NewWaveManager : MonoBehaviour
             GameManager.Instance.OnStateChanged += HandleGameStateChanged;
         }
 
-        // if the wave actually exists
-        if (currentWave != null)
-        {
-            // if youve killed all enemies in the wave
-            // change current wave number to the next one
-            // reset enemies killed in that wave
-            if (currentWave.numOfEnemies <= enemiesKilled)
-            {
-                //currentWaveGO.SetActive(false);
-                Destroy(currentWaveGO);
-                waveNumber += 1;
-                enemiesKilled = 0;
-                currentWave = null;
-                spawningWave();
-                Debug.Log("yay");
 
-                // if youve cleared all the waves then give upgrade selection
-                if (waveNumber == maxWaves)
+        if (GameManager.Instance.currentState == GameManager.GameState.Playing)
+        {
+            // if the wave actually exists
+            if (currentWave != null)
+            {
+                // if youve killed all enemies in the wave
+                // change current wave number to the next one
+                // reset enemies killed in that wave
+                if (currentWave.numOfEnemies <= enemiesKilled)
                 {
-                    GameManager.Instance.changeState(GameManager.GameState.CardSelection);
-                    Debug.Log("win");
+                    currentWaveGO.SetActive(false);
+                    Destroy(currentWaveGO);
+                    waveNumber += 1;
+                    enemiesKilled = 0;
+                    currentWave = null;
+                    spawningWave();
+                    Debug.Log("yay");
+
+                    // if youve cleared all the waves then give upgrade selection
+                    if (waveNumber == maxWaves)
+                    {
+                        GameManager.Instance.changeState(GameManager.GameState.CardSelection);
+                        Debug.Log("win");
+                    }
                 }
+            }
+            else
+            {
+                currentWaveGO = GameObject.FindGameObjectWithTag("EnemyWave");
             }
         }
         
@@ -99,6 +107,7 @@ public class NewWaveManager : MonoBehaviour
             waveNumber = 0;
             oldWaveNumber = 0;
             RandomizeNewWaves();
+            GameManager.Instance.currentState = GameManager.GameState.Playing;
         }
     }
 
@@ -187,8 +196,9 @@ public class NewWaveManager : MonoBehaviour
     GameObject InstantiateWave(GameObject wavePrefab, Transform position)
     {
         GameObject waveGO = Instantiate(wavePrefab, position.position, Quaternion.identity, position);
-        GameManager.Instance.changeState(GameManager.GameState.Playing);
         currentWaveGO = GameObject.FindGameObjectWithTag("EnemyWave");
+        GameManager.Instance.changeState(GameManager.GameState.Playing);
+        Debug.Log("done");
         return waveGO;
     }
 }

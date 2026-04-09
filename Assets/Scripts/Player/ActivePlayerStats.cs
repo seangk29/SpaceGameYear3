@@ -64,7 +64,7 @@ public class ActivePlayerHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Enemy" && dodging == false)
+        if (collider.gameObject.tag == "Enemy" && dodging == false && playerData != null)
         {
             if (shieldHealth <= 0)
             {
@@ -84,7 +84,7 @@ public class ActivePlayerHealth : MonoBehaviour
             }
         }
 
-        if (collider.gameObject.tag == "EnemyBullet" && dodging == false)
+        if (collider.gameObject.tag == "EnemyBullet" && dodging == false && playerData != null)
         {
             if (shieldHealth <= 0)
             {
@@ -92,6 +92,18 @@ public class ActivePlayerHealth : MonoBehaviour
                 health -= collider.GetComponent<EnemyBulletData>().damage;
                 invul = 0.50f;
                 gameObject.layer = 8;
+
+                if (SpRend && shieldHealth > 0)
+                {
+                    StartCoroutine(VisualIndicator(Color.cyan));
+                }
+
+                else if (SpRend)
+                {
+                    StartCoroutine(VisualIndicator(Color.red));
+                }
+
+                Daudio.Play();
             }
 
             if (shieldHealth > 0)
@@ -101,37 +113,19 @@ public class ActivePlayerHealth : MonoBehaviour
                 canRegen = true;
                 invul = 0.50f; ;
                 gameObject.layer = 8;
+
+                if (SpRend && shieldHealth > 0)
+                {
+                    StartCoroutine(VisualIndicator(Color.cyan));
+                }
+
+                else if (SpRend)
+                {
+                    StartCoroutine(VisualIndicator(Color.red));
+                }
+
+                Daudio.Play();
             }
-        }
-
-        if (Combat)
-        {
-            /*if (shieldHealth <= 0)
-            {
-                invul = 0.50f;
-                gameObject.layer = 8;
-            }
-
-            if (shieldHealth > 0)
-            {
-                shieldHealth--;
-                shieldTimer = 0;
-                canRegen = true;
-                invul = 0.50f; ;
-                gameObject.layer = 8;
-            }*/
-
-            if (SpRend && shieldHealth > 0)
-            {
-                StartCoroutine(VisualIndicator(Color.cyan));
-            }
-
-            else if (SpRend)
-            {
-                StartCoroutine(VisualIndicator(Color.red));
-            }
-
-            Daudio.Play();
         }
 
         if (collider.gameObject.tag == "HealthPack")

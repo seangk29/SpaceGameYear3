@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -59,6 +60,30 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // called second
+    void OnEnable()
+    {
+        Debug.Log("OnEnable called");
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    // called third
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Hub")
+        {
+            currentState = GameState.Hub;
+        }
+    }
+
+
+    // called when the game is terminated
+    void OnDisable()
+    {
+        Debug.Log("OnDisable");
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
     public enum GameState
     {
         Playing,
@@ -69,6 +94,8 @@ public class GameManager : MonoBehaviour
 
         NextArea,
 
-        BossDefeated
+        BossDefeated,
+
+        Hub
     }
 }
