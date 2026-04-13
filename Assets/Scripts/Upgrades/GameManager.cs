@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
             changeState(GameState.CardSelection);
-            currentLevel++;
+            //currentLevel++;
         }
 
         if (Input.GetKeyDown(KeyCode.J))
