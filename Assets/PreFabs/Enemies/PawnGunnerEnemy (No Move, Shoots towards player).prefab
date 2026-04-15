@@ -171,7 +171,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_Name
-      value: PawnGunnerEnemy
+      value: PawnGunnerEnemy (No Move, Shoots towards player)
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_Layer
@@ -518,3 +518,6 @@ MonoBehaviour:
   Daudio: {fileID: 1179204053745780962}
   fireDelay: 0.25
   Wave: {fileID: 0}
+  playerData: {fileID: 0}
+  NewWave: {fileID: 0}
+  animator: {fileID: 7860216263291286792}

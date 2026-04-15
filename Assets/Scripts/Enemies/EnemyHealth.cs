@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class EnemyHealth : MonoBehaviour
     public EnemyWaveHandler Wave;
     public PlayerData playerData;
     public NewWaveManager NewWave;
+    public Animator animator;
+    public bool isDying;
 
 
     // Start is called before the first frame update
@@ -36,7 +39,7 @@ public class EnemyHealth : MonoBehaviour
             Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
         }*/
 
-        if (health <= 0)
+        if (health <= 0 && isDying == false)
         {
             Die();
         }
@@ -50,7 +53,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (Combat)
+        if (playerData != null)
         {
 
             if (collider.gameObject.tag == "Bullet" || collider.gameObject.tag == "SpecialBullet")
@@ -59,11 +62,11 @@ public class EnemyHealth : MonoBehaviour
                 playerData.score = playerData.score + 50;
                 health -= collider.GetComponent<BulletData>().damage;
 
-            }
+                if (SpRend)
+                {
+                    StartCoroutine(VisualIndicator(Color.red));
+                }
 
-            if (SpRend)
-            {
-                StartCoroutine(VisualIndicator(Color.red));
             }
 
             if (collider.gameObject.tag == "Border")
@@ -90,9 +93,28 @@ public class EnemyHealth : MonoBehaviour
             //Debug.Log(Wave.enemyCount);
         }
 
-        NewWave.enemiesKilled += 1; //NewWave.enemiesKilled + 1;
-        playerData.kills += 1; //playerData.kills + 1;
-        Destroy(gameObject);
+        isDying = true;
+
+        //NewWave.enemiesKilled += 1; //NewWave.enemiesKilled + 1;
+        //playerData.kills += 1; //playerData.kills + 1;
+        //animator.SetTrigger("IsDying");
+        //animator.SetBool("IsDying", true);
+        //animator.Play("Explosion_Clip");
+        StartCoroutine(playExplosion());
+        //Destroy(gameObject);
         
     }
+
+    IEnumerator playExplosion()
+    {
+        NewWave.enemiesKilled += 1; //NewWave.enemiesKilled + 1;
+        playerData.kills += 1; //playerData.kills + 1;
+        //animator.SetTrigger("IsDying");
+        //animator.SetBool("IsDying", true);
+        animator.Play("Explosion_Clip");
+        yield return new WaitForSecondsRealtime(0.5f);
+        animator.StopPlayback();
+        Destroy(gameObject);
+    }
+
 }

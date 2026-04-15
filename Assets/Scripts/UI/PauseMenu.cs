@@ -14,7 +14,13 @@ public class PauseMenu : MonoBehaviour
     public GameObject confirmMenu;
 
 
-
+    private void Start()
+    {
+        if (shooting  == null)
+        {
+            shooting = GameObject.FindGameObjectWithTag("GunPos").GetComponent<PlayerShooting>();
+        }
+    }
     private void Update()
     {
         shooting = GameObject.FindGameObjectWithTag("GunPos").GetComponent<PlayerShooting>();

@@ -504,3 +504,6 @@ MonoBehaviour:
   Daudio: {fileID: 0}
   fireDelay: 0.25
   Wave: {fileID: 0}
+  playerData: {fileID: 0}
+  NewWave: {fileID: 0}
+  animator: {fileID: 3455083145107599859}

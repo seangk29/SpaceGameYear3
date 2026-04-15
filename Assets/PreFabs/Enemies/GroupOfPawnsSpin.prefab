@@ -1695,6 +1695,7 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   NewWave: {fileID: 0}
+  animator: {fileID: 6380783574226753457}
 --- !u!4 &8890487059642183191 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
@@ -2059,6 +2060,7 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   NewWave: {fileID: 0}
+  animator: {fileID: 6380783574226753457}
 --- !u!1001 &2411242178692449946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2413,6 +2415,7 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   NewWave: {fileID: 0}
+  animator: {fileID: 6380783574226753457}
 --- !u!4 &5486499403791301015 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
@@ -2858,6 +2861,7 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   NewWave: {fileID: 0}
+  animator: {fileID: 6380783574226753457}
 --- !u!4 &3175653275193034094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
@@ -3222,6 +3226,7 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   NewWave: {fileID: 0}
+  animator: {fileID: 6380783574226753457}
 --- !u!1001 &6842330333423572245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3591,6 +3596,7 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   NewWave: {fileID: 0}
+  animator: {fileID: 7860216263291286792}
 --- !u!114 &1613069472787750623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3958,6 +3964,7 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   NewWave: {fileID: 0}
+  animator: {fileID: 6380783574226753457}
 --- !u!4 &863514915891826300 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
@@ -4322,6 +4329,7 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   NewWave: {fileID: 0}
+  animator: {fileID: 6380783574226753457}
 --- !u!1001 &9197034041431470745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4681,3 +4689,4 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   NewWave: {fileID: 0}
+  animator: {fileID: 6380783574226753457}

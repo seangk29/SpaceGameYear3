@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 54923025}
   m_Layer: 6
   m_Name: GunPos
-  m_TagString: Untagged
+  m_TagString: GunPos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -367,7 +367,7 @@ MonoBehaviour:
   SPfireDelay: 1
   cooldownTimer: 0
   ScooldownTimer: 0
-  Special: {fileID: 2258427709521727254}
+  Special: {fileID: 0}
 --- !u!1001 &63296343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -565,6 +565,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 943594645}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &245546849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2268689228742911996, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+  m_PrefabInstance: {fileID: 1681389204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &414303974 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2791629031710010161, guid: d234e397157ec80498699b26251c04a6, type: 3}
@@ -838,7 +843,7 @@ GameObject:
   - component: {fileID: 468541658}
   m_Layer: 6
   m_Name: NEW playership (1)
-  m_TagString: Player1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1561,6 +1566,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &543330824 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5588407209600304734, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+  m_PrefabInstance: {fileID: 1681389204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &557241506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2539,7 +2549,7 @@ GameObject:
   - component: {fileID: 974406885}
   m_Layer: 6
   m_Name: NEW playership (3)
-  m_TagString: Player1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3040,7 +3050,7 @@ GameObject:
   - component: {fileID: 1124721064}
   m_Layer: 6
   m_Name: NEW playership (2)
-  m_TagString: Player1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4133,6 +4143,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1519672322 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6863645607111567945, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+  m_PrefabInstance: {fileID: 1681389204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1546331988
 GameObject:
   m_ObjectHideFlags: 0
@@ -4418,7 +4433,7 @@ GameObject:
   - component: {fileID: 1551957356}
   m_Layer: 6
   m_Name: GunPos
-  m_TagString: Untagged
+  m_TagString: GunPos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4649,7 +4664,7 @@ MonoBehaviour:
   SPfireDelay: 1
   cooldownTimer: 0
   ScooldownTimer: 0
-  Special: {fileID: 2258427709521727254}
+  Special: {fileID: 0}
 --- !u!1 &1646957901
 GameObject:
   m_ObjectHideFlags: 0
@@ -4680,9 +4695,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shooting: {fileID: 0}
-  pMenu: {fileID: 1649145093}
-  confirmHubMenu: {fileID: 0}
-  confirmMenu: {fileID: 0}
+  pMenu: {fileID: 543330824}
+  confirmHubMenu: {fileID: 1519672322}
+  confirmMenu: {fileID: 245546849}
 --- !u!4 &1646957903
 Transform:
   m_ObjectHideFlags: 0
@@ -4996,6 +5011,107 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1681389204
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188873964560675137, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5588407209600304734, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_Name
+      value: Pause Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6157486892059145402, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
 --- !u!1 &1684235947
 GameObject:
   m_ObjectHideFlags: 0
@@ -5260,7 +5376,7 @@ GameObject:
   - component: {fileID: 1909650441}
   m_Layer: 6
   m_Name: GunPos
-  m_TagString: Untagged
+  m_TagString: GunPos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5491,7 +5607,7 @@ MonoBehaviour:
   SPfireDelay: 1
   cooldownTimer: 0
   ScooldownTimer: 0
-  Special: {fileID: 2258427709521727254}
+  Special: {fileID: 0}
 --- !u!1 &1992036746
 GameObject:
   m_ObjectHideFlags: 0
@@ -5552,7 +5668,7 @@ GameObject:
   - component: {fileID: 1996939555}
   m_Layer: 6
   m_Name: GunPos
-  m_TagString: Untagged
+  m_TagString: GunPos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5783,7 +5899,7 @@ MonoBehaviour:
   SPfireDelay: 1
   cooldownTimer: 0
   ScooldownTimer: 0
-  Special: {fileID: 2258427709521727254}
+  Special: {fileID: 0}
 --- !u!1 &2016545047
 GameObject:
   m_ObjectHideFlags: 0
@@ -5956,7 +6072,7 @@ GameObject:
   - component: {fileID: 2094823759}
   m_Layer: 6
   m_Name: NEW playership (4)
-  m_TagString: Player1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6539,44 +6655,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.22934651, y: 0.13462353}
   m_EdgeRadius: 0
---- !u!114 &2258427709521727254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3509504762453666871}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d2b2a0a5d6833a408f1b9e8352898e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerStats: {fileID: 0}
-  activePlayer: {fileID: 0}
-  moveSpeed: 4
-  maxSpeed: 4
-  speedIndicator: 4
-  rotationSpeed: 360
-  Dodging: 1
-  cooldownDodge: 0
-  Dtimer: 0
-  dodgeSpeed: 15
-  CanUseSpecial: 0
-  PlayerShip: {fileID: 8975586398741482229}
-  PlayerShipLeft: {fileID: 0}
-  PlayerShipRight: {fileID: 0}
-  PlayerShipDown: {fileID: 0}
-  afterImagePrefab: {fileID: 0}
-  emitting: 0
-  interval: 0.2
-  ShipUp: 0
-  ShipDown: 0
-  ShipLeft: 0
-  ShipRight: 0
-  SpriteUp: {fileID: 0}
-  SpriteDown: {fileID: 0}
-  SpriteLeft: {fileID: 0}
-  SpriteRight: {fileID: 0}
 --- !u!114 &2493210257134065605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6756,7 +6834,7 @@ GameObject:
   - component: {fileID: 2739239169661633489}
   m_Layer: 6
   m_Name: GunPos
-  m_TagString: Untagged
+  m_TagString: GunPos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6812,7 +6890,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3804860994689799749}
-  - component: {fileID: 2258427709521727254}
   - component: {fileID: 2135187750721950703}
   - component: {fileID: 5110982373582287047}
   - component: {fileID: 1859069467043464121}
@@ -6824,7 +6901,7 @@ GameObject:
   - component: {fileID: 8804977236450645292}
   m_Layer: 6
   m_Name: PlayerShipFinal
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7127,7 +7204,7 @@ MonoBehaviour:
   SPfireDelay: 1
   cooldownTimer: 0
   ScooldownTimer: 0
-  Special: {fileID: 2258427709521727254}
+  Special: {fileID: 0}
 --- !u!4 &6863462244057704941
 Transform:
   m_ObjectHideFlags: 0
@@ -7215,7 +7292,7 @@ GameObject:
   - component: {fileID: 8437950153139213659}
   m_Layer: 6
   m_Name: NEW playership
-  m_TagString: Player1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7554,7 +7631,7 @@ GameObject:
   - component: {fileID: 8975586398741482230}
   m_Layer: 6
   m_Name: Ship
-  m_TagString: Player1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7618,3 +7695,4 @@ SceneRoots:
   - {fileID: 3804860994689799749}
   - {fileID: 718757987}
   - {fileID: 1992036748}
+  - {fileID: 1681389204}

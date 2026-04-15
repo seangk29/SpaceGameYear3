@@ -189,11 +189,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.29
+      value: -7.254
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9000001
+      value: 0.881
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -506,3 +506,4 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   NewWave: {fileID: 0}
+  animator: {fileID: 2843284373615740907}
