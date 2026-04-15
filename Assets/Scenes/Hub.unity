@@ -3028,7 +3028,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2daa2c1fb6f0e944dacd8a4b1c407f49, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 45dac73d5e945d749bb0abd58a407f73, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
@@ -5008,7 +5008,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2daa2c1fb6f0e944dacd8a4b1c407f49, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 45dac73d5e945d749bb0abd58a407f73, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
@@ -6005,12 +6005,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalTime: 0
   musicDuration: 0
-  clipDuration: 64.3
+  clipDuration: 91.3
   audioSources:
   - {fileID: 1653780534}
   - {fileID: 885060153}
-  currentClip: {fileID: 8300000, guid: 2daa2c1fb6f0e944dacd8a4b1c407f49, type: 3}
-  newClip: {fileID: 8300000, guid: 3e3191487a5ada845a741964593b881a, type: 3}
+  currentClip: {fileID: 8300000, guid: 45dac73d5e945d749bb0abd58a407f73, type: 3}
+  newClip: {fileID: 0}
   audioToggle: 0
   count: 0
   changingTrack: 0
@@ -6021,7 +6021,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022046812}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d728aed162ff7094b8c3d03965bd9e0e, type: 3}
   m_Name: 
