@@ -46,24 +46,21 @@ public class BossHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (Combat)
+        if (playerData != null)
         {
 
-            if (SpRend)
+            if (collider.gameObject.tag == "Bullet" || collider.gameObject.tag == "SpecialBullet")
             {
-                StartCoroutine(VisualIndicator(Color.red));
+                Daudio.Play();
+                playerData.score = playerData.score + 50;
+                health -= collider.GetComponent<BulletData>().damage;
+
+                if (SpRend)
+                {
+                    StartCoroutine(VisualIndicator(Color.red));
+                }
+
             }
-
-            //Daudio.Play();
-
-        }
-
-        if (collider.gameObject.tag == "Bullet" || collider.gameObject.tag == "SpecialBullet")
-        {
-            Daudio.Play();
-            playerData.score = playerData.score + 50;
-            health -= collider.GetComponent<BulletData>().damage;
-
         }
     }
 
