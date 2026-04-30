@@ -270,7 +270,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 pos = transform.position;
 
         Vector3 velocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 
-                           Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime, 0);
+                           Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime);
 
         pos += velocity;
 
