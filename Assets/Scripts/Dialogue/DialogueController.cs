@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 using UnityEngine.InputSystem.XR;
 
 public class DialogueController : MonoBehaviour
@@ -93,6 +93,7 @@ public class DialogueController : MonoBehaviour
             p = paragraphs.Dequeue();
 
             typeDialogueRoutine = StartCoroutine(typeDialogueText(p));
+            counter++;
         }
 
         else
