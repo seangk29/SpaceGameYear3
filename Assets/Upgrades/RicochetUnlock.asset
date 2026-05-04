@@ -18,6 +18,6 @@ MonoBehaviour:
   descText: Unlock a SPECIAL SHOT that bounces off ENEMY ships until it expires.
   effectType: 5
   effectString: {fileID: 0}
-  effectValue: 0
+  effectValue: 1
   isUnique: 1
-  unlockLevel: 3
+  unlockLevel: 0

@@ -19,6 +19,6 @@ MonoBehaviour:
     of ENEMY ships.
   effectType: 4
   effectString: {fileID: 0}
-  effectValue: 0
+  effectValue: 1
   isUnique: 1
   unlockLevel: 2

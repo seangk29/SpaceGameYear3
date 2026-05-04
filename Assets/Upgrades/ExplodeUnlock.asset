@@ -19,6 +19,6 @@ MonoBehaviour:
     DESTROYED.
   effectType: 6
   effectString: {fileID: 0}
-  effectValue: 0
+  effectValue: 1
   isUnique: 1
-  unlockLevel: 3
+  unlockLevel: 1

@@ -1,7 +1,9 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEngine.Rendering.DebugUI;
 
 public class RLPermData : MonoBehaviour
 {
@@ -134,29 +136,35 @@ public class RLPermData : MonoBehaviour
     }
 
 
-    public void spreadUnlock()
+    public void spreadUnlock(int value)
     {
         specialShotHandler.GetSpreadShot();
         playerMovement.CanUseSpecial = true;
+        specialDamage += value;
+        spBulletHealth += value;
         canUseSpecial = true;
         activeSpecial = "Spread";
         Debug.Log("Spread Shot Unlocked");
     }
 
-    public void ricochetUnlock()
+    public void ricochetUnlock(int value)
     {
         specialShotHandler.GetRichochetShot();
         playerMovement.CanUseSpecial = true;
+        specialDamage += value;
+        spBulletHealth += value;
         canUseSpecial = true;
         activeSpecial = "Richochet";
         Debug.Log("Richochet Shot Unlocked");
     }
 
-    public void explodeUnlock()
+    public void explodeUnlock(int value)
     {
         specialShotHandler.GetExplodeShot();
         playerMovement.CanUseSpecial = true;
         canUseSpecial = true;
+        specialDamage += value;
+        spBulletHealth += value;
         activeSpecial = "Explode";
         Debug.Log("Explode Shot Unlocked");
     }
