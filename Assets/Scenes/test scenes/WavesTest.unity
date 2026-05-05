@@ -2057,6 +2057,7 @@ MonoBehaviour:
   activePlayerHealth: {fileID: 0}
   playerMovement: {fileID: 0}
   specialShotHandler: {fileID: 0}
+  rlPermData: {fileID: 0}
   health: 3
   maxHealth: 3
   shield: 1
@@ -2070,6 +2071,7 @@ MonoBehaviour:
   damage: 1
   specialDamage: 2
   spBulletHealth: 3
+  checkObject: 0
 --- !u!114 &1383394145
 MonoBehaviour:
   m_ObjectHideFlags: 0

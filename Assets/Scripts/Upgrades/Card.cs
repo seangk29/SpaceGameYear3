@@ -46,7 +46,7 @@ public class Card : MonoBehaviour
 
         if (gameManager.currentState == GameManager.GameState.CardSelection)
         {
-            if (currentlySelected && Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button0)/* || currentlySelected && controls.Gameplay.UIAccept.IsPressed()*/)
+            if (currentlySelected && Input.GetKeyDown(KeyCode.Space) || currentlySelected && Input.GetKeyDown(KeyCode.Joystick1Button1)/* || currentlySelected && controls.Gameplay.UIAccept.IsPressed()*/)
                 OnSelect();
         }
     }

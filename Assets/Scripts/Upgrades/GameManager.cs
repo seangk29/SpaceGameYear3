@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     }
 
     // this part is just for testing
-    /*private void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
@@ -25,11 +25,11 @@ public class GameManager : MonoBehaviour
             //currentLevel++;
         }
 
-        if (Input.GetKeyDown(KeyCode.J))
+     /*   if (Input.GetKeyDown(KeyCode.J))
         {
             changeState(GameState.WaveGenerate);
-        }
-    }*/
+        }*/
+    }
 
     public int GetCurrentLevel()
     {

@@ -26,7 +26,7 @@ public class PauseMenu : MonoBehaviour
         shooting = GameObject.FindGameObjectWithTag("GunPos").GetComponent<PlayerShooting>();
 
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button9))
         {
             gameIsPaused = !gameIsPaused;
             pMenu.SetActive(true);
@@ -40,9 +40,21 @@ public class PauseMenu : MonoBehaviour
         {
             Time.timeScale = 0f;
             shooting.enabled = false;
+
+            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button9))
+            {
+                
+            }
         }
         else
         {
+            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button9))
+            {
+                Time.timeScale = 1f;
+                pMenu.SetActive(false);
+                shooting.enabled = true;
+            }
+
             Time.timeScale = 1f;
             pMenu.SetActive(false);
             shooting.enabled = true;
