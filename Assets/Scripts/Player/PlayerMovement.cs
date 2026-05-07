@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
     public float speedIndicator = 4f;
     public float rotationSpeed = 360f;
     public int directionNumber = 0;
+    public int maxDirectionRight = 4;
+    public int maxDirectionLeft = -4;
+
 
     public bool Dodging;
     public float cooldownDodge = 0f;
@@ -49,12 +52,12 @@ public class PlayerMovement : MonoBehaviour
     public GameObject SpriteLeft;
     public GameObject SpriteRight;
 
-    
+
     public void SpeedUpgrade()
     {
-       moveSpeed = moveSpeed + 0.2f;
+        moveSpeed = moveSpeed + 0.2f;
         moveSpeed = maxSpeed + 0.2f;
-       speedIndicator = speedIndicator + 1f;
+        speedIndicator = speedIndicator + 1f;
     }
     public void EnableSpecial()
     {
@@ -69,8 +72,8 @@ public class PlayerMovement : MonoBehaviour
 
         controls.Gameplay.Move.performed += ctx => MovePlayer();
         controls.Gameplay.Dash.performed += ctx => Dash();
-        controls.Gameplay.LeftRotate.performed += ctx => MovePlayer();
-        controls.Gameplay.RotateRight.performed += ctx => MovePlayer();
+       // controls.Gameplay.LeftRotate.performed += ctx => MovePlayer();
+       //controls.Gameplay.RotateRight.performed += ctx => MovePlayer();
 
         playerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
         //moveSpeed = playerStats.maxSpeed;
@@ -88,8 +91,8 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Start()
     {
-        
-       
+
+
     }
 
     IEnumerator EmitAfterImages()
@@ -114,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Dodging)
         {
-            
+
             cooldownDodge += Time.deltaTime;
         }
 
@@ -122,31 +125,31 @@ public class PlayerMovement : MonoBehaviour
         //float horizontal = Input.GetAxis("Horizontal");
         //float vertical = Input.GetAxis("Vertical");
 
-        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift) 
+        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift)
             || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeUp.IsPressed())
-         {
+        {
 
             //PlayerShip.transform.rotation = Quaternion.identity.;
 
-             PlayerShip.SetActive(true);
-             PlayerShipLeft.SetActive(false);
-             PlayerShipRight.SetActive(false);
-             PlayerShipDown.SetActive(false);
+            PlayerShip.SetActive(true);
+            PlayerShipLeft.SetActive(false);
+            PlayerShipRight.SetActive(false);
+            PlayerShipDown.SetActive(false);
 
             ShipUp = true;
             ShipDown = false;
             ShipLeft = false;
             ShipRight = false;
         }
-         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift) 
-            || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeLeft.IsPressed())
-         {
+        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift)
+           || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeLeft.IsPressed())
+        {
 
 
-             PlayerShip.SetActive(false);
-             PlayerShipLeft.SetActive(true);
-             PlayerShipRight.SetActive(false);
-             PlayerShipDown.SetActive(false);
+            PlayerShip.SetActive(false);
+            PlayerShipLeft.SetActive(true);
+            PlayerShipRight.SetActive(false);
+            PlayerShipDown.SetActive(false);
 
             ShipUp = false;
             ShipDown = false;
@@ -154,15 +157,15 @@ public class PlayerMovement : MonoBehaviour
             ShipRight = false;
 
         }
-         if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift) 
-            || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeRight.IsPressed())
-         {
+        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift)
+           || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeRight.IsPressed())
+        {
 
 
-             PlayerShip.SetActive(false);
-             PlayerShipLeft.SetActive(false);
-             PlayerShipRight.SetActive(true);
-             PlayerShipDown.SetActive(false);
+            PlayerShip.SetActive(false);
+            PlayerShipLeft.SetActive(false);
+            PlayerShipRight.SetActive(true);
+            PlayerShipDown.SetActive(false);
 
 
             ShipUp = false;
@@ -173,15 +176,15 @@ public class PlayerMovement : MonoBehaviour
 
 
         }
-         if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.LeftShift) 
-            || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeDown.IsPressed())
-         {
+        if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.LeftShift)
+           || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeDown.IsPressed())
+        {
 
 
-             PlayerShip.SetActive(false);
-             PlayerShipLeft.SetActive(false);
-             PlayerShipRight.SetActive(false);
-             PlayerShipDown.SetActive(true);
+            PlayerShip.SetActive(false);
+            PlayerShipLeft.SetActive(false);
+            PlayerShipRight.SetActive(false);
+            PlayerShipDown.SetActive(true);
 
             ShipUp = false;
             ShipDown = true;
@@ -193,14 +196,14 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-       /* if (Input.GetKey(KeyCode.E))
-        {
-            RotatingShip();
-        }*/
+        /* if (Input.GetKey(KeyCode.E))
+         {
+             RotatingShip();
+         }*/
 
     }
 
-    
+
 
 
     void SpawnAfterImage()
@@ -208,28 +211,28 @@ public class PlayerMovement : MonoBehaviour
         if (ShipUp)
         {
             afterImagePrefab = SpriteUp;
-           
+
 
         }
 
         if (ShipDown)
         {
             afterImagePrefab = SpriteDown;
-            
+
 
         }
 
         if (ShipLeft)
         {
             afterImagePrefab = SpriteLeft;
-           
+
         }
-            
+
         if (ShipRight)
         {
             afterImagePrefab = SpriteRight;
 
-            
+
 
         }
 
@@ -245,9 +248,9 @@ public class PlayerMovement : MonoBehaviour
             emitting = true;
 
             Dtimer = 2f;
-            
+
             StartCoroutine(EmitAfterImages());
-          
+
 
         }
 
@@ -268,7 +271,7 @@ public class PlayerMovement : MonoBehaviour
             activePlayer.dodging = false;
             emitting = false;
 
-          
+
         }
     }
     public void MovePlayer()
@@ -305,106 +308,125 @@ public class PlayerMovement : MonoBehaviour
 
         transform.position = pos;
 
-        /*
 
-        if (controls.Gameplay.RotateRight.IsPressed())
+
+        if (Input.GetKeyDown(KeyCode.Joystick1Button5))
         {
             directionNumber = directionNumber + 1;
 
-            if (directionNumber == 1)
-            {
-                Quaternion rot1 = transform.rotation;
-
-                rot1 = Quaternion.Euler(0, 0, -90);
-
-                transform.rotation = rot1;
-            }
-
-            if (directionNumber == 2)
-            {
-                Quaternion rot1 = transform.rotation;
-
-                rot1 = Quaternion.Euler(0, 0, 180);
-
-                transform.rotation = rot1;
-            }
-
-            if (directionNumber == 3)
-            {
-                Quaternion rot1 = transform.rotation;
-
-                rot1 = Quaternion.Euler(0, 0, 90);
-
-                transform.rotation = rot1;
-            }
-
-            if (directionNumber == 4)
-            {
-                Quaternion rot1 = transform.rotation;
-
-                rot1 = Quaternion.Euler(0, 0, 0);
-
-                transform.rotation = rot1;
-            }
-
-            if (controls.Gameplay.LeftRotate.IsPressed())
-            {
-                directionNumber = directionNumber - 1;
-
-                if (directionNumber == 1)
-                {
-                    Quaternion rot1 = transform.rotation;
-
-                    rot1 = Quaternion.Euler(0, 0, -90);
-
-                    transform.rotation = rot1;
-                }
-
-                if (directionNumber == 2)
-                {
-                    Quaternion rot1 = transform.rotation;
-
-                    rot1 = Quaternion.Euler(0, 0, 180);
-
-                    transform.rotation = rot1;
-                }
-
-                if (directionNumber == 3)
-                {
-                    Quaternion rot1 = transform.rotation;
-
-                    rot1 = Quaternion.Euler(0, 0, 90);
-
-                    transform.rotation = rot1;
-                }
-
-                if (directionNumber == 4)
-                {
-                    Quaternion rot1 = transform.rotation;
-
-                    rot1 = Quaternion.Euler(0, 0, 0);
-
-                    transform.rotation = rot1;
-                }
-
-        
-            }
-
-
-            /* private void RotatingShip()
-             {
-                 Quaternion rotation = transform.rotation;
-                 float z = rotation.eulerAngles.z;
-                 z -=  transform.position.x * rotationSpeed * Time.deltaTime;
-                 rotation = Quaternion.Euler(0, 0, z);
-
-                 transform.rotation = rotation;
-
-
-             }*/
-
         }
+
+
+        if (directionNumber == 1 && directionNumber < maxDirectionRight)
+        {
+            Quaternion rot1 = transform.rotation;
+
+            rot1 = Quaternion.Euler(0, 0, -90);
+
+            transform.rotation = rot1;
+        }
+
+        if (directionNumber == 2 && directionNumber < maxDirectionRight)
+        {
+            Quaternion rot1 = transform.rotation;
+
+            rot1 = Quaternion.Euler(0, 0, 180);
+
+            transform.rotation = rot1;
+        }
+
+        if (directionNumber == 3 && directionNumber < maxDirectionRight)
+        {
+            Quaternion rot1 = transform.rotation;
+
+            rot1 = Quaternion.Euler(0, 0, 90);
+
+            transform.rotation = rot1;
+        }
+
+        if (directionNumber == 4 && directionNumber == maxDirectionRight || directionNumber == 0)
+        {
+            Quaternion rot1 = transform.rotation;
+
+            rot1 = Quaternion.Euler(0, 0, 0);
+
+            transform.rotation = rot1;
+        }
+
+        if (directionNumber >= maxDirectionRight)
+        {
+            directionNumber = 0;
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.Joystick1Button4))
+        {
+            directionNumber = directionNumber - 1;
+
+            
+        }
+
+        if (directionNumber == -1 && directionNumber > maxDirectionLeft)
+        {
+            Quaternion rot1 = transform.rotation;
+
+            rot1 = Quaternion.Euler(0, 0, 90);
+
+            transform.rotation = rot1;
+        }
+
+        if (directionNumber == -2 && directionNumber > maxDirectionLeft)
+        {
+            Quaternion rot1 = transform.rotation;
+
+            rot1 = Quaternion.Euler(0, 0, 180);
+
+            transform.rotation = rot1;
+        }
+
+        if (directionNumber == -3 && directionNumber > maxDirectionLeft)
+        {
+            Quaternion rot1 = transform.rotation;
+
+            rot1 = Quaternion.Euler(0, 0, -90);
+
+            transform.rotation = rot1;
+        }
+
+        if (directionNumber == -4 && directionNumber == maxDirectionLeft || directionNumber == 0)
+        {
+            Quaternion rot1 = transform.rotation;
+
+            rot1 = Quaternion.Euler(0, 0, 0);
+
+            transform.rotation = rot1;
+        }
+
+        if (directionNumber <= maxDirectionLeft)
+        {
+            directionNumber = 0;
+        }
+
+        /* private void RotatingShip()
+         {
+             Quaternion rotation = transform.rotation;
+             float z = rotation.eulerAngles.z;
+             z -=  transform.position.x * rotationSpeed * Time.deltaTime;
+             rotation = Quaternion.Euler(0, 0, z);
+
+             transform.rotation = rotation;
+
+
+         }*/
+
     }
+  
+
+
+
+}
+
+
 
 
 

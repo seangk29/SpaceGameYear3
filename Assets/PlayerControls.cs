@@ -279,7 +279,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""ac845e0b-f863-46b2-a7d4-9177c52dd196"",
-                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
