@@ -112,6 +112,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "RotateRight",
+                    "type": "Button",
+                    "id": "49d32ef2-952f-4d78-818c-82581f42461a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftRotate",
+                    "type": "Button",
+                    "id": "d428d26b-d139-4762-adbe-36dce668e25c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -261,7 +279,7 @@
                 {
                     "name": "",
                     "id": "458fa548-2338-4911-8e9a-968f5cfe109f",
-                    "path": "<Gamepad>/rightShoulder",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -387,6 +405,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "UI Accept",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "38a6be20-67cd-4638-b7d9-c47f07217858",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotateRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5a538850-885c-49da-b961-19a9ec168509",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftRotate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

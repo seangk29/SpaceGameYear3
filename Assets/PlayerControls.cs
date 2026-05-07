@@ -134,6 +134,24 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RotateRight"",
+                    ""type"": ""Button"",
+                    ""id"": ""49d32ef2-952f-4d78-818c-82581f42461a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LeftRotate"",
+                    ""type"": ""Button"",
+                    ""id"": ""d428d26b-d139-4762-adbe-36dce668e25c"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -283,7 +301,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""458fa548-2338-4911-8e9a-968f5cfe109f"",
-                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -411,6 +429,28 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""UI Accept"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""38a6be20-67cd-4638-b7d9-c47f07217858"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RotateRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5a538850-885c-49da-b961-19a9ec168509"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftRotate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -431,6 +471,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Gameplay_UILeft = m_Gameplay.FindAction("UI Left", throwIfNotFound: true);
         m_Gameplay_UIRight = m_Gameplay.FindAction("UI Right", throwIfNotFound: true);
         m_Gameplay_UIAccept = m_Gameplay.FindAction("UI Accept", throwIfNotFound: true);
+        m_Gameplay_RotateRight = m_Gameplay.FindAction("RotateRight", throwIfNotFound: true);
+        m_Gameplay_LeftRotate = m_Gameplay.FindAction("LeftRotate", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -509,6 +551,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_UILeft;
     private readonly InputAction m_Gameplay_UIRight;
     private readonly InputAction m_Gameplay_UIAccept;
+    private readonly InputAction m_Gameplay_RotateRight;
+    private readonly InputAction m_Gameplay_LeftRotate;
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
@@ -525,6 +569,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         public InputAction @UILeft => m_Wrapper.m_Gameplay_UILeft;
         public InputAction @UIRight => m_Wrapper.m_Gameplay_UIRight;
         public InputAction @UIAccept => m_Wrapper.m_Gameplay_UIAccept;
+        public InputAction @RotateRight => m_Wrapper.m_Gameplay_RotateRight;
+        public InputAction @LeftRotate => m_Wrapper.m_Gameplay_LeftRotate;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -570,6 +616,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @UIAccept.started += instance.OnUIAccept;
             @UIAccept.performed += instance.OnUIAccept;
             @UIAccept.canceled += instance.OnUIAccept;
+            @RotateRight.started += instance.OnRotateRight;
+            @RotateRight.performed += instance.OnRotateRight;
+            @RotateRight.canceled += instance.OnRotateRight;
+            @LeftRotate.started += instance.OnLeftRotate;
+            @LeftRotate.performed += instance.OnLeftRotate;
+            @LeftRotate.canceled += instance.OnLeftRotate;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -610,6 +662,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @UIAccept.started -= instance.OnUIAccept;
             @UIAccept.performed -= instance.OnUIAccept;
             @UIAccept.canceled -= instance.OnUIAccept;
+            @RotateRight.started -= instance.OnRotateRight;
+            @RotateRight.performed -= instance.OnRotateRight;
+            @RotateRight.canceled -= instance.OnRotateRight;
+            @LeftRotate.started -= instance.OnLeftRotate;
+            @LeftRotate.performed -= instance.OnLeftRotate;
+            @LeftRotate.canceled -= instance.OnLeftRotate;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -641,5 +699,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnUILeft(InputAction.CallbackContext context);
         void OnUIRight(InputAction.CallbackContext context);
         void OnUIAccept(InputAction.CallbackContext context);
+        void OnRotateRight(InputAction.CallbackContext context);
+        void OnLeftRotate(InputAction.CallbackContext context);
     }
 }

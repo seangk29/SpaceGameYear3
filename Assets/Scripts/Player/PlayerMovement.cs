@@ -5,6 +5,9 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
+using System;
+using UnityEditor;
+using JetBrains.Annotations;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -15,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed = 4f;
     public float speedIndicator = 4f;
     public float rotationSpeed = 360f;
+    public int directionNumber = 0;
 
     public bool Dodging;
     public float cooldownDodge = 0f;
@@ -65,6 +69,8 @@ public class PlayerMovement : MonoBehaviour
 
         controls.Gameplay.Move.performed += ctx => MovePlayer();
         controls.Gameplay.Dash.performed += ctx => Dash();
+        controls.Gameplay.LeftRotate.performed += ctx => MovePlayer();
+        controls.Gameplay.RotateRight.performed += ctx => MovePlayer();
 
         playerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
         //moveSpeed = playerStats.maxSpeed;
@@ -269,7 +275,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 pos = transform.position;
 
-        Vector3 velocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 
+        Vector3 velocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime,
                            Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime);
 
         pos += velocity;
@@ -298,23 +304,109 @@ public class PlayerMovement : MonoBehaviour
         }
 
         transform.position = pos;
+
+        /*
+
+        if (controls.Gameplay.RotateRight.IsPressed())
+        {
+            directionNumber = directionNumber + 1;
+
+            if (directionNumber == 1)
+            {
+                Quaternion rot1 = transform.rotation;
+
+                rot1 = Quaternion.Euler(0, 0, -90);
+
+                transform.rotation = rot1;
+            }
+
+            if (directionNumber == 2)
+            {
+                Quaternion rot1 = transform.rotation;
+
+                rot1 = Quaternion.Euler(0, 0, 180);
+
+                transform.rotation = rot1;
+            }
+
+            if (directionNumber == 3)
+            {
+                Quaternion rot1 = transform.rotation;
+
+                rot1 = Quaternion.Euler(0, 0, 90);
+
+                transform.rotation = rot1;
+            }
+
+            if (directionNumber == 4)
+            {
+                Quaternion rot1 = transform.rotation;
+
+                rot1 = Quaternion.Euler(0, 0, 0);
+
+                transform.rotation = rot1;
+            }
+
+            if (controls.Gameplay.LeftRotate.IsPressed())
+            {
+                directionNumber = directionNumber - 1;
+
+                if (directionNumber == 1)
+                {
+                    Quaternion rot1 = transform.rotation;
+
+                    rot1 = Quaternion.Euler(0, 0, -90);
+
+                    transform.rotation = rot1;
+                }
+
+                if (directionNumber == 2)
+                {
+                    Quaternion rot1 = transform.rotation;
+
+                    rot1 = Quaternion.Euler(0, 0, 180);
+
+                    transform.rotation = rot1;
+                }
+
+                if (directionNumber == 3)
+                {
+                    Quaternion rot1 = transform.rotation;
+
+                    rot1 = Quaternion.Euler(0, 0, 90);
+
+                    transform.rotation = rot1;
+                }
+
+                if (directionNumber == 4)
+                {
+                    Quaternion rot1 = transform.rotation;
+
+                    rot1 = Quaternion.Euler(0, 0, 0);
+
+                    transform.rotation = rot1;
+                }
+
+        
+            }
+
+
+            /* private void RotatingShip()
+             {
+                 Quaternion rotation = transform.rotation;
+                 float z = rotation.eulerAngles.z;
+                 z -=  transform.position.x * rotationSpeed * Time.deltaTime;
+                 rotation = Quaternion.Euler(0, 0, z);
+
+                 transform.rotation = rotation;
+
+
+             }*/
+
+        }
     }
-   /* private void RotatingShip()
-    {
-        Quaternion rotation = transform.rotation;
-        float z = rotation.eulerAngles.z;
-        z -=  transform.position.x * rotationSpeed * Time.deltaTime;
-        rotation = Quaternion.Euler(0, 0, z);
-
-        transform.rotation = rotation;
 
 
-    }*/
-
-
-
-
-}
 
   
 
