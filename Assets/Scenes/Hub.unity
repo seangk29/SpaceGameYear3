@@ -182,7 +182,10 @@ MonoBehaviour:
   playerVoice: {fileID: 1755215302}
   playerVoiceObject: {fileID: 1755215300}
   playerClips: []
+  playerImage: {fileID: 0}
   playerSprites: []
+  npc: {fileID: 0}
+  playerSprite: {fileID: 0}
   shops: {fileID: 0}
   skipsShop: {fileID: 514052944}
   nicosShop: {fileID: 38975506}
@@ -484,7 +487,7 @@ MonoBehaviour:
   canUseSpecial: 0
   damage: 1
   specialDamage: 2
-  spBulletHealth: 1
+  spBulletHealth: 3
 --- !u!114 &28166083
 MonoBehaviour:
   m_ObjectHideFlags: 0

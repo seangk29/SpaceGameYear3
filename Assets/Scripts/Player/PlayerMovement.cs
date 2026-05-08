@@ -18,9 +18,9 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed = 4f;
     public float speedIndicator = 4f;
     public float rotationSpeed = 360f;
-    public int directionNumber = 0;
-    public int maxDirectionRight = 4;
-    public int maxDirectionLeft = -4;
+   // public int directionNumber = 0;
+   // public int maxDirectionRight = 4;
+   // public int maxDirectionLeft = -4;
 
 
     public bool Dodging;
@@ -309,7 +309,7 @@ public class PlayerMovement : MonoBehaviour
         transform.position = pos;
 
 
-
+     /*
         if (Input.GetKeyDown(KeyCode.Joystick1Button5))
         {
             directionNumber = directionNumber + 1;
