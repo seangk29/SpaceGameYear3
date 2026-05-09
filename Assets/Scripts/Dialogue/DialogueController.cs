@@ -95,7 +95,7 @@ public class DialogueController : MonoBehaviour
             //This is what will make the Dialogue Audio play once
             //the clips have been properly done so remember to uncomment this
             
-            //replaceVoice.Play();
+            replaceVoice.Play();
 
         }
 

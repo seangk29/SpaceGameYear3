@@ -1040,6 +1040,7 @@ MonoBehaviour:
   directionNumber: 0
   maxDirectionRight: 4
   maxDirectionLeft: -4
+  rotate: {fileID: 5946322690500378483}
 --- !u!1 &3327284902683556773
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,7 +2125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5521890873287797393
 Transform:
   m_ObjectHideFlags: 0
