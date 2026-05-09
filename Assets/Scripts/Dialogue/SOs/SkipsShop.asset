@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e82745c8fbc5d0b49a445aa993baf045, type: 3}
   m_Name: SkipsShop
   m_EditorClassIdentifier: 
-  speakerClip: []
-  sprites: []
+  speakerClip:
+  - {fileID: 8300000, guid: 95fff1f1ba9467c4bbaef9213507bb4c, type: 3}
+  - {fileID: 8300000, guid: 18b63bc6f8747b34da031db40aa4fa19, type: 3}
+  sprites:
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 227497761842265811, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
   paragraphs:
   - "SKIPPY: Looking for some upgrades, Cosmo? I\u2019ll fix your ship up and give
     you a chance against these Specimen X guys."

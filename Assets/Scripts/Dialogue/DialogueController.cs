@@ -26,12 +26,10 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private GameObject playerVoiceObject;
     [SerializeField] private AudioClip[] playerClips;
 
-    [SerializeField] private Image playerImage;
+                     public Image playerImage;
     [SerializeField] private Sprite[] playerSprites;
 
     private int counter = -1;
-    public Image npc;
-    public Image playerSprite;
 
     public FindShop shops;
 
@@ -41,6 +39,8 @@ public class DialogueController : MonoBehaviour
     public bool skipBool = false;
 
     public bool nicoBool = false;
+
+    public int visual;
 
     void Start()
     {
@@ -64,9 +64,9 @@ public class DialogueController : MonoBehaviour
     public void ShowNextParagraph(DialogueText dialogueText)
     {
         //This finds the player and gets access to movement component.
-         // PlayerMovement move = GameObject.Find("Player").GetComponent<PlayerMovement>();
-         
+        // PlayerMovement move = GameObject.Find("Player").GetComponent<PlayerMovement>();
 
+        visual = dialogueText.paragraphs.Length;
 
         if (paragraphs.Count == 0)
         {
@@ -93,6 +93,12 @@ public class DialogueController : MonoBehaviour
             p = paragraphs.Dequeue();
 
             typeDialogueRoutine = StartCoroutine(typeDialogueText(p));
+            for (int i = 0; i < dialogueText.paragraphs.Length; i++)
+            {
+                // playerVoice.clip = playerClips[counter];
+                playerImage.sprite = playerSprites[counter];
+                playerVoice.Play();
+            }
             counter++;
         }
 
@@ -101,52 +107,55 @@ public class DialogueController : MonoBehaviour
             FinishParagraphEarly();
         }
 
-        switch (counter)
+
+
+
+       /* switch (counter)
         {
             case 0:
-                playerVoice.clip = playerClips[counter];
+               // playerVoice.clip = playerClips[counter];
                 playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             case 1:
-                playerVoice.clip = playerClips[counter];
+               // playerVoice.clip = playerClips[counter];
                 playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             case 2:
-                playerVoice.clip = playerClips[counter];
+               // playerVoice.clip = playerClips[counter];
                 playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             case 3:
-                playerVoice.clip = playerClips[counter];
+              //  playerVoice.clip = playerClips[counter];
                 playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             case 4:
-                playerVoice.clip = playerClips[counter];
+               // playerVoice.clip = playerClips[counter];
                 playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             case 5:
-                playerVoice.clip = playerClips[counter];
+               // playerVoice.clip = playerClips[counter];
                 playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             case 6:
-                playerVoice.clip = playerClips[counter];
+               // playerVoice.clip = playerClips[counter];
                 playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             case 7:
-                playerVoice.clip = playerClips[counter];
+               // playerVoice.clip = playerClips[counter];
                 playerImage.sprite = playerSprites[counter];
                 playerVoice.Play();
                 break;
             default:
                 playerVoice.clip = null;
                 break;
-        }
+        }*/
 
 
 

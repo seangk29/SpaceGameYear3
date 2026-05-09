@@ -182,15 +182,14 @@ MonoBehaviour:
   playerVoice: {fileID: 1755215302}
   playerVoiceObject: {fileID: 1755215300}
   playerClips: []
-  playerImage: {fileID: 0}
+  playerImage: {fileID: 466127986}
   playerSprites: []
-  npc: {fileID: 0}
-  playerSprite: {fileID: 0}
   shops: {fileID: 0}
   skipsShop: {fileID: 514052944}
   nicosShop: {fileID: 38975506}
   skipBool: 0
   nicoBool: 0
+  visual: 0
 --- !u!114 &879929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -864,7 +863,7 @@ MonoBehaviour:
   spawned: 0
   bossCounts: 0
   paus: {fileID: 1970894170}
-  control: {fileID: 0}
+  control: {fileID: 879928}
   skips: {fileID: 1659134053}
   nics: {fileID: 713310126}
 --- !u!4 &109168980
@@ -905,7 +904,7 @@ PrefabInstance:
     - target: {fileID: 5081064802379610618, guid: 996633934ac96a040b6bbad036244dc8, type: 3}
       propertyPath: controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 879928}
     - target: {fileID: 6489694305284316333, guid: 996633934ac96a040b6bbad036244dc8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3
