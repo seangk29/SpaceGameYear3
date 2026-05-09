@@ -11,25 +11,26 @@ public class DialogueController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI npcDialogueText;
     [SerializeField] private float typeSpeed;
-    //[SerializeField] private GameObject player;
 
     private Queue<string> paragraphs = new Queue<string>();
     public bool convoEnded;
     private bool isTyping;
 
     private string p;
+    private Sprite s;
+    private AudioClip a;
     private const float MAX_TYPE_TIME = 0.1F;
 
     private Coroutine typeDialogueRoutine;
 
-    [SerializeField] private AudioSource playerVoice;
+    [SerializeField] private AudioSource replaceVoice;
     [SerializeField] private GameObject playerVoiceObject;
-    [SerializeField] private AudioClip[] playerClips;
+    public Queue<AudioClip> newAudio = new Queue<AudioClip>();
 
-                     public Image playerImage;
-    [SerializeField] private Sprite[] playerSprites;
 
-    private int counter = -1;
+    public  Queue<Sprite> newImage = new Queue<Sprite>();
+    public Image imgReplace;
+
 
     public FindShop shops;
 
@@ -56,15 +57,11 @@ public class DialogueController : MonoBehaviour
         else
             return;
 
-
-
     }
 
 
     public void ShowNextParagraph(DialogueText dialogueText)
     {
-        //This finds the player and gets access to movement component.
-        // PlayerMovement move = GameObject.Find("Player").GetComponent<PlayerMovement>();
 
         visual = dialogueText.paragraphs.Length;
 
@@ -73,14 +70,13 @@ public class DialogueController : MonoBehaviour
             if (!convoEnded)
             {
                 startConvo(dialogueText);
-              //  move.enabled = false;
+
             }
 
             else if (convoEnded && !isTyping)
             {
                 
                 endConvo();
-               // move.enabled = true;
                 return;
             }
 
@@ -91,71 +87,22 @@ public class DialogueController : MonoBehaviour
         if (!isTyping)
         {
             p = paragraphs.Dequeue();
+            s = newImage.Dequeue();
+            a = newAudio.Dequeue();
 
-            typeDialogueRoutine = StartCoroutine(typeDialogueText(p));
-            for (int i = 0; i < dialogueText.paragraphs.Length; i++)
-            {
-                // playerVoice.clip = playerClips[counter];
-                playerImage.sprite = playerSprites[counter];
-                playerVoice.Play();
-            }
-            counter++;
+            typeDialogueRoutine = StartCoroutine(typeDialogueText(p, s, a));
+
+            //This is what will make the Dialogue Audio play once
+            //the clips have been properly done so remember to uncomment this
+            
+            //replaceVoice.Play();
+
         }
 
         else
         {
             FinishParagraphEarly();
         }
-
-
-
-
-       /* switch (counter)
-        {
-            case 0:
-               // playerVoice.clip = playerClips[counter];
-                playerImage.sprite = playerSprites[counter];
-                playerVoice.Play();
-                break;
-            case 1:
-               // playerVoice.clip = playerClips[counter];
-                playerImage.sprite = playerSprites[counter];
-                playerVoice.Play();
-                break;
-            case 2:
-               // playerVoice.clip = playerClips[counter];
-                playerImage.sprite = playerSprites[counter];
-                playerVoice.Play();
-                break;
-            case 3:
-              //  playerVoice.clip = playerClips[counter];
-                playerImage.sprite = playerSprites[counter];
-                playerVoice.Play();
-                break;
-            case 4:
-               // playerVoice.clip = playerClips[counter];
-                playerImage.sprite = playerSprites[counter];
-                playerVoice.Play();
-                break;
-            case 5:
-               // playerVoice.clip = playerClips[counter];
-                playerImage.sprite = playerSprites[counter];
-                playerVoice.Play();
-                break;
-            case 6:
-               // playerVoice.clip = playerClips[counter];
-                playerImage.sprite = playerSprites[counter];
-                playerVoice.Play();
-                break;
-            case 7:
-               // playerVoice.clip = playerClips[counter];
-                playerImage.sprite = playerSprites[counter];
-                playerVoice.Play();
-                break;
-            default:
-                playerVoice.clip = null;
-                break;
-        }*/
 
 
 
@@ -174,14 +121,12 @@ public class DialogueController : MonoBehaviour
         gameObject.SetActive(true);
         }
 
-        playerClips = dialogueText.speakerClip;
-        playerSprites = dialogueText.sprites;
-
-
         //Adds the text to the Queue
         for (int i = 0; i < dialogueText.paragraphs.Length; i++)
         {
             paragraphs.Enqueue(dialogueText.paragraphs[i]);
+            newImage.Enqueue(dialogueText.sprites[i]);
+            newAudio.Enqueue(dialogueText.speakerClip[i]);
         }
 
     }
@@ -214,7 +159,7 @@ public class DialogueController : MonoBehaviour
 
 
     //This function makes it so the dialogue gets typed letter by letter.
-    private IEnumerator typeDialogueText(string p)
+    private IEnumerator typeDialogueText(string p, Sprite s, AudioClip a)
     {
         isTyping = true;
 
@@ -222,6 +167,8 @@ public class DialogueController : MonoBehaviour
 
         npcDialogueText.text = p;
         npcDialogueText.maxVisibleCharacters = maxVisibleChars;
+        imgReplace.sprite = s;
+        replaceVoice.clip = a;
 
         foreach (char c in p.ToCharArray())
         {
