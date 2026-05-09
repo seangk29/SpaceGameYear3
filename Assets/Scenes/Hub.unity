@@ -179,11 +179,9 @@ MonoBehaviour:
   npcDialogueText: {fileID: 1478899942}
   typeSpeed: 3
   convoEnded: 0
-  playerVoice: {fileID: 1755215302}
+  replaceVoice: {fileID: 1755215302}
   playerVoiceObject: {fileID: 1755215300}
-  playerClips: []
-  playerImage: {fileID: 466127986}
-  playerSprites: []
+  imgReplace: {fileID: 466127986}
   shops: {fileID: 0}
   skipsShop: {fileID: 514052944}
   nicosShop: {fileID: 38975506}
