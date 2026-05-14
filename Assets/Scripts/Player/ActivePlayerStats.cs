@@ -34,18 +34,19 @@ public class ActivePlayerHealth : MonoBehaviour
     // public float fireDelay = 0.25f;
     //  float cooldownTimer = 0;
 
-    public PlayerSpawner playerSpawn;
-    public EnemyWaveHandler Wave;
+    
     public PlayerData playerData;
     public PermaPlayerStats playerStats;
+    public PlayerSpawner spawn;
 
     private void Start()
     {
 
         //Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
-        playerSpawn = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerSpawner>();
+        
         playerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
         playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
+        spawn = GameObject.FindGameObjectWithTag("Spawner").GetComponent<PlayerSpawner>();
 
         maxHealth = playerStats.maxHealth;
         health = maxHealth;
@@ -106,6 +107,8 @@ public class ActivePlayerHealth : MonoBehaviour
                 Daudio.Play();
             }
 
+
+
             if (shieldHealth > 0)
             {
                 shieldHealth--;
@@ -128,11 +131,7 @@ public class ActivePlayerHealth : MonoBehaviour
             }
         }
 
-        if (collider.gameObject.tag == "HealthPack")
-        {
-            health = health - 50;
-            playerSpawn.numLives = playerSpawn.numLives + 1;
-        }
+        
     }
 
     public void HealthUpgrade(int value)
@@ -208,8 +207,9 @@ public class ActivePlayerHealth : MonoBehaviour
 
     public void Die()
     {
-        //Destroy(gameObject);
-        SceneManager.LoadSceneAsync("Retry");
+        Destroy(gameObject);
+
+        
     }
 
     public void ExitCombat()

@@ -27,6 +27,7 @@ TagManager:
   - GameMg
   - EnemyWave
   - RLPermData
+  - Spawner
   layers:
   - Default
   - TransparentFX

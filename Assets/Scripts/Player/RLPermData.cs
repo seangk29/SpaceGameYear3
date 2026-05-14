@@ -19,6 +19,9 @@ public class RLPermData : MonoBehaviour
     public int shield;
     public int maxShield;
 
+    public int numLives;
+    public PlayerSpawner spawn;
+
     public int regenShieldTimer;
     public int baseRegenShieldTimer;
 
@@ -52,6 +55,12 @@ public class RLPermData : MonoBehaviour
     void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void Start()
+    {
+        spawn = GameObject.FindGameObjectWithTag("Spawner").GetComponent<PlayerSpawner>();
+        spawn.numLives = numLives;
     }
 
     // the rest should all be self explanatory

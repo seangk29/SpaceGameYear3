@@ -526,6 +526,7 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   playerStats: {fileID: 0}
+  spawn: {fileID: 0}
 --- !u!1 &1667372856028613701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,6 +1193,7 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   playerStats: {fileID: 0}
+  spawn: {fileID: 0}
 --- !u!114 &5291026808162551070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1924,6 +1926,7 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   playerStats: {fileID: 0}
+  spawn: {fileID: 0}
 --- !u!1 &4805046748181273822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2817,6 +2820,7 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   playerStats: {fileID: 0}
+  spawn: {fileID: 0}
 --- !u!1 &7671036059347274953
 GameObject:
   m_ObjectHideFlags: 0
@@ -4690,7 +4694,7 @@ MonoBehaviour:
   shieldHealth: 1
   maxShield: 1
   health: 3
-  maxHealth: 0
+  maxHealth: 3
   canRegen: 0
   SpRend: 1
   Combat: 1
@@ -4700,6 +4704,7 @@ MonoBehaviour:
   Wave: {fileID: 0}
   playerData: {fileID: 0}
   playerStats: {fileID: 0}
+  spawn: {fileID: 0}
 --- !u!114 &5946322690500378483
 MonoBehaviour:
   m_ObjectHideFlags: 0

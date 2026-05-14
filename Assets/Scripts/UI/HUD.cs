@@ -8,12 +8,15 @@ public class HUD : MonoBehaviour
 {
     public ActivePlayerHealth activePlayer;
     public PlayerData playerData;
+    public PlayerSpawner spawn;
 
     public TextMeshProUGUI killsTMP;
     public TextMeshProUGUI timerTMP;
+   
 
     public Image[] health;
     public Image[] shield;
+    public Image[] live;
 
     public float time;
     private int minutes;
@@ -24,6 +27,7 @@ public class HUD : MonoBehaviour
     private void Start()
     {
         playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
+        spawn = GameObject.FindGameObjectWithTag("Spawner").GetComponent<PlayerSpawner>();
     }
 
     private void Update()
@@ -37,10 +41,17 @@ public class HUD : MonoBehaviour
             playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
         }
 
+        if (spawn == null)
+        {
+            spawn = GameObject.FindGameObjectWithTag("Spawner").GetComponent<PlayerSpawner>();
+        }
+
         HPBarUpdate();
         ShieldBarUpdate();
+        LivesUpdate();
         KillsUpdate();
         TimerUpdate();
+
     }
 
     public void HPBarUpdate()
@@ -69,6 +80,21 @@ public class HUD : MonoBehaviour
             else
             {
                 shield[i].enabled = false;
+            }
+        }
+    }
+
+    public void LivesUpdate()
+    {
+        for (int i = 0; i < live.Length; i++)
+        {
+            if (i < spawn.numLives)
+            {
+                live[i].enabled = true;
+            }
+            else
+            {
+                live[i].enabled = false;
             }
         }
     }

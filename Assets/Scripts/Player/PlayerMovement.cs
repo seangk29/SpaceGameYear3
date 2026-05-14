@@ -125,7 +125,7 @@ public class PlayerMovement : MonoBehaviour
         //float horizontal = Input.GetAxis("Horizontal");
         //float vertical = Input.GetAxis("Vertical");
 
-        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift)
+        /*if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift)
             || controls.Gameplay.ChangeDirection.IsPressed() && controls.Gameplay.ChangeUp.IsPressed())
         {
 

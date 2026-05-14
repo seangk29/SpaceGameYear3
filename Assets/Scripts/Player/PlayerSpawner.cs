@@ -22,6 +22,8 @@ public class PlayerSpawner : MonoBehaviour
     void Start()
     {
         SpawnPlayer();
+
+       // playerPrefab = GameObject.FindGameObjectWithTag("Player").gameObject;
     }
 
     public void SpawnPlayer()
@@ -36,6 +38,10 @@ public class PlayerSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+       
+
+
         if (playerInstance == null && numLives > 0)
         {
 
@@ -51,7 +57,7 @@ public class PlayerSpawner : MonoBehaviour
         if (playerInstance == null && numLives == 0)
         {
             deathScreen.SetActive(true);
-            Time.timeScale = 0f;
+            Time.timeScale = 0.25f;
 
         }
       
