@@ -21,4 +21,4 @@ MonoBehaviour:
   effectString: {fileID: 0}
   effectValue: 1
   isUnique: 1
-  unlockLevel: 1
+  unlockLevel: 0

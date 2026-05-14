@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1475593213658424686, guid: da7b8a3980b33ef4397ab2aa13367917, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1475593213658424686, guid: da7b8a3980b33ef4397ab2aa13367917, type: 3}
       propertyPath: m_LocalPosition.z
@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1844125890818198795, guid: da7b8a3980b33ef4397ab2aa13367917, type: 3}
       propertyPath: m_Name
-      value: PawnRunnerGunner  Variant
+      value: PawnSpinnerGunner  Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2277265565496739874, guid: da7b8a3980b33ef4397ab2aa13367917, type: 3}
       propertyPath: bulletPrefab
