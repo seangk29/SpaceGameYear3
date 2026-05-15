@@ -11,6 +11,7 @@ public class ShopText : ScriptableObject
 {
     public string conTxt;
 
+    public string cost;
 
     [TextArea(5, 10)]
     public string upgradeTxt;

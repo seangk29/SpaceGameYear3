@@ -43,6 +43,7 @@ public class PlayerData : MonoBehaviour
     public void resetStats()
     { 
         kills = 0;
+        spaceMoney = spaceMoney + score;
         score = 0;
     }
 
