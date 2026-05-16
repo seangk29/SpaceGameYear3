@@ -21,6 +21,7 @@ public class PlayerData : MonoBehaviour
 
     public int score = 0;
     public int spaceMoney = 0;
+    public int previousMoney = 0;
     public int kills = 0;
 
 
@@ -43,7 +44,13 @@ public class PlayerData : MonoBehaviour
     public void resetStats()
     { 
         kills = 0;
+        previousMoney = spaceMoney;
         spaceMoney = spaceMoney + score;
+        if (score < 0)
+        {
+            spaceMoney = 0;
+            spaceMoney = previousMoney; 
+        }
         score = 0;
     }
 

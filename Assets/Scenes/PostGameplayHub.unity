@@ -2958,9 +2958,9 @@ MonoBehaviour:
   npcDialogueText: {fileID: 560301170}
   typeSpeed: 3
   convoEnded: 0
-  replaceVoice: {fileID: 0}
+  replaceVoice: {fileID: 1755215302}
   playerVoiceObject: {fileID: 1755215300}
-  imgReplace: {fileID: 0}
+  imgReplace: {fileID: 1003801266}
   shops: {fileID: 0}
   skipsShop: {fileID: 1125707723}
   nicosShop: {fileID: 38975506}
