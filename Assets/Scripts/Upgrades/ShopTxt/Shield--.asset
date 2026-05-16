@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Shield--
   m_EditorClassIdentifier: 
   conTxt: SHIELD COOLDOWN
+  cost: 15000
   upgradeTxt: THIS IS THE SHIELD COOLDOWN UPGRADE THIS WILL DECREASE YOUR SHIELD
     COOLDOWN

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: SpBullet--
   m_EditorClassIdentifier: 
   conTxt: SP BULLET COOLDOWN
+  cost: 30000
   upgradeTxt: THIS IS THE SPECIAL BULLET COOLDOWN UPGRADE THIS WILL DECREASE YOUR
     SPEVIAL BULLET COOLDOWN

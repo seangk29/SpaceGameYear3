@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 804a3f7a033595a488ec739ec3b0e722, type: 3}
   m_Name: Life++
   m_EditorClassIdentifier: 
-  conTxt: MAX LIFES
+  conTxt: MAX LIVES
+  cost: 100000
   upgradeTxt: THIS IS THE MAX LIVES UPGRADE THIS WILL INCREASE YOUR MAX LIVES

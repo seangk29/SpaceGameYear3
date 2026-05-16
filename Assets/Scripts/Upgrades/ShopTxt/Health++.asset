@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Health++
   m_EditorClassIdentifier: 
   conTxt: MAX HEALTH
+  cost: 20000
   upgradeTxt: THIS IS THE HEALTH UPGRADE THIS WILL INCREASE YOUR MAX HEALTH

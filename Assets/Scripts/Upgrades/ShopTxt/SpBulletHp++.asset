@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: SpBulletHp++
   m_EditorClassIdentifier: 
   conTxt: SP BULLET HEALTH
+  cost: 40000
   upgradeTxt: THIS IS THE SPECIAL BULLET HEALTH UPGRADE THIS WILL INCREASE THE MAX
     BULLETS HEALTH
