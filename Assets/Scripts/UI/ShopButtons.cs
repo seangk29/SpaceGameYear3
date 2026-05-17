@@ -129,53 +129,53 @@ public class ShopButtons : MonoBehaviour
         switch(indic)
         {
             case 1:
-                if (PlayerData.spaceMoney >= 200)
+                if (PlayerData.spaceMoney >= 20000)
                 {
                     RLPermData.maxHealth++;
                     RLPermData.health++;
-                    PlayerData.spaceMoney = PlayerData.spaceMoney - 200;
+                    PlayerData.spaceMoney = PlayerData.spaceMoney - 20000;
                  }
                 else notEnough.SetActive(true);
             break;
             case 2:
-                if (PlayerData.spaceMoney >= 200)
+                if (PlayerData.spaceMoney >= 25000)
                 {
                     RLPermData.maxShield++;
                     RLPermData.shield++;
-                    PlayerData.spaceMoney = PlayerData.spaceMoney - 200;
+                    PlayerData.spaceMoney = PlayerData.spaceMoney - 25000;
                 } 
                 else notEnough.SetActive(true);
                 break;
             case 3:
-                if (PlayerData.spaceMoney >= 200)
+                if (PlayerData.spaceMoney >= 15000)
                 {
                     RLPermData.regenShieldTimer++;
-                    PlayerData.spaceMoney = PlayerData.spaceMoney - 200;
+                    PlayerData.spaceMoney = PlayerData.spaceMoney - 15000;
                 }
                 else notEnough.SetActive(true);
                 break;
             case 4:
-                if (PlayerData.spaceMoney >= 200)
+                if (PlayerData.spaceMoney >= 50000)
                 {
                     RLPermData.damage++;
-                    PlayerData.spaceMoney = PlayerData.spaceMoney - 200;
+                    PlayerData.spaceMoney = PlayerData.spaceMoney - 50000;
                 }
                 else notEnough.SetActive(true);
                 break;
             case 5:
-                if (PlayerData.spaceMoney >= 200)
+                if (PlayerData.spaceMoney >= 15000)
                 {
                     RLPermData.maxSpeed++;
                     RLPermData.speed++;
-                    PlayerData.spaceMoney = PlayerData.spaceMoney - 200;
+                    PlayerData.spaceMoney = PlayerData.spaceMoney - 15000;
                 }
                 else notEnough.SetActive(true);
                 break;
             case 6:
-                if (PlayerData.spaceMoney >= 200)
+                if (PlayerData.spaceMoney >= 40000)
                 {
                     RLPermData.spBulletHealth++;
-                    PlayerData.spaceMoney = PlayerData.spaceMoney - 200;
+                    PlayerData.spaceMoney = PlayerData.spaceMoney - 40000;
                 }
                 else notEnough.SetActive(true);
                 break;
