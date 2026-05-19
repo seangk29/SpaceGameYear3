@@ -22,12 +22,12 @@ public class CardManager : MonoBehaviour
     public GameObject cardGO2;
     public GameObject cardGO3;
 
-    [SerializeField] List<CardSO> Upgrades;
+    [SerializeField] public List<CardSO> Upgrades;
 
     // Currently randomized cards go here
     GameObject cardOne, cardTwo, cardThree;
 
-    List<CardSO> alreadySelectedCards = new List<CardSO>();
+    public cardRemover cardRemover;
 
     public static CardManager Instance;
 
@@ -44,7 +44,7 @@ public class CardManager : MonoBehaviour
     {
         PermaPlayerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
         applyUpgrades = GetComponent<ApplyUpgrades>();
-
+        cardRemover = GameObject.FindGameObjectWithTag("cardRemover").GetComponent<cardRemover>();
 
     }
     private void Awake()
@@ -105,10 +105,10 @@ public class CardManager : MonoBehaviour
         List<CardSO> availableCards = new List<CardSO>(Upgrades);
 
         // filtering upgrades
-        availableCards.RemoveAll(card =>
-            card.isUnique && alreadySelectedCards.Contains(card)
-            || card.unlockLevel > GameManager.Instance.GetCurrentLevel()
-        );
+        //availableCards.RemoveAll(card =>
+      //      card.isUnique && alreadySelectedCards.Contains(card)
+       //     || card.unlockLevel > GameManager.Instance.GetCurrentLevel()
+       // );
 
         // if theres less than 3 available cards. dont think this should ever happen now. you never know.
         if (availableCards.Count < 3)
@@ -149,9 +149,9 @@ public class CardManager : MonoBehaviour
     // the memory overflow issue weird
     public void SelectCard(CardSO selectedCard)
     {
-        if (!alreadySelectedCards.Contains(selectedCard))
+        if (!cardRemover.alreadySelectedCards.Contains(selectedCard))
         { 
-            alreadySelectedCards.Add(selectedCard);
+            cardRemover.alreadySelectedCards.Add(selectedCard);
         }
 
         selectedCardType = selectedCard.effectType;
@@ -183,6 +183,9 @@ public class CardManager : MonoBehaviour
                 break;
             case CardEffect.ExplodeUnlock:
                 PermaPlayerStats.explodeUnlock();
+                break;
+            case CardEffect.SpinUnlock:
+                PermaPlayerStats.spinUnlock();
                 break;
             case CardEffect.DamageUpgrade:
                 PermaPlayerStats.damageUpgrade(selectedCardValue);

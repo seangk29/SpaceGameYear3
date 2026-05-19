@@ -155,6 +155,8 @@ public class DialogueController : MonoBehaviour
             nicoBool = true;
         }
 
+        replaceVoice.Stop();
+
     }
 
 

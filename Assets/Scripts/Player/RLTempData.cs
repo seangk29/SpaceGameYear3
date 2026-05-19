@@ -180,6 +180,14 @@ public class PermaPlayerStats : MonoBehaviour
         Debug.Log("Explode Shot Unlocked");
     }
 
+    public void spinUnlock()
+    {
+        specialShotHandler.getSpinShot();
+        playerMovement.CanUseSpecial = true;
+        canUseSpecial = true;
+        activeSpecial = "Spin";
+    }
+
     public void resetStats()
     { 
         rlPermData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<RLPermData>();

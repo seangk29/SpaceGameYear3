@@ -23,7 +23,7 @@ public class ActivePlayerHealth : MonoBehaviour
 
     public bool canRegen = false;
 
-    int correctLayer;
+    int correctLayer = 6;
 
     public bool SpRend;
     public bool Combat;
@@ -38,6 +38,7 @@ public class ActivePlayerHealth : MonoBehaviour
     public PlayerData playerData;
     public PermaPlayerStats playerStats;
     public PlayerSpawner spawn;
+    public GameObject sprite;
 
     private void Start()
     {
@@ -57,9 +58,11 @@ public class ActivePlayerHealth : MonoBehaviour
         regenShieldsTimer = playerStats.regenShieldTimer;
 
         Combat = true;
-        correctLayer = gameObject.layer;
+        correctLayer =  sprite.gameObject.layer;
 
         dodging = false;
+
+       
 
     }
 
@@ -71,8 +74,8 @@ public class ActivePlayerHealth : MonoBehaviour
             {
                 playerData.score -= 50;
                 health -= 1;
-                invul = 0.50f;
-                gameObject.layer = 8;
+                invul = 1f;
+                sprite.gameObject.layer = 8;
             }
 
             if (shieldHealth > 0)
@@ -80,8 +83,8 @@ public class ActivePlayerHealth : MonoBehaviour
                 shieldHealth--;
                 shieldTimer = 0;
                 canRegen = true;
-                invul = 0.50f; ;
-                gameObject.layer = 8;
+                invul = 1f; ;
+                sprite.gameObject.layer = 8;
             }
         }
 
@@ -91,8 +94,8 @@ public class ActivePlayerHealth : MonoBehaviour
             {
                 playerData.score -= 50;
                 health -= collider.GetComponent<EnemyBulletData>().damage;
-                invul = 0.50f;
-                gameObject.layer = 8;
+                invul = 1f;
+                sprite.gameObject.layer = 8;
 
                 if (SpRend && shieldHealth > 0)
                 {
@@ -114,8 +117,8 @@ public class ActivePlayerHealth : MonoBehaviour
                 shieldHealth--;
                 shieldTimer = 0;
                 canRegen = true;
-                invul = 0.50f; ;
-                gameObject.layer = 8;
+                invul = 1f; ;
+                sprite.gameObject.layer = 8;
 
                 if (SpRend && shieldHealth > 0)
                 {
@@ -153,9 +156,12 @@ public class ActivePlayerHealth : MonoBehaviour
     private void Update()
     {
 
+
+      
+
         if (invul <= 0)
         {
-            gameObject.layer = correctLayer;
+            sprite.gameObject.layer = correctLayer;
         }
         invul -= Time.deltaTime;
 

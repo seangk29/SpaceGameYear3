@@ -10,6 +10,7 @@ public class SpecialShotHandler : MonoBehaviour
     public GameObject spreadShot;
     public GameObject ricochetShot;
     public GameObject explodeShot;
+    public GameObject spinShot;
 
     public PlayerShooting currentSpecialPos1;
     public PlayerShooting currentSpecialPos2;
@@ -37,6 +38,9 @@ public class SpecialShotHandler : MonoBehaviour
                     break;
                 case "Explode":
                     GetExplodeShot();
+                    break;
+                case "Spin":
+                    getSpinShot();
                     break;
             }
         }
@@ -84,5 +88,12 @@ public class SpecialShotHandler : MonoBehaviour
         currentSpecialPos4.SPfireDelay = 1f;
         activeSpecial = "Explode";
 
+    }
+
+
+    public void getSpinShot()
+    {
+        spinShot.SetActive(true);
+        activeSpecial = "Spin";
     }
 }

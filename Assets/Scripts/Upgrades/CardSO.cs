@@ -32,6 +32,7 @@ public class CardSO : ScriptableObject
     // so like hp can show up a bunch but you can only get one unlock spread shot
     public bool isUnique;
 
+
     public int unlockLevel;
 }
 
@@ -46,6 +47,7 @@ public enum CardEffect
     SpreadUnlock,
     RicochetUnlock,
     ExplodeUnlock,
+    SpinUnlock,
     SpecialUpgrade,
     DamageUpgrade,
     SPBulHP

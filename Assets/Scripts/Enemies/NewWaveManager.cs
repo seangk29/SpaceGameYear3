@@ -21,7 +21,7 @@ public class NewWaveManager : MonoBehaviour
     GameObject spawnWave;
     public GameObject currentWaveGO;
 
-    List<WavesSO> alreadySelectedWaves = new List<WavesSO>();
+   [SerializeField] List<WavesSO> alreadySelectedWaves = new List<WavesSO>();
 
     public List<WavesSO> finalizedWaves = new List<WavesSO>();
 
@@ -131,17 +131,16 @@ public class NewWaveManager : MonoBehaviour
                 // this whole selected recently thing confuses me like it edits the
                 // so's even after the debugging is over
                 // i think it works. this was just kinda to stop back to back same waves.
-                if (randomWave.selectedRecently != true)
-                {
+              if (randomWave.selectedRecently == true)
+               {
                     randomizedWaves.Add(randomWave);
-                    //randomWave.selectedRecently = true;
-                }
-                else
-                { 
-                    // should loop back to the start of while? hopefully
-                    //randomWave.selectedRecently = false;
-                    return;
-                }
+               }
+                  else
+                 { 
+                // should loop back to the start of while? hopefully
+                  randomWave.selectedRecently = true;
+                 return;
+                 }
             }
         }
 
@@ -188,6 +187,7 @@ public class NewWaveManager : MonoBehaviour
                 currentWave = finalizedWaves[waveNumber];
                 spawnWave = InstantiateWave(finalizedWaves[waveNumber].wavePrefab, wavePosition);
                 currentWaveGO = GameObject.FindGameObjectWithTag("EnemyWave");
+                
             }
         }
     }

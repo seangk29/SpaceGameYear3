@@ -5,7 +5,9 @@ using UnityEngine;
 public class ExplodeShot : MonoBehaviour
 {
 
-    public Death explode;
+    
+
+    public BulletData bullet;
 
     public GameObject explodeBullet;
   
@@ -14,12 +16,12 @@ public class ExplodeShot : MonoBehaviour
     void Start()
     {
         // change to player
-        explode = GetComponent<Death>();
+      
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (explode.health <= 0)
+        if (collision.gameObject.tag == "Enemy")
         {
             Instantiate(explodeBullet, transform.position, transform.rotation);
             return;

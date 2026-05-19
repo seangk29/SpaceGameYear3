@@ -28,6 +28,8 @@ TagManager:
   - EnemyWave
   - RLPermData
   - Spawner
+  - cardManager
+  - cardRemover
   layers:
   - Default
   - TransparentFX

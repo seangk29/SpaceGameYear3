@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,6 +10,7 @@ public class NextAreaTP : MonoBehaviour
     public GameManager gameManager;
     public GameObject OnScreen;
     public GameObject OffScreen;
+    public GameObject interact;
 
     // Start is called before the first frame update
     void Start()
@@ -45,32 +47,44 @@ public class NextAreaTP : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2" || collision.gameObject.tag == "Player3" || collision.gameObject.tag == "Player4" )
+
+        if (collision.gameObject.CompareTag("Player1"))
         {
-            Debug.Log("player collided");
             if (gameManager.currentState == GameManager.GameState.BossDefeated)
-            {
-                // load ending scene
-                SceneManager.LoadSceneAsync("Ending");
-            }
-            else
-            {
-                if (gameManager.currentLevel == 10)
                 {
-                    Debug.Log("it would load boss here");
-                    SceneManager.LoadSceneAsync("BOSS 1");
-                }
-                else if (gameManager.currentLevel == 0)
-                {
-                    Debug.Log("start gameplay");
-                    SceneManager.LoadSceneAsync("Start Gameplay");
+                    // load ending scene
+                    SceneManager.LoadSceneAsync("Ending");
                 }
                 else
                 {
-                    Debug.Log("it would load here");
-                    SceneManager.LoadSceneAsync("NoPDGameplay");
+                    if (gameManager.currentLevel == 10)
+                    {
+                        Debug.Log("it would load boss here");
+                        SceneManager.LoadSceneAsync("BOSS 1");
+                    }
+                    else if (gameManager.currentLevel == 0)
+                    {
+                        Debug.Log("start gameplay");
+                        SceneManager.LoadSceneAsync("Start Gameplay");
+                    }
+                    else
+                    {
+                        Debug.Log("it would load here");
+                        SceneManager.LoadSceneAsync("NoPDGameplay");
+                    }
                 }
-            }
-       }
+            
+
+
+            Debug.Log("player collided");
+ 
+         
+        }
+    }
+
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        interact.SetActive(false);
     }
 }

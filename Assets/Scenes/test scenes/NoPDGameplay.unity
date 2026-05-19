@@ -633,6 +633,7 @@ MonoBehaviour:
   oldWaveNumber: 0
   maxWaves: 3
   currentWaveGO: {fileID: 0}
+  alreadySelectedWaves: []
   finalizedWaves:
   - {fileID: 0}
   - {fileID: 0}
@@ -3704,7 +3705,7 @@ GameObject:
   - component: {fileID: 1653525500}
   m_Layer: 0
   m_Name: CardManager
-  m_TagString: Untagged
+  m_TagString: cardManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3744,6 +3745,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c98153a10385dc5439e5da7044142958, type: 2}
   - {fileID: 11400000, guid: 5aeead8a0b7b18e42b704cb59a222c5d, type: 2}
   - {fileID: 11400000, guid: ee7272ef21222d346be5ab436af83811, type: 2}
+  - {fileID: 11400000, guid: 8cf5e83ade07f3b48bbb9ef3578bccc4, type: 2}
   selectedCardType: 0
   selectedCardValue: 0
 --- !u!4 &1653525501
@@ -4617,7 +4619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8592981165356098803, guid: 21a4d2ade32557447897f1f8e6024291, type: 3}
       propertyPath: numLives
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8592981165356098803, guid: 21a4d2ade32557447897f1f8e6024291, type: 3}
       propertyPath: deathScreen
