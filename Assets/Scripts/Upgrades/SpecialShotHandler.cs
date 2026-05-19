@@ -53,7 +53,7 @@ public class SpecialShotHandler : MonoBehaviour
         currentSpecialPos3.SbulletPrefab = spreadShot;
         currentSpecialPos4.SbulletPrefab = spreadShot;
 
-        currentSpecialPos1.SPfireDelay = 1.5f;
+        currentSpecialPos1.SPfireDelay = 0.5f;
         currentSpecialPos2.SPfireDelay = 1.5f;
         currentSpecialPos3.SPfireDelay = 1.5f;
         currentSpecialPos4.SPfireDelay = 1.5f;
