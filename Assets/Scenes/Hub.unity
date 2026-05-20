@@ -1708,6 +1708,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SpecialBullet
       objectReference: {fileID: 0}
+    - target: {fileID: 1469651522427813453, guid: fc9791c5414697b4a97d946b7511bd22, type: 3}
+      propertyPath: SpRend
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2261693644480105344, guid: fc9791c5414697b4a97d946b7511bd22, type: 3}
       propertyPath: health
       value: 2

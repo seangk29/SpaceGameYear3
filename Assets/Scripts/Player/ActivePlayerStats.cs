@@ -39,6 +39,7 @@ public class ActivePlayerHealth : MonoBehaviour
     public PermaPlayerStats playerStats;
     public PlayerSpawner spawn;
     public GameObject sprite;
+    public EnemyBulletData enemyBullet;
 
     private void Start()
     {
@@ -68,6 +69,22 @@ public class ActivePlayerHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+
+        if (SpRend && shieldHealth > 0)
+        {
+            StartCoroutine(VisualIndicator(Color.cyan));
+        }
+
+        else if (SpRend)
+        {
+            StartCoroutine(VisualIndicator(Color.red));
+            Daudio.Play();
+        }
+
+      
+
+
+
         if (collider.gameObject.tag == "Enemy" && dodging == false && playerData != null)
         {
             if (shieldHealth <= 0)
@@ -97,17 +114,7 @@ public class ActivePlayerHealth : MonoBehaviour
                 invul = 1f;
                 sprite.gameObject.layer = 8;
 
-                if (SpRend && shieldHealth > 0)
-                {
-                    StartCoroutine(VisualIndicator(Color.cyan));
-                }
-
-                else if (SpRend)
-                {
-                    StartCoroutine(VisualIndicator(Color.red));
-                }
-
-                Daudio.Play();
+                
             }
 
 
@@ -120,7 +127,7 @@ public class ActivePlayerHealth : MonoBehaviour
                 invul = 1f; ;
                 sprite.gameObject.layer = 8;
 
-                if (SpRend && shieldHealth > 0)
+               /* if (SpRend && shieldHealth > 0)
                 {
                     StartCoroutine(VisualIndicator(Color.cyan));
                 }
@@ -130,7 +137,7 @@ public class ActivePlayerHealth : MonoBehaviour
                     StartCoroutine(VisualIndicator(Color.red));
                 }
 
-                Daudio.Play();
+                Daudio.Play();*/
             }
         }
 
@@ -156,9 +163,7 @@ public class ActivePlayerHealth : MonoBehaviour
     private void Update()
     {
 
-
-      
-
+       
         if (invul <= 0)
         {
             sprite.gameObject.layer = correctLayer;
