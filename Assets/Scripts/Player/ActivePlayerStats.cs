@@ -100,7 +100,6 @@ public class ActivePlayerHealth : MonoBehaviour
                 shieldHealth--;
                 shieldTimer = 0;
                 canRegen = true;
-                invul = 1f; ;
                 sprite.gameObject.layer = 8;
             }
         }
@@ -124,7 +123,6 @@ public class ActivePlayerHealth : MonoBehaviour
                 shieldHealth--;
                 shieldTimer = 0;
                 canRegen = true;
-                invul = 1f; ;
                 sprite.gameObject.layer = 8;
 
                /* if (SpRend && shieldHealth > 0)
