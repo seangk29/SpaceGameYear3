@@ -262,13 +262,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998818493631491545}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -1.65, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6406609021607725358}
-  m_Father: {fileID: 5521890873287797393}
+  m_Father: {fileID: 185449838748580946}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!212 &3773851449339665041
 SpriteRenderer:
@@ -875,6 +875,7 @@ MonoBehaviour:
   playerStats: {fileID: 0}
   spawn: {fileID: 0}
   sprite: {fileID: 0}
+  enemyBullet: {fileID: 0}
 --- !u!1 &1667372856028613701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,6 +1528,7 @@ MonoBehaviour:
   playerStats: {fileID: 0}
   spawn: {fileID: 0}
   sprite: {fileID: 0}
+  enemyBullet: {fileID: 0}
 --- !u!114 &5291026808162551070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1964,6 +1966,7 @@ MonoBehaviour:
   playerStats: {fileID: 0}
   spawn: {fileID: 0}
   sprite: {fileID: 0}
+  enemyBullet: {fileID: 0}
 --- !u!1 &4805046748181273822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2316,6 +2319,39 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &5187919943738197021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 185449838748580946}
+  m_Layer: 6
+  m_Name: Upgrade2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &185449838748580946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5187919943738197021}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8191383659531144171}
+  - {fileID: 892084821547844614}
+  m_Father: {fileID: 5521890873287797393}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5758430098709622640
 GameObject:
   m_ObjectHideFlags: 0
@@ -2407,7 +2443,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5521890873287797393}
-  - component: {fileID: 5002052093204188800}
+  - component: {fileID: 6892790680912189344}
   m_Layer: 6
   m_Name: RotateBullet
   m_TagString: Untagged
@@ -2428,13 +2464,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8167780187206360746}
   - {fileID: 5436081309830881920}
-  - {fileID: 8191383659531144171}
-  - {fileID: 892084821547844614}
+  - {fileID: 8167780187206360746}
+  - {fileID: 185449838748580946}
   m_Father: {fileID: 8727848638913848864}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5002052093204188800
+--- !u!114 &6892790680912189344
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2481,7 +2516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6292792333108652511}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: -1.65, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2830,13 +2865,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6697116264112834690}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 1.65, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.2279896}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2558929705910002922}
-  m_Father: {fileID: 5521890873287797393}
+  m_Father: {fileID: 185449838748580946}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &7689319154238987531
 SpriteRenderer:
@@ -3720,6 +3755,7 @@ MonoBehaviour:
   playerStats: {fileID: 0}
   spawn: {fileID: 0}
   sprite: {fileID: 0}
+  enemyBullet: {fileID: 0}
 --- !u!1 &7671036059347274953
 GameObject:
   m_ObjectHideFlags: 0
@@ -5280,6 +5316,7 @@ MonoBehaviour:
   playerStats: {fileID: 0}
   spawn: {fileID: 0}
   sprite: {fileID: 2913796824387255504}
+  enemyBullet: {fileID: 0}
 --- !u!114 &5946322690500378483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5579,6 +5616,7 @@ MonoBehaviour:
   ricochetShot: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
   explodeShot: {fileID: 1260864631553775174, guid: af5722c7079a6ed429f874e380444ecd, type: 3}
   spinShot: {fileID: 5789570455946320749}
+  activeSpin: 0
   currentSpecialPos1: {fileID: 1188533996794506909}
   currentSpecialPos2: {fileID: 7739745485852572010}
   currentSpecialPos3: {fileID: 6112183806146585590}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4403440731421434280}
   - component: {fileID: 4356675260298331550}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Top
   m_TagString: Border
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2033411497802874517}
   - component: {fileID: 7392892720836106550}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Right
   m_TagString: Border
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1285444547160569968}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bullet Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5949045871464499499}
   - component: {fileID: 8995099291071413684}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Left
   m_TagString: Border
   m_Icon: {fileID: 0}
@@ -317,7 +317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8208334373441391433}
   - component: {fileID: 3376714685008518082}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bottom
   m_TagString: Border
   m_Icon: {fileID: 0}

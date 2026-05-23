@@ -52,13 +52,13 @@ public class ApplyUpgrades : MonoBehaviour
                 PermaPlayerStats.MaxSpeedUpgrade(selectedCardValue);
                 break;
             case CardEffect.SpreadUnlock:
-                PermaPlayerStats.spreadUnlock();
+                PermaPlayerStats.spreadUnlock(selectedCardValue);
                 break;
             case CardEffect.RicochetUnlock:
-                PermaPlayerStats.ricochetUnlock();
+                PermaPlayerStats.ricochetUnlock(selectedCardValue);
                 break;
             case CardEffect.ExplodeUnlock:
-                PermaPlayerStats.explodeUnlock();
+                PermaPlayerStats.explodeUnlock(selectedCardValue);
                 break;
             case CardEffect.DamageUpgrade:
                 PermaPlayerStats.damageUpgrade(selectedCardValue);

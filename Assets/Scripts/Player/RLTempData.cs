@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.Runtime.InteropServices;
 using Unity.VisualScripting;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEngine.Rendering.DebugUI;
 
 public class PermaPlayerStats : MonoBehaviour
 {
@@ -28,14 +29,14 @@ public class PermaPlayerStats : MonoBehaviour
 
     public string activeSpecial;
     public bool canUseSpecial;
-
+  
     public int damage;
     public int specialDamage;
     public int spBulletHealth;
     Scene scene;
 
     public bool checkObject = false;
-
+    public bool activeSpin = false;
 
     //all this enable disable scene load part does is check if its the main menu
     //or the quit scene
@@ -86,7 +87,9 @@ public class PermaPlayerStats : MonoBehaviour
             }
             else
                 return;
-        //
+
+ 
+        
     }
 
     void OnDisable()
@@ -153,39 +156,47 @@ public class PermaPlayerStats : MonoBehaviour
     }
 
 
-    public void spreadUnlock()
+    public void spreadUnlock(int value)
     {
         specialShotHandler.GetSpreadShot();
         playerMovement.CanUseSpecial = true;
         canUseSpecial = true;
         activeSpecial = "Spread";
+        specialDamage += value;
+        spBulletHealth += value;
         Debug.Log("Spread Shot Unlocked");
     }
 
-    public void ricochetUnlock()
+    public void ricochetUnlock(int value)
     {
         specialShotHandler.GetRichochetShot();
         playerMovement.CanUseSpecial = true;
         canUseSpecial = true;
         activeSpecial = "Richochet";
+        specialDamage += value;
+        spBulletHealth += value;
         Debug.Log("Richochet Shot Unlocked");
     }
 
-    public void explodeUnlock()
+    public void explodeUnlock(int value)
     {
         specialShotHandler.GetExplodeShot();
         playerMovement.CanUseSpecial = true;
         canUseSpecial = true;
         activeSpecial = "Explode";
+        specialDamage += value;
+        spBulletHealth += value;
         Debug.Log("Explode Shot Unlocked");
     }
 
     public void spinUnlock()
     {
+       
         specialShotHandler.getSpinShot();
-        playerMovement.CanUseSpecial = true;
-        canUseSpecial = true;
-        activeSpecial = "Spin";
+        activeSpin = true;
+       // playerMovement.CanUseSpecial = true;
+       // canUseSpecial = true;
+       // activeSpecial = "Spin";
     }
 
     public void resetStats()

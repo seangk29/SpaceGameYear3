@@ -30,6 +30,7 @@ TagManager:
   - Spawner
   - cardManager
   - cardRemover
+  - spinUpgrade
   layers:
   - Default
   - TransparentFX

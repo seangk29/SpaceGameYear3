@@ -4576,6 +4576,7 @@ MonoBehaviour:
   specialDamage: 2
   spBulletHealth: 1
   checkObject: 0
+  activeSpin: 0
 --- !u!114 &1847853961
 MonoBehaviour:
   m_ObjectHideFlags: 0

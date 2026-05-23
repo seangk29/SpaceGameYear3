@@ -5,12 +5,15 @@ using UnityEngine;
 public class SpecialShotHandler : MonoBehaviour
 {
     public PermaPlayerStats playerStats;
+   
     public string activeSpecial;
 
     public GameObject spreadShot;
     public GameObject ricochetShot;
     public GameObject explodeShot;
     public GameObject spinShot;
+
+    public bool activeSpin = false;
 
     public PlayerShooting currentSpecialPos1;
     public PlayerShooting currentSpecialPos2;
@@ -19,6 +22,9 @@ public class SpecialShotHandler : MonoBehaviour
 
     private void Start()
     {
+        
+       
+        
         PlayerShooting currentSpecial = GetComponent<PlayerShooting>();
 
         playerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
@@ -46,6 +52,14 @@ public class SpecialShotHandler : MonoBehaviour
         }
     }
 
+
+    private void Update()
+    {
+        if (playerStats.activeSpin == true)
+        {
+            spinShot.SetActive(true);
+        }
+    }
     public void GetSpreadShot()
     {
         currentSpecialPos1.SbulletPrefab = spreadShot;
@@ -94,6 +108,6 @@ public class SpecialShotHandler : MonoBehaviour
     public void getSpinShot()
     {
         spinShot.SetActive(true);
-        activeSpecial = "Spin";
+       // activeSpecial = "Spin";
     }
 }
