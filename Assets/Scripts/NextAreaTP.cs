@@ -12,6 +12,8 @@ public class NextAreaTP : MonoBehaviour
     public GameObject OffScreen;
     public GameObject interact;
 
+    public bool canTeleport;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +23,48 @@ public class NextAreaTP : MonoBehaviour
         }
 
         gameManager = GameObject.FindGameObjectWithTag("GameMg").GetComponent<GameManager>();
-        
 
+        canTeleport = false;
     }
+
+    private void Update()
+    {
+        /*if (canTeleport && Input.GetKey(KeyCode.E)
+            || canTeleport && Input.GetKey(KeyCode.Joystick1Button3))
+        {
+
+            if (gameManager.currentState == GameManager.GameState.BossDefeated)
+            {
+                // load ending scene
+                SceneManager.LoadSceneAsync("Ending");
+            }
+            else
+            {
+                if (gameManager.currentLevel == 10)
+                {
+                    Debug.Log("it would load boss here");
+                    SceneManager.LoadSceneAsync("BOSS 1");
+                }
+                else if (gameManager.currentLevel == 0)
+                {
+                    Debug.Log("start gameplay");
+                    SceneManager.LoadSceneAsync("Start Gameplay");
+                }
+                else
+                {
+                    Debug.Log("it would load here");
+                    SceneManager.LoadSceneAsync("NoPDGameplay");
+                }
+            }
+
+
+
+            Debug.Log("player collided");
+
+
+        }*/
+    }
+
     private void OnDisable()
     {
         if (GameManager.Instance != null)
@@ -45,11 +86,20 @@ public class NextAreaTP : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerStay2D(Collider2D collision)
     {
-
-        if (collision.gameObject.CompareTag("Player1"))
+        if (collision.gameObject.tag == ("Player1"))
         {
+            interact.SetActive(true);
+            canTeleport = true;
+        }
+
+   
+
+        if (canTeleport && Input.GetKey(KeyCode.E) 
+            || canTeleport && Input.GetKey(KeyCode.Joystick1Button3))
+        {
+             
             if (gameManager.currentState == GameManager.GameState.BossDefeated)
                 {
                     // load ending scene
@@ -86,5 +136,6 @@ public class NextAreaTP : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         interact.SetActive(false);
+        canTeleport = false;
     }
 }

@@ -16,6 +16,8 @@ public class EnemyHealth : MonoBehaviour
     public PlayerData playerData;
     public NewWaveManager NewWave;
     public Animator animator;
+    public Collider2D Collider;
+    public MoveForward move;
     public bool isDying;
 
 
@@ -25,6 +27,9 @@ public class EnemyHealth : MonoBehaviour
         Combat = true;
         playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
         NewWave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<NewWaveManager>();
+
+        Collider = this.GetComponent<Collider2D>();
+        move = this.GetComponent<MoveForward>();
 
         //correctLayer = gameObject.layer;
         //Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
@@ -94,6 +99,11 @@ public class EnemyHealth : MonoBehaviour
         }
 
         isDying = true;
+
+        Collider.enabled = false;
+
+        move.enabled = false;
+        
 
         //NewWave.enemiesKilled += 1; //NewWave.enemiesKilled + 1;
         //playerData.kills += 1; //playerData.kills + 1;

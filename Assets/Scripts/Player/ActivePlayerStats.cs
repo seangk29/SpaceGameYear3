@@ -63,7 +63,7 @@ public class ActivePlayerHealth : MonoBehaviour
 
         dodging = false;
 
-       
+        SpRend = true;
 
     }
 
@@ -73,6 +73,7 @@ public class ActivePlayerHealth : MonoBehaviour
         if (SpRend && shieldHealth > 0)
         {
             StartCoroutine(VisualIndicator(Color.cyan));
+            Daudio.Play();
         }
 
         else if (SpRend)
@@ -87,12 +88,15 @@ public class ActivePlayerHealth : MonoBehaviour
 
         if (collider.gameObject.tag == "Enemy" && dodging == false && playerData != null)
         {
+            SpRend = true;
+            
             if (shieldHealth <= 0)
             {
                 playerData.score -= 50;
                 health -= 1;
                 invul = 1f;
                 sprite.gameObject.layer = 8;
+                SpRend = false;
             }
 
             if (shieldHealth > 0)
@@ -101,18 +105,21 @@ public class ActivePlayerHealth : MonoBehaviour
                 shieldTimer = 0;
                 canRegen = true;
                 sprite.gameObject.layer = 8;
+                SpRend = false;
             }
         }
 
         if (collider.gameObject.tag == "EnemyBullet" && dodging == false && playerData != null)
         {
+            SpRend = true;
+            
             if (shieldHealth <= 0)
             {
                 playerData.score -= 50;
                 health -= collider.GetComponent<EnemyBulletData>().damage;
                 invul = 1f;
                 sprite.gameObject.layer = 8;
-
+                SpRend = false;
                 
             }
 
@@ -123,19 +130,20 @@ public class ActivePlayerHealth : MonoBehaviour
                 shieldHealth--;
                 shieldTimer = 0;
                 canRegen = true;
-                sprite.gameObject.layer = 8;
+                SpRend = false;
 
-               /* if (SpRend && shieldHealth > 0)
-                {
-                    StartCoroutine(VisualIndicator(Color.cyan));
-                }
 
-                else if (SpRend)
-                {
-                    StartCoroutine(VisualIndicator(Color.red));
-                }
+                /* if (SpRend && shieldHealth > 0)
+                 {
+                     StartCoroutine(VisualIndicator(Color.cyan));
+                 }
 
-                Daudio.Play();*/
+                 else if (SpRend)
+                 {
+                     StartCoroutine(VisualIndicator(Color.red));
+                 }
+
+                 Daudio.Play();*/
             }
         }
 

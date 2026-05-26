@@ -389,8 +389,8 @@ BoxCollider2D:
   m_Offset: {x: 0.000000014901161, y: 0.7171117}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: -0.7213115}
-    oldSize: {x: 1.28, y: 0.61}
+    pivot: {x: 0.5, y: -0.640625}
+    oldSize: {x: 1.28, y: 0.64}
     newSize: {x: 0.54, y: 1.44}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1240,7 +1240,6 @@ GameObject:
   - component: {fileID: 4092512052659053887}
   - component: {fileID: 7422697933036058719}
   - component: {fileID: 125169855869528775}
-  - component: {fileID: 1052168599787172306}
   - component: {fileID: 5291026808162551070}
   m_Layer: 6
   m_Name: NEW playership
@@ -1498,37 +1497,6 @@ MonoBehaviour:
   Dodging: 0
   cooldownDodge: 1
   Dtimer: 0
---- !u!114 &1052168599787172306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2913796824387255504}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db97ab5e57c8a1540af9c3ee6a72dd63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 300
-  maxHealth: 0
-  canRegen: 0
-  SpRend: 1
-  Combat: 0
-  dodging: 0
-  Daudio: {fileID: 4092512052659053887}
-  playerData: {fileID: 0}
-  playerStats: {fileID: 0}
-  spawn: {fileID: 0}
-  sprite: {fileID: 0}
-  enemyBullet: {fileID: 0}
 --- !u!114 &5291026808162551070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2643,8 +2611,8 @@ BoxCollider2D:
   m_Offset: {x: 0.000000014901161, y: 0.7171117}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: -0.7213115}
-    oldSize: {x: 1.28, y: 0.61}
+    pivot: {x: 0.5, y: -0.640625}
+    oldSize: {x: 1.28, y: 0.64}
     newSize: {x: 0.54, y: 1.44}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2992,8 +2960,8 @@ BoxCollider2D:
   m_Offset: {x: 0.000000014901161, y: 0.7171117}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: -0.7213115}
-    oldSize: {x: 1.28, y: 0.61}
+    pivot: {x: 0.5, y: -0.640625}
+    oldSize: {x: 1.28, y: 0.64}
     newSize: {x: 0.54, y: 1.44}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5050,8 +5018,8 @@ BoxCollider2D:
   m_Offset: {x: 0.000000014901161, y: 0.7171117}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: -0.7213115}
-    oldSize: {x: 1.28, y: 0.61}
+    pivot: {x: 0.5, y: -0.640625}
+    oldSize: {x: 1.28, y: 0.64}
     newSize: {x: 0.54, y: 1.44}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5308,7 +5276,7 @@ MonoBehaviour:
   health: 3
   maxHealth: 3
   canRegen: 0
-  SpRend: 1
+  SpRend: 0
   Combat: 1
   dodging: 0
   Daudio: {fileID: 5323057429700352014}
@@ -5439,7 +5407,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: de36aeae0f1370f40841d0eee9fd8204, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.25
   m_Pitch: -2.16
   Loop: 0
   Mute: 0

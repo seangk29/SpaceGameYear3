@@ -39,13 +39,14 @@ public class CardManager : MonoBehaviour
     public CardEffect selectedCardType;
     public int selectedCardValue;
 
+    public ActivePlayerHealth health;
 
     private void Start()
     {
         PermaPlayerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
         applyUpgrades = GetComponent<ApplyUpgrades>();
         cardRemover = GameObject.FindGameObjectWithTag("cardRemover").GetComponent<cardRemover>();
-
+        health = GameObject.FindGameObjectWithTag("Player").GetComponent<ActivePlayerHealth>();
     }
     private void Awake()
     {
@@ -224,5 +225,6 @@ public class CardManager : MonoBehaviour
         //applyUpgrades.enableMove();
         move.enabled = true;
         shoot.enabled = true;
+      //  health.SpRend = false;
     }
 }

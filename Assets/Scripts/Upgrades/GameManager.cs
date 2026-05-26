@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,9 +12,12 @@ public class GameManager : MonoBehaviour
     public GameState currentState;
     public event Action<GameState> OnStateChanged;
 
+ 
     private void Awake()
     {
         Instance = this;
+
+        
     }
 
     // this part is just for testing
@@ -24,6 +28,8 @@ public class GameManager : MonoBehaviour
             changeState(GameState.CardSelection);
             //currentLevel++;
         }
+
+        
 
      /*   if (Input.GetKeyDown(KeyCode.J))
         {
@@ -76,7 +82,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
+    
     // called when the game is terminated
     void OnDisable()
     {
@@ -98,4 +104,7 @@ public class GameManager : MonoBehaviour
 
         Hub
     }
+
+
+    
 }
