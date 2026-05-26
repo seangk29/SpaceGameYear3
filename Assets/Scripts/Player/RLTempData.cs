@@ -163,7 +163,6 @@ public class PermaPlayerStats : MonoBehaviour
         canUseSpecial = true;
         activeSpecial = "Spread";
         specialDamage += value;
-        spBulletHealth += value;
         Debug.Log("Spread Shot Unlocked");
     }
 
@@ -174,7 +173,6 @@ public class PermaPlayerStats : MonoBehaviour
         canUseSpecial = true;
         activeSpecial = "Richochet";
         specialDamage += value;
-        spBulletHealth += value;
         Debug.Log("Richochet Shot Unlocked");
     }
 
@@ -185,7 +183,6 @@ public class PermaPlayerStats : MonoBehaviour
         canUseSpecial = true;
         activeSpecial = "Explode";
         specialDamage += value;
-        spBulletHealth += value;
         Debug.Log("Explode Shot Unlocked");
     }
 

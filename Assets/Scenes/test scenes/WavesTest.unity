@@ -2072,6 +2072,7 @@ MonoBehaviour:
   specialDamage: 2
   spBulletHealth: 3
   checkObject: 0
+  activeSpin: 0
 --- !u!114 &1383394145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2096,6 +2097,7 @@ MonoBehaviour:
   bossCount: 0
   score: 0
   spaceMoney: 0
+  previousMoney: 0
   kills: 0
 --- !u!114 &1383394146
 MonoBehaviour:
