@@ -38,6 +38,8 @@ public class CardManager : MonoBehaviour
 
     public CardEffect selectedCardType;
     public int selectedCardValue;
+    public float selectedCardFloatValue;
+
 
     public ActivePlayerHealth health;
 
@@ -157,12 +159,13 @@ public class CardManager : MonoBehaviour
 
         selectedCardType = selectedCard.effectType;
         selectedCardValue = selectedCard.effectValue;
+        selectedCardFloatValue = selectedCard.effectFloatValue;
 
 
         //applyUpgrades.getUpgrade(selectedCardType, selectedCardValue);
 
         // try and actually apply upgrade
-       switch (selectedCardType)
+        switch (selectedCardType)
         {
             case CardEffect.HpIncrease:
                 PermaPlayerStats.MaxHealthUpgrade(selectedCardValue);
@@ -174,7 +177,7 @@ public class CardManager : MonoBehaviour
                 PermaPlayerStats.ShieldRegenUpgrade(selectedCardValue);
                 break;
             case CardEffect.SpeedIncrease:
-                PermaPlayerStats.MaxSpeedUpgrade(selectedCardValue);
+                PermaPlayerStats.MaxSpeedUpgrade(selectedCardFloatValue);
                 break;
             case CardEffect.SpreadUnlock:
                 PermaPlayerStats.spreadUnlock(selectedCardValue);

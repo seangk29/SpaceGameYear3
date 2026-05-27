@@ -18,6 +18,7 @@ MonoBehaviour:
   descText: Cosmo's boosters gain an increase in SPEED by ONE.
   effectType: 3
   effectString: {fileID: 0}
-  effectValue: 1
+  effectValue: 0
+  effectFloatValue: 0.2
   isUnique: 0
   unlockLevel: 5

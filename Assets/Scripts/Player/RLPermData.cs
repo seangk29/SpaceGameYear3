@@ -25,8 +25,8 @@ public class RLPermData : MonoBehaviour
     public int regenShieldTimer;
     public int baseRegenShieldTimer;
 
-    public int speed;
-    public int maxSpeed;
+    public float speed;
+    public float maxSpeed;
 
     public string activeSpecial;
     public bool canUseSpecial;
@@ -121,6 +121,7 @@ public class RLPermData : MonoBehaviour
     public void MaxSpeedUpgrade(int value)
     {
         playerMovement.moveSpeed = playerMovement.moveSpeed + value;
+        speed = speed + value;  
         maxSpeed = maxSpeed + value;
         gameObject.GetComponentInChildren<PlayerMovement>();
         Debug.Log("Speed upgraded");

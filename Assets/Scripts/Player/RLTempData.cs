@@ -24,8 +24,8 @@ public class PermaPlayerStats : MonoBehaviour
     public int regenShieldTimer;
     public int baseRegenShieldTimer;
 
-    public int speed;
-    public int maxSpeed;
+    public float speed;
+    public float maxSpeed;
 
     public string activeSpecial;
     public bool canUseSpecial;
@@ -130,11 +130,12 @@ public class PermaPlayerStats : MonoBehaviour
         Debug.Log("Healed");
     }
 
-    public void MaxSpeedUpgrade(int value)
+    public void MaxSpeedUpgrade(float value)
     { 
         playerMovement.moveSpeed = playerMovement.moveSpeed + value;
+        speed = speed + value;
         maxSpeed = maxSpeed + value;
-        gameObject.GetComponentInChildren<PlayerMovement>();
+        gameObject.GetComponent<PlayerMovement>();
         Debug.Log("Speed upgraded");
     }
 

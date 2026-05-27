@@ -91,7 +91,8 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Start()
     {
-
+       
+      
 
     }
 
@@ -257,7 +258,7 @@ public class PlayerMovement : MonoBehaviour
         if (cooldownDodge >= 0.01)
         {
 
-            moveSpeed = dodgeSpeed;
+            playerStats.speed = dodgeSpeed;
 
 
         }
@@ -265,7 +266,7 @@ public class PlayerMovement : MonoBehaviour
         if (cooldownDodge >= 0.25)
         {
 
-            moveSpeed = maxSpeed;
+            playerStats.speed = playerStats.maxSpeed;
             cooldownDodge = 0;
             Dodging = false;
             activePlayer.dodging = false;
@@ -276,10 +277,11 @@ public class PlayerMovement : MonoBehaviour
     }
     public void MovePlayer()
     {
+        
         Vector3 pos = transform.position;
 
-        Vector3 velocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime,
-                           Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime);
+        Vector3 velocity = new Vector3(Input.GetAxis("Horizontal") * playerStats.speed * Time.deltaTime,
+                           Input.GetAxis("Vertical") * playerStats.speed * Time.deltaTime);
 
         pos += velocity;
 

@@ -27,6 +27,7 @@ public class CardSO : ScriptableObject
 
     // how much each effect changes so we can do "+1 hp" and "+2 shield" with the same script
     public int effectValue;
+    public float effectFloatValue;
 
     // this is for if the upgrade should only be selected one time
     // so like hp can show up a bunch but you can only get one unlock spread shot

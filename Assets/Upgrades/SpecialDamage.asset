@@ -16,8 +16,9 @@ MonoBehaviour:
   headerText: --- SPECIAL ---
   cardText: Receive +3 Spread Shot Damage
   descText: Increase the DAMAGE of the SPREAD SHOT by THREE.
-  effectType: 8
+  effectType: 9
   effectString: {fileID: 0}
   effectValue: 3
+  effectFloatValue: 0
   isUnique: 0
   unlockLevel: 5
