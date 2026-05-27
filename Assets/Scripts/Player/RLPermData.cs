@@ -158,13 +158,13 @@ public class RLPermData : MonoBehaviour
 
     public void ricochetUnlock(int value)
     {
-        specialShotHandler.GetRichochetShot();
+        specialShotHandler.GetRicochetShot();
         playerMovement.CanUseSpecial = true;
         specialDamage += value;
         spBulletHealth += value;
         canUseSpecial = true;
-        activeSpecial = "Richochet";
-        Debug.Log("Richochet Shot Unlocked");
+        activeSpecial = "Ricochet";
+        Debug.Log("Ricochet Shot Unlocked");
     }
 
     public void explodeUnlock(int value)

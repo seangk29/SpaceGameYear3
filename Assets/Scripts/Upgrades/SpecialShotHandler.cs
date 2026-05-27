@@ -12,8 +12,9 @@ public class SpecialShotHandler : MonoBehaviour
     public GameObject ricochetShot;
     public GameObject explodeShot;
     public GameObject spinShot;
+    public GameObject gunBot;
 
-    public bool activeSpin = false;
+  
 
     public PlayerShooting currentSpecialPos1;
     public PlayerShooting currentSpecialPos2;
@@ -40,7 +41,7 @@ public class SpecialShotHandler : MonoBehaviour
                     GetSpreadShot();
                     break;
                 case "Ricochet":
-                    GetRichochetShot();
+                    GetRicochetShot();
                     break;
                 case "Explode":
                     GetExplodeShot();
@@ -59,6 +60,11 @@ public class SpecialShotHandler : MonoBehaviour
         {
             spinShot.SetActive(true);
         }
+
+        if (playerStats.activeGunBot == true)
+        {
+            gunBot.SetActive(true);
+        }
     }
     public void GetSpreadShot()
     {
@@ -74,7 +80,7 @@ public class SpecialShotHandler : MonoBehaviour
         activeSpecial = "Spread";
     }
 
-    public void GetRichochetShot()
+    public void GetRicochetShot()
     {
         currentSpecialPos1.SbulletPrefab = ricochetShot;
         currentSpecialPos2.SbulletPrefab = ricochetShot;
@@ -108,6 +114,12 @@ public class SpecialShotHandler : MonoBehaviour
     public void getSpinShot()
     {
         spinShot.SetActive(true);
-       // activeSpecial = "Spin";
+      
+    }
+
+    public void getGunBot()
+    {
+        gunBot.SetActive(true);
+     
     }
 }

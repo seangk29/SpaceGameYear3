@@ -3985,6 +3985,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5aeead8a0b7b18e42b704cb59a222c5d, type: 2}
   - {fileID: 11400000, guid: ee7272ef21222d346be5ab436af83811, type: 2}
   - {fileID: 11400000, guid: 8cf5e83ade07f3b48bbb9ef3578bccc4, type: 2}
+  - {fileID: 11400000, guid: 30ce8fdb965c3c147b2c17ef3c2d8ef1, type: 2}
   cardRemover: {fileID: 0}
   selectedCardType: 0
   selectedCardValue: 0

@@ -48,6 +48,7 @@ public enum CardEffect
     RicochetUnlock,
     ExplodeUnlock,
     SpinUnlock,
+    GunBot,
     SpecialUpgrade,
     DamageUpgrade,
     SPBulHP

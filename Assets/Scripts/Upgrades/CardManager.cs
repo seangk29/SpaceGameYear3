@@ -197,6 +197,9 @@ public class CardManager : MonoBehaviour
             case CardEffect.SPBulHP:
                 PermaPlayerStats.spBulletHPUpgrade(selectedCardValue);
                 break;
+            case CardEffect.GunBot:
+                PermaPlayerStats.GunBot();
+                break;
         }
 
         // change state back to playing

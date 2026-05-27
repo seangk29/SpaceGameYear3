@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
-  m_Name: SpinUnlock
+  m_Name: GunBot
   m_EditorClassIdentifier: 
-  cardImage: {fileID: -1234337173940379404, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
-  headerText: --- SPIN ---
-  cardText: 'Receive Ship Addition: Spin'
-  descText: Obtain a SHIP ADDITION that SPINS TWO bullets AROUND Cosmo.
-  effectType: 7
+  cardImage: {fileID: 2663702130759295590, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
+  headerText: --- GUN BOT---
+  cardText: 'Receive SHIP ADDITION: Gun Bot'
+  descText: 'Obtain a GUN BOT that targets and fires at ENEMY SHIPS '
+  effectType: 8
   effectString: {fileID: 0}
   effectValue: 1
   isUnique: 1

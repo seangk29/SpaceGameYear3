@@ -37,6 +37,7 @@ public class PermaPlayerStats : MonoBehaviour
 
     public bool checkObject = false;
     public bool activeSpin = false;
+    public bool activeGunBot = false;
 
     //all this enable disable scene load part does is check if its the main menu
     //or the quit scene
@@ -168,12 +169,13 @@ public class PermaPlayerStats : MonoBehaviour
 
     public void ricochetUnlock(int value)
     {
-        specialShotHandler.GetRichochetShot();
+        specialShotHandler.GetRicochetShot();
         playerMovement.CanUseSpecial = true;
         canUseSpecial = true;
-        activeSpecial = "Richochet";
+        activeSpecial = "Ricochet";
         specialDamage += value;
-        Debug.Log("Richochet Shot Unlocked");
+        spBulletHealth += value;
+        Debug.Log("Ricochet Shot Unlocked");
     }
 
     public void explodeUnlock(int value)
@@ -194,6 +196,12 @@ public class PermaPlayerStats : MonoBehaviour
        // playerMovement.CanUseSpecial = true;
        // canUseSpecial = true;
        // activeSpecial = "Spin";
+    }
+
+    public void GunBot()
+    {
+        specialShotHandler.getGunBot();
+        activeGunBot = true;
     }
 
     public void resetStats()

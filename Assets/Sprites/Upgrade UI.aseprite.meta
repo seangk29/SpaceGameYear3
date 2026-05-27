@@ -425,7 +425,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_14
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -445,6 +445,26 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_15
     originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 11
+      width: 30
+      height: 33
+    spriteID: d99693bd7c6aab24fa865ad94dc4464b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Upgrade UI_16
+    originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,7 +474,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 18
-    spriteID: d99693bd7c6aab24fa865ad94dc4464b
+    spriteID: 34d77e93fc597064c95f74ee5a034d8f
     spriteBone: []
     spriteOutline: []
     vertices: []

@@ -86,49 +86,40 @@ public class NextAreaTP : MonoBehaviour
         }
     }
 
-    public void OnTriggerStay2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == ("Player1"))
         {
-            interact.SetActive(true);
-            canTeleport = true;
-        }
 
-   
-
-        if (canTeleport && Input.GetKey(KeyCode.E) 
-            || canTeleport && Input.GetKey(KeyCode.Joystick1Button3))
-        {
-             
             if (gameManager.currentState == GameManager.GameState.BossDefeated)
+            {
+                // load ending scene
+                SceneManager.LoadSceneAsync("Ending");
+            }
+            else
+            {
+                if (gameManager.currentLevel == 10)
                 {
-                    // load ending scene
-                    SceneManager.LoadSceneAsync("Ending");
+                    Debug.Log("it would load boss here");
+                    SceneManager.LoadSceneAsync("BOSS 1");
+                }
+                else if (gameManager.currentLevel == 0)
+                {
+                    Debug.Log("start gameplay");
+                    SceneManager.LoadSceneAsync("Start Gameplay");
                 }
                 else
                 {
-                    if (gameManager.currentLevel == 10)
-                    {
-                        Debug.Log("it would load boss here");
-                        SceneManager.LoadSceneAsync("BOSS 1");
-                    }
-                    else if (gameManager.currentLevel == 0)
-                    {
-                        Debug.Log("start gameplay");
-                        SceneManager.LoadSceneAsync("Start Gameplay");
-                    }
-                    else
-                    {
-                        Debug.Log("it would load here");
-                        SceneManager.LoadSceneAsync("NoPDGameplay");
-                    }
+                    Debug.Log("it would load here");
+                    SceneManager.LoadSceneAsync("NoPDGameplay");
                 }
-            
+            }
+
 
 
             Debug.Log("player collided");
- 
-         
+
+
         }
     }
 
