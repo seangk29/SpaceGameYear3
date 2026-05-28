@@ -629,6 +629,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 54af541cd59a37d43bd964785c143b77, type: 2}
   - {fileID: 11400000, guid: f75c569847c42dd4abfe00c839030564, type: 2}
   - {fileID: 11400000, guid: 9bdd061130c82f947b6bff75fd4628e7, type: 2}
+  - {fileID: 11400000, guid: 9bdd061130c82f947b6bff75fd4628e7, type: 2}
   wavePosition: {fileID: 348620700}
   currentWave: {fileID: 0}
   enemiesKilled: 0
@@ -3989,6 +3990,7 @@ MonoBehaviour:
   cardRemover: {fileID: 0}
   selectedCardType: 0
   selectedCardValue: 0
+  selectedCardFloatValue: 0
   health: {fileID: 0}
 --- !u!4 &1653525501
 Transform:
@@ -4684,6 +4686,22 @@ PrefabInstance:
     - target: {fileID: 3300949747444414615, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
       propertyPath: m_Name
       value: Next area
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946870170590383945, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
+      propertyPath: m_Size.x
+      value: 1.4972919
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946870170590383945, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.67859143
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946870170590383945, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.001424253
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946870170590383945, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.9607042
       objectReference: {fileID: 0}
     - target: {fileID: 6065342687248122764, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
       propertyPath: m_LocalPosition.x

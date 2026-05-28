@@ -19,5 +19,6 @@ MonoBehaviour:
   effectType: 5
   effectString: {fileID: 0}
   effectValue: 1
+  effectFloatValue: 0
   isUnique: 1
-  unlockLevel: 5
+  unlockLevel: 4

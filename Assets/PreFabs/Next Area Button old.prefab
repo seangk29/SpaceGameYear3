@@ -134,6 +134,8 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   OnScreen: {fileID: 8628753632869782775}
   OffScreen: {fileID: 7082979011092925552}
+  interact: {fileID: 0}
+  canTeleport: 0
 --- !u!61 &517714144468089762
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -166,18 +168,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.068897486, y: 0.5657141}
+  m_Offset: {x: 0.0023729205, y: 0.8238305}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: -1.6530613}
-    oldSize: {x: 1.44, y: 0.49}
+    pivot: {x: 0.5, y: -0.5853659}
+    oldSize: {x: 1.44, y: 0.82}
     newSize: {x: 1.44, y: 0.49}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.5132089, y: 1.4685717}
+  m_Size: {x: 1.4642442, y: 0.9523389}
   m_EdgeRadius: 0
 --- !u!1 &8628753632869782775
 GameObject:

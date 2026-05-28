@@ -5631,6 +5631,8 @@ MonoBehaviour:
   specialDamage: 2
   spBulletHealth: 1
   checkObject: 0
+  activeSpin: 0
+  activeGunBot: 0
 --- !u!114 &1847853961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6042,6 +6044,22 @@ PrefabInstance:
     - target: {fileID: 3300949747444414615, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
       propertyPath: m_Name
       value: Next area
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946870170590383945, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
+      propertyPath: m_Size.x
+      value: 1.4150488
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946870170590383945, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6799014
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946870170590383945, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0019352436
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946870170590383945, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.9600493
       objectReference: {fileID: 0}
     - target: {fileID: 6065342687248122764, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
       propertyPath: m_LocalPosition.x

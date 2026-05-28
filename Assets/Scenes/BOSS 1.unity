@@ -1391,6 +1391,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Next area
       objectReference: {fileID: 0}
+    - target: {fileID: 5946870170590383945, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5051069
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946870170590383945, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6677624
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946870170590383945, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.018110633
+      objectReference: {fileID: 0}
+    - target: {fileID: 5946870170590383945, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.96611875
+      objectReference: {fileID: 0}
     - target: {fileID: 6065342687248122764, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -33.5

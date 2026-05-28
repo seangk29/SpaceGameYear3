@@ -21,4 +21,4 @@ MonoBehaviour:
   effectValue: 1
   effectFloatValue: 0
   isUnique: 0
-  unlockLevel: 0
+  unlockLevel: 1
