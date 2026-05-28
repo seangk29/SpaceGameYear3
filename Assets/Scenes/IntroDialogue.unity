@@ -1199,6 +1199,7 @@ MonoBehaviour:
   bossCount: 0
   score: 0
   spaceMoney: 0
+  previousMoney: 0
   kills: 0
 --- !u!114 &631784484
 MonoBehaviour:
@@ -1242,6 +1243,7 @@ MonoBehaviour:
   activePlayerHealth: {fileID: 0}
   playerMovement: {fileID: 0}
   specialShotHandler: {fileID: 0}
+  rlPermData: {fileID: 0}
   health: 3
   maxHealth: 3
   shield: 1
@@ -1255,6 +1257,9 @@ MonoBehaviour:
   damage: 0
   specialDamage: 0
   spBulletHealth: 0
+  checkObject: 0
+  activeSpin: 0
+  activeGunBot: 0
 --- !u!1 &678500041
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,7 +3337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1558638038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3468,10 +3473,15 @@ MonoBehaviour:
   npcDialogueText: {fileID: 1957618097}
   typeSpeed: 3
   convoEnded: 0
-  playerVoice: {fileID: 582516070}
+  replaceVoice: {fileID: 582516070}
   playerVoiceObject: {fileID: 582516068}
-  playerClips: []
-  playerSprites: []
+  imgReplace: {fileID: 927057107}
+  shops: {fileID: 0}
+  skipsShop: {fileID: 0}
+  nicosShop: {fileID: 0}
+  skipBool: 0
+  nicoBool: 0
+  visual: 0
 --- !u!224 &1647872070
 RectTransform:
   m_ObjectHideFlags: 0
