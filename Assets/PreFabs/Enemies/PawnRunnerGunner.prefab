@@ -428,6 +428,10 @@ PrefabInstance:
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7040152100466939437, guid: 3b3677c12f869b14f877bb05e5de0405, type: 3}
+    - target: {fileID: 3626916397498700004, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_SortingLayer
       value: 2
       objectReference: {fileID: 0}
@@ -437,15 +441,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -594,18 +598,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00546813, y: 0.6621767}
+  m_Offset: {x: -0.005467981, y: -0.005094528}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: -0.09090909}
-    oldSize: {x: 1, y: 0.9166667}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.484375}
     newSize: {x: 1, y: 0.9166667}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6477854, y: 1.5556467}
+  m_Size: {x: 0.53480774, y: 0.530264}
   m_EdgeRadius: 0
 --- !u!114 &3053484737215144298
 MonoBehaviour:
@@ -743,7 +747,7 @@ Animator:
   m_GameObject: {fileID: 1844125890818198795}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f1d1876e606737a41946353cfbc860be, type: 2}
+  m_Controller: {fileID: 9100000, guid: bf55c73b233754d48aa1087a9213ab2a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -776,4 +780,6 @@ MonoBehaviour:
   playerData: {fileID: 0}
   NewWave: {fileID: 0}
   animator: {fileID: 3248134804905234509}
+  Collider: {fileID: 0}
+  move: {fileID: 0}
   isDying: 0

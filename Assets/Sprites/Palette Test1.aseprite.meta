@@ -225,7 +225,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_4
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -245,7 +245,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_5
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -265,7 +265,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_6
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -285,7 +285,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_7
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -305,7 +305,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_8
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -325,7 +325,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_9
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -345,7 +345,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_10
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -365,7 +365,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_11
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -385,7 +385,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_12
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -405,7 +405,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_13
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -425,7 +425,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_14
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -445,7 +445,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_15
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -465,7 +465,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_16
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -485,7 +485,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_17
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -505,7 +505,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_18
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -525,7 +525,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_19
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -545,7 +545,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_20
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -565,7 +565,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_21
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -585,7 +585,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_22
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -605,7 +605,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Palette Test1_23
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
