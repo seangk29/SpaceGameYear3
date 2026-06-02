@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class cardRemover : MonoBehaviour
 {
-   public CardManager cardManager;
+    public CardManager cardManager;
     public List<CardSO> alreadySelectedCards = new List<CardSO>();
 
-  
+
     private void Update()
     {
         if (cardManager == null)
@@ -18,6 +18,18 @@ public class cardRemover : MonoBehaviour
             return;
     }
 
+    public void removeCard()
+    {
+        List<CardSO> availableCards = new List<CardSO>(cardManager.Upgrades);
+
+        // filtering upgrades
+        availableCards.RemoveAll(card => card.isUnique && alreadySelectedCards.Contains(card) || card.unlockLevel > GameManager.Instance.GetCurrentLevel()
+        );
+
+        
+
+    }
+
     private void HandleGameStateChanged(GameManager.GameState state)
     {
         if (state == GameManager.GameState.CardSelection)
@@ -25,16 +37,6 @@ public class cardRemover : MonoBehaviour
 
             removeCard();
         }
-    }
-
-
-    public void removeCard()
-    {
-        List<CardSO> availableCards = new List<CardSO>(cardManager.Upgrades);
-      
-        // filtering upgrades
-        availableCards.RemoveAll(card => card.isUnique && alreadySelectedCards.Contains(card) || card.unlockLevel > GameManager.Instance.GetCurrentLevel()
-        );
 
     }
 }

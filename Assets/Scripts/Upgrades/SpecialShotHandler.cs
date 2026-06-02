@@ -5,6 +5,8 @@ using UnityEngine;
 public class SpecialShotHandler : MonoBehaviour
 {
     public PermaPlayerStats playerStats;
+    public bool spreadUnlocked;
+    public CardExtras extras;
    
     public string activeSpecial;
 
@@ -78,6 +80,8 @@ public class SpecialShotHandler : MonoBehaviour
         currentSpecialPos3.SPfireDelay = 1.5f;
         currentSpecialPos4.SPfireDelay = 1.5f;
         activeSpecial = "Spread";
+        spreadUnlocked = true;
+                            
     }
 
     public void GetRicochetShot()
