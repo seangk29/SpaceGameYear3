@@ -45,6 +45,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 93562069747532519, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+      propertyPath: timer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
       propertyPath: m_Name
       value: Ricochet Bullet (1)
@@ -55,7 +59,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2058856672232373795, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.25
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 2058856672232373795, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
       propertyPath: m_LocalPosition.y
@@ -100,13 +104,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2250116500096128495}
   m_SourcePrefab: {fileID: 100100000, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
 --- !u!4 &4002536104741339562 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2058856672232373795, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
   m_PrefabInstance: {fileID: 3105612776414052233}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4208094805341710799 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+  m_PrefabInstance: {fileID: 3105612776414052233}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2250116500096128495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208094805341710799}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6eba34b52f6e148aaa01c80cbaec33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpeed: 90
 --- !u!1001 &8052487717134482032
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -119,6 +144,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 93562069747532519, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+      propertyPath: timer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
       propertyPath: m_Name
       value: Ricochet Bullet
@@ -129,7 +158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2058856672232373795, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.25
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 2058856672232373795, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
       propertyPath: m_LocalPosition.y
@@ -174,10 +203,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1427087340613780249}
   m_SourcePrefab: {fileID: 100100000, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
 --- !u!4 &8309890999545840723 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2058856672232373795, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
   m_PrefabInstance: {fileID: 8052487717134482032}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9133110213336034358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1260864631553775174, guid: a42e3163f9c6a0649958a6bc58c3ce60, type: 3}
+  m_PrefabInstance: {fileID: 8052487717134482032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1427087340613780249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9133110213336034358}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6eba34b52f6e148aaa01c80cbaec33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpeed: 90

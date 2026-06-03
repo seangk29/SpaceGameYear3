@@ -4855,6 +4855,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Skippy
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: 5b3e3851fe6d88249bcfb6367e7fa41b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 680fefeb673ac104db7dd5281b4c7a8e, type: 2}
     - target: {fileID: 3626916397498700004, guid: 5b3e3851fe6d88249bcfb6367e7fa41b, type: 3}
       propertyPath: m_Sprite
       value: 
