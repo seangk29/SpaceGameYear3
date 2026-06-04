@@ -182,10 +182,10 @@ MonoBehaviour:
   replaceVoice: {fileID: 1755215302}
   playerVoiceObject: {fileID: 1755215300}
   imgReplace: {fileID: 466127986}
-  shops: {fileID: 0}
-  skipsShop: {fileID: 514052944}
+  shops: {fileID: 813715082}
+  firstActivator: {fileID: 514052944}
   nicosShop: {fileID: 38975506}
-  skipBool: 0
+  activatorBool: 0
   nicoBool: 0
   visual: 0
 --- !u!114 &879929
@@ -3474,6 +3474,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8727848638913848864, guid: fc9791c5414697b4a97d946b7511bd22, type: 3}
   m_PrefabInstance: {fileID: 520451772}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &813715082 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6471710731014124954, guid: fc9791c5414697b4a97d946b7511bd22, type: 3}
+  m_PrefabInstance: {fileID: 520451772}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e336240644ed8046a8e26a84fa91e36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &821266658
 GameObject:
   m_ObjectHideFlags: 0

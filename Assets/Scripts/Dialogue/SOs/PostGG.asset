@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82745c8fbc5d0b49a445aa993baf045, type: 3}
+  m_Name: PostGG
+  m_EditorClassIdentifier: 
+  speakerClip:
+  - {fileID: 8300000, guid: 4dd46a535e2cc62468e3b37e72874d54, type: 3}
+  - {fileID: 8300000, guid: 63302d9ecf13daf49aad32edd67d99d9, type: 3}
+  sprites:
+  - {fileID: 3391192003638874636, guid: 2fff7170d11fe63498b1ff052142e643, type: 3}
+  - {fileID: 21300000, guid: feb267bcfa6a3824c8bfa454015aaab5, type: 3}
+  paragraphs:
+  - aurora
+  - aurora blue

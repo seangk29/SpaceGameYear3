@@ -41,6 +41,7 @@ public class BossHealth : MonoBehaviour
 
         Combat = true;
         correctLayer = gameObject.layer;
+        gameManager.currentLevel++;
         //Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
     }
 
@@ -81,6 +82,7 @@ public class BossHealth : MonoBehaviour
         if (health <= 0)
         {
             Die();
+            
         }
     }
 
@@ -99,8 +101,8 @@ public class BossHealth : MonoBehaviour
             Debug.Log("Shot!");
             //Debug.Log(Wave.enemyCount);
         }
-        GameManager.Instance.changeState(GameManager.GameState.BossDefeated);
         Destroy(gameObject);
+        GameManager.Instance.changeState(GameManager.GameState.NextArea);
     }
 
 

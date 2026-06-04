@@ -91,17 +91,19 @@ public class NextAreaTP : MonoBehaviour
         if (collision.gameObject.tag == ("Player1"))
         {
 
-            if (gameManager.currentState == GameManager.GameState.BossDefeated)
-            {
-                // load ending scene
-                SceneManager.LoadSceneAsync("Ending");
-            }
-            else
-            {
-                if (gameManager.currentLevel == 10)
+
+                if (gameManager.currentLevel == 11)
+                {
+                    SceneManager.LoadSceneAsync("PostGG");
+                }
+                else if (gameManager.currentLevel == 10)
                 {
                     Debug.Log("it would load boss here");
                     SceneManager.LoadSceneAsync("BOSS 1");
+                }
+                else if (gameManager.currentLevel == 9)
+                {
+                    SceneManager.LoadSceneAsync("PreGG");
                 }
                 else if (gameManager.currentLevel == 0)
                 {
@@ -113,7 +115,7 @@ public class NextAreaTP : MonoBehaviour
                     Debug.Log("it would load here");
                     SceneManager.LoadSceneAsync("NoPDGameplay");
                 }
-            }
+         
 
 
 

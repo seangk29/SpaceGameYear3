@@ -34,10 +34,10 @@ public class DialogueController : MonoBehaviour
 
     public FindShop shops;
 
-    public GameObject skipsShop;
+    public GameObject firstActivator;
     public GameObject nicosShop;
 
-    public bool skipBool = false;
+    public bool activatorBool = false;
 
     public bool nicoBool = false;
 
@@ -145,8 +145,13 @@ public class DialogueController : MonoBehaviour
 
         if (shops.npcShopable.CompareTag("Skippy"))
         {
-            skipsShop.SetActive(true);
-            skipBool = true;
+            firstActivator.SetActive(true);
+            activatorBool = true;
+        }
+        else if (shops.npcShopable.CompareTag("Activator"))
+        {
+            firstActivator.SetActive(true);
+            activatorBool = true;
         }
 
         if (shops.npcShopable.CompareTag("Nicos"))
@@ -154,6 +159,8 @@ public class DialogueController : MonoBehaviour
             nicosShop.SetActive(true);
             nicoBool = true;
         }
+
+
 
         replaceVoice.Stop();
 

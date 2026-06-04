@@ -36,7 +36,7 @@ public class UnlockHubItems : MonoBehaviour
             Nicos.SetActive(true);
         }
 
-        if (control.skipBool == true)
+        if (control.activatorBool == true)
         {
             skips.SetActive(false);
             paus.shooting.enabled = false;

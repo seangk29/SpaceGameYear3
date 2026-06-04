@@ -21,6 +21,11 @@ public class FindShop : MonoBehaviour
         {
             npcShopable = collision.gameObject;
         }
+        else if (collision.gameObject.transform.CompareTag("Activator"))
+        {
+            npcShopable = collision.gameObject;
+        }
+
     }
 
 }
