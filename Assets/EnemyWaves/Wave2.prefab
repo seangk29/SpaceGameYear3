@@ -495,10 +495,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6576449767661405556}
   - component: {fileID: 2338423541363781888}
-  - component: {fileID: 4551294700840207326}
+  - component: {fileID: 7524774737779871570}
   m_Layer: 0
   m_Name: Bullet Audio Spin
-  m_TagString: bulletAudio
+  m_TagString: spinnyBulletAudio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -614,7 +614,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4551294700840207326
+--- !u!114 &7524774737779871570
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -623,7 +623,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7589337939748964902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d53bdba18a995cd40a7dcd8f5f91193e, type: 3}
+  m_Script: {fileID: 11500000, guid: 467e3e66b1874774fbc836c03784237a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shoot: {fileID: 2338423541363781888}

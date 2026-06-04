@@ -133,9 +133,4 @@ public class NextAreaTP : MonoBehaviour
     }
 
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        interact.SetActive(false);
-        canTeleport = false;
-    }
-}
+

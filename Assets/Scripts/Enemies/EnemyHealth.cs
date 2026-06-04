@@ -21,6 +21,7 @@ public class EnemyHealth : MonoBehaviour
     public bool isDying;
 
     public EnemyShootAudio shootAudio;
+    public SpinnyEnemyShootAudio spinnyShootAudio;
 
 
     // Start is called before the first frame update
@@ -31,6 +32,7 @@ public class EnemyHealth : MonoBehaviour
         NewWave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<NewWaveManager>();
 
         shootAudio = GameObject.FindGameObjectWithTag("bulletAudio").GetComponent<EnemyShootAudio>();
+        spinnyShootAudio = GameObject.FindGameObjectWithTag("spinnyBulletAudio").GetComponent<SpinnyEnemyShootAudio>();
 
 
 
@@ -116,6 +118,11 @@ public class EnemyHealth : MonoBehaviour
         if (gameObject.tag == "shootEnemy")
         {
             shootAudio.enemyCount = shootAudio.enemyCount + 1;
+        }
+
+        if (gameObject.tag == "spinnyShootEnemy")
+        {
+            spinnyShootAudio.enemyCount = spinnyShootAudio.enemyCount + 1;
         }
 
         //NewWave.enemiesKilled += 1; //NewWave.enemiesKilled + 1;

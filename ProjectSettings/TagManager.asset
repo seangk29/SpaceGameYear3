@@ -34,6 +34,9 @@ TagManager:
   - Activator
   - bulletAudio
   - shootEnemy
+  - spinnyShootEnemy
+  - spinnyBulletAudio
+  - shootAudio = GameObject.FindGameObjectWithTag("bulletAudio").GetComponent<EnemyShootAudio>();
   layers:
   - Default
   - TransparentFX
