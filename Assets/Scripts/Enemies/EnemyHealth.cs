@@ -20,6 +20,8 @@ public class EnemyHealth : MonoBehaviour
     public MoveForward move;
     public bool isDying;
 
+    public EnemyShootAudio shootAudio;
+
 
     // Start is called before the first frame update
     private void Start()
@@ -27,6 +29,10 @@ public class EnemyHealth : MonoBehaviour
         Combat = true;
         playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
         NewWave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<NewWaveManager>();
+
+        shootAudio = GameObject.FindGameObjectWithTag("bulletAudio").GetComponent<EnemyShootAudio>();
+
+
 
         Collider = this.GetComponent<Collider2D>();
         move = this.GetComponent<MoveForward>();
@@ -94,7 +100,9 @@ public class EnemyHealth : MonoBehaviour
         if (gameObject.tag == "Enemy")
         {
             //Wave.enemyCount = Wave.enemyCount + 1;
-            Debug.Log("Shot!");
+            //Debug.Log("Shot!");
+
+
             //Debug.Log(Wave.enemyCount);
         }
 
@@ -103,7 +111,12 @@ public class EnemyHealth : MonoBehaviour
         Collider.enabled = false;
 
         move.enabled = false;
-        
+
+       
+        if (gameObject.tag == "shootEnemy")
+        {
+            shootAudio.enemyCount = shootAudio.enemyCount + 1;
+        }
 
         //NewWave.enemiesKilled += 1; //NewWave.enemiesKilled + 1;
         //playerData.kills += 1; //playerData.kills + 1;

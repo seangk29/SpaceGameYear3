@@ -8,7 +8,7 @@ public class EnemyShooting : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject GunPos;
 
-    public AudioSource Eaudio;
+    
 
     public float timer = 0;
     public float timeToAttack;
@@ -33,8 +33,7 @@ public class EnemyShooting : MonoBehaviour
 
         if (Fire)
         {
-            Eaudio.Play();
-
+           
             Instantiate(bulletPrefab, transform.position, transform.rotation);
 
             timer = 0;

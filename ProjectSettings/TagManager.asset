@@ -31,6 +31,8 @@ TagManager:
   - cardManager
   - cardRemover
   - spinUpgrade
+  - bulletAudio
+  - shootEnemy
   layers:
   - Default
   - TransparentFX

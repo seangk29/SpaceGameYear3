@@ -30,7 +30,7 @@ public class PersistScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (scene.name == "NewWavesSystemTest" ||  scene.name == "NoPDGameplay")
+        if (scene.name == "NewWavesSystemTest" ||  scene.name == "NoPDGameplay" || scene.name == "Action 2")
         {
             StartCoroutine(waitTimer());
             GameManager.Instance.changeState(GameManager.GameState.WaveGenerate);

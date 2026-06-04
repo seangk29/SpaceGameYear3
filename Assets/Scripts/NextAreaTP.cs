@@ -78,11 +78,11 @@ public class NextAreaTP : MonoBehaviour
         if (state == GameManager.GameState.NextArea || state == GameManager.GameState.BossDefeated)
         //if (gameManager.currentState == GameManager.GameState.NextArea)
         {
-            Debug.Log("on screen");
+           // Debug.Log("on screen");
             gameObject.transform.position = OnScreen.transform.position;
         }
         else { gameObject.transform.position = OffScreen.transform.position;
-            Debug.Log("off screen");
+            //Debug.Log("off screen");
         }
     }
 
@@ -100,24 +100,30 @@ public class NextAreaTP : MonoBehaviour
             {
                 if (gameManager.currentLevel == 10)
                 {
-                    Debug.Log("it would load boss here");
+                   // Debug.Log("it would load boss here");
                     SceneManager.LoadSceneAsync("BOSS 1");
                 }
                 else if (gameManager.currentLevel == 0)
                 {
-                    Debug.Log("start gameplay");
+                   // Debug.Log("start gameplay");
                     SceneManager.LoadSceneAsync("Start Gameplay");
                 }
-                else
+                else if (gameManager.currentLevel > 0 && gameManager.currentLevel <= 3)
                 {
-                    Debug.Log("it would load here");
+                   // Debug.Log("it would load here");
                     SceneManager.LoadSceneAsync("NoPDGameplay");
+                }
+
+                else if (gameManager.currentLevel > 3 && gameManager.currentLevel <= 6)
+                {
+                    // Debug.Log("it would load here");
+                    SceneManager.LoadSceneAsync("Action 2");
                 }
             }
 
 
 
-            Debug.Log("player collided");
+           // Debug.Log("player collided");
 
 
         }
