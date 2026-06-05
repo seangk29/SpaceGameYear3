@@ -37,6 +37,7 @@ TagManager:
   - spinnyShootEnemy
   - spinnyBulletAudio
   - shootAudio = GameObject.FindGameObjectWithTag("bulletAudio").GetComponent<EnemyShootAudio>();
+  - HUD
   layers:
   - Default
   - TransparentFX

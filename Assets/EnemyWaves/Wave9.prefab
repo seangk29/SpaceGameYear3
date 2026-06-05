@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 7118326021123053122}
   m_Layer: 0
   m_Name: Bullet Audio Spin
-  m_TagString: spinnyShootEnemy
+  m_TagString: spinnyBulletAudio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

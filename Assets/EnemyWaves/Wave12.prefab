@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 2638187640061710130}
   m_Layer: 0
   m_Name: Bullet Audio Spin
-  m_TagString: shootAudio = GameObject.FindGameObjectWithTag("bulletAudio").GetComponent<EnemyShootAudio>();
+  m_TagString: spinnyBulletAudio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

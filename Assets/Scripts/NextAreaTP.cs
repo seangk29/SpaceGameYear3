@@ -122,7 +122,20 @@ public class NextAreaTP : MonoBehaviour
                     // Debug.Log("it would load here");
                     SceneManager.LoadSceneAsync("Action 2");
                 }
+
+
+            else if (gameManager.currentLevel > 6 && gameManager.currentLevel < 9)
+            {
+                // Debug.Log("it would load here");
+                SceneManager.LoadSceneAsync("Action 2");
             }
+
+            else if (gameManager.currentLevel == 9)
+            {
+                // Debug.Log("it would load here");
+                SceneManager.LoadSceneAsync("PreGG");
+            }
+        }
 
 
 

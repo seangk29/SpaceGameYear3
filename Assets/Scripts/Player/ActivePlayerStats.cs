@@ -41,6 +41,8 @@ public class ActivePlayerHealth : MonoBehaviour
     public GameObject sprite;
     public EnemyBulletData enemyBullet;
 
+    public GameObject HUD;
+
     private void Start()
     {
 
@@ -49,6 +51,9 @@ public class ActivePlayerHealth : MonoBehaviour
         playerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
         playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
         spawn = GameObject.FindGameObjectWithTag("Spawner").GetComponent<PlayerSpawner>();
+
+        HUD = GameObject.FindGameObjectWithTag("HUD").gameObject;
+
 
         maxHealth = playerStats.maxHealth;
         health = maxHealth;
@@ -89,6 +94,8 @@ public class ActivePlayerHealth : MonoBehaviour
         if (collider.gameObject.tag == "Enemy" && dodging == false && playerData != null)
         {
             SpRend = true;
+
+            StartCoroutine(VisualIndicator(Color.red));
             
             if (shieldHealth <= 0)
             {
