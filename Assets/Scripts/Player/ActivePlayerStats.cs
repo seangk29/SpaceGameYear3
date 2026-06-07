@@ -95,7 +95,7 @@ public class ActivePlayerHealth : MonoBehaviour
         {
             SpRend = true;
 
-            StartCoroutine(VisualIndicator(Color.red));
+          
             
             if (shieldHealth <= 0)
             {

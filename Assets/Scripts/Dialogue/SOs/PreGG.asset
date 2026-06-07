@@ -15,9 +15,44 @@ MonoBehaviour:
   speakerClip:
   - {fileID: 8300000, guid: 9042bd44bbd5bf741985ea5ba5e787c7, type: 3}
   - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
+  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
+  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
+  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
+  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
+  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
+  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
+  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
+  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
+  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
+  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
   sprites:
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
   - {fileID: -773076659937609671, guid: b682e3ffd7cde064eb81729b8d792d64, type: 3}
   - {fileID: -773076659937609671, guid: b682e3ffd7cde064eb81729b8d792d64, type: 3}
+  - {fileID: -773076659937609671, guid: b682e3ffd7cde064eb81729b8d792d64, type: 3}
+  - {fileID: -773076659937609671, guid: b682e3ffd7cde064eb81729b8d792d64, type: 3}
+  - {fileID: -773076659937609671, guid: b682e3ffd7cde064eb81729b8d792d64, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: -773076659937609671, guid: b682e3ffd7cde064eb81729b8d792d64, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
   paragraphs:
-  - blah
-  - blah blah
+  - 'AURORA: Careful Cosmo, I sense a large energy signal rapidly approaching your
+    location. '
+  - "COSMO: Don\u2019t worry Aurora; I see it."
+  - "???: Rahahahaha! You there, are you this \u201CCosmo\u201D fellow I\u2019ve
+    been hearing all about from my troops? "
+  - 'COSMO: Maybe I am, maybe I am not. State your business. '
+  - "???: General Glorgus. The number one general in charge of \u2018Specimen X\u2019."
+  - "COSMO: So, you\u2019re the fiend behind this attack. Then yes, I am Cosmo. And
+    I am here to dismantle your entire fleet and stop your attacks on our planet
+    for good. "
+  - "GENERAL GLORGUS: I\u2019m not one for chit chat especially with the enemy. Let
+    us fight! "
+  - "AURORA: Watch out Cosmo, if he\u2019s their General, he must be strong. "
+  - "COSMO: I\u2019ll handle it Aurora, especially with you by my side."
+  - "GENERAL GLORGUS: Are we fighting or are we talking? I\u2019m waiting."
+  - "AURORA: Let\u2019s get him then."
+  - 'COSMO: Let''s'
