@@ -129,7 +129,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: dfb6314960fc0ca4ebe01e5c243801fe, type: 3}
   GunPos: {fileID: 3448958641128252907}
-  Eaudio: {fileID: 6484643801895574886}
   timer: 0
   timeToAttack: 1
   Fire: 0
@@ -562,7 +561,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598003937132662273}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -769,9 +768,13 @@ MonoBehaviour:
   playerData: {fileID: 0}
   NewWave: {fileID: 0}
   animator: {fileID: 2843284373615740907}
-  Collider: {fileID: 0}
-  move: {fileID: 0}
+  Collider: {fileID: 2356932814952167223}
+  move: {fileID: 5723617375694139264}
+  sprite: {fileID: 6530662591337793933}
   isDying: 0
+  IsSpawning: 0
+  shootAudio: {fileID: 0}
+  spinnyShootAudio: {fileID: 0}
 --- !u!114 &5768453157142230223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -785,3 +788,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move: {fileID: 5723617375694139264}
+--- !u!212 &6530662591337793933 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3626916397498700004, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
+  m_PrefabInstance: {fileID: 7562940402935535977}
+  m_PrefabAsset: {fileID: 0}

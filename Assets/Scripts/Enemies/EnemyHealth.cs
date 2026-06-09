@@ -18,7 +18,9 @@ public class EnemyHealth : MonoBehaviour
     public Animator animator;
     public Collider2D Collider;
     public MoveForward move;
+    public SpriteRenderer sprite;
     public bool isDying;
+    public bool IsSpawning;
 
     public EnemyShootAudio shootAudio;
     public SpinnyEnemyShootAudio spinnyShootAudio;
@@ -34,10 +36,15 @@ public class EnemyHealth : MonoBehaviour
         shootAudio = GameObject.FindGameObjectWithTag("bulletAudio").GetComponent<EnemyShootAudio>();
         spinnyShootAudio = GameObject.FindGameObjectWithTag("spinnyBulletAudio").GetComponent<SpinnyEnemyShootAudio>();
 
-
+        sprite = this.GetComponent<SpriteRenderer>();
 
         Collider = this.GetComponent<Collider2D>();
         move = this.GetComponent<MoveForward>();
+
+        StartCoroutine(Spawn());
+
+        
+       animator = this.GetComponent<Animator>();
 
         //correctLayer = gameObject.layer;
         //Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
@@ -47,6 +54,8 @@ public class EnemyHealth : MonoBehaviour
     void Update()
     {
 
+
+        
         /*if (Wave == null)
         {
             Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
@@ -96,6 +105,33 @@ public class EnemyHealth : MonoBehaviour
         yield return new WaitForSeconds(0.15f);
         GetComponent<SpriteRenderer>().color = Color.white;
     }
+
+    IEnumerator Spawn()
+    {
+       
+        yield return new WaitForSeconds(0.25f);
+        animator.enabled = false;
+        sprite.enabled = false;
+        yield return new WaitForSeconds(0.25f);
+        animator.enabled = true;
+        sprite.enabled = true;
+        yield return new WaitForSeconds(0.25f);
+        animator.enabled = false;
+        sprite.enabled = false;
+        yield return new WaitForSeconds(0.25f);
+        animator.enabled = true;
+        sprite.enabled = true;
+        yield return new WaitForSeconds(0.25f);
+        animator.enabled = false;
+        sprite.enabled = false;
+        yield return new WaitForSeconds(0.25f);
+        animator.enabled = true;
+        sprite.enabled = true;
+        Collider.enabled = true;
+
+    }
+
+    
 
     public void Die()
     {
