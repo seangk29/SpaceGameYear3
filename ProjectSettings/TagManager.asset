@@ -38,6 +38,7 @@ TagManager:
   - spinnyBulletAudio
   - shootAudio = GameObject.FindGameObjectWithTag("bulletAudio").GetComponent<EnemyShootAudio>();
   - HUD
+  - RLTempData
   layers:
   - Default
   - TransparentFX

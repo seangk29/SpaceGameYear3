@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82745c8fbc5d0b49a445aa993baf045, type: 3}
+  m_Name: MidRunNico
+  m_EditorClassIdentifier: 
+  speakerClip:
+  - {fileID: 8300000, guid: 9042bd44bbd5bf741985ea5ba5e787c7, type: 3}
+  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
+  sprites:
+  - {fileID: 8607865469773963822, guid: 04f4592e2afb6fe4f9a5e497d2b30d69, type: 3}
+  - {fileID: 779479012041854851, guid: 5baea4a560d45ed41847152293b9e606, type: 3}
+  paragraphs:
+  - this is mid run
+  - hello i am nico

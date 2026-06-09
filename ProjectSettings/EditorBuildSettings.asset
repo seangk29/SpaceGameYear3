@@ -47,6 +47,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PostGG.unity
     guid: 06cee78aec3e38240b3739ce860eae0a
+  - enabled: 1
+    path: Assets/Scenes/MidRunShop.unity
+    guid: f5f4a0fb50c913346a854dbe347ee291
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 17ffa39a988d9ab4ba8b4c3b4372c4c4, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: a996dc94a93c9aa4cb392ff5b57d73f7, type: 3}

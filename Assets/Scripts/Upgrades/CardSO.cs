@@ -19,6 +19,7 @@ public class CardSO : ScriptableObject
     public string headerText;
     public string cardText;
     public string descText;
+    public string costs;
 
     // what the upgrade actually does
     public CardEffect effectType;

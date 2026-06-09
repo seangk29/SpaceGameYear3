@@ -31,9 +31,9 @@ public class ShopButtons : MonoBehaviour
 
     private void Start()
     {
-        //PermaPlayerStats = GameObject.Find("PlayerData").GetComponent<PermaPlayerStats>();
         RLPermData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<RLPermData>();
         PlayerData = GameObject.Find("RLPermData").GetComponent<PlayerData>();
+        PermaPlayerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
     }
 
 

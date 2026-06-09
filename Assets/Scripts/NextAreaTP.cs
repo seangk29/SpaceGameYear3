@@ -117,17 +117,17 @@ public class NextAreaTP : MonoBehaviour
                 }
          
 
-                else if (gameManager.currentLevel > 3 && gameManager.currentLevel <= 6)
+                else if (gameManager.currentLevel >= 5 && gameManager.currentLevel <= 8)
                 {
                     // Debug.Log("it would load here");
                     SceneManager.LoadSceneAsync("Action 2");
                 }
 
 
-            else if (gameManager.currentLevel > 6 && gameManager.currentLevel < 9)
+            else if (gameManager.currentLevel == 4)
             {
                 // Debug.Log("it would load here");
-                SceneManager.LoadSceneAsync("Action 2");
+                SceneManager.LoadSceneAsync("MidRunShop");
             }
 
             else if (gameManager.currentLevel == 9)
