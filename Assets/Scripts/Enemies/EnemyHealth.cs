@@ -109,22 +109,16 @@ public class EnemyHealth : MonoBehaviour
     IEnumerator Spawn()
     {
        
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.5f);
         animator.enabled = false;
         sprite.enabled = false;
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.5f);
         animator.enabled = true;
         sprite.enabled = true;
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.5f);
         animator.enabled = false;
         sprite.enabled = false;
-        yield return new WaitForSeconds(0.25f);
-        animator.enabled = true;
-        sprite.enabled = true;
-        yield return new WaitForSeconds(0.25f);
-        animator.enabled = false;
-        sprite.enabled = false;
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.5f);
         animator.enabled = true;
         sprite.enabled = true;
         Collider.enabled = true;

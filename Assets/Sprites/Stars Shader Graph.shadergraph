@@ -504,10 +504,10 @@
     "m_Guid": {
         "m_GuidSerialized": "102bc31a-bb19-439c-9e50-39a17eb841c2"
     },
-    "m_Name": "Stars",
+    "m_Name": "MainTex",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Stars",
-    "m_DefaultReferenceName": "_Stars",
+    "m_RefNameGeneratedByDisplayName": "MainTex",
+    "m_DefaultReferenceName": "_MainTex",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -1567,7 +1567,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "e833c6c8a94e44abb9245c7aaf116a46",
     "m_Id": 0,
-    "m_DisplayName": "Stars",
+    "m_DisplayName": "MainTex",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
