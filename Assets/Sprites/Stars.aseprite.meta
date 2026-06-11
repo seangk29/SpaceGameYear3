@@ -33,10 +33,10 @@ ScriptedImporter:
     sRGBTexture: 1
     spriteMode: 2
     spriteExtrude: 1
-    spriteMeshType: 1
+    spriteMeshType: 0
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 144
+    spritePixelsToUnits: 512
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -81,7 +81,7 @@ ScriptedImporter:
     mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
-    generateAnimationClips: 1
+    generateAnimationClips: 0
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
@@ -94,11 +94,11 @@ ScriptedImporter:
     mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
-    generateAnimationClips: 1
+    generateAnimationClips: 0
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639136113950775333
+  platformSettingsDirtyTick: 639167821724677339
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,7 +122,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Stars
+  - name: Layer 1
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -133,7 +133,7 @@ ScriptedImporter:
       y: 4
       width: 1920
       height: 1440
-    spriteID: f2fb15bb0c5190f49842a466acabe3de
+    spriteID: 73d0ab43bf363e9449de2240e826b903
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -145,9 +145,9 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1436209293
-    name: Stars
-    layerFlags: 0
+    guid: -7500616
+    name: Layer 1
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
@@ -159,7 +159,7 @@ ScriptedImporter:
         y: 0
         width: 1920
         height: 1440
-      spriteId: f2fb15bb0c5190f49842a466acabe3de
+      spriteId: 73d0ab43bf363e9449de2240e826b903
     linkedCells: []
     parentIndex: -1
   platformSettings:
