@@ -115,12 +115,6 @@ public class EnemyHealth : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         animator.enabled = true;
         sprite.enabled = true;
-        yield return new WaitForSeconds(0.5f);
-        animator.enabled = false;
-        sprite.enabled = false;
-        yield return new WaitForSeconds(0.5f);
-        animator.enabled = true;
-        sprite.enabled = true;
         Collider.enabled = true;
 
     }
