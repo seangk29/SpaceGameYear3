@@ -707,12 +707,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 973cc55b6d6c88c43b361a81562d3b36, type: 2}
   - {fileID: 11400000, guid: e310c5c2be5455040ad52674b5da1937, type: 2}
   - {fileID: 11400000, guid: 6d482b071946b1041a3e001e04bba004, type: 2}
-  - {fileID: 11400000, guid: d5654edbd4ada7b4daccd3961cd1298b, type: 2}
+  - {fileID: 11400000, guid: a9d1608e06bd8c24384238aec41403d2, type: 2}
   - {fileID: 11400000, guid: 81be3029618f4d84cba6f6e814ecfd6f, type: 2}
   - {fileID: 11400000, guid: 229d14ad4b6724f42863e0e9a283626e, type: 2}
-  - {fileID: 11400000, guid: 54af541cd59a37d43bd964785c143b77, type: 2}
-  - {fileID: 11400000, guid: f75c569847c42dd4abfe00c839030564, type: 2}
-  - {fileID: 11400000, guid: 9bdd061130c82f947b6bff75fd4628e7, type: 2}
+  - {fileID: 11400000, guid: 490fa18825e245e42b8ecdee7cedbe17, type: 2}
+  - {fileID: 11400000, guid: 77ba59f041512a94caab2ce06d2f9e35, type: 2}
   - {fileID: 11400000, guid: 9bdd061130c82f947b6bff75fd4628e7, type: 2}
   wavePosition: {fileID: 348620700}
   currentWave: {fileID: 0}
@@ -5152,7 +5151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2022046813
 MonoBehaviour:
   m_ObjectHideFlags: 0
