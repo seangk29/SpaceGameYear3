@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: PreGG
   m_EditorClassIdentifier: 
   speakerClip:
-  - {fileID: 8300000, guid: 9042bd44bbd5bf741985ea5ba5e787c7, type: 3}
-  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
-  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
-  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
-  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
-  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
-  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
-  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
-  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
-  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
-  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
-  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
+  - {fileID: 8300000, guid: 31ac33b4d9e87c14ba496f408511ab4f, type: 3}
+  - {fileID: 8300000, guid: cc53551bba94ab64b94bef40947b3a8e, type: 3}
+  - {fileID: 8300000, guid: 80ce78cdaf1c8834fbbcbbd9782a064c, type: 3}
+  - {fileID: 8300000, guid: e5804796da2c4d9459793c9958779605, type: 3}
+  - {fileID: 8300000, guid: 55f23628c456aa04da9afe5a3ac834ce, type: 3}
+  - {fileID: 8300000, guid: 485715d3f5897b142bec965a9067a6f9, type: 3}
+  - {fileID: 8300000, guid: 3897171735c698147bf4ded52e3b964b, type: 3}
+  - {fileID: 8300000, guid: 849e3f9977eb37248abf9b020e56706b, type: 3}
+  - {fileID: 8300000, guid: f66627314c5e5fb4e82927baa4eaa371, type: 3}
+  - {fileID: 8300000, guid: 452e3e14069222749ab72c3e8f4d66ff, type: 3}
+  - {fileID: 8300000, guid: 952bc3ca589200c43bcb68dc50410bba, type: 3}
+  - {fileID: 8300000, guid: 93f6d97dd8de41a4791f0b48ff321951, type: 3}
   sprites:
   - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
   - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
@@ -46,13 +46,13 @@ MonoBehaviour:
     been hearing all about from my troops? "
   - 'COSMO: Maybe I am, maybe I am not. State your business. '
   - "???: General Glorgus. The number one general in charge of \u2018Specimen X\u2019."
-  - "COSMO: So, you\u2019re the fiend behind this attack. Then yes, I am Cosmo. And
-    I am here to dismantle your entire fleet and stop your attacks on our planet
-    for good. "
+  - "COSMO: So, you\u2019re the fiend behind this attack. Well, I am Cosmo. And I
+    am here to dismantle your entire fleet and stop your attacks on our planet for
+    good. "
   - "GENERAL GLORGUS: I\u2019m not one for chit chat especially with the enemy. Let
     us fight! "
   - "AURORA: Watch out Cosmo, if he\u2019s their General, he must be strong. "
-  - "COSMO: I\u2019ll handle it Aurora, especially with you by my side."
+  - 'COSMO: We can handle this. I''m not stopping now.'
   - "GENERAL GLORGUS: Are we fighting or are we talking? I\u2019m waiting."
   - "AURORA: Let\u2019s get him then."
   - 'COSMO: Let''s'

@@ -26,7 +26,7 @@ public class PersistScript : MonoBehaviour
         Debug.Log("OnSceneLoaded: " + scene.name);
         Debug.Log(mode);
 
-        if (scene.name == "MainMenu" || scene.name == "ResetStats" || scene.name == "Ending" /*and quitscene*/)
+        if (scene.name == "MainMenu" || scene.name == "ResetStats" || scene.name == "Ending" || scene.name == "PreGG"/*and quitscene*/)
         {
             Destroy(gameObject);
         }
