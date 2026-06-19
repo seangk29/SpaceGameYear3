@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
+  m_Name: SpreadUnlock UPGRADED
+  m_EditorClassIdentifier: 
+  cardImage: {fileID: 7843752175946602825, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
+  headerText: --- SPREAD ---
+  cardText: 'Receive Special Shot: Spread'
+  descText: Obtain a SPECIAL SHOT that fires a spread of bullets to hit a number
+    of ENEMY ships.
+  effectType: 4
+  effectString: {fileID: 0}
+  effectValue: 1
+  effectFloatValue: 0
+  isUnique: 1
+  unlockLevel: 3

@@ -5,7 +5,7 @@ using UnityEngine;
 public class FacesEnemy : MonoBehaviour
 {
 
-    Transform enemy;
+   public Transform enemy;
 
     public float rotSpeed = 90f;
 
@@ -23,15 +23,36 @@ public class FacesEnemy : MonoBehaviour
         if (enemy == null)
         {
             GameObject go = GameObject.FindWithTag("Enemy");
-            GameObject go1 = GameObject.FindWithTag("shootEnemy");
-            GameObject go2 = GameObject.FindWithTag("spinnyShootEnemy");
+            
 
-
-            if (go != null || go1 != null || go2 != null)
+            if (go != null )
             {
                 enemy = go.transform;
-                enemy = go1.transform;
-                enemy = go2.transform;
+                
+            }
+        }
+
+        if (enemy == null)
+        {
+            GameObject go = GameObject.FindWithTag("shootEnemy");
+
+
+            if (go != null)
+            {
+                enemy = go.transform;
+
+            }
+        }
+
+        if(enemy == null)
+        {
+            GameObject go = GameObject.FindWithTag("spinnyShootEnemy");
+
+
+            if (go != null)
+            {
+                enemy = go.transform;
+
             }
         }
 
@@ -43,11 +64,16 @@ public class FacesEnemy : MonoBehaviour
         Vector3 dir = enemy.position - transform.position;
         dir.Normalize();
 
+       
+
         float zAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90;
+        
 
         Quaternion desiredRot = Quaternion.Euler(0, 0, zAngle);
+       
 
         transform.rotation = Quaternion.RotateTowards(transform.rotation, desiredRot, rotSpeed * Time.deltaTime);
+        
     }
 
 
