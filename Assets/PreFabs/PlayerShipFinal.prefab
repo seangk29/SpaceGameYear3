@@ -4359,7 +4359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51822ee12f4a9f543bad5e8b8cb3c675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
+  bulletPrefab: {fileID: 1260864631553775174, guid: 8222752802b131a4daac12fe90bae389, type: 3}
   SbulletPrefab: {fileID: 7005896041558608142, guid: 50c7f12fed23f3f41938be721275c559, type: 3}
   GunPos: {fileID: 7671036059347274953}
   fireDelay: 0.25
