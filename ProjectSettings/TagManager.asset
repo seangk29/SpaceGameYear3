@@ -39,6 +39,7 @@ TagManager:
   - shootAudio = GameObject.FindGameObjectWithTag("bulletAudio").GetComponent<EnemyShootAudio>();
   - HUD
   - RLTempData
+  - Flicker
   layers:
   - Default
   - TransparentFX

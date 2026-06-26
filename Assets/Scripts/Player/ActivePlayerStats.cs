@@ -43,6 +43,8 @@ public class ActivePlayerHealth : MonoBehaviour
 
     public GameObject HUD;
 
+    public GameObject healthFlick;
+
     private void Start()
     {
 
@@ -54,6 +56,9 @@ public class ActivePlayerHealth : MonoBehaviour
 
         HUD = GameObject.FindGameObjectWithTag("HUD").gameObject;
 
+        healthFlick = GameObject.FindGameObjectWithTag("Flicker").gameObject;
+
+        healthFlick.SetActive(false);
 
         maxHealth = playerStats.maxHealth;
         health = maxHealth;
@@ -173,10 +178,12 @@ public class ActivePlayerHealth : MonoBehaviour
 
     }
 
+
+
     private void Update()
     {
 
-       
+
         if (invul <= 0)
         {
             sprite.gameObject.layer = correctLayer;
@@ -187,6 +194,12 @@ public class ActivePlayerHealth : MonoBehaviour
         {
             Die();
         }
+
+        if (health <= 1)
+        {
+            StartCoroutine(healthFlicker());
+        }
+
 
             if (canRegen)
             {
@@ -221,6 +234,16 @@ public class ActivePlayerHealth : MonoBehaviour
             return;*/
 
     }
+
+    private IEnumerator healthFlicker()
+    {
+        healthFlick.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        healthFlick.SetActive(false);
+        yield return new WaitForSeconds(1f);
+    }
+
+
 
     private IEnumerator VisualIndicator(Color color)
     {
