@@ -17,10 +17,10 @@ MonoBehaviour:
   cardText: 'Receive UPGRADED Special Shot: Spread'
   descText: Obtain a SPECIAL SHOT that fires a spread of bullets to hit a number
     of ENEMY ships.
-  costs: 
+  costs: 200
   effectType: 5
-  effectString: {fileID: 0}
+  effectString: {fileID: 11400000}
   effectValue: 1
   effectFloatValue: 0
   isUnique: 1
-  unlockLevel: 3
+  unlockLevel: 0

@@ -81,7 +81,7 @@ public class MidRunShop : MonoBehaviour
             case 2:
                 if (PlayerData.score >= 200)
                 {
-                    PermaPlayerStats.spreadUnlock(1);
+                    PermaPlayerStats.spreadUnlockUpgraded1(1);
                     PlayerData.score = PlayerData.score - 200;
                 }
                 else notEnough.SetActive(true);
@@ -106,7 +106,7 @@ public class MidRunShop : MonoBehaviour
             case 5:
                 if (PlayerData.score >= 200)
                 {
-                    PermaPlayerStats.ricochetUnlock(1); ;
+                    PermaPlayerStats.ricochetUnlockUpgraded1(1); 
                     PlayerData.score = PlayerData.score - 200;
                 }
                 else notEnough.SetActive(true);
@@ -114,8 +114,7 @@ public class MidRunShop : MonoBehaviour
             case 6:
                 if (PlayerData.score >= 200)
                 {
-                    RLPermData.maxHealth++;
-                    RLPermData.health++;
+                    PermaPlayerStats.explodeUnlockUpgraded1(1);
                     PlayerData.score = PlayerData.score - 200;
                 }
                 else notEnough.SetActive(true);

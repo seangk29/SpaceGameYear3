@@ -17,10 +17,10 @@ MonoBehaviour:
   cardText: 'Receive UPGRADED Special Shot: Explode'
   descText: Obtain a SPECIAL SHOT that fires two bullets that explode at Cosmo's
     sides and explode into four when colliding with ENEMY ships.
-  costs: 
+  costs: 200
   effectType: 9
-  effectString: {fileID: 0}
+  effectString: {fileID: 11400000}
   effectValue: 1
   effectFloatValue: 0
   isUnique: 1
-  unlockLevel: 3
+  unlockLevel: 0
