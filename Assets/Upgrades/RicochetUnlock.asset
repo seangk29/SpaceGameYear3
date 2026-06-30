@@ -16,7 +16,8 @@ MonoBehaviour:
   headerText: --- SPECIAL ---
   cardText: 'Receive Special Shot: Ricochet'
   descText: Unlock a SPECIAL SHOT that bounces off ENEMY ships until it expires.
-  effectType: 5
+  costs: 
+  effectType: 6
   effectString: {fileID: 0}
   effectValue: 1
   effectFloatValue: 0

@@ -959,6 +959,7 @@ MonoBehaviour:
   sprite: {fileID: 0}
   enemyBullet: {fileID: 0}
   HUD: {fileID: 0}
+  healthFlick: {fileID: 0}
 --- !u!1 &1667372856028613701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2523,6 +2524,7 @@ MonoBehaviour:
   sprite: {fileID: 0}
   enemyBullet: {fileID: 0}
   HUD: {fileID: 0}
+  healthFlick: {fileID: 0}
 --- !u!1 &4805046748181273822
 GameObject:
   m_ObjectHideFlags: 0
@@ -4313,6 +4315,7 @@ MonoBehaviour:
   sprite: {fileID: 0}
   enemyBullet: {fileID: 0}
   HUD: {fileID: 0}
+  healthFlick: {fileID: 0}
 --- !u!1 &7671036059347274953
 GameObject:
   m_ObjectHideFlags: 0
@@ -4359,7 +4362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51822ee12f4a9f543bad5e8b8cb3c675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1260864631553775174, guid: 8222752802b131a4daac12fe90bae389, type: 3}
+  bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
   SbulletPrefab: {fileID: 7005896041558608142, guid: 50c7f12fed23f3f41938be721275c559, type: 3}
   GunPos: {fileID: 7671036059347274953}
   fireDelay: 0.25
@@ -6040,6 +6043,7 @@ MonoBehaviour:
   sprite: {fileID: 2913796824387255504}
   enemyBullet: {fileID: 0}
   HUD: {fileID: 0}
+  healthFlick: {fileID: 0}
 --- !u!114 &5946322690500378483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6338,8 +6342,11 @@ MonoBehaviour:
   extras: {fileID: 0}
   activeSpecial: 
   spreadShot: {fileID: 1260864631553775174, guid: 4b41931a8f15f4841a1b9a9591b48d8a, type: 3}
+  spreadShotUpgraded1: {fileID: 1260864631553775174, guid: 0667d706ce5c35145a4886b6580b4366, type: 3}
   ricochetShot: {fileID: 7005896041558608142, guid: f1099f9caadac144f8bfe46c99f1f349, type: 3}
+  ricochetShotUpgraded1: {fileID: 7005896041558608142, guid: 50c7f12fed23f3f41938be721275c559, type: 3}
   explodeShot: {fileID: 1260864631553775174, guid: af5722c7079a6ed429f874e380444ecd, type: 3}
+  explodeShotUpgraded1: {fileID: 1260864631553775174, guid: da006f0664ac77f428946aa0fe04d91b, type: 3}
   spinShot: {fileID: 5789570455946320749}
   gunBot: {fileID: 5707057115716299130}
   currentSpecialPos1: {fileID: 1188533996794506909}

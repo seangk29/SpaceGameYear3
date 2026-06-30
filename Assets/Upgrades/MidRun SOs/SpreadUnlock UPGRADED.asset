@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: SpreadUnlock UPGRADED
   m_EditorClassIdentifier: 
   cardImage: {fileID: 7843752175946602825, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
-  headerText: --- SPREAD ---
-  cardText: 'Receive Special Shot: Spread'
+  headerText: --- SPREAD UPGRADE ---
+  cardText: 'Receive UPGRADED Special Shot: Spread'
   descText: Obtain a SPECIAL SHOT that fires a spread of bullets to hit a number
     of ENEMY ships.
-  effectType: 4
+  costs: 
+  effectType: 5
   effectString: {fileID: 0}
   effectValue: 1
   effectFloatValue: 0

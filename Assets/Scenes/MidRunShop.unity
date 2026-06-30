@@ -3340,20 +3340,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 436635058651218128, guid: 5dd264716736a554f94f4d8e208d054d, type: 3}
       propertyPath: Upgrades.Array.size
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 436635058651218128, guid: 5dd264716736a554f94f4d8e208d054d, type: 3}
       propertyPath: Upgrades.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 8cf5e83ade07f3b48bbb9ef3578bccc4, type: 2}
+      objectReference: {fileID: 11400000, guid: 9a25d1019a1389548aa409c1330ede14, type: 2}
     - target: {fileID: 436635058651218128, guid: 5dd264716736a554f94f4d8e208d054d, type: 3}
       propertyPath: Upgrades.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 87d3a1e784f94134496cb1adafc9ef26, type: 2}
+      objectReference: {fileID: 11400000, guid: 9cb3b98247e94454c977b6c771154ad1, type: 2}
     - target: {fileID: 436635058651218128, guid: 5dd264716736a554f94f4d8e208d054d, type: 3}
       propertyPath: Upgrades.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 3c11f05ef34ac1049ac404b0361bff77, type: 2}
+      objectReference: {fileID: 11400000, guid: 30a9ee862630f484d9f3f821ad041c0e, type: 2}
     - target: {fileID: 436635058651218128, guid: 5dd264716736a554f94f4d8e208d054d, type: 3}
       propertyPath: Upgrades.Array.data[3]
       value: 
@@ -5214,21 +5214,11 @@ MonoBehaviour:
   cardGO2: {fileID: 2071279885}
   cardGO3: {fileID: 745996486}
   Upgrades:
-  - {fileID: 11400000, guid: c41a27f63dfbaf0499190514267aae4c, type: 2}
-  - {fileID: 11400000, guid: 9d8ef918b3400c04599dd8c4657ca447, type: 2}
-  - {fileID: 11400000, guid: ead496dfe5a1ff94194ca383985cb433, type: 2}
-  - {fileID: 11400000, guid: 5af1d767e2db4434da3385469befd7fe, type: 2}
-  - {fileID: 11400000, guid: 3ca4700a6e84b4e44944ec9fcee342f3, type: 2}
-  - {fileID: 11400000, guid: 9d8ef918b3400c04599dd8c4657ca447, type: 2}
-  - {fileID: 11400000, guid: 87d3a1e784f94134496cb1adafc9ef26, type: 2}
-  - {fileID: 11400000, guid: 96f4fe768f240844fbeb53c3385e1685, type: 2}
-  - {fileID: 11400000, guid: 5d5229b729a39b54796c141022d9bd8e, type: 2}
-  - {fileID: 11400000, guid: c98153a10385dc5439e5da7044142958, type: 2}
-  - {fileID: 11400000, guid: ee7272ef21222d346be5ab436af83811, type: 2}
-  - {fileID: 11400000, guid: 8cf5e83ade07f3b48bbb9ef3578bccc4, type: 2}
-  - {fileID: 11400000, guid: 30ce8fdb965c3c147b2c17ef3c2d8ef1, type: 2}
+  - {fileID: 11400000, guid: 9cb3b98247e94454c977b6c771154ad1, type: 2}
+  - {fileID: 11400000, guid: 9a25d1019a1389548aa409c1330ede14, type: 2}
+  - {fileID: 11400000, guid: 30a9ee862630f484d9f3f821ad041c0e, type: 2}
   cardRemover: {fileID: 0}
-  selectedCardType: 0
+  selectedCardType: 5
   selectedCardValue: 0
   selectedCardFloatValue: 0
   health: {fileID: 0}

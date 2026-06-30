@@ -17,7 +17,8 @@ MonoBehaviour:
   cardText: 'Receive Special Shot: Explode'
   descText: Cosmo's SPECIAL shot becomes a bullet that creates TWO projectiles when
     DESTROYED.
-  effectType: 6
+  costs: 
+  effectType: 8
   effectString: {fileID: 0}
   effectValue: 1
   effectFloatValue: 0

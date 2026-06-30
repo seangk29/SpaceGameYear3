@@ -182,11 +182,20 @@ public class CardManager : MonoBehaviour
             case CardEffect.SpreadUnlock:
                 PermaPlayerStats.spreadUnlock(selectedCardValue);
                 break;
+            case CardEffect.SpreadUpgraded1Unlock:
+                PermaPlayerStats.spreadUnlockUpgraded1(selectedCardValue);
+                break;
             case CardEffect.RicochetUnlock:
                 PermaPlayerStats.ricochetUnlock(selectedCardValue);
                 break;
+            case CardEffect.RicochetUpgraded1Unlock:
+                PermaPlayerStats.ricochetUnlockUpgraded1(selectedCardValue);
+                break;
             case CardEffect.ExplodeUnlock:
                 PermaPlayerStats.explodeUnlock(selectedCardValue);
+                break;
+            case CardEffect.ExplodeUpgraded1Unlock:
+                PermaPlayerStats.explodeUnlockUpgraded1(selectedCardValue);
                 break;
             case CardEffect.SpinUnlock:
                 PermaPlayerStats.spinUnlock();

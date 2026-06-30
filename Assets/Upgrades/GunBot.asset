@@ -16,8 +16,10 @@ MonoBehaviour:
   headerText: --- GUN BOT---
   cardText: 'Receive SHIP ADDITION: Gun Bot'
   descText: 'Obtain a GUN BOT that targets and fires at ENEMY SHIPS '
-  effectType: 8
+  costs: 
+  effectType: 11
   effectString: {fileID: 0}
   effectValue: 1
+  effectFloatValue: 0
   isUnique: 1
   unlockLevel: 0

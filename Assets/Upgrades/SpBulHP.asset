@@ -16,7 +16,8 @@ MonoBehaviour:
   headerText: --- SPECIAL ---
   cardText: Receive +1 Special Shot HP
   descText: The SPECIAL shot bullet increases durability by ONE.
-  effectType: 11
+  costs: 
+  effectType: 14
   effectString: {fileID: 0}
   effectValue: 1
   effectFloatValue: 0

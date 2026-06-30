@@ -165,7 +165,18 @@ public class PermaPlayerStats : MonoBehaviour
         canUseSpecial = true;
         activeSpecial = "Spread";
         specialDamage += value;
-        Debug.Log("Spread Shot Unlocked");
+        //Debug.Log("Spread Shot Unlocked");
+    }
+
+
+    public void spreadUnlockUpgraded1(int value)
+    {
+        specialShotHandler.GetSpreadShotUpgraded1();
+        playerMovement.CanUseSpecial = true;
+        canUseSpecial = true;
+        activeSpecial = "SpreadUpgraded1";
+        specialDamage += value;
+      //  Debug.Log("Spread Shot Unlocked");
     }
 
     public void ricochetUnlock(int value)
@@ -176,8 +187,21 @@ public class PermaPlayerStats : MonoBehaviour
         activeSpecial = "Ricochet";
         specialDamage += value;
         spBulletHealth += value;
-        Debug.Log("Ricochet Shot Unlocked");
+       // Debug.Log("Ricochet Shot Unlocked");
     }
+
+    public void ricochetUnlockUpgraded1(int value)
+    {
+        specialShotHandler.GetRicochetShotUpgraded1();
+        playerMovement.CanUseSpecial = true;
+        canUseSpecial = true;
+        activeSpecial = "RicochetUpgraded1";
+        specialDamage += value;
+        spBulletHealth += value;
+        // Debug.Log("Ricochet Shot Unlocked");
+    }
+
+
 
     public void explodeUnlock(int value)
     {
@@ -186,7 +210,17 @@ public class PermaPlayerStats : MonoBehaviour
         canUseSpecial = true;
         activeSpecial = "Explode";
         specialDamage += value;
-        Debug.Log("Explode Shot Unlocked");
+       // Debug.Log("Explode Shot Unlocked");
+    }
+
+    public void explodeUnlockUpgraded1(int value)
+    {
+        specialShotHandler.GetExplodeShotUpgraded1();
+        playerMovement.CanUseSpecial = true;
+        canUseSpecial = true;
+        activeSpecial = "ExplodeUpgraded1";
+        specialDamage += value;
+        // Debug.Log("Explode Shot Unlocked");
     }
 
     public void spinUnlock()

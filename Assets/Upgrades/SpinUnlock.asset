@@ -16,8 +16,10 @@ MonoBehaviour:
   headerText: --- SPIN ---
   cardText: 'Receive Ship Addition: Spin'
   descText: Obtain a SHIP ADDITION that SPINS TWO bullets AROUND Cosmo.
-  effectType: 7
+  costs: 
+  effectType: 10
   effectString: {fileID: 0}
   effectValue: 1
+  effectFloatValue: 0
   isUnique: 1
   unlockLevel: 0

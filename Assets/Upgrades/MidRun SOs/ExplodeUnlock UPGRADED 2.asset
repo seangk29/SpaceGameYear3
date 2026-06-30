@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
-  m_Name: SpecialDamage
+  m_Name: ExplodeUnlock UPGRADED 2
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 5764860548189917020, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
-  headerText: --- SPECIAL ---
-  cardText: Receive +3 Spread Shot Damage
-  descText: Increase the DAMAGE of the SPREAD SHOT by THREE.
+  cardImage: {fileID: -5666045124886114260, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
+  headerText: --- EXPLODE UPGRADE ---
+  cardText: 'Receive UPGRADED Special Shot: Explode'
+  descText: Obtain a SPECIAL SHOT that fires two bullets that explode at Cosmo's
+    sides and explode into four when colliding with ENEMY ships.
   costs: 
-  effectType: 13
+  effectType: 9
   effectString: {fileID: 0}
-  effectValue: 3
+  effectValue: 1
   effectFloatValue: 0
-  isUnique: 0
-  unlockLevel: 8
+  isUnique: 1
+  unlockLevel: 3
