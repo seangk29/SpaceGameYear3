@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d93d6c8584f0bf41905aecf6498815b, type: 3}
   m_Name: Wave 7
   m_EditorClassIdentifier: 
-  waveName: Wave7
+  waveName: CORNERS
   wavePrefab: {fileID: 1696317364416253266, guid: c75fca8ea1f8f724cab85becdb8f88ee, type: 3}
   numOfEnemies: 12
   selectedRecently: 1

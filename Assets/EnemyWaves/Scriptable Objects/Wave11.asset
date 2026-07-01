@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d93d6c8584f0bf41905aecf6498815b, type: 3}
   m_Name: Wave11
   m_EditorClassIdentifier: 
-  waveName: Wave11
+  waveName: SECOND FLEET
   wavePrefab: {fileID: 6746273965440130776, guid: 07739e3b3d0937a4f9778cbdcdabad88, type: 3}
   numOfEnemies: 23
   selectedRecently: 1

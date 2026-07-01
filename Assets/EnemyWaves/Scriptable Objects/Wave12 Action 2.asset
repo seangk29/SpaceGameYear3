@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d93d6c8584f0bf41905aecf6498815b, type: 3}
   m_Name: Wave12 Action 2
   m_EditorClassIdentifier: 
-  waveName: Wave12
+  waveName: SPINNY REAPER
   wavePrefab: {fileID: 7708548760066271572, guid: 7f3778e31d7557d40add52eb1b5ea473, type: 3}
   numOfEnemies: 22
   selectedRecently: 1

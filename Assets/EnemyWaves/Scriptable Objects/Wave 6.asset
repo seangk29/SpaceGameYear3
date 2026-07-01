@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d93d6c8584f0bf41905aecf6498815b, type: 3}
   m_Name: Wave 6
   m_EditorClassIdentifier: 
-  waveName: Wave 6
+  waveName: WALL OF DEATH L
   wavePrefab: {fileID: 1696317364416253266, guid: 6526ec2e1728ce54c909538170f5cbf2, type: 3}
   numOfEnemies: 124
   selectedRecently: 1

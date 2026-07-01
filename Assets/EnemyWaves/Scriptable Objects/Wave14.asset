@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d93d6c8584f0bf41905aecf6498815b, type: 3}
   m_Name: Wave14
   m_EditorClassIdentifier: 
-  waveName: Wave14
+  waveName: APPROACHER 2
   wavePrefab: {fileID: 1696317364416253266, guid: 2f7b63c1957bbcd48a2c1514ff5d72ab, type: 3}
   numOfEnemies: 78
   selectedRecently: 1

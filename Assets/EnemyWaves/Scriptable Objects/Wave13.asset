@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d93d6c8584f0bf41905aecf6498815b, type: 3}
   m_Name: Wave13
   m_EditorClassIdentifier: 
-  waveName: Wave13
+  waveName: THIRD FLEET
   wavePrefab: {fileID: 6746273965440130776, guid: 21167fdb896e2b544b55e85dca1a8d8b, type: 3}
   numOfEnemies: 22
   selectedRecently: 1

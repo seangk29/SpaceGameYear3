@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d93d6c8584f0bf41905aecf6498815b, type: 3}
   m_Name: Wave 2
   m_EditorClassIdentifier: 
-  waveName: Wave 2
+  waveName: SPIN N STAY
   wavePrefab: {fileID: 1696317364416253266, guid: 699ebdc707126404f994d4be46302764, type: 3}
   numOfEnemies: 7
   selectedRecently: 1

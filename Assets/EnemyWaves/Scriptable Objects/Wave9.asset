@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d93d6c8584f0bf41905aecf6498815b, type: 3}
   m_Name: Wave9
   m_EditorClassIdentifier: 
-  waveName: Wave 9
+  waveName: SPINNY TRIANGLE TRIO
   wavePrefab: {fileID: 7486200845691951626, guid: 7b881ca8df37e9441a4fca3e04ad248b, type: 3}
   numOfEnemies: 3
   selectedRecently: 1
