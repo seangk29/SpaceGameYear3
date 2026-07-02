@@ -1977,7 +1977,7 @@ PrefabInstance:
     - target: {fileID: 1188533996794506909, guid: fc9791c5414697b4a97d946b7511bd22, type: 3}
       propertyPath: bulletPrefab
       value: 
-      objectReference: {fileID: 1260864631553775174, guid: 521c1f76c64b47c4f8d94d05a35792ec, type: 3}
+      objectReference: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
     - target: {fileID: 1469651522427813453, guid: fc9791c5414697b4a97d946b7511bd22, type: 3}
       propertyPath: SpRend
       value: 0

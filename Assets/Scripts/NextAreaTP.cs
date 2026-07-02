@@ -92,11 +92,11 @@ public class NextAreaTP : MonoBehaviour
         {
 
 
-                if (gameManager.currentLevel == 12)
+                if (gameManager.currentLevel == 11)
                 {
                     SceneManager.LoadSceneAsync("PostGG");
                 }
-                else if (gameManager.currentLevel == 11)
+                else if (gameManager.currentLevel == 10)
                 {
                    // Debug.Log("it would load boss here");
                     SceneManager.LoadSceneAsync("BOSS 1");
@@ -136,7 +136,7 @@ public class NextAreaTP : MonoBehaviour
                 SceneManager.LoadSceneAsync("MidRunShop");
             }
 
-            else if (gameManager.currentLevel == 10)
+            else if (gameManager.currentLevel == 9)
             {
                 // Debug.Log("it would load here");
                 SceneManager.LoadSceneAsync("PreGG");

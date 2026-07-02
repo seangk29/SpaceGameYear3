@@ -89,8 +89,7 @@ public class MidRunShop : MonoBehaviour
             case 3:
                 if (PlayerData.score >= 200)
                 {
-                    RLPermData.maxShield++;
-                    RLPermData.shield++;
+                    PermaPlayerStats.explodeUnlockUpgraded1(1);
                     PlayerData.score = PlayerData.score - 200;
                 }
                 else notEnough.SetActive(true);
