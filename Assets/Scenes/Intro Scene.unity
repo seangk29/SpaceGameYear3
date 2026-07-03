@@ -1566,11 +1566,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &543330824 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5588407209600304734, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
-  m_PrefabInstance: {fileID: 1681389204}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &557241506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3821,6 +3816,11 @@ RectTransform:
   m_AnchoredPosition: {x: 764, y: 447}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1268976481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6157486892059145402, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+  m_PrefabInstance: {fileID: 1681389204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1295181329
 GameObject:
   m_ObjectHideFlags: 0
@@ -3964,7 +3964,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 819127374662173261, guid: 7c8fb523816e03e40ad44d677d82699a, type: 3}
   GunPos: {fileID: 1295181329}
-  Eaudio: {fileID: 1295181331}
   timer: 0
   timeToAttack: 6
   Fire: 0
@@ -4695,7 +4694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shooting: {fileID: 0}
-  pMenu: {fileID: 543330824}
+  pMenu: {fileID: 1268976481}
   confirmHubMenu: {fileID: 1519672322}
   confirmMenu: {fileID: 245546849}
 --- !u!4 &1646957903
@@ -5106,6 +5105,18 @@ PrefabInstance:
     - target: {fileID: 6157486892059145402, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7536240902080345780, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1041673246}
+    - target: {fileID: 7536240902080345780, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7536240902080345780, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Hub
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
