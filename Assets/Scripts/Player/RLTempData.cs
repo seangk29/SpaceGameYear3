@@ -56,7 +56,8 @@ public class PermaPlayerStats : MonoBehaviour
             checkObject = false;
         }
 
-        if (scene.name == "NoPDGameplay" || scene.name == "BOSS 1" || scene.name == "Hub" || scene.name == "PostGameplayHub")
+        if (scene.name == "NoPDGameplay" || scene.name == "BOSS 1" || scene.name == "Hub" || scene.name == "PostGameplayHub" 
+            || scene.name == "Action 2" || scene.name == "Action 3" || scene.name == "MidRunShop")
         {
             checkObject = true;
         }

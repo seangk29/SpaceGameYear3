@@ -141,6 +141,12 @@ public class NextAreaTP : MonoBehaviour
                 // Debug.Log("it would load here");
                 SceneManager.LoadSceneAsync("PreGG");
             }
+
+            else if (gameManager.currentLevel == 12)
+            {
+                // Debug.Log("it would load here");
+                SceneManager.LoadSceneAsync("ResetStats");
+            }
         }
 
 

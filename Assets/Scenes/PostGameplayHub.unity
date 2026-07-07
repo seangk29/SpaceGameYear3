@@ -3476,7 +3476,7 @@ MonoBehaviour:
   playerVoiceObject: {fileID: 1755215300}
   imgReplace: {fileID: 1003801266}
   shops: {fileID: 0}
-  firstActivator: {fileID: 0}
+  firstActivator: {fileID: 1476054918}
   nicosShop: {fileID: 38975506}
   activatorBool: 0
   nicoBool: 0
@@ -4988,6 +4988,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1659134058}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 5b3e3851fe6d88249bcfb6367e7fa41b, type: 3}
+--- !u!1 &1476054918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1089851948980943487, guid: 996633934ac96a040b6bbad036244dc8, type: 3}
+  m_PrefabInstance: {fileID: 133987105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1511378486
 GameObject:
   m_ObjectHideFlags: 0
