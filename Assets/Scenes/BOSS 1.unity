@@ -279,9 +279,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: dfb6314960fc0ca4ebe01e5c243801fe, type: 3}
   GunPos: {fileID: 26818187}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 1.5
   Fire: 0
+  canFire: 1
 --- !u!1001 &31234422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -668,9 +671,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: dfb6314960fc0ca4ebe01e5c243801fe, type: 3}
   GunPos: {fileID: 77764413}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 1.5
   Fire: 0
+  canFire: 1
 --- !u!1001 &321501264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1537,9 +1543,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: d0f5f1e2646c0d64886bfac590f6b03b, type: 3}
   GunPos: {fileID: 391645285}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 1
   Fire: 0
+  canFire: 1
 --- !u!1001 &391817759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3100,7 +3109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -4003,9 +4012,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 819127374662173261, guid: 7c8fb523816e03e40ad44d677d82699a, type: 3}
   GunPos: {fileID: 1295181329}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 6
   Fire: 0
+  canFire: 1
 --- !u!1 &1315528877
 GameObject:
   m_ObjectHideFlags: 0
@@ -4163,9 +4175,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: d0f5f1e2646c0d64886bfac590f6b03b, type: 3}
   GunPos: {fileID: 1315528877}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 1
   Fire: 0
+  canFire: 1
 --- !u!1 &1335622762
 GameObject:
   m_ObjectHideFlags: 0
@@ -5050,9 +5065,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: dfb6314960fc0ca4ebe01e5c243801fe, type: 3}
   GunPos: {fileID: 1634942560}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 1.5
   Fire: 0
+  canFire: 1
 --- !u!114 &1646957902 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6264891894901497655, guid: a5bdca29cc646ea47847591796260ee8, type: 3}

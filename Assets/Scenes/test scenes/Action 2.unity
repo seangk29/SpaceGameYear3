@@ -699,13 +699,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Waves:
-  - {fileID: 11400000, guid: 7c8fb06dc575bc74bb435fb590ecd3f6, type: 2}
+  - {fileID: 11400000, guid: f849c6fc5a827d843bab24cd9c1e1a1f, type: 2}
   - {fileID: 11400000, guid: 1803798da011b5e4989ce5044436e8e9, type: 2}
   - {fileID: 11400000, guid: a59f84b08a37cde478a0becf615a8eac, type: 2}
   - {fileID: 11400000, guid: a664e41c6f00b2f4eacf93c871b6f6f8, type: 2}
   - {fileID: 11400000, guid: c081f7ebf2247ce4caf64ecd04e1b9f0, type: 2}
   - {fileID: 11400000, guid: 973cc55b6d6c88c43b361a81562d3b36, type: 2}
-  - {fileID: 11400000, guid: e310c5c2be5455040ad52674b5da1937, type: 2}
+  - {fileID: 11400000, guid: 89aaf70f2fbe2fd408be8ade4d8c4847, type: 2}
   - {fileID: 11400000, guid: 6d482b071946b1041a3e001e04bba004, type: 2}
   - {fileID: 11400000, guid: a9d1608e06bd8c24384238aec41403d2, type: 2}
   - {fileID: 11400000, guid: 338ac0d485eae004e981dcaf98ff5923, type: 2}
@@ -2677,7 +2677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3482,9 +3482,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 819127374662173261, guid: 7c8fb523816e03e40ad44d677d82699a, type: 3}
   GunPos: {fileID: 1295181329}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 6
   Fire: 0
+  canFire: 1
 --- !u!1 &1303106770
 GameObject:
   m_ObjectHideFlags: 0

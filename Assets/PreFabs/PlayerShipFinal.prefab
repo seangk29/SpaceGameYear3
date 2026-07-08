@@ -1989,9 +1989,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 4e32451f40a33e442997ed0266a2695a, type: 3}
   GunPos: {fileID: 3163889527582514349}
+  gunBot: 1
+  face: {fileID: 9018105846869668963}
   timer: 0
   timeToAttack: 1
   Fire: 0
+  canFire: 0
 --- !u!82 &2102180399899956819
 AudioSource:
   m_ObjectHideFlags: 0

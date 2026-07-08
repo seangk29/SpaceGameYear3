@@ -235,12 +235,12 @@ public class ActivePlayerHealth : MonoBehaviour
 
     }
 
-    private IEnumerator healthFlicker()
+    IEnumerator healthFlicker()
     {
         healthFlick.SetActive(true);
         yield return new WaitForSeconds(1f);
         healthFlick.SetActive(false);
-        yield return new WaitForSeconds(1f);
+        
     }
 
 
