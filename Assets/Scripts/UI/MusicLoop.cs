@@ -23,7 +23,7 @@ public class MusicLoop : MonoBehaviour
         audioSources[audioToggle].clip = currentClip;   
         audioSources[audioToggle].PlayScheduled(goalTime);
 
-        musicDuration = clipDuration;//(double)currentClip.samples / currentClip.frequency;
+        musicDuration = (double)currentClip.samples / currentClip.frequency;
         goalTime = goalTime + musicDuration;
 
         audioToggle = 1 - audioToggle;
