@@ -21,10 +21,32 @@ public class ManualPlayerRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.D))
+        {
+            directionNumber = 1;
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.W))
+        {
+            directionNumber = 0;
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.S))
+        {
+            directionNumber = 2;
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.A))
+        {
+            directionNumber = 3;
+        }
+
+
         //Clockwise Rotation
 
-        if (Input.GetKeyDown(KeyCode.Joystick1Button5) || Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.Joystick1Button5))
         {
             directionNumber = directionNumber + 1;
 
@@ -98,7 +120,7 @@ public class ManualPlayerRotate : MonoBehaviour
 
         //Counter-Clockwise Rotation
 
-        if (Input.GetKeyDown(KeyCode.Joystick1Button4) || Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Joystick1Button4))
         {
             directionNumber = directionNumber - 1;
 
