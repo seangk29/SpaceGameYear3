@@ -5851,6 +5851,7 @@ MonoBehaviour:
   damage: 1
   specialDamage: 2
   spBulletHealth: 1
+  specialIndic: 0
   checkObject: 0
   activeSpin: 0
   activeGunBot: 0

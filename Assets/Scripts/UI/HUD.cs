@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.ShaderGraph;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +11,8 @@ public class HUD : MonoBehaviour
     public ActivePlayerHealth activePlayer;
     public PlayerData playerData;
     public PlayerSpawner spawn;
+    public PlayerShooting shooting;
+    public PermaPlayerStats shotHandler;
 
     public TextMeshProUGUI killsTMP;
     public TextMeshProUGUI timerTMP;
@@ -17,6 +21,11 @@ public class HUD : MonoBehaviour
     public Image[] health;
     public Image[] shield;
     public Image[] live;
+    public Image[] ammo;
+
+    public Image[] specialShotImage;
+
+    public int indic;
 
     public float time;
     private int minutes;
@@ -28,6 +37,7 @@ public class HUD : MonoBehaviour
     {
         playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
         spawn = GameObject.FindGameObjectWithTag("Spawner").GetComponent<PlayerSpawner>();
+       
     }
 
     private void Update()
@@ -46,11 +56,25 @@ public class HUD : MonoBehaviour
             spawn = GameObject.FindGameObjectWithTag("Spawner").GetComponent<PlayerSpawner>();
         }
 
+        if (shooting == null)
+        {
+            shooting = GameObject.FindGameObjectWithTag("GunPos").GetComponent<PlayerShooting>();
+        }
+
+        if (shotHandler == null)
+        {
+            shotHandler = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
+        }
+
+       indic = shotHandler.specialIndic;
+
         HPBarUpdate();
         ShieldBarUpdate();
         LivesUpdate();
+        AmmoUpdate();
         KillsUpdate();
         TimerUpdate();
+
 
     }
 
@@ -97,6 +121,103 @@ public class HUD : MonoBehaviour
                 live[i].enabled = false;
             }
         }
+    }
+
+    public void AmmoUpdate()
+    {
+        for (int i = 0; i < ammo.Length; i++)
+        {
+            if (i < shooting.specialAmmo)
+            {
+                ammo[i].enabled = true;
+            }
+            else
+            {
+                ammo[i].enabled = false;
+            }
+        }
+
+
+        switch (indic)
+        {
+            case 1:
+               // specialShotImage[0].enabled = true;
+               // specialShotImage[1].enabled = false;
+               // specialShotImage[2].enabled = false;
+
+                ammo[0].color = new Color(1f,0.6470588f, 0f, 1f);
+                ammo[1].color = new Color(1f, 0.6470588f, 0f, 1f); 
+                ammo[2].color = new Color(1f, 0.6470588f, 0f, 1f);
+                ammo[3].color = new Color(1f, 0.6470588f, 0f, 1f);
+                ammo[4].color = new Color(1f, 0.6470588f, 0f, 1f);
+
+                break;
+            case 2:
+               // specialShotImage[0].enabled = true;
+                //specialShotImage[1].enabled = false;
+                //specialShotImage[2].enabled = false;
+
+                ammo[0].color = new Color(1f,0.6470588f, 0f, 1f);
+                ammo[1].color = new Color(1f, 0.6470588f, 0f, 1f); 
+                ammo[2].color = new Color(1f, 0.6470588f, 0f, 1f);
+                ammo[3].color = new Color(1f, 0.6470588f, 0f, 1f);
+                ammo[4].color = new Color(1f, 0.6470588f, 0f, 1f);
+
+
+                break;
+            case 3:
+                //specialShotImage[1].enabled = true;
+                //specialShotImage[0].enabled = false;
+              //  specialShotImage[2].enabled = false;
+
+                ammo[0].color = Color.yellow;
+                ammo[1].color = Color.yellow;
+                ammo[2].color = Color.yellow;
+                ammo[3].color = Color.yellow;
+                ammo[4].color = Color.yellow;
+
+
+                break;
+            case 4:
+               //specialShotImage[1].enabled = true;
+               // specialShotImage[0].enabled = false;
+               // specialShotImage[2].enabled = false;
+
+                ammo[0].color = Color.yellow;
+                ammo[1].color = Color.yellow;
+                ammo[2].color = Color.yellow;
+                ammo[3].color = Color.yellow;
+                ammo[4].color = Color.yellow;
+
+
+                break;
+            case 5:
+                //specialShotImage[2].enabled = true;
+                //specialShotImage[0].enabled = false;
+               // specialShotImage[1].enabled = false;
+
+                ammo[0].color = Color.blue;
+                ammo[1].color = Color.blue;
+                ammo[2].color = Color.blue;
+                ammo[3].color = Color.blue;
+                ammo[4].color = Color.blue;
+
+                break;
+            case 6:
+                //specialShotImage[2].enabled = true;
+               // specialShotImage[0].enabled = false;
+                //specialShotImage[1].enabled = false;
+
+                ammo[0].color = Color.blue;
+                ammo[1].color = Color.blue;
+                ammo[2].color = Color.blue;
+                ammo[3].color = Color.blue;
+                ammo[4].color = Color.blue;
+
+                break;
+        }
+
+
     }
 
     public void KillsUpdate()

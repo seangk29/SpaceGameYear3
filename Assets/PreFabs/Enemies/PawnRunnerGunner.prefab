@@ -130,9 +130,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: dfb6314960fc0ca4ebe01e5c243801fe, type: 3}
   GunPos: {fileID: 2314202229306812045}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 1
   Fire: 0
+  canFire: 1
 --- !u!82 &2099463346290018847
 AudioSource:
   m_ObjectHideFlags: 0
@@ -324,6 +327,37 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &6274396328521258634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5652375063456481414}
+  m_Layer: 7
+  m_Name: trans
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5652375063456481414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6274396328521258634}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1475593213658424686}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8193908702254135369
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,6 +709,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5988365868781928692}
+    - targetCorrespondingSourceObject: {fileID: 7878350319992209165, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5652375063456481414}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       insertIndex: -1
@@ -697,6 +734,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
       insertIndex: -1
       addedObject: {fileID: -6828180533616989515}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8725790663595221959}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: ba3aa2a634436604b9745c3d99f056d3, type: 3}
 --- !u!4 &1475593213658424686 stripped
 Transform:
@@ -956,3 +996,22 @@ MonoBehaviour:
   IsSpawning: 0
   shootAudio: {fileID: 0}
   spinnyShootAudio: {fileID: 0}
+  drop: {fileID: 8725790663595221959}
+--- !u!114 &8725790663595221959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844125890818198795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7960d051c2ebb904fa67d1d794de9b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreItem: {fileID: 612720399998753881, guid: b077d6596aac87747bee44bebc3f87ee, type: 3}
+  healthItem: {fileID: 612720399998753881, guid: 4ed5130c991504a4a839e82e24baa147, type: 3}
+  ammoItem: {fileID: 612720399998753881, guid: 80f3b6baae34f3c4fb2404fbd9a87263, type: 3}
+  health: {fileID: -6828180533616989515}
+  trans: {fileID: 5652375063456481414}
+  giveItem: 0

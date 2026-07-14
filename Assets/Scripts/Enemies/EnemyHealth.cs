@@ -25,6 +25,8 @@ public class EnemyHealth : MonoBehaviour
     public EnemyShootAudio shootAudio;
     public SpinnyEnemyShootAudio spinnyShootAudio;
 
+    public DropItem drop;
+
 
     // Start is called before the first frame update
     private void Start()
@@ -123,6 +125,9 @@ public class EnemyHealth : MonoBehaviour
 
     public void Die()
     {
+        drop.giveItem = true;
+
+
         if (gameObject.tag == "Enemy")
         {
             //Wave.enemyCount = Wave.enemyCount + 1;

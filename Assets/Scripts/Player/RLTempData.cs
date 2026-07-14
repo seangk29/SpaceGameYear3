@@ -35,6 +35,8 @@ public class PermaPlayerStats : MonoBehaviour
     public int spBulletHealth;
     Scene scene;
 
+    public int specialIndic;
+
     public bool checkObject = false;
     public bool activeSpin = false;
     public bool activeGunBot = false;
@@ -166,6 +168,7 @@ public class PermaPlayerStats : MonoBehaviour
         canUseSpecial = true;
         activeSpecial = "Spread";
         specialDamage += value;
+        specialIndic = 1;
         //Debug.Log("Spread Shot Unlocked");
     }
 
@@ -177,7 +180,8 @@ public class PermaPlayerStats : MonoBehaviour
         canUseSpecial = true;
         activeSpecial = "SpreadUpgraded1";
         specialDamage += value;
-      //  Debug.Log("Spread Shot Unlocked");
+        specialIndic = 2;
+        //  Debug.Log("Spread Shot Unlocked");
     }
 
     public void ricochetUnlock(int value)
@@ -188,7 +192,8 @@ public class PermaPlayerStats : MonoBehaviour
         activeSpecial = "Ricochet";
         specialDamage += value;
         spBulletHealth += value;
-       // Debug.Log("Ricochet Shot Unlocked");
+        specialIndic = 3;
+        // Debug.Log("Ricochet Shot Unlocked");
     }
 
     public void ricochetUnlockUpgraded1(int value)
@@ -199,6 +204,7 @@ public class PermaPlayerStats : MonoBehaviour
         activeSpecial = "RicochetUpgraded1";
         specialDamage += value;
         spBulletHealth += value;
+        specialIndic = 4;
         // Debug.Log("Ricochet Shot Unlocked");
     }
 
@@ -211,7 +217,8 @@ public class PermaPlayerStats : MonoBehaviour
         canUseSpecial = true;
         activeSpecial = "Explode";
         specialDamage += value;
-       // Debug.Log("Explode Shot Unlocked");
+        specialIndic = 5;
+        // Debug.Log("Explode Shot Unlocked");
     }
 
     public void explodeUnlockUpgraded1(int value)
@@ -221,6 +228,7 @@ public class PermaPlayerStats : MonoBehaviour
         canUseSpecial = true;
         activeSpecial = "ExplodeUpgraded1";
         specialDamage += value;
+        specialIndic = 6;
         // Debug.Log("Explode Shot Unlocked");
     }
 

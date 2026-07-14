@@ -20,7 +20,6 @@ public class SpecialShotHandler : MonoBehaviour
     public GameObject gunBot;
 
   
-
     public PlayerShooting currentSpecialPos1;
     public PlayerShooting currentSpecialPos2;
     public PlayerShooting currentSpecialPos3;
@@ -87,6 +86,8 @@ public class SpecialShotHandler : MonoBehaviour
         
 
         currentSpecialPos1.SPfireDelay = 0.5f;
+
+        currentSpecialPos1.specialAmmoCount = 3;
         
         activeSpecial = "Spread";
         spreadUnlocked = true;
@@ -98,6 +99,8 @@ public class SpecialShotHandler : MonoBehaviour
         currentSpecialPos1.SbulletPrefab = spreadShotUpgraded1;
 
         currentSpecialPos1.SPfireDelay = 0.5f;
+
+        currentSpecialPos1.specialAmmoCount = 2;
         
         activeSpecial = "SpreadUpgraded1";
         spreadUnlocked = true;
@@ -109,6 +112,7 @@ public class SpecialShotHandler : MonoBehaviour
         currentSpecialPos1.SbulletPrefab = ricochetShot;
         
         currentSpecialPos1.SPfireDelay = 1f;
+        currentSpecialPos1.specialAmmoCount = 5;
        
         activeSpecial = "Ricochet";
 
@@ -119,6 +123,7 @@ public class SpecialShotHandler : MonoBehaviour
         currentSpecialPos1.SbulletPrefab = ricochetShotUpgraded1;
 
         currentSpecialPos1.SPfireDelay = 1f;
+        currentSpecialPos1.specialAmmoCount = 3;
 
         activeSpecial = "RicochetUpgraded1";
 
@@ -130,6 +135,8 @@ public class SpecialShotHandler : MonoBehaviour
         
 
         currentSpecialPos1.SPfireDelay = 1f;
+
+        currentSpecialPos1.specialAmmoCount = 2;
         
         activeSpecial = "Explode";
 
@@ -142,6 +149,9 @@ public class SpecialShotHandler : MonoBehaviour
 
 
         currentSpecialPos1.SPfireDelay = 1f;
+
+        currentSpecialPos1.specialAmmoCount = 3;
+
 
         activeSpecial = "ExplodeUpgraded1";
 

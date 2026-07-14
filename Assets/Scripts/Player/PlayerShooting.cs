@@ -18,7 +18,8 @@ public class PlayerShooting : MonoBehaviour
     public float cooldownTimer = 0;
     public float ScooldownTimer = 0;
 
-   
+    public int specialAmmo;
+    public int specialAmmoCount;
     
     public PlayerMovement Special;
 
@@ -29,6 +30,8 @@ public class PlayerShooting : MonoBehaviour
 
         controls.Gameplay.ShootStandard.performed += ctx => Shoot();
         controls.Gameplay.ShootSpecial.performed += ctx => SpecialShoot();
+
+        
     }
 
     void OnEnable()
@@ -43,6 +46,7 @@ public class PlayerShooting : MonoBehaviour
     public void Start()
     {
         PlayerMovement Special = GetComponent<PlayerMovement>();
+        specialAmmo = specialAmmoCount;
     }
 
 
@@ -52,6 +56,8 @@ public class PlayerShooting : MonoBehaviour
         Shoot();
         SpecialShoot();
         cooldownTimer -= Time.deltaTime;
+
+      
 
         /*if (Input.GetKey(KeyCode.Mouse0) && cooldownTimer <= 0)
         {
@@ -89,11 +95,12 @@ public class PlayerShooting : MonoBehaviour
         if (MakingChoice == false)
         {
            
-            if (Input.GetKey(KeyCode.Mouse1) && ScooldownTimer <= 0 && Special.CanUseSpecial == true
-                || controls.Gameplay.ShootSpecial.IsPressed() && ScooldownTimer <= 0 && Special.CanUseSpecial == true)
+            if (Input.GetKey(KeyCode.Mouse1) && ScooldownTimer <= 0 && Special.CanUseSpecial == true && specialAmmo > 0
+                || controls.Gameplay.ShootSpecial.IsPressed() && ScooldownTimer <= 0 && Special.CanUseSpecial == true && specialAmmo > 0)
             {
                 ScooldownTimer = SPfireDelay;
                 Instantiate(SbulletPrefab, transform.position, transform.rotation);
+                specialAmmo = specialAmmo - 1;
             }
         }
 
