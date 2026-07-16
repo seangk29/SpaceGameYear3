@@ -47,9 +47,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: efaa14fdb5cda9242906e63a06254f7b, type: 3}
   GunPos: {fileID: 423238712717166506}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 2
   Fire: 0
+  canFire: 1
 --- !u!82 &3872739644916922523
 AudioSource:
   m_ObjectHideFlags: 0
@@ -193,9 +196,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 883b1180b12c7a84a8945d768342ea24, type: 3}
   GunPos: {fileID: 430243333439794577}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 0.5
   Fire: 0
+  canFire: 1
 --- !u!82 &3502726924407745918
 AudioSource:
   m_ObjectHideFlags: 0
@@ -339,9 +345,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 883b1180b12c7a84a8945d768342ea24, type: 3}
   GunPos: {fileID: 1760754551109543424}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 0.5
   Fire: 0
+  canFire: 1
 --- !u!82 &1436798963617142247
 AudioSource:
   m_ObjectHideFlags: 0
@@ -486,9 +495,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: dfb6314960fc0ca4ebe01e5c243801fe, type: 3}
   GunPos: {fileID: 1896043259398271227}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 1
   Fire: 0
+  canFire: 1
 --- !u!82 &6195292593964768824
 AudioSource:
   m_ObjectHideFlags: 0
@@ -696,9 +708,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: dfb6314960fc0ca4ebe01e5c243801fe, type: 3}
   GunPos: {fileID: 2724377685737679683}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 1
   Fire: 0
+  canFire: 1
 --- !u!82 &2575900839162039780
 AudioSource:
   m_ObjectHideFlags: 0
@@ -856,9 +871,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: dfb6314960fc0ca4ebe01e5c243801fe, type: 3}
   GunPos: {fileID: 3326118419591685161}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 1
   Fire: 0
+  canFire: 1
 --- !u!82 &2687842730025050967
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1015,9 +1033,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: 883b1180b12c7a84a8945d768342ea24, type: 3}
   GunPos: {fileID: 3946930077515180539}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 0.5
   Fire: 0
+  canFire: 1
 --- !u!82 &7690763165602365059
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1449,9 +1470,12 @@ MonoBehaviour:
   animator: {fileID: 6683389373399445009}
   Collider: {fileID: 0}
   move: {fileID: 0}
+  sprite: {fileID: 0}
   isDying: 0
+  IsSpawning: 0
   shootAudio: {fileID: 0}
   spinnyShootAudio: {fileID: 0}
+  drop: {fileID: 0}
 --- !u!1 &5383338529341791671
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,9 +1524,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: dfb6314960fc0ca4ebe01e5c243801fe, type: 3}
   GunPos: {fileID: 5383338529341791671}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 1
   Fire: 0
+  canFire: 1
 --- !u!82 &4865669600819864107
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1660,9 +1687,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: dfb6314960fc0ca4ebe01e5c243801fe, type: 3}
   GunPos: {fileID: 5391320328642485536}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 1
   Fire: 0
+  canFire: 1
 --- !u!82 &8414565887322708982
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2107,9 +2137,12 @@ MonoBehaviour:
   animator: {fileID: 1469601241009775215}
   Collider: {fileID: 0}
   move: {fileID: 0}
+  sprite: {fileID: 0}
   isDying: 0
+  IsSpawning: 0
   shootAudio: {fileID: 0}
   spinnyShootAudio: {fileID: 0}
+  drop: {fileID: 0}
 --- !u!1 &6048924443810451503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,9 +2478,12 @@ MonoBehaviour:
   animator: {fileID: 4617571791549799082}
   Collider: {fileID: 0}
   move: {fileID: 0}
+  sprite: {fileID: 0}
   isDying: 0
+  IsSpawning: 0
   shootAudio: {fileID: 0}
   spinnyShootAudio: {fileID: 0}
+  drop: {fileID: 0}
 --- !u!1 &6516421197015903028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2495,9 +2531,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1260864631553775174, guid: efaa14fdb5cda9242906e63a06254f7b, type: 3}
   GunPos: {fileID: 6516421197015903028}
+  gunBot: 0
+  face: {fileID: 0}
   timer: 0
   timeToAttack: 2
   Fire: 0
+  canFire: 1
 --- !u!82 &5331956946362343509
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2929,9 +2968,12 @@ MonoBehaviour:
   animator: {fileID: 6024355397822120377}
   Collider: {fileID: 0}
   move: {fileID: 0}
+  sprite: {fileID: 0}
   isDying: 0
+  IsSpawning: 0
   shootAudio: {fileID: 0}
   spinnyShootAudio: {fileID: 0}
+  drop: {fileID: 0}
 --- !u!1 &7860996916196858069
 GameObject:
   m_ObjectHideFlags: 0
@@ -3267,9 +3309,12 @@ MonoBehaviour:
   animator: {fileID: 1381664297785133646}
   Collider: {fileID: 0}
   move: {fileID: 0}
+  sprite: {fileID: 0}
   isDying: 0
+  IsSpawning: 0
   shootAudio: {fileID: 0}
   spinnyShootAudio: {fileID: 0}
+  drop: {fileID: 0}
 --- !u!1 &8260905942059251619
 GameObject:
   m_ObjectHideFlags: 0
@@ -3606,9 +3651,12 @@ MonoBehaviour:
   animator: {fileID: 0}
   Collider: {fileID: 0}
   move: {fileID: 0}
+  sprite: {fileID: 0}
   isDying: 0
+  IsSpawning: 0
   shootAudio: {fileID: 0}
   spinnyShootAudio: {fileID: 0}
+  drop: {fileID: 0}
 --- !u!114 &6524251808154053377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3826,8 +3874,8 @@ BoxCollider2D:
   m_Offset: {x: -0.010232151, y: -0.14667106}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: -0.16091955}
-    oldSize: {x: 1.18, y: 0.87}
+    pivot: {x: 0.5, y: -0.20289856}
+    oldSize: {x: 1.18, y: 0.69}
     newSize: {x: 2.22, y: 1.39}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3896,7 +3944,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: de36aeae0f1370f40841d0eee9fd8204, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.424
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
