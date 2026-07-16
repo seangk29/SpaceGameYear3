@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5336992251652906992}
   - component: {fileID: 3335458020552655265}
   - component: {fileID: 5551051324519883224}
+  - component: {fileID: 6977425274951797770}
+  - component: {fileID: 3808847938728060683}
   m_Layer: 0
   m_Name: AmmoDrop
   m_TagString: ammoDrop
@@ -131,6 +133,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6977425274951797770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612720399998753881}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68b60ae0855c73449b6549af14461b68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpeed: 360
+--- !u!114 &3808847938728060683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612720399998753881}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab5d0642e9ab9ae40b98535268b71464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  movingForward: 1
+  movingBackwards: 0
+  movingLeft: 0
+  movingRight: 0
 --- !u!1001 &574732491543829680
 PrefabInstance:
   m_ObjectHideFlags: 0

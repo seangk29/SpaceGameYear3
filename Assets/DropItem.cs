@@ -10,7 +10,9 @@ public class DropItem : MonoBehaviour
     public GameObject ammoItem;
     public EnemyHealth health;
 
-    public Transform trans;
+    //public Transform trans;
+
+    public Quaternion rot;
 
     public bool giveItem;
     
@@ -31,19 +33,19 @@ public class DropItem : MonoBehaviour
             
             if (rand >= 0 && rand <= 1)
             {
-                Instantiate(ammoItem, transform.position, trans.rotation);
+                Instantiate(ammoItem, transform.position, rot);
                 giveItem = false;
             }
 
             if (rand >= 2 && rand <= 4)
             {
-                Instantiate(healthItem, transform.position, trans.rotation);
+                Instantiate(healthItem, transform.position, rot);
                 giveItem = false;
             }
 
             if (rand >= 5 && rand <= 25)
             {
-                Instantiate(scoreItem, transform.position, trans.rotation);
+                Instantiate(scoreItem, transform.position, rot);
                 giveItem = false;
             }
 
