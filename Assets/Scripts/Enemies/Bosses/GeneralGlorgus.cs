@@ -11,16 +11,44 @@ public class GeneralGlorgus : MonoBehaviour
     public int phase2complete;
     public int phase3complete;
 
+    public GlorgusShield glorg;
+    public GameObject glorgShield;
+    public float timer;
+    public float timeToShield;
+
 
     // Start is called before the first frame update
     void Start()
     {
         health = GetComponent<BossHealth>();
+        glorg = GameObject.FindGameObjectWithTag("glorgusShield").GetComponent<GlorgusShield>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
+        if (glorg.canDamage)
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= timeToShield)
+            {
+                glorg.canDamage = false;
+                timer = 0;
+                glorgShield.SetActive(true);
+            }
+
+        }
+
+
+
+
+
+
+
+
 
         if (health.health <=  phase1complete)
         {
