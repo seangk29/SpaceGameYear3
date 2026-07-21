@@ -24,7 +24,7 @@ public class DamageToShields : MonoBehaviour
         if (shieldHealth <= 0)
         {
             glorg.shieldHealth = shieldHealth / 2;
-            shieldHealth = 100;
+            shieldHealth = 25;
         }
     }
 

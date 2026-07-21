@@ -29,7 +29,7 @@ public class BulletData : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "shootEnemy" || collision.gameObject.tag == "spinnyShootEnemy")
+        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "shootEnemy" || collision.gameObject.tag == "glorgusShield")
         {
             health -= 1;
         }
