@@ -75,7 +75,7 @@ PrefabInstance:
     - target: {fileID: 2277265565496739874, guid: da7b8a3980b33ef4397ab2aa13367917, type: 3}
       propertyPath: bulletPrefab
       value: 
-      objectReference: {fileID: 1260864631553775174, guid: dfb6314960fc0ca4ebe01e5c243801fe, type: 3}
+      objectReference: {fileID: 1260864631553775174, guid: 4434c81a5663616498ddfd6bd78cee78, type: 3}
     - target: {fileID: 2277265565496739874, guid: da7b8a3980b33ef4397ab2aa13367917, type: 3}
       propertyPath: timeToAttack
       value: 0.25

@@ -13,6 +13,8 @@ public class GeneralGlorgus : MonoBehaviour
 
     public GlorgusShield glorg;
     public GameObject glorgShield;
+    public GameObject gen1;
+    public GameObject gen2;
     public float Atimer;
     public float timeToShield;
     
@@ -59,8 +61,6 @@ public class GeneralGlorgus : MonoBehaviour
 
         }
 
-
-
         if (glorgusAttack)
         {
             Btimer += Time.deltaTime;
@@ -103,7 +103,15 @@ public class GeneralGlorgus : MonoBehaviour
                 }
             }
 
+        }
 
+            if (health.health <= phase1complete)
+            {
+                glorgusAttack = false;
+                gen1.SetActive(false);
+                gen2.SetActive(false);
+                
+            }
 
 
 
@@ -165,6 +173,6 @@ public class GeneralGlorgus : MonoBehaviour
 
     }
 
-}
+
 
 

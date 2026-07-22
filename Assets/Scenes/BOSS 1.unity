@@ -2229,6 +2229,14 @@ PrefabInstance:
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 3586341589025811906, guid: d234e397157ec80498699b26251c04a6, type: 3}
+      propertyPath: gen1
+      value: 
+      objectReference: {fileID: 82483461}
+    - target: {fileID: 3586341589025811906, guid: d234e397157ec80498699b26251c04a6, type: 3}
+      propertyPath: gen2
+      value: 
+      objectReference: {fileID: 630030898}
+    - target: {fileID: 3586341589025811906, guid: d234e397157ec80498699b26251c04a6, type: 3}
       propertyPath: bossy
       value: 
       objectReference: {fileID: 0}
@@ -2275,11 +2283,11 @@ PrefabInstance:
     - target: {fileID: 3586341589025811906, guid: d234e397157ec80498699b26251c04a6, type: 3}
       propertyPath: attack5
       value: 
-      objectReference: {fileID: 1260864631553775174, guid: 9ca5b792e7996c34aa8a36302d763ef9, type: 3}
+      objectReference: {fileID: 1260864631553775174, guid: c45ec887f3bbee44280a54d2646e9df9, type: 3}
     - target: {fileID: 3586341589025811906, guid: d234e397157ec80498699b26251c04a6, type: 3}
       propertyPath: attack6
       value: 
-      objectReference: {fileID: 1260864631553775174, guid: c3ce4b2faeee96a49a4c8c507ac02efc, type: 3}
+      objectReference: {fileID: 1260864631553775174, guid: c508f2fded16973479671e6daa087237, type: 3}
     - target: {fileID: 3586341589025811906, guid: d234e397157ec80498699b26251c04a6, type: 3}
       propertyPath: timeToMove
       value: 3
@@ -2318,7 +2326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3586341589025811906, guid: d234e397157ec80498699b26251c04a6, type: 3}
       propertyPath: phase1complete
-      value: 300
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 3586341589025811906, guid: d234e397157ec80498699b26251c04a6, type: 3}
       propertyPath: phase2complete
@@ -2358,7 +2366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6891351033923048039, guid: d234e397157ec80498699b26251c04a6, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6891351033923048039, guid: d234e397157ec80498699b26251c04a6, type: 3}
       propertyPath: moveSpeed
