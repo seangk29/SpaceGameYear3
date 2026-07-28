@@ -27,11 +27,16 @@ public class EnemyHealth : MonoBehaviour
 
     public DropItem drop;
 
+    public bool gotKilled;
+    public KillEmQuickPerk kill;
+    public PlayerShooting shoot;
 
     // Start is called before the first frame update
     private void Start()
     {
         Combat = true;
+        kill = GameObject.FindGameObjectWithTag("Player").GetComponent<KillEmQuickPerk>();
+        shoot = GameObject.FindGameObjectWithTag("GunPos").GetComponent<PlayerShooting>();
         playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
         NewWave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<NewWaveManager>();
 
@@ -127,7 +132,21 @@ public class EnemyHealth : MonoBehaviour
     {
         drop.giveItem = true;
 
+       
+        if (kill.killEmQuickActive)
+        {
+            gotKilled = true;
 
+
+            if (gotKilled)
+            {
+                kill.timer = 0;
+                shoot.specialAmmo = shoot.specialAmmo + 1;
+
+            }
+        }
+        
+       
         if (gameObject.tag == "Enemy")
         {
             //Wave.enemyCount = Wave.enemyCount + 1;

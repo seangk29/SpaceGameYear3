@@ -959,7 +959,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   enemyBullet: {fileID: 0}
   HUD: {fileID: 0}
-  healthFlick: {fileID: 0}
 --- !u!1 &1667372856028613701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2548,7 +2547,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   enemyBullet: {fileID: 0}
   HUD: {fileID: 0}
-  healthFlick: {fileID: 0}
 --- !u!1 &4805046748181273822
 GameObject:
   m_ObjectHideFlags: 0
@@ -4341,7 +4339,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   enemyBullet: {fileID: 0}
   HUD: {fileID: 0}
-  healthFlick: {fileID: 0}
 --- !u!1 &7671036059347274953
 GameObject:
   m_ObjectHideFlags: 0
@@ -6015,6 +6012,7 @@ GameObject:
   - component: {fileID: 2128474471066485355}
   - component: {fileID: 6471710731014124954}
   - component: {fileID: 6217109527498254700}
+  - component: {fileID: 291641128631099326}
   m_Layer: 6
   m_Name: PlayerShipFinal
   m_TagString: Player
@@ -6077,7 +6075,6 @@ MonoBehaviour:
   sprite: {fileID: 2913796824387255504}
   enemyBullet: {fileID: 0}
   HUD: {fileID: 0}
-  healthFlick: {fileID: 0}
 --- !u!114 &5946322690500378483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6387,6 +6384,23 @@ MonoBehaviour:
   currentSpecialPos2: {fileID: 7739745485852572010}
   currentSpecialPos3: {fileID: 6112183806146585590}
   currentSpecialPos4: {fileID: 3054290766208163443}
+--- !u!114 &291641128631099326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9036009820611157074}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8ffdfed77abd05408fe8dcd80b34563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  timeToLoseAmmo: 1
+  shoot: {fileID: 0}
+  eHealth: {fileID: 0}
+  killEmQuickActive: 0
 --- !u!1001 &59767049634889980
 PrefabInstance:
   m_ObjectHideFlags: 0
