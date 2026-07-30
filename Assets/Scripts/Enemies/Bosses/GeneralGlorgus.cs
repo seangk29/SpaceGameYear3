@@ -35,6 +35,9 @@ public class GeneralGlorgus : MonoBehaviour
 
     public bool phase3;
     public bool phase3Pos;
+    public float Dtimer;
+    public float timeToContinue;
+    public bool comeBack;
 
     public GameObject attack0;
     public GameObject attack1;
@@ -185,14 +188,15 @@ public class GeneralGlorgus : MonoBehaviour
         }
 
 
-        if (health.health <= phase2complete)
+        if (health.health <= phase2complete && health.health >= phase3complete)
         {
             phase2 = false;
+            phase3Pos = true;
             phase3 = true;
 
             face.enabled = true;
             
-            phase3Pos = true;
+           
 
         }
 
@@ -211,13 +215,20 @@ public class GeneralGlorgus : MonoBehaviour
 
             transform.rotation = rot;
 
-
-            move.movingForward = false;
+            move.moveSpeed = 0;
+            move.movingBackwards = false;
+            move.movingForward = true;
+            
         }
 
 
         if (phase3)
         {
+            gun1.SetActive(false);
+            gun2.SetActive(false);
+            gun3.SetActive(false);
+            
+            
             phase3Pos = false;
             
             Btimer += Time.deltaTime;
@@ -231,47 +242,67 @@ public class GeneralGlorgus : MonoBehaviour
                 {
                     case 0:
                         Instantiate(attack0, transform.position, transform.rotation);
+                        Instantiate(attack0, transform.position, transform.rotation);
                         Btimer = 0;
                         break;
                     case 1:
-                        move.enabled = true;
-                        // Instantiate(attack1, transform.position, transform.rotation);
+                       
+                        Instantiate(attack1, transform.position, transform.rotation);
                         Btimer = 0;
                         break;
                     case 2:
-                        move.enabled = true;
-              
-                        // Instantiate(attack2, transform.position, transform.rotation);
+                        Instantiate(attack2, transform.position, transform.rotation);
+                        Instantiate(attack3, transform.position, transform.rotation);
                         Btimer = 0;
                         break;
                     case 3:
-                        move.enabled = true;
-                        
-                        // Instantiate(attack3, transform.position, transform.rotation);
-                        Btimer = 0;
+                        move.moveSpeed = 5;
+                        face.enabled = false;
+                        phase3Attack();
                         break;
                     case 4:
-                        move.enabled = true;
-                       
-                        // Instantiate(attack4, transform.position, transform.rotation);
+                        Instantiate(attack4, transform.position, transform.rotation);
                         Btimer = 0;
                         break;
                     case 5:
-                        move.enabled = true;
-                       
-                        //Instantiate(attack5, transform.position, transform.rotation);
+                        Instantiate(attack5, transform.position, transform.rotation);
+                        Instantiate(attack4, transform.position, transform.rotation);
                         Btimer = 0;
                         break;
                     case 6:
-                        move.enabled = true;
-                        
-                        Btimer = 0;
+                        move.moveSpeed = 5;
+                        face.enabled = false;
+                        phase3Attack();
                         break;
 
                 }
             }
 
            
+        }
+
+        if (comeBack)
+        {
+            Dtimer += Time.deltaTime;
+
+            if (Dtimer >= timeToContinue)
+            {
+
+                Vector3 pos = transform.position;
+
+                pos = new Vector3(0, 2.5f, 0);
+
+                transform.position = pos;
+
+                Quaternion rot = transform.rotation;
+
+                rot = Quaternion.Euler(0, 0, 180);
+
+                face.enabled = true;
+                Dtimer = 0;
+                move.moveSpeed = 0;
+                comeBack = false;
+            }
         }
 
     }
@@ -528,6 +559,17 @@ public class GeneralGlorgus : MonoBehaviour
         Ctimer = 0;
         
 
+
+    }
+
+
+    void phase3Attack()
+    {
+
+
+        comeBack = true;
+      
+        
 
     }
 

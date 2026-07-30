@@ -70,12 +70,7 @@ public class BossHealth : MonoBehaviour
 
     private void Update()
     {
-         if (invul <= 0)
-         {
-             gameObject.layer = correctLayer;
-
-         }
-         invul -= Time.deltaTime;
+        
 
 
 
