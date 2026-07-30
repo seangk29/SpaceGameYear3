@@ -33,6 +33,9 @@ public class GeneralGlorgus : MonoBehaviour
     public GameObject gun2;
     public GameObject gun3;
 
+    public bool phase3;
+    public bool phase3Pos;
+
     public GameObject attack0;
     public GameObject attack1;
     public GameObject attack2;
@@ -118,7 +121,7 @@ public class GeneralGlorgus : MonoBehaviour
 
         }
 
-        if (health.health <= phase1complete)
+        if (health.health <= phase1complete && health.health >= phase2complete)
         {
             glorgusAttack = false;
             gen1.SetActive(false);
@@ -179,6 +182,96 @@ public class GeneralGlorgus : MonoBehaviour
                 }
             }
 
+        }
+
+
+        if (health.health <= phase2complete)
+        {
+            phase2 = false;
+            phase3 = true;
+
+            face.enabled = true;
+            
+            phase3Pos = true;
+
+        }
+
+
+        if (phase3Pos)
+        {
+            Vector3 pos = transform.position;
+
+            pos = new Vector3(0, 2.5f, 0);
+
+            transform.position = pos;
+
+            Quaternion rot = transform.rotation;
+
+            rot = Quaternion.Euler(0, 0, 180);
+
+            transform.rotation = rot;
+
+
+            move.movingForward = false;
+        }
+
+
+        if (phase3)
+        {
+            phase3Pos = false;
+            
+            Btimer += Time.deltaTime;
+
+            if (Btimer >= timeToAttack)
+            {
+                
+                int rand = Random.Range(0, 6);
+
+                switch (rand)
+                {
+                    case 0:
+                        Instantiate(attack0, transform.position, transform.rotation);
+                        Btimer = 0;
+                        break;
+                    case 1:
+                        move.enabled = true;
+                        // Instantiate(attack1, transform.position, transform.rotation);
+                        Btimer = 0;
+                        break;
+                    case 2:
+                        move.enabled = true;
+              
+                        // Instantiate(attack2, transform.position, transform.rotation);
+                        Btimer = 0;
+                        break;
+                    case 3:
+                        move.enabled = true;
+                        
+                        // Instantiate(attack3, transform.position, transform.rotation);
+                        Btimer = 0;
+                        break;
+                    case 4:
+                        move.enabled = true;
+                       
+                        // Instantiate(attack4, transform.position, transform.rotation);
+                        Btimer = 0;
+                        break;
+                    case 5:
+                        move.enabled = true;
+                       
+                        //Instantiate(attack5, transform.position, transform.rotation);
+                        Btimer = 0;
+                        break;
+                    case 6:
+                        move.enabled = true;
+                        
+                        Btimer = 0;
+                        break;
+
+                }
+            }
+
+           
         }
 
     }
