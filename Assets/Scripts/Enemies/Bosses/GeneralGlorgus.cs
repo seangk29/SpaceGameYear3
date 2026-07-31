@@ -18,6 +18,8 @@ public class GeneralGlorgus : MonoBehaviour
     public GameObject glorgShield;
     public GameObject gen1;
     public GameObject gen2;
+    public GameObject gen3;
+    public GameObject gen4;
     public float Atimer;
     public float timeToShield;
 
@@ -215,6 +217,13 @@ public class GeneralGlorgus : MonoBehaviour
 
             transform.rotation = rot;
 
+            gen1.SetActive(true);
+            gen2.SetActive(true);
+            gen3.SetActive(true);
+            gen4.SetActive(true);
+            glorgShield.SetActive(true);
+            glorg.shieldHealth = 100;
+
             move.moveSpeed = 0;
             move.movingBackwards = false;
             move.movingForward = true;
@@ -227,8 +236,7 @@ public class GeneralGlorgus : MonoBehaviour
             gun1.SetActive(false);
             gun2.SetActive(false);
             gun3.SetActive(false);
-            
-            
+
             phase3Pos = false;
             
             Btimer += Time.deltaTime;

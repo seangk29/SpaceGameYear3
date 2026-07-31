@@ -15,12 +15,17 @@ public class DamageToShields : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        glorg = GameObject.FindGameObjectWithTag("glorgusShield").GetComponent<GlorgusShield>();
+       glorg = GameObject.FindGameObjectWithTag("glorgusShield").GetComponent<GlorgusShield>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+       
+
+
+
         if (shieldHealth <= 0)
         {
             glorg.shieldHealth = shieldHealth / 2;
