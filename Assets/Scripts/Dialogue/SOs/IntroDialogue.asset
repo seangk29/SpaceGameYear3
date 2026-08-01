@@ -14,22 +14,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerClip:
   - {fileID: 8300000, guid: b398f3d0f0acc544aa8ed6340778e0c1, type: 3}
-  - {fileID: 8300000, guid: 45dac73d5e945d749bb0abd58a407f73, type: 3}
+  - {fileID: 8300000, guid: e7f5e09c8ca7f894fb2df092b2fe4c78, type: 3}
   - {fileID: 8300000, guid: 66bacd1f11748b741bb33c887444045b, type: 3}
-  - {fileID: 8300000, guid: 437c3ae505f5abe408ccc78554f9a154, type: 3}
-  - {fileID: 8300000, guid: 188cb9458944bf24d8638614ee75d299, type: 3}
+  - {fileID: 8300000, guid: 2a60aac12dac88f469d0d0f1303d48b6, type: 3}
   - {fileID: 8300000, guid: c7e91ad6305ac21448aa36517ca0fd1a, type: 3}
+  - {fileID: 8300000, guid: 546bfa347f15f98428897dc505d8dcbd, type: 3}
   - {fileID: 8300000, guid: de36aeae0f1370f40841d0eee9fd8204, type: 3}
-  - {fileID: 8300000, guid: 6bc656f336236054b817f802be4a3771, type: 3}
+  - {fileID: 8300000, guid: 94ac01802c3c81c489ccd6cfa311ee5f, type: 3}
+  - {fileID: 8300000, guid: d322b8d7bbc39824a8e9bee1116223fb, type: 3}
+  - {fileID: 8300000, guid: 4d9be0ec10cfe9b4b967ef8927f9ffc4, type: 3}
+  - {fileID: 8300000, guid: 4d9be0ec10cfe9b4b967ef8927f9ffc4, type: 3}
+  - {fileID: 8300000, guid: 492d67aacd1167242bc6331b442b30d0, type: 3}
   sprites:
   - {fileID: 2543192724016724221, guid: 08bb4f73637a9d540903814b9bf3692e, type: 3}
-  - {fileID: -4785656388619445238, guid: 687f07bc4a35a7b4588f59fc3ffe300c, type: 3}
-  - {fileID: -2959936546265915197, guid: 579bdee35b9e1eb48849a0b719ed245f, type: 3}
-  - {fileID: 3567258947319990041, guid: deca441533155d14db6cda2d9e621f10, type: 3}
-  - {fileID: -516185406570346511, guid: 5b7d30b9a4126cd468259a8b4f08fa2b, type: 3}
-  - {fileID: 2733241868513160400, guid: dbf1d6698ef2f4b4f96cebb4cb28d854, type: 3}
-  - {fileID: 1880696031944839962, guid: d9a14ec960a89204dbae7fe853a73bc1, type: 3}
-  - {fileID: 4180949317170676475, guid: 687f07bc4a35a7b4588f59fc3ffe300c, type: 3}
+  - {fileID: 8745822638593887074, guid: cf9e8955e03aa3442a9e22a44568a005, type: 3}
+  - {fileID: 2543192724016724221, guid: 08bb4f73637a9d540903814b9bf3692e, type: 3}
+  - {fileID: 2543192724016724221, guid: 08bb4f73637a9d540903814b9bf3692e, type: 3}
+  - {fileID: 2543192724016724221, guid: 08bb4f73637a9d540903814b9bf3692e, type: 3}
+  - {fileID: 2543192724016724221, guid: 08bb4f73637a9d540903814b9bf3692e, type: 3}
+  - {fileID: 8745822638593887074, guid: cf9e8955e03aa3442a9e22a44568a005, type: 3}
+  - {fileID: 2543192724016724221, guid: 08bb4f73637a9d540903814b9bf3692e, type: 3}
+  - {fileID: 8745822638593887074, guid: cf9e8955e03aa3442a9e22a44568a005, type: 3}
+  - {fileID: 8745822638593887074, guid: cf9e8955e03aa3442a9e22a44568a005, type: 3}
+  - {fileID: 2543192724016724221, guid: 08bb4f73637a9d540903814b9bf3692e, type: 3}
+  - {fileID: 2543192724016724221, guid: 08bb4f73637a9d540903814b9bf3692e, type: 3}
   paragraphs:
   - "COSMO: Come in \u2018Bastion One\u2019 do you copy? "
   - 'BASTION ONE: Copy!
@@ -37,6 +45,9 @@ MonoBehaviour:
 '
   - "COSMO: Let\u2019s not forget how important this mission is. We must eradicate
     these bugs before they have the chance to get their filth all over our home."
+  - 'BAXTER: What do we know about our enemy, Captain?'
+  - 'COSMO: Not much, our friends in the solar system went dark long before they
+    could give us any valuable intel.'
   - "BAXTER: It doesn\u2019t matter. We\u2019ll crush them either way. "
   - 'BASTION ONE: Yeah!!!'
   - "COSMO: Settle down, while it\u2019s true we are the best, knowing is half the
@@ -44,3 +55,5 @@ MonoBehaviour:
   - "PHOENIX: Are we approaching the location of the signal we picked up? I\u2019m
     not seeing anything. "
   - 'HOLT: I think I see-'
+  - 'BAXTER: Holt! No!'
+  - 'COSMO: Stay in formation, stay in formation!'
