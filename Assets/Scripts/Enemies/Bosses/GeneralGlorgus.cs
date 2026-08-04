@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.XR;
 
 public class GeneralGlorgus : MonoBehaviour
 {
 
+    public GlorgusPhase1 phase1;
+    
+    
     public BossHealth health;
     public MoveForward move;
     public FacesPlayer face;
@@ -57,6 +61,9 @@ public class GeneralGlorgus : MonoBehaviour
         glorg = GameObject.FindGameObjectWithTag("glorgusShield").GetComponent<GlorgusShield>();
         move = GetComponent<MoveForward>();
         face = GetComponent<FacesPlayer>();
+
+        phase1.enabled = true;
+
     }
 
     // Update is called once per frame
@@ -64,523 +71,469 @@ public class GeneralGlorgus : MonoBehaviour
     {
 
 
-        if (glorg.canDamage)
-        {
 
-            glorgusAttack = false;
 
-            Atimer += Time.deltaTime;
 
-            if (Atimer >= timeToShield)
-            {
-                glorg.canDamage = false;
-                Atimer = 0;
-                glorgShield.SetActive(true);
-                glorgusAttack = true;
-                glorg.shieldHealth = 100;
-            }
-
-        }
-
-        if (glorgusAttack)
-        {
-            Btimer += Time.deltaTime;
-
-            if (Btimer >= timeToAttack)
-            {
-                int rand = Random.Range(0, 6);
-
-                switch (rand)
+        /*
+                if (health.health <= phase1complete && health.health >= phase2complete)
                 {
-                    case 0:
-                        Instantiate(attack0, transform.position, transform.rotation);
-                        Btimer = 0;
-                        break;
-                    case 1:
-                        Instantiate(attack1, transform.position, transform.rotation);
-                        Btimer = 0;
-                        break;
-                    case 2:
-                        Instantiate(attack2, transform.position, transform.rotation);
-                        Btimer = 0;
-                        break;
-                    case 3:
-                        Instantiate(attack3, transform.position, transform.rotation);
-                        Btimer = 0;
-                        break;
-                    case 4:
-                        Instantiate(attack4, transform.position, transform.rotation);
-                        Btimer = 0;
-                        break;
-                    case 5:
-                        Instantiate(attack5, transform.position, transform.rotation);
-                        Btimer = 0;
-                        break;
-                    case 6:
-                        Instantiate(attack6, transform.position, transform.rotation);
-                        Btimer = 0;
-                        break;
+                    glorgusAttack = false;
+                    gen1.SetActive(false);
+                    gen2.SetActive(false);
+                    glorgShield.SetActive(false);
+                    move.enabled = true;
+                    face.enabled = false;
+
+                    phase2 = true;
 
                 }
-            }
 
-        }
-
-        if (health.health <= phase1complete && health.health >= phase2complete)
-        {
-            glorgusAttack = false;
-            gen1.SetActive(false);
-            gen2.SetActive(false);
-            glorgShield.SetActive(false);
-            move.enabled = true;
-            face.enabled = false;
-
-            phase2 = true;
-
-        }
-
-        if (phase2)
-        {
-            Ctimer += Time.deltaTime;
-
-
-            if (Ctimer >= timeToGo)
-            {
-                int rand = Random.Range(0, 8);
-                newPos = true;
-                gun1.SetActive(true);
-                gun2.SetActive(true);
-                gun3.SetActive(true);
-
-                switch (rand)
+                if (phase2)
                 {
-                    case 0:
-                        phase2Attack1();
-                        break;
-                    case 1:
-                        phase2Attack2();
-                        break;
-                    case 2:
-                        phase2Attack3();
-                        break;
-                    case 3:
-                        phase2Attack4();
-                        break;
-                    case 4:
-                        phase2Attack5();
-                        break;
-                    case 5:
-                        phase2Attack6();
-                        break;
-                    case 6:
-                        phase2Attack7();
-                        break;
-                    case 7:
-                        phase2Attack8();
-                        break;
-                    case 8:
-                        phase2Attack9();
-                        break;
+                    Ctimer += Time.deltaTime;
+
+
+                    if (Ctimer >= timeToGo)
+                    {
+                        int rand = Random.Range(0, 8);
+                        newPos = true;
+                        gun1.SetActive(true);
+                        gun2.SetActive(true);
+                        gun3.SetActive(true);
+
+                        switch (rand)
+                        {
+                            case 0:
+                                phase2Attack1();
+                                break;
+                            case 1:
+                                phase2Attack2();
+                                break;
+                            case 2:
+                                phase2Attack3();
+                                break;
+                            case 3:
+                                phase2Attack4();
+                                break;
+                            case 4:
+                                phase2Attack5();
+                                break;
+                            case 5:
+                                phase2Attack6();
+                                break;
+                            case 6:
+                                phase2Attack7();
+                                break;
+                            case 7:
+                                phase2Attack8();
+                                break;
+                            case 8:
+                                phase2Attack9();
+                                break;
+
+
+
+                        }
+                    }
+
+                }
+
+
+                if (health.health <= phase2complete)
+                {
+                    phase3Pos = true;
+
 
 
 
                 }
-            }
-
-        }
 
 
-        if (health.health <= phase2complete && health.health >= phase3complete)
-        {
-            phase2 = false;
-            phase3Pos = true;
-            phase3 = true;
-
-            face.enabled = true;
-            
-           
-
-        }
-
-
-        if (phase3Pos)
-        {
-            Vector3 pos = transform.position;
-
-            pos = new Vector3(0, 2.5f, 0);
-
-            transform.position = pos;
-
-            Quaternion rot = transform.rotation;
-
-            rot = Quaternion.Euler(0, 0, 180);
-
-            transform.rotation = rot;
-
-            gen1.SetActive(true);
-            gen2.SetActive(true);
-            gen3.SetActive(true);
-            gen4.SetActive(true);
-            glorgShield.SetActive(true);
-            glorg.shieldHealth = 100;
-
-            move.moveSpeed = 0;
-            move.movingBackwards = false;
-            move.movingForward = true;
-            
-        }
-
-
-        if (phase3)
-        {
-            gun1.SetActive(false);
-            gun2.SetActive(false);
-            gun3.SetActive(false);
-
-            phase3Pos = false;
-            
-            Btimer += Time.deltaTime;
-
-            if (Btimer >= timeToAttack)
-            {
-                
-                int rand = Random.Range(0, 6);
-
-                switch (rand)
+                if (phase3Pos)
                 {
-                    case 0:
-                        Instantiate(attack0, transform.position, transform.rotation);
-                        Instantiate(attack0, transform.position, transform.rotation);
-                        Btimer = 0;
-                        break;
-                    case 1:
-                       
-                        Instantiate(attack1, transform.position, transform.rotation);
-                        Btimer = 0;
-                        break;
-                    case 2:
-                        Instantiate(attack2, transform.position, transform.rotation);
-                        Instantiate(attack3, transform.position, transform.rotation);
-                        Btimer = 0;
-                        break;
-                    case 3:
-                        move.moveSpeed = 5;
-                        face.enabled = false;
-                        phase3Attack();
-                        break;
-                    case 4:
-                        Instantiate(attack4, transform.position, transform.rotation);
-                        Btimer = 0;
-                        break;
-                    case 5:
-                        Instantiate(attack5, transform.position, transform.rotation);
-                        Instantiate(attack4, transform.position, transform.rotation);
-                        Btimer = 0;
-                        break;
-                    case 6:
-                        move.moveSpeed = 5;
-                        face.enabled = false;
-                        phase3Attack();
-                        break;
+                    phase2 = false;
+
+
+                    Vector3 pos = transform.position;
+
+                    pos = new Vector3(0, 2.5f, 0);
+
+                    transform.position = pos;
+
+                    Quaternion rot = transform.rotation;
+
+                    rot = Quaternion.Euler(0, 0, 180);
+
+                    transform.rotation = rot;
+
+                    face.enabled = true;
+
+
+                    gen1.SetActive(true);
+                    gen2.SetActive(true);
+                    gen3.SetActive(true);
+                    gen4.SetActive(true);
+                    glorgShield.SetActive(true);
+                    //glorg.shieldHealth = 100;
+                    move.movingBackwards = false;
+
+                    phase3 = true;
+                }
+
+
+                if (phase3)
+                {
+                    glorg = GameObject.FindGameObjectWithTag("glorgusShield").GetComponent<GlorgusShield>();
+
+
+                    gun1.SetActive(false);
+                    gun2.SetActive(false);
+                    gun3.SetActive(false);
+
+
+
+                    Btimer += Time.deltaTime;
+
+                    if (Btimer >= timeToAttack)
+                    {
+
+                        phase3Pos = false;
+
+                        int rand = Random.Range(0, 6);
+
+                        switch (rand)
+                        {
+                            case 0:
+                                Instantiate(attack0, transform.position, transform.rotation);
+                                Instantiate(attack0, transform.position, transform.rotation);
+                                Btimer = 0;
+                                break;
+                            case 1:
+
+                                Instantiate(attack1, transform.position, transform.rotation);
+                                Btimer = 0;
+                                break;
+                            case 2:
+                                Instantiate(attack2, transform.position, transform.rotation);
+                                Instantiate(attack3, transform.position, transform.rotation);
+                                Btimer = 0;
+                                break;
+                            case 3:
+                                Instantiate(attack1, transform.position, transform.rotation);
+                                Btimer = 0;
+                                break;
+                            case 4:
+                                Instantiate(attack4, transform.position, transform.rotation);
+                                Btimer = 0;
+                                break;
+                            case 5:
+                                Instantiate(attack5, transform.position, transform.rotation);
+                                Instantiate(attack4, transform.position, transform.rotation);
+                                Btimer = 0;
+                                break;
+                            case 6:
+                                Instantiate(attack4, transform.position, transform.rotation);
+                                Btimer = 0;
+                                break;
+
+                        }
+                    }
+
 
                 }
+
+                if (comeBack)
+                {
+                    Dtimer += Time.deltaTime;
+
+                    if (Dtimer >= timeToContinue)
+                    {
+
+                        Vector3 pos = transform.position;
+
+                        pos = new Vector3(0, 2.5f, 0);
+
+                        transform.position = pos;
+
+                        Quaternion rot = transform.rotation;
+
+                        rot = Quaternion.Euler(0, 0, 180);
+
+                        face.enabled = true;
+                        Dtimer = 0;
+                        move.moveSpeed = 0;
+                        comeBack = false;
+                    }
+                }
+
             }
 
-           
-        }
-
-        if (comeBack)
-        {
-            Dtimer += Time.deltaTime;
-
-            if (Dtimer >= timeToContinue)
+            void phase2Attack1()
             {
 
-                Vector3 pos = transform.position;
+                if (newPos)
+                {
+                    Vector3 pos = transform.position;
 
-                pos = new Vector3(0, 2.5f, 0);
+                    pos = new Vector3(0, 4f, 0);
 
-                transform.position = pos;
+                    transform.position = pos;
 
-                Quaternion rot = transform.rotation;
+                    Quaternion rot = transform.rotation;
 
-                rot = Quaternion.Euler(0, 0, 180);
+                    rot = Quaternion.Euler(0, 0, 180);
 
-                face.enabled = true;
-                Dtimer = 0;
-                move.moveSpeed = 0;
-                comeBack = false;
+                    transform.rotation = rot;
+
+                    newPos = false;
+                }
+
+                move.movingBackwards = false;
+                move.movingForward = true;
+
+                Ctimer = 0;
+
+
             }
-        }
 
+            void phase2Attack2()
+            {
+
+                if (newPos)
+                {
+                    Vector3 pos = transform.position;
+
+                    pos = new Vector3(-9, 0.5f, 0);
+
+                    transform.position = pos;
+
+                    Quaternion rot = transform.rotation;
+
+                    rot = Quaternion.Euler(0, 0, -90);
+
+                    transform.rotation = rot;
+
+                    newPos = false;
+                }
+
+                move.movingBackwards = false;
+                move.movingForward = true;
+
+                Ctimer = 0;
+
+
+            }
+
+            void phase2Attack3()
+            {
+
+                if (newPos)
+                {
+                    Vector3 pos = transform.position;
+
+                    pos = new Vector3(9, 0.5f, 0);
+
+                    transform.position = pos;
+
+                    Quaternion rot = transform.rotation;
+
+                    rot = Quaternion.Euler(0, 0, 90);
+
+                    transform.rotation = rot;
+
+                    newPos = false;
+                }
+
+                move.movingBackwards = false;
+                move.movingForward = true;
+
+                Ctimer = 0;
+
+
+            }
+
+            void phase2Attack4()
+            {
+
+                if (newPos)
+                {
+                    Vector3 pos = transform.position;
+
+                    pos = new Vector3(-6, 4f, 0);
+
+                    transform.position = pos;
+
+                    Quaternion rot = transform.rotation;
+
+                    rot = Quaternion.Euler(0, 0, 180);
+
+                    transform.rotation = rot;
+
+                    newPos = false;
+                }
+
+                move.movingBackwards = false;
+                move.movingForward = true;
+
+                Ctimer = 0;
+
+
+            }
+
+            void phase2Attack5()
+            {
+
+                if (newPos)
+                {
+                    Vector3 pos = transform.position;
+
+                    pos = new Vector3(6, 4f, 0);
+
+                    transform.position = pos;
+
+                    Quaternion rot = transform.rotation;
+
+                    rot = Quaternion.Euler(0, 0, 180);
+
+                    transform.rotation = rot;
+
+                    newPos = false;
+                }
+
+                move.movingBackwards = false;
+                move.movingForward = true;
+
+                Ctimer = 0;
+
+
+            }
+
+
+            void phase2Attack6()
+            {
+
+                if (newPos)
+                {
+                    Vector3 pos = transform.position;
+
+                    pos = new Vector3(9, 2.5f, 0);
+
+                    transform.position = pos;
+
+                    Quaternion rot = transform.rotation;
+
+                    rot = Quaternion.Euler(0, 0, 90);
+
+                    transform.rotation = rot;
+
+                    newPos = false;
+                }
+
+                move.movingBackwards = false;
+                move.movingForward = true;
+
+                Ctimer = 0;
+
+
+            }
+
+
+            void phase2Attack7()
+            {
+
+                if (newPos)
+                {
+                    Vector3 pos = transform.position;
+
+                    pos = new Vector3(9, -2.5f, 0);
+
+                    transform.position = pos;
+
+                    Quaternion rot = transform.rotation;
+
+                    rot = Quaternion.Euler(0, 0, 90);
+
+                    transform.rotation = rot;
+
+                    newPos = false;
+                }
+
+                move.movingBackwards = false;
+                move.movingForward = true;
+
+                Ctimer = 0;
+
+
+            }
+
+            void phase2Attack8()
+            {
+
+                if (newPos)
+                {
+                    Vector3 pos = transform.position;
+
+                    pos = new Vector3(-9, 2.5f, 0);
+
+                    transform.position = pos;
+
+                    Quaternion rot = transform.rotation;
+
+                    rot = Quaternion.Euler(0, 0, -90);
+
+                    transform.rotation = rot;
+
+                    newPos = false;
+                }
+
+                move.movingBackwards = false;
+                move.movingForward = true;
+
+                Ctimer = 0;
+
+
+            }
+
+            void phase2Attack9()
+            {
+
+                if (newPos)
+                {
+                    Vector3 pos = transform.position;
+
+                    pos = new Vector3(9, -2.5f, 0);
+
+                    transform.position = pos;
+
+                    Quaternion rot = transform.rotation;
+
+                    rot = Quaternion.Euler(0, 0, -90);
+
+                    transform.rotation = rot;
+
+                    newPos = false;
+                }
+
+                move.movingBackwards = false;
+                move.movingForward = true;
+
+                Ctimer = 0;
+
+
+
+            }
+
+
+            void phase3Attack()
+            {
+
+
+                comeBack = true;
+
+
+
+            }*/
     }
-
-    void phase2Attack1()
-    {
-        
-        if (newPos)
-        {
-            Vector3 pos = transform.position;
-
-            pos = new Vector3(0, 4f, 0);
-
-            transform.position = pos;
-
-            Quaternion rot = transform.rotation;
-
-            rot = Quaternion.Euler(0, 0, 180);
-
-            transform.rotation = rot;
-
-            newPos = false;
-        }
-
-        move.movingBackwards = false;
-        move.movingForward = true;
-
-        Ctimer = 0;
-
-
-    }
-
-    void phase2Attack2()
-    {
-
-        if (newPos)
-        {
-            Vector3 pos = transform.position;
-
-            pos = new Vector3(-9, 0.5f, 0);
-
-            transform.position = pos;
-
-            Quaternion rot = transform.rotation;
-
-            rot = Quaternion.Euler(0, 0, -90);
-
-            transform.rotation = rot;
-
-            newPos = false;
-        }
-
-        move.movingBackwards = false;
-        move.movingForward = true;
-
-        Ctimer = 0;
-
-
-    }
-
-    void phase2Attack3()
-    {
-
-        if (newPos)
-        {
-            Vector3 pos = transform.position;
-
-            pos = new Vector3(9, 0.5f, 0);
-
-            transform.position = pos;
-
-            Quaternion rot = transform.rotation;
-
-            rot = Quaternion.Euler(0, 0, 90);
-
-            transform.rotation = rot;
-
-            newPos = false;
-        }
-
-        move.movingBackwards = false;
-        move.movingForward = true;
-
-        Ctimer = 0;
-
-
-    }
-
-    void phase2Attack4()
-    {
-
-        if (newPos)
-        {
-            Vector3 pos = transform.position;
-
-            pos = new Vector3(-6, 4f, 0);
-
-            transform.position = pos;
-
-            Quaternion rot = transform.rotation;
-
-            rot = Quaternion.Euler(0, 0, 180);
-
-            transform.rotation = rot;
-
-            newPos = false;
-        }
-
-        move.movingBackwards = false;
-        move.movingForward = true;
-
-        Ctimer = 0;
-
-
-    }
-
-    void phase2Attack5()
-    {
-
-        if (newPos)
-        {
-            Vector3 pos = transform.position;
-
-            pos = new Vector3(6, 4f, 0);
-
-            transform.position = pos;
-
-            Quaternion rot = transform.rotation;
-
-            rot = Quaternion.Euler(0, 0, 180);
-
-            transform.rotation = rot;
-
-            newPos = false;
-        }
-
-        move.movingBackwards = false;
-        move.movingForward = true;
-
-        Ctimer = 0;
-
-
-    }
-
-
-    void phase2Attack6()
-    {
-
-        if (newPos)
-        {
-            Vector3 pos = transform.position;
-
-            pos = new Vector3(9, 2.5f, 0);
-
-            transform.position = pos;
-
-            Quaternion rot = transform.rotation;
-
-            rot = Quaternion.Euler(0, 0, 90);
-
-            transform.rotation = rot;
-
-            newPos = false;
-        }
-
-        move.movingBackwards = false;
-        move.movingForward = true;
-
-        Ctimer = 0;
-
-
-    }
-
-
-    void phase2Attack7()
-    {
-
-        if (newPos)
-        {
-            Vector3 pos = transform.position;
-
-            pos = new Vector3(9, -2.5f, 0);
-
-            transform.position = pos;
-
-            Quaternion rot = transform.rotation;
-
-            rot = Quaternion.Euler(0, 0, 90);
-
-            transform.rotation = rot;
-
-            newPos = false;
-        }
-
-        move.movingBackwards = false;
-        move.movingForward = true;
-
-        Ctimer = 0;
-
-
-    }
-
-    void phase2Attack8()
-    {
-
-        if (newPos)
-        {
-            Vector3 pos = transform.position;
-
-            pos = new Vector3(-9, 2.5f, 0);
-
-            transform.position = pos;
-
-            Quaternion rot = transform.rotation;
-
-            rot = Quaternion.Euler(0, 0, -90);
-
-            transform.rotation = rot;
-
-            newPos = false;
-        }
-
-        move.movingBackwards = false;
-        move.movingForward = true;
-
-        Ctimer = 0;
-
-
-    }
-
-    void phase2Attack9()
-    {
-
-        if (newPos)
-        {
-            Vector3 pos = transform.position;
-
-            pos = new Vector3(9, -2.5f, 0);
-
-            transform.position = pos;
-
-            Quaternion rot = transform.rotation;
-
-            rot = Quaternion.Euler(0, 0, -90);
-
-            transform.rotation = rot;
-
-            newPos = false;
-        }
-
-        move.movingBackwards = false;
-        move.movingForward = true;
-
-        Ctimer = 0;
-        
-
-
-    }
-
-
-    void phase3Attack()
-    {
-
-
-        comeBack = true;
-      
-        
-
-    }
-
 }
 
 

@@ -45,6 +45,7 @@ TagManager:
   - scoreDrop
   - healthDrop
   - glorgusShield
+  - GeneralGlorgus
   layers:
   - Default
   - TransparentFX
