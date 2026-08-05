@@ -22,6 +22,7 @@ public class CosmoSignStop : MonoBehaviour
         if (timer >= timeToStop)
         {
             move.movingForward = false;
+            timer = 0;
         }
     }
 }
