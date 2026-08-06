@@ -16,6 +16,7 @@ public class SpecialShotHandler : MonoBehaviour
     public GameObject ricochetShotUpgraded1;
     public GameObject explodeShot;
     public GameObject explodeShotUpgraded1;
+    public GameObject laserShot;
     public GameObject spinShot;
     public GameObject gunBot;
 
@@ -62,6 +63,9 @@ public class SpecialShotHandler : MonoBehaviour
                     break;
                 case "Spin":
                     getSpinShot();
+                    break;
+                case "Laser":
+                    GetLaserShot();
                     break;
             }
         }
@@ -154,6 +158,22 @@ public class SpecialShotHandler : MonoBehaviour
 
 
         activeSpecial = "ExplodeUpgraded1";
+
+    }
+
+
+
+    public void GetLaserShot()
+    {
+        currentSpecialPos1.SbulletPrefab = laserShot;
+
+
+        currentSpecialPos1.SPfireDelay = 3f;
+
+        currentSpecialPos1.specialAmmoCount = 3;
+
+
+        activeSpecial = "Laser";
 
     }
 

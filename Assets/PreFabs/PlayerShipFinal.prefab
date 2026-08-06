@@ -6378,6 +6378,7 @@ MonoBehaviour:
   ricochetShotUpgraded1: {fileID: 7005896041558608142, guid: 50c7f12fed23f3f41938be721275c559, type: 3}
   explodeShot: {fileID: 1260864631553775174, guid: af5722c7079a6ed429f874e380444ecd, type: 3}
   explodeShotUpgraded1: {fileID: 1260864631553775174, guid: da006f0664ac77f428946aa0fe04d91b, type: 3}
+  laserShot: {fileID: 1260864631553775174, guid: cdae0eedeeba01a449280feb85e6a51b, type: 3}
   spinShot: {fileID: 5789570455946320749}
   gunBot: {fileID: 5707057115716299130}
   currentSpecialPos1: {fileID: 1188533996794506909}

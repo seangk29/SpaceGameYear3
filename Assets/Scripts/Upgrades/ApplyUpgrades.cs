@@ -60,6 +60,9 @@ public class ApplyUpgrades : MonoBehaviour
             case CardEffect.ExplodeUnlock:
                 PermaPlayerStats.explodeUnlock(selectedCardValue);
                 break;
+            case CardEffect.LaserUnlock:
+                PermaPlayerStats.laserUnlock(selectedCardValue);
+                break;
             case CardEffect.DamageUpgrade:
                 PermaPlayerStats.damageUpgrade(selectedCardValue);
                 break;

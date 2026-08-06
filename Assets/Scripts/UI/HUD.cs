@@ -214,6 +214,19 @@ public class HUD : MonoBehaviour
                 ammo[4].color = Color.blue;
 
                 break;
+
+            case 7:
+                //specialShotImage[2].enabled = true;
+                // specialShotImage[0].enabled = false;
+                //specialShotImage[1].enabled = false;
+
+                ammo[0].color = Color.white;
+                ammo[1].color = Color.white;
+                ammo[2].color = Color.white;
+                ammo[3].color = Color.white;
+                ammo[4].color = Color.white;
+
+                break;
         }
 
 

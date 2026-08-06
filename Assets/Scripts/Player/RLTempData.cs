@@ -232,6 +232,18 @@ public class PermaPlayerStats : MonoBehaviour
         // Debug.Log("Explode Shot Unlocked");
     }
 
+
+    public void laserUnlock(int value)
+    {
+        specialShotHandler.GetLaserShot();
+        playerMovement.CanUseSpecial = true;
+        canUseSpecial = true;
+        activeSpecial = "Laser";
+        specialDamage += value;
+        specialIndic = 7;
+        //Debug.Log("Spread Shot Unlocked");
+    }
+
     public void spinUnlock()
     {
        
