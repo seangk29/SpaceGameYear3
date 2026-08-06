@@ -197,6 +197,9 @@ public class CardManager : MonoBehaviour
             case CardEffect.ExplodeUpgraded1Unlock:
                 PermaPlayerStats.explodeUnlockUpgraded1(selectedCardValue);
                 break;
+            case CardEffect.LaserUnlock:
+                PermaPlayerStats.laserUnlock(selectedCardValue);
+                break;
             case CardEffect.SpinUnlock:
                 PermaPlayerStats.spinUnlock();
                 break;

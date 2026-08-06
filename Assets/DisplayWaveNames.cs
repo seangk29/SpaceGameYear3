@@ -19,7 +19,15 @@ public class DisplayWaveNames : MonoBehaviour
     void Update()
     {
 
-        wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<NewWaveManager>();
+        if (wave == null)
+        {
+            wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<NewWaveManager>();
+        }
+        
+        
+       
+
+
         waveTMP.text = "WAVE:  " + wave.currentWave.waveName;
     }
 }

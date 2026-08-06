@@ -172,10 +172,10 @@ public class SpecialShotHandler : MonoBehaviour
 
         currentSpecialPos1.specialAmmoCount = 3;
 
-        
-
-
+      
         activeSpecial = "Laser";
+
+        Debug.Log("Laser");
 
     }
 

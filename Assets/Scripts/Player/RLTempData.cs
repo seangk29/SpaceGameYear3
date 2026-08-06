@@ -109,14 +109,14 @@ public class PermaPlayerStats : MonoBehaviour
         activePlayerHealth.health = activePlayerHealth.health + value;
         maxHealth = maxHealth + value;
         gameObject.GetComponentInChildren<ActivePlayerHealth>();
-        Debug.Log("Max Health Upgraded");
+       // Debug.Log("Max Health Upgraded");
     }
 
     public void MaxShieldUpgrade(int value)
     {
         activePlayerHealth.shieldHealth = activePlayerHealth.shieldHealth + value;
         maxShield = maxShield + value;
-        Debug.Log("Shield Upgraded");
+       // Debug.Log("Shield Upgraded");
 
     }
 
@@ -124,13 +124,13 @@ public class PermaPlayerStats : MonoBehaviour
     {
         activePlayerHealth.regenShieldsTimer = activePlayerHealth.regenShieldsTimer - value;
         regenShieldTimer = regenShieldTimer - value;
-        Debug.Log("Shield Regen Upgraded");
+        //Debug.Log("Shield Regen Upgraded");
     }
 
     public void heal(int value)
     {
         activePlayerHealth.health= activePlayerHealth.health + value;
-        Debug.Log("Healed");
+        //Debug.Log("Healed");
     }
 
     public void MaxSpeedUpgrade(float value)
@@ -139,25 +139,25 @@ public class PermaPlayerStats : MonoBehaviour
         speed = speed + value;
         maxSpeed = maxSpeed + value;
         gameObject.GetComponent<PlayerMovement>();
-        Debug.Log("Speed upgraded");
+       // Debug.Log("Speed upgraded");
     }
 
     public void damageUpgrade(int value)
     {
         damage += value;
-        Debug.Log("Standard Damage Upgraded");
+       // Debug.Log("Standard Damage Upgraded");
     }
 
     public void spDmgUpgrade(int value)
     { 
         specialDamage += value;
-        Debug.Log("Special Damage Upgraded");
+       // Debug.Log("Special Damage Upgraded");
     }
 
     public void spBulletHPUpgrade(int value)
     { 
         spBulletHealth += value;
-        Debug.Log("Special Bullet HP Upgraded");
+       // Debug.Log("Special Bullet HP Upgraded");
     }
 
 
@@ -240,8 +240,9 @@ public class PermaPlayerStats : MonoBehaviour
         canUseSpecial = true;
         activeSpecial = "Laser";
         specialDamage += value;
+        spBulletHealth += value;
         specialIndic = 7;
-        //Debug.Log("Spread Shot Unlocked");
+        Debug.Log("Laser Shot Unlocked");
     }
 
     public void spinUnlock()

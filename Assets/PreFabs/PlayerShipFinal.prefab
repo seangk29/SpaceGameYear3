@@ -6376,7 +6376,7 @@ MonoBehaviour:
   spreadShotUpgraded1: {fileID: 1260864631553775174, guid: 0667d706ce5c35145a4886b6580b4366, type: 3}
   ricochetShot: {fileID: 7005896041558608142, guid: f1099f9caadac144f8bfe46c99f1f349, type: 3}
   ricochetShotUpgraded1: {fileID: 7005896041558608142, guid: 50c7f12fed23f3f41938be721275c559, type: 3}
-  explodeShot: {fileID: 1260864631553775174, guid: af5722c7079a6ed429f874e380444ecd, type: 3}
+  explodeShot: {fileID: 1260864631553775174, guid: cdae0eedeeba01a449280feb85e6a51b, type: 3}
   explodeShotUpgraded1: {fileID: 1260864631553775174, guid: da006f0664ac77f428946aa0fe04d91b, type: 3}
   laserShot: {fileID: 1260864631553775174, guid: cdae0eedeeba01a449280feb85e6a51b, type: 3}
   spinShot: {fileID: 5789570455946320749}

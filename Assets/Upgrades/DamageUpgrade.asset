@@ -17,7 +17,7 @@ MonoBehaviour:
   cardText: 'Receive +1 SB Damage '
   descText: Cosmo's STANDARD BULLET damage increases by ONE.
   costs: 
-  effectType: 13
+  effectType: 14
   effectString: {fileID: 0}
   effectValue: 1
   effectFloatValue: 0

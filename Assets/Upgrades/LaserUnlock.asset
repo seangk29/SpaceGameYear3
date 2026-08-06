@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: LaserUnlock
   m_EditorClassIdentifier: 
   cardImage: {fileID: 1387938505793899080, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-  headerText: --- LASER---
+  headerText: --- LASER ---
   cardText: 'Receive Special Shot: Laser'
-  descText: Obtain a SPECIAL SHOT that fires a LASER to hit ENEMY ships with ease.
-  costs: 
+  descText: Unlock a SPECIAL SHOT that fires a LASER that fires through multiple
+    ENEMY ships.
+  costs: 0
   effectType: 10
   effectString: {fileID: 0}
   effectValue: 1
   effectFloatValue: 0
   isUnique: 1
-  unlockLevel: 3
+  unlockLevel: 2

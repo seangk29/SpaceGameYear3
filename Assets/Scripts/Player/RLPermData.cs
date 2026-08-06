@@ -178,4 +178,6 @@ public class RLPermData : MonoBehaviour
         activeSpecial = "Explode";
         Debug.Log("Explode Shot Unlocked");
     }
+
+    
 }
