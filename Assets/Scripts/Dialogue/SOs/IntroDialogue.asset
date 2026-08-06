@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerClip:
   - {fileID: 8300000, guid: b398f3d0f0acc544aa8ed6340778e0c1, type: 3}
-  - {fileID: 8300000, guid: e7f5e09c8ca7f894fb2df092b2fe4c78, type: 3}
+  - {fileID: 8300000, guid: e88dc6d92b2658c47a8ef73bee2ca7c1, type: 3}
   - {fileID: 8300000, guid: 66bacd1f11748b741bb33c887444045b, type: 3}
   - {fileID: 8300000, guid: 2a60aac12dac88f469d0d0f1303d48b6, type: 3}
   - {fileID: 8300000, guid: c7e91ad6305ac21448aa36517ca0fd1a, type: 3}
   - {fileID: 8300000, guid: 546bfa347f15f98428897dc505d8dcbd, type: 3}
-  - {fileID: 8300000, guid: de36aeae0f1370f40841d0eee9fd8204, type: 3}
+  - {fileID: 8300000, guid: 4ecb27fa34219ae45bbc2211bc05d4cc, type: 3}
   - {fileID: 8300000, guid: 94ac01802c3c81c489ccd6cfa311ee5f, type: 3}
-  - {fileID: 8300000, guid: d322b8d7bbc39824a8e9bee1116223fb, type: 3}
-  - {fileID: 8300000, guid: 4d9be0ec10cfe9b4b967ef8927f9ffc4, type: 3}
+  - {fileID: 8300000, guid: 575ce5f1082b7eb4abcc5ebbbef31e90, type: 3}
+  - {fileID: 8300000, guid: 4d61ae52d2d416c45b84bf0c3b5953d1, type: 3}
   - {fileID: 8300000, guid: 4d9be0ec10cfe9b4b967ef8927f9ffc4, type: 3}
   - {fileID: 8300000, guid: 492d67aacd1167242bc6331b442b30d0, type: 3}
   sprites:
@@ -52,8 +52,7 @@ MonoBehaviour:
   - 'BASTION ONE: Yeah!!!'
   - "COSMO: Settle down, while it\u2019s true we are the best, knowing is half the
     battle."
-  - "PHOENIX: Are we approaching the location of the signal we picked up? I\u2019m
-    not seeing anything. "
+  - "PHOENIX: Are we approaching the signal we picked up? I\u2019m not seeing anything. "
   - 'HOLT: I think I see-'
   - 'BAXTER: Holt! No!'
   - 'COSMO: Stay in formation, stay in formation!'

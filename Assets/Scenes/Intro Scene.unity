@@ -176,7 +176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &19432128
 RectTransform:
   m_ObjectHideFlags: 0
@@ -184,18 +184,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19432127}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2540582, y: 0.2540582, z: 0.2540582}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1058053059}
   - {fileID: 841655121}
-  m_Father: {fileID: 1725437876}
+  m_Father: {fileID: 1178213254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -747.5695, y: -458.16}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &42554821
@@ -1269,6 +1269,8 @@ MonoBehaviour:
   text4: {fileID: 1725437875}
   cosmoSign: {fileID: 1886494003}
   ships: {fileID: 748927536}
+  cover: {fileID: 19432127}
+  dialogue: {fileID: 1569628236}
   timer: 0
   timeToShow: 16
   textCounter: 0
@@ -1561,6 +1563,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &380933050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 380933052}
+  - component: {fileID: 380933051}
+  m_Layer: 0
+  m_Name: NextAreaSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &380933051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380933050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef6f18f27f4c2944cbc799f87ffd08fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paus: {fileID: 1646957902}
+  control: {fileID: 1775537500}
+  nextArea: {fileID: 1786826200}
+  interact: {fileID: 586127920}
+  gameManager: {fileID: 0}
+--- !u!4 &380933052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380933050}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.7176778, y: 1.203463, z: 0.12214641}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &414303974 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2791629031710010161, guid: d234e397157ec80498699b26251c04a6, type: 3}
@@ -6253,7 +6304,7 @@ GameObject:
   - component: {fileID: 1178213252}
   - component: {fileID: 1178213251}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Intro Text Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6338,6 +6389,7 @@ RectTransform:
   - {fileID: 1165385129}
   - {fileID: 97898710}
   - {fileID: 1725437876}
+  - {fileID: 19432128}
   - {fileID: 217481221}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8414,7 +8466,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1569628237
 Transform:
   m_ObjectHideFlags: 0
@@ -9641,7 +9693,6 @@ RectTransform:
   m_Children:
   - {fileID: 1433731247}
   - {fileID: 1424116980}
-  - {fileID: 19432128}
   m_Father: {fileID: 1178213254}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -12563,6 +12614,7 @@ SceneRoots:
   - {fileID: 2502249196154639663}
   - {fileID: 1178213254}
   - {fileID: 1569628237}
+  - {fileID: 380933052}
   - {fileID: 46749394}
   - {fileID: 748927537}
   - {fileID: 1886494006}

@@ -13,6 +13,8 @@ public class IntroScript : MonoBehaviour
 
     public GameObject cosmoSign;
     public GameObject ships;
+    public GameObject cover;
+    public GameObject dialogue;
 
     public float timer;
     public float timeToShow;
@@ -49,6 +51,7 @@ public class IntroScript : MonoBehaviour
                     break;
                 case 3:
                     text4.SetActive(true);
+                    cover.SetActive(true);
                     text3.SetActive(false);
                     timer = 0;
                     break;
@@ -59,6 +62,7 @@ public class IntroScript : MonoBehaviour
                     break;
                 case 5:
                     ships.SetActive(true);
+                    dialogue.SetActive(true);
                     timer = 0;
                     break;
                 case 6:
