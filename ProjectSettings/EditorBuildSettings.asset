@@ -53,6 +53,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/test scenes/Action 3.unity
     guid: b5252732d0efc354cb661f90dd4d8843
+  - enabled: 1
+    path: Assets/Scenes/Tutorials/Tutorial_1.unity
+    guid: aadb5b614a064d04392177ef8fc3d870
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 17ffa39a988d9ab4ba8b4c3b4372c4c4, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: a996dc94a93c9aa4cb392ff5b57d73f7, type: 3}

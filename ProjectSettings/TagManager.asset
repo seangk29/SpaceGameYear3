@@ -46,6 +46,8 @@ TagManager:
   - healthDrop
   - glorgusShield
   - GeneralGlorgus
+  - tutorialManager
+  - checkpoint
   layers:
   - Default
   - TransparentFX
