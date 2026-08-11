@@ -874,9 +874,6 @@ PrefabInstance:
       addedObject: {fileID: 3544506651673177771}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1227596376638339716}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 3486028648340071492}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -994,34 +991,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1227596376638339716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6969775441670523394}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &3486028648340071492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1271,9 +1240,6 @@ PrefabInstance:
       addedObject: {fileID: 8785553648414363637}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 117609953569508630}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 3282396283830159332}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -1391,34 +1357,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &117609953569508630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7028777883513774049}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &3282396283830159332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1668,9 +1606,6 @@ PrefabInstance:
       addedObject: {fileID: 3935078351059658335}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1366541786400281258}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7129624394386497219}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -1788,34 +1723,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1366541786400281258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7106923341095287453}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &7129624394386497219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2065,9 +1972,6 @@ PrefabInstance:
       addedObject: {fileID: 6276086492693248971}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2745138133999309010}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 3959839301471341611}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -2185,34 +2089,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2745138133999309010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7077533826853870042}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &3959839301471341611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2462,9 +2338,6 @@ PrefabInstance:
       addedObject: {fileID: 3994351689857100735}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5032428261308063501}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8756443511312845414}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -2582,34 +2455,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5032428261308063501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7095854776923737063}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &8756443511312845414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2859,9 +2704,6 @@ PrefabInstance:
       addedObject: {fileID: 8542331715074535399}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6810001175902352945}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 330133206993871877}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -2979,34 +2821,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6810001175902352945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7136984640550145681}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &330133206993871877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3256,9 +3070,6 @@ PrefabInstance:
       addedObject: {fileID: 8767250894363441512}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8254609797610668028}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8017943256502540560}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -3376,34 +3187,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8254609797610668028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7289428226977238661}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &8017943256502540560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3653,9 +3436,6 @@ PrefabInstance:
       addedObject: {fileID: 1078295542860816326}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5711974044649813021}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6941667104406046608}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -3773,34 +3553,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5711974044649813021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7300185739145854029}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &6941667104406046608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4050,9 +3802,6 @@ PrefabInstance:
       addedObject: {fileID: 2820800097321391268}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6855766134262484822}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5404893074189859821}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -4170,34 +3919,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6855766134262484822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7436576889758279474}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5404893074189859821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4447,9 +4168,6 @@ PrefabInstance:
       addedObject: {fileID: 1674735807245163788}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 859453620501526162}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6914193639259914612}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -4572,34 +4290,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &859453620501526162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7619645119489631534}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &6914193639259914612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4844,9 +4534,6 @@ PrefabInstance:
       addedObject: {fileID: 5673489134839081993}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1843935859189848282}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6903816840448727106}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -4969,34 +4656,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1843935859189848282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7630649635152542835}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &6903816840448727106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5241,9 +4900,6 @@ PrefabInstance:
       addedObject: {fileID: 3945151189220636055}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4961641771406802434}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 9148879956199625628}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -5366,34 +5022,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4961641771406802434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7571237696723238222}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &9148879956199625628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5638,9 +5266,6 @@ PrefabInstance:
       addedObject: {fileID: 2840675894805421499}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7924757571066429645}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6158189025432882906}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -5763,34 +5388,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7924757571066429645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7567567999494717488}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &6158189025432882906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6035,9 +5632,6 @@ PrefabInstance:
       addedObject: {fileID: 312020649142003365}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3569323053631777245}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6631637256342658264}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -6160,34 +5754,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3569323053631777245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7769068615865102626}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &6631637256342658264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6432,9 +5998,6 @@ PrefabInstance:
       addedObject: {fileID: 6947569610105264841}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6517138049545823453}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7984146356474143757}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -6557,34 +6120,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6517138049545823453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7818496783450297980}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &7984146356474143757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6829,9 +6364,6 @@ PrefabInstance:
       addedObject: {fileID: 5218345687207731778}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2497698985166260841}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5514417224709994911}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -6954,34 +6486,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2497698985166260841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7811146577985980066}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5514417224709994911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7226,9 +6730,6 @@ PrefabInstance:
       addedObject: {fileID: 7856757511108377442}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3082697979014117396}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1092810867325566749}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -7351,34 +6852,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3082697979014117396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7897657676588871190}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &1092810867325566749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7623,9 +7096,6 @@ PrefabInstance:
       addedObject: {fileID: 7037536454037449561}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 618533431178384105}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6115499887679139358}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -7748,34 +7218,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &618533431178384105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7885441516303000458}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &6115499887679139358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8020,9 +7462,6 @@ PrefabInstance:
       addedObject: {fileID: 8184181139539365533}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2061605076337732492}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 3742022603595277245}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -8145,34 +7584,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2061605076337732492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7955631665083246543}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &3742022603595277245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8417,9 +7828,6 @@ PrefabInstance:
       addedObject: {fileID: 7565465145398686294}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1130622105556578752}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1688493607692136324}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -8542,34 +7950,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1130622105556578752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8029668535003972248}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &1688493607692136324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8814,9 +8194,6 @@ PrefabInstance:
       addedObject: {fileID: 6790116127330236411}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4186723187592774121}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1572085095458079486}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -8934,34 +8311,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4186723187592774121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8139721052292420401}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &1572085095458079486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9211,9 +8560,6 @@ PrefabInstance:
       addedObject: {fileID: 7438613106996473247}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5616149513992378914}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1107979669589011397}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -9331,34 +8677,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5616149513992378914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8097571262821835262}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &1107979669589011397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9608,9 +8926,6 @@ PrefabInstance:
       addedObject: {fileID: 5489144971284503027}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2111033104976779628}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4418797816270633003}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -9728,34 +9043,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2111033104976779628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8229136526791495032}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &4418797816270633003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10005,9 +9292,6 @@ PrefabInstance:
       addedObject: {fileID: 3101899222265889639}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5157272509743805133}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4299687948295639105}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -10125,34 +9409,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5157272509743805133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8496162028149479547}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &4299687948295639105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10402,9 +9658,6 @@ PrefabInstance:
       addedObject: {fileID: 8333752914895894656}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1262235614244277614}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5264482313327622556}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -10522,34 +9775,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1262235614244277614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8596455005043898346}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5264482313327622556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10799,9 +10024,6 @@ PrefabInstance:
       addedObject: {fileID: 457644185067807355}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5364587489486184719}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6071745116503732810}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -10924,34 +10146,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5364587489486184719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8755037368275380748}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &6071745116503732810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11196,9 +10390,6 @@ PrefabInstance:
       addedObject: {fileID: 6834366055764281560}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6705304447040234179}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6210918888110458948}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -11321,34 +10512,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6705304447040234179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9055827361078190652}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &6210918888110458948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11593,9 +10756,6 @@ PrefabInstance:
       addedObject: {fileID: 2497546364299473962}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6045641420152450892}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5573594832620674397}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -11718,34 +10878,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6045641420152450892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9016281520348029176}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5573594832620674397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11990,9 +11122,6 @@ PrefabInstance:
       addedObject: {fileID: 577461986957533529}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2126449330366453113}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6755141824343574709}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -12115,34 +11244,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2126449330366453113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9117491800048846760}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &6755141824343574709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12387,9 +11488,6 @@ PrefabInstance:
       addedObject: {fileID: 70892826903947113}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 475114648003580284}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1411432684001888120}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -12507,34 +11605,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &475114648003580284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4630627957690722256}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &1411432684001888120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12784,9 +11854,6 @@ PrefabInstance:
       addedObject: {fileID: 457959431275988576}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2604122002753364562}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6634527742166553584}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -12904,34 +11971,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2604122002753364562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4742057183684096334}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &6634527742166553584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13181,9 +12220,6 @@ PrefabInstance:
       addedObject: {fileID: 2032866976217957213}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4308425178157085154}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8102116680688957321}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -13301,34 +12337,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4308425178157085154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4872613758915188193}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &8102116680688957321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13578,9 +12586,6 @@ PrefabInstance:
       addedObject: {fileID: 4275075480343194110}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6896245605910050542}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2567527276305216679}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -13698,34 +12703,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6896245605910050542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4996437503959796615}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &2567527276305216679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13975,9 +12952,6 @@ PrefabInstance:
       addedObject: {fileID: 977192119802542425}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5387902565667369532}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4576733699738356565}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -14095,34 +13069,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5387902565667369532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5103564145003220702}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &4576733699738356565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14372,9 +13318,6 @@ PrefabInstance:
       addedObject: {fileID: 99694986428047993}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3885636348755363907}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 367712670176982985}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -14497,34 +13440,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3885636348755363907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5248675289974402967}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &367712670176982985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14769,9 +13684,6 @@ PrefabInstance:
       addedObject: {fileID: 4123775426630252498}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8252593417909454915}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2544643488327887130}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -14894,34 +13806,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8252593417909454915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5302763497062286284}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &2544643488327887130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15166,9 +14050,6 @@ PrefabInstance:
       addedObject: {fileID: 4028030990740019870}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7068208954036375199}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4284639605130371807}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -15291,34 +14172,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7068208954036375199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5545616349786254240}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &4284639605130371807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15563,9 +14416,6 @@ PrefabInstance:
       addedObject: {fileID: 8191482636322789197}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3985481736076599639}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 9179724602044393725}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -15688,34 +14538,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3985481736076599639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5593591989722524659}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &9179724602044393725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15960,9 +14782,6 @@ PrefabInstance:
       addedObject: {fileID: 1865617920509026138}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8321888810061090493}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 3903580972204684902}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -16085,34 +14904,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8321888810061090493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5679642197152693344}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &3903580972204684902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16357,9 +15148,6 @@ PrefabInstance:
       addedObject: {fileID: 937719248337424666}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7801187928944403312}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6110152605307973353}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -16482,34 +15270,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7801187928944403312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5651733072922308191}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &6110152605307973353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16754,9 +15514,6 @@ PrefabInstance:
       addedObject: {fileID: 5358320837453177947}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4687336239613662471}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2210670028457018783}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -16879,34 +15636,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4687336239613662471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5696099011618875212}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &2210670028457018783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17151,9 +15880,6 @@ PrefabInstance:
       addedObject: {fileID: 6671532868535618241}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6951007994893305318}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1342232866107047865}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -17271,34 +15997,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6951007994893305318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5795713916430515604}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &1342232866107047865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17548,9 +16246,6 @@ PrefabInstance:
       addedObject: {fileID: 2747490650005644241}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 48545922215554703}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 9087534169317738900}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -17668,34 +16363,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &48545922215554703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5841050052971365451}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &9087534169317738900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17945,9 +16612,6 @@ PrefabInstance:
       addedObject: {fileID: 6324572096339620835}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4226688512871526415}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 392209021263603680}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -18065,34 +16729,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4226688512871526415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6069539409918949525}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &392209021263603680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18342,9 +16978,6 @@ PrefabInstance:
       addedObject: {fileID: 5161323596903048189}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2595852693760242166}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5084825762144935347}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -18462,34 +17095,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2595852693760242166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6179807498215018964}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5084825762144935347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18739,9 +17344,6 @@ PrefabInstance:
       addedObject: {fileID: 1271986566810020007}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1089994131830054331}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7204460566211292414}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -18859,34 +17461,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1089994131830054331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6226669494630715376}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &7204460566211292414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19136,9 +17710,6 @@ PrefabInstance:
       addedObject: {fileID: 3998139101592431878}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7958198973929013907}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4193660237721282969}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -19261,34 +17832,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7958198973929013907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6374970702034234513}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &4193660237721282969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19533,9 +18076,6 @@ PrefabInstance:
       addedObject: {fileID: 135703723736350314}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9046155183543675601}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7759821799476329506}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -19658,34 +18198,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &9046155183543675601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6537097733350568271}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &7759821799476329506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19930,9 +18442,6 @@ PrefabInstance:
       addedObject: {fileID: 6476423571393248672}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1214945523084151330}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8815982990694410820}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -20055,34 +18564,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1214945523084151330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6542343650555685268}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &8815982990694410820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20327,9 +18808,6 @@ PrefabInstance:
       addedObject: {fileID: 5822819504030458366}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5264027224198524268}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8378143900210333275}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -20452,34 +18930,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5264027224198524268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6692635098561642680}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &8378143900210333275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20724,9 +19174,6 @@ PrefabInstance:
       addedObject: {fileID: 2833398457159819149}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7622498043961620198}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7390733796082780306}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -20849,34 +19296,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7622498043961620198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6741027226497410951}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &7390733796082780306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21121,9 +19540,6 @@ PrefabInstance:
       addedObject: {fileID: 769928112491639045}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 922331456107156582}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7393952087479427952}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -21246,34 +19662,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &922331456107156582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6764452675555863778}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &7393952087479427952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21518,9 +19906,6 @@ PrefabInstance:
       addedObject: {fileID: 7178914624871925639}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3599649053579371978}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8389046599445034330}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -21643,34 +20028,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3599649053579371978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6899383572823861596}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &8389046599445034330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21915,9 +20272,6 @@ PrefabInstance:
       addedObject: {fileID: 1746732629625645571}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3369331940636780600}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1864574494584395282}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -22040,34 +20394,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3369331940636780600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6914029914594829875}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &1864574494584395282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22312,9 +20638,6 @@ PrefabInstance:
       addedObject: {fileID: 6727665726449897263}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8242330930858423385}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7002711753692085889}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -22437,34 +20760,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8242330930858423385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6869395768518331083}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &7002711753692085889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22709,9 +21004,6 @@ PrefabInstance:
       addedObject: {fileID: 6616104324590562987}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4472433669675467689}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5907688698184941360}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -22829,34 +21121,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4472433669675467689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2306300605339873297}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5907688698184941360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23106,9 +21370,6 @@ PrefabInstance:
       addedObject: {fileID: 8233667922350684008}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5852257876102641118}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8345674168494503317}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -23226,34 +21487,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5852257876102641118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2551630867137787732}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &8345674168494503317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23503,9 +21736,6 @@ PrefabInstance:
       addedObject: {fileID: 5332506605119071524}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2258562441824642104}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4847851839826323481}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -23623,34 +21853,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2258562441824642104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2621691344153315477}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &4847851839826323481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23900,9 +22102,6 @@ PrefabInstance:
       addedObject: {fileID: 1537570994640834219}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4569464929953273522}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7668100322301308141}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -24020,34 +22219,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4569464929953273522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2671840750582281147}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &7668100322301308141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24297,9 +22468,6 @@ PrefabInstance:
       addedObject: {fileID: 7057964646847089630}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6070992387648788012}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5586712416661788610}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -24422,34 +22590,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6070992387648788012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2922097121561735381}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5586712416661788610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24694,9 +22834,6 @@ PrefabInstance:
       addedObject: {fileID: 6420975003699371346}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2507142928087351202}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 3120843593434922432}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -24819,34 +22956,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2507142928087351202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2948042802031753758}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &3120843593434922432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25091,9 +23200,6 @@ PrefabInstance:
       addedObject: {fileID: 4366811892784731920}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8188312082891597958}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6808904599521902688}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -25216,34 +23322,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8188312082891597958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3286349598899645224}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &6808904599521902688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25488,9 +23566,6 @@ PrefabInstance:
       addedObject: {fileID: 4728123848253361000}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 229933501039494148}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2811970085550287591}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -25613,34 +23688,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &229933501039494148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3430234927667055050}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &2811970085550287591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25885,9 +23932,6 @@ PrefabInstance:
       addedObject: {fileID: 7932614816361659836}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7121794900194975555}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5331212647314866294}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -26010,34 +24054,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7121794900194975555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3446673204243037611}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5331212647314866294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26282,9 +24298,6 @@ PrefabInstance:
       addedObject: {fileID: 6552932223085447106}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1141815854312804055}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1450043882657776748}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -26407,34 +24420,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1141815854312804055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3407691747516129263}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &1450043882657776748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26679,9 +24664,6 @@ PrefabInstance:
       addedObject: {fileID: 3732182215690416168}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2579584046281285272}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 3675419946093756431}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -26799,34 +24781,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2579584046281285272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3560717121311069038}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &3675419946093756431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27076,9 +25030,6 @@ PrefabInstance:
       addedObject: {fileID: 6454743692351978151}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4030905653915022910}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 3403307634169871617}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -27196,34 +25147,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4030905653915022910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3719607566312712193}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &3403307634169871617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27473,9 +25396,6 @@ PrefabInstance:
       addedObject: {fileID: 5135037588885994036}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1486958298431894285}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7516336548318748963}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -27593,34 +25513,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1486958298431894285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3679807680034405674}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &7516336548318748963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27870,9 +25762,6 @@ PrefabInstance:
       addedObject: {fileID: 3522830423453164130}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3647502376981781094}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 429860236693309237}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -27990,34 +25879,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3647502376981781094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3753732819254173872}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &429860236693309237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28267,9 +26128,6 @@ PrefabInstance:
       addedObject: {fileID: 7419664727861358736}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 499445103181145665}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1029957205529688758}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -28387,34 +26245,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &499445103181145665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3934008515998367276}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &1029957205529688758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28664,9 +26494,6 @@ PrefabInstance:
       addedObject: {fileID: 8015173864289460624}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5923891357794073470}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8515039343549541151}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -28784,34 +26611,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5923891357794073470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4024883325055496796}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &8515039343549541151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29061,9 +26860,6 @@ PrefabInstance:
       addedObject: {fileID: 5363547424492020592}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9065483796275716579}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7016949940108627188}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -29181,34 +26977,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &9065483796275716579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4019255294741746237}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &7016949940108627188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29458,9 +27226,6 @@ PrefabInstance:
       addedObject: {fileID: 7974173785911999868}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4680152785513579319}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5924782274000828144}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -29583,34 +27348,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4680152785513579319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4074843345329843482}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5924782274000828144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29855,9 +27592,6 @@ PrefabInstance:
       addedObject: {fileID: 6416634096287529519}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7918056841944858999}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5042591121397779130}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -29980,34 +27714,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7918056841944858999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4098377817098532113}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5042591121397779130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30252,9 +27958,6 @@ PrefabInstance:
       addedObject: {fileID: 3826852568341005460}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2840324307766074125}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 3102927231446633329}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -30377,34 +28080,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2840324307766074125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4224581264944930888}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &3102927231446633329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30649,9 +28324,6 @@ PrefabInstance:
       addedObject: {fileID: 4147662771873944622}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7618812784755923951}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5760978002375339724}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -30774,34 +28446,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7618812784755923951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4272948832241003436}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5760978002375339724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31046,9 +28690,6 @@ PrefabInstance:
       addedObject: {fileID: 5631068322290229195}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4943300446382918868}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6268539498228002917}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -31171,34 +28812,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4943300446382918868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4365956085197716311}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &6268539498228002917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31443,9 +29056,6 @@ PrefabInstance:
       addedObject: {fileID: 3635089425308548215}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4232216664656048188}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4388771002117091543}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -31568,34 +29178,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4232216664656048188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4464786799974873552}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &4388771002117091543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31840,9 +29422,6 @@ PrefabInstance:
       addedObject: {fileID: 3302221467706670072}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2263681683265192875}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7220164125726754433}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -31965,34 +29544,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2263681683265192875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4520855393500118715}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &7220164125726754433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32237,9 +29788,6 @@ PrefabInstance:
       addedObject: {fileID: 8913194695667199536}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1791281850559492415}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5787312252593819584}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -32357,34 +29905,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1791281850559492415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 63392211567777710}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5787312252593819584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32634,9 +30154,6 @@ PrefabInstance:
       addedObject: {fileID: 5841867425279088550}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8926312822312629387}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2125168742321404696}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -32754,34 +30271,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8926312822312629387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29573439059251183}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &2125168742321404696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33031,9 +30520,6 @@ PrefabInstance:
       addedObject: {fileID: 2016568763774078245}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5778689523458448009}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4670839332848370874}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -33151,34 +30637,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5778689523458448009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261421806546745577}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &4670839332848370874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33428,9 +30886,6 @@ PrefabInstance:
       addedObject: {fileID: 2586010345582505204}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1279784277395613465}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 3658156787883667735}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -33553,34 +31008,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1279784277395613465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632566739029785864}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &3658156787883667735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33825,9 +31252,6 @@ PrefabInstance:
       addedObject: {fileID: 9155150207857689407}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1984924506817610980}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1463570773277767184}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -33950,34 +31374,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1984924506817610980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780652686461058440}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &1463570773277767184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34222,9 +31618,6 @@ PrefabInstance:
       addedObject: {fileID: 1257924190823828849}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2197043798858809061}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7738056944573109907}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -34347,34 +31740,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2197043798858809061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808312677388678273}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &7738056944573109907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34619,9 +31984,6 @@ PrefabInstance:
       addedObject: {fileID: 2379962133206342135}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9054434940121600492}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2080112378355438562}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -34744,34 +32106,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &9054434940121600492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913168029834205292}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &2080112378355438562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35016,9 +32350,6 @@ PrefabInstance:
       addedObject: {fileID: 7562922957318881008}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1789563423882502615}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1730995775414207090}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -35141,34 +32472,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1789563423882502615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 923867648399427152}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &1730995775414207090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35413,9 +32716,6 @@ PrefabInstance:
       addedObject: {fileID: 139649880722303033}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1506192870880432483}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1759673851694849055}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -35538,34 +32838,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1506192870880432483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875257945569104021}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &1759673851694849055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35810,9 +33082,6 @@ PrefabInstance:
       addedObject: {fileID: 2430686713899136505}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3184146349142357492}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 612311307495356136}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -35935,34 +33204,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3184146349142357492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 997959878901986966}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &612311307495356136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36207,9 +33448,6 @@ PrefabInstance:
       addedObject: {fileID: 7443153753984489131}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1205090495611759579}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 9039642837567814479}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -36332,34 +33570,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1205090495611759579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030097900121141039}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &9039642837567814479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36604,9 +33814,6 @@ PrefabInstance:
       addedObject: {fileID: 1972294752360487898}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 155444772067973122}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4144102154797599893}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -36729,34 +33936,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &155444772067973122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143706131756686018}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &4144102154797599893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37001,9 +34180,6 @@ PrefabInstance:
       addedObject: {fileID: 4417080417193339881}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8139002948955242328}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1673576343083431484}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -37126,34 +34302,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8139002948955242328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104387153606745908}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &1673576343083431484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37398,9 +34546,6 @@ PrefabInstance:
       addedObject: {fileID: 6166629222524061013}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 886761325286233323}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6159442884684756732}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -37518,34 +34663,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &886761325286233323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1195049439662704550}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &6159442884684756732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38250,9 +35367,6 @@ PrefabInstance:
       addedObject: {fileID: 8456126949947502723}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8638031892620389512}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5929445853465367348}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -38370,34 +35484,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8638031892620389512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325570508336497739}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5929445853465367348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38647,9 +35733,6 @@ PrefabInstance:
       addedObject: {fileID: 837582217610702057}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6088753923549364595}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7457988300060117285}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -38767,34 +35850,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6088753923549364595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425121093993834509}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &7457988300060117285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39044,9 +36099,6 @@ PrefabInstance:
       addedObject: {fileID: 7504290663871150220}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7544132941271227761}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5361532475167402297}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -39164,34 +36216,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7544132941271227761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637060154043205721}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5361532475167402297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39441,9 +36465,6 @@ PrefabInstance:
       addedObject: {fileID: 8118686455107924387}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7096244820416419167}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4238961289949321349}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -39561,34 +36582,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7096244820416419167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1651099876039074370}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &4238961289949321349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39838,9 +36831,6 @@ PrefabInstance:
       addedObject: {fileID: 1952503199263554747}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 48598694494945543}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1141387927307234336}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -39958,34 +36948,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &48598694494945543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644942909135994873}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &1141387927307234336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40235,9 +37197,6 @@ PrefabInstance:
       addedObject: {fileID: 2982551264979994495}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8636738684473268742}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8160420401251463161}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -40360,34 +37319,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8636738684473268742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792413111288456233}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &8160420401251463161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40632,9 +37563,6 @@ PrefabInstance:
       addedObject: {fileID: 6830633109779540233}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1360523271088470364}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 7920243292182958554}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -40757,34 +37685,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1360523271088470364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789825405373127613}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &7920243292182958554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41029,9 +37929,6 @@ PrefabInstance:
       addedObject: {fileID: 1801666420870602119}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5012490991310406170}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5694843891612425179}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -41154,34 +38051,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5012490991310406170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785362391782694525}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5694843891612425179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41426,9 +38295,6 @@ PrefabInstance:
       addedObject: {fileID: 752619803114916717}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1375376498016639936}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5222770326679545393}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -41551,34 +38417,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1375376498016639936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996761779903293201}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &5222770326679545393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41823,9 +38661,6 @@ PrefabInstance:
       addedObject: {fileID: 3170820842163313166}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4870572437711036859}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 472911102808668178}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -41948,34 +38783,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4870572437711036859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2058080049684232988}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &472911102808668178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42220,9 +39027,6 @@ PrefabInstance:
       addedObject: {fileID: 8043245133194891021}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1868091190284223421}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2963699529293553611}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -42345,34 +39149,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1868091190284223421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088127138987302351}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &2963699529293553611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42617,9 +39393,6 @@ PrefabInstance:
       addedObject: {fileID: 55440284204914596}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2405909016333640092}
-    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 9200667019994027854}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
       insertIndex: -1
@@ -42742,34 +39515,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2405909016333640092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2115851004664964214}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9c7f53b191e3464b9102f2e46ef6c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  invul: 0
-  invulPeriod: 0
-  shieldTimer: 0
-  regenShieldsTimer: 0
-  shieldHealth: 0
-  maxShield: 0
-  health: 1
-  canRegen: 0
-  SpRend: 0
-  Combat: 1
-  Daudio: {fileID: 0}
-  fireDelay: 0.25
-  Wave: {fileID: 0}
-  playerData: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!114 &9200667019994027854
 MonoBehaviour:
   m_ObjectHideFlags: 0

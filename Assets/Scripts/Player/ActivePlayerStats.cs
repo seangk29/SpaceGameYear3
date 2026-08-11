@@ -58,10 +58,11 @@ public class ActivePlayerHealth : MonoBehaviour
         HUD = GameObject.FindGameObjectWithTag("HUD").gameObject;
 
         healthFlick = GameObject.FindGameObjectWithTag("Flicker").gameObject;
+        flicker = GameObject.FindGameObjectWithTag("Flicker").GetComponent<Animator>();
 
         healthFlick.SetActive(false);
 
-        flicker = healthFlick.GetComponent<Animator>();
+        
 
         maxHealth = playerStats.maxHealth;
         health = maxHealth;
@@ -197,30 +198,34 @@ public class ActivePlayerHealth : MonoBehaviour
         {
             Die();
         }
+       
 
         if (health <= 1)
         {
             healthFlick.SetActive(true);
             flicker.Play("Flicker");
         }
+        else { healthFlick.SetActive(false); }
 
 
-            if (canRegen)
+
+
+        if (canRegen)
+        {
+            shieldTimer += Time.deltaTime;
+
+            if (shieldTimer >= regenShieldsTimer)
             {
-                shieldTimer += Time.deltaTime;
+                shieldHealth = shieldHealth + 1;
+                shieldTimer = 0;
 
-                if (shieldTimer >= regenShieldsTimer)
+                if (shieldHealth >= maxShield)
                 {
-                    shieldHealth = shieldHealth + 1;
                     shieldTimer = 0;
-
-                    if (shieldHealth >= maxShield)
-                    {
-                        shieldTimer = 0;
-                        canRegen = false;
-                    }
+                    canRegen = false;
                 }
             }
+        }
 
         if (playerData == null)
         {

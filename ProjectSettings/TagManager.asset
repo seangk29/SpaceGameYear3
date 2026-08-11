@@ -48,6 +48,7 @@ TagManager:
   - GeneralGlorgus
   - tutorialManager
   - checkpoint
+  - Intro
   layers:
   - Default
   - TransparentFX

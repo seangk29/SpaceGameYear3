@@ -36,6 +36,8 @@ public class DialogueController : MonoBehaviour
 
     public GameObject firstActivator;
     public GameObject nicosShop;
+    public MoveForward Ships;
+    public PlayerMovement move;
 
     public bool activatorBool = false;
 
@@ -151,6 +153,14 @@ public class DialogueController : MonoBehaviour
         else if (shops.npcShopable.CompareTag("Activator"))
         {
             firstActivator.SetActive(true);
+            activatorBool = true;
+        }
+
+        else if (shops.npcShopable.CompareTag("Intro"))
+        {
+            firstActivator.SetActive(true);
+            Ships.enabled = true;
+            move.enabled = true;
             activatorBool = true;
         }
 

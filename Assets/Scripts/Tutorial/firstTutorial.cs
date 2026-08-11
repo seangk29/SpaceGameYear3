@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Loading;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,11 +13,19 @@ public class firstTutorial : MonoBehaviour
 
     public GameObject firstShootingTxt;
 
+    public GameObject finalTxt;
+
+
     public int checkpointsNum;
 
     public GameObject[] checkpoints;
 
     public GameObject enemies;
+
+    public int enemiesDeaths;
+
+    public GameObject returnHub;
+    public GameObject continueTutorial;
 
     private void Start()
     {
@@ -54,6 +63,18 @@ public class firstTutorial : MonoBehaviour
             enemies.SetActive(true);
         }
 
+
+    if (enemiesDeaths == 4)
+        {
+            firstShootingTxt.SetActive(false);
+            enemies.SetActive(false);
+
+            finalTxt.SetActive(true);
+
+            returnHub.SetActive(true);
+            continueTutorial.SetActive(true);
+            
+        }
 
     }
 

@@ -869,7 +869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interOBJ: {fileID: 15100748}
   PlayerTrans: {fileID: 0}
-  dialogueText: {fileID: 11400000, guid: 9acd7712969079d418a18b560a1d9598, type: 2}
+  dialogueText: {fileID: 11400000, guid: e97114de30924bb419c95dfd46d027b7, type: 2}
   dialogueController: {fileID: 879928}
 --- !u!61 &499982780
 BoxCollider2D:

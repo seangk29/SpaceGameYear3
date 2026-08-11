@@ -6082,7 +6082,7 @@ MonoBehaviour:
   sprite: {fileID: 2913796824387255504}
   enemyBullet: {fileID: 0}
   HUD: {fileID: 0}
-  healthFlick: {fileID: 3709623377824151977, guid: 3d0c5d58d392a514394e4ea56598143b, type: 3}
+  healthFlick: {fileID: 0}
   flicker: {fileID: 0}
 --- !u!114 &5946322690500378483
 MonoBehaviour:

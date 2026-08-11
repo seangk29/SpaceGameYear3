@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82745c8fbc5d0b49a445aa993baf045, type: 3}
+  m_Name: Meeting Aurora
+  m_EditorClassIdentifier: 
+  speakerClip:
+  - {fileID: 8300000, guid: de36aeae0f1370f40841d0eee9fd8204, type: 3}
+  - {fileID: 8300000, guid: 47100668d0c3fd2459b7bce8f1c9b84b, type: 3}
+  - {fileID: 8300000, guid: 4a4d2275fd0c09c47b02c8cb437b4b8a, type: 3}
+  - {fileID: 8300000, guid: 408b90c6dc98f0848a8e5bfca2a15579, type: 3}
+  - {fileID: 8300000, guid: 0b8a68715c79c654aad8f1fcb5382d1f, type: 3}
+  - {fileID: 8300000, guid: d4232c85710734342a26bd4621772a52, type: 3}
+  - {fileID: 8300000, guid: 0b8a68715c79c654aad8f1fcb5382d1f, type: 3}
+  - {fileID: 8300000, guid: dfd498d5e1f0ed5448264629b9ffe2bb, type: 3}
+  - {fileID: 8300000, guid: 13eba6fb3baf0564da0d832af0b57828, type: 3}
+  - {fileID: 8300000, guid: 929878a7b38bc3e4084486e87af05fcc, type: 3}
+  - {fileID: 8300000, guid: 9bbad16c12a6a3c4a88735d1fdec7a72, type: 3}
+  - {fileID: 8300000, guid: 12db374c109ab3747a85860dbfb123d8, type: 3}
+  - {fileID: 8300000, guid: 2f9f20be55da41b44b23db9b44c3de5b, type: 3}
+  - {fileID: 8300000, guid: 6582b4fcfbca5b143b1dd5648ed21948, type: 3}
+  - {fileID: 8300000, guid: 4987d9c551fb59342a60fb262e13c385, type: 3}
+  - {fileID: 8300000, guid: f1c4efada44ea8c499a5f4a95c04171b, type: 3}
+  - {fileID: 8300000, guid: abd7ce3878efbae429ab235f35c2ce15, type: 3}
+  - {fileID: 8300000, guid: df3ab9af517534642bf675c23413bdd1, type: 3}
+  - {fileID: 8300000, guid: 21b97c8c442c4324d908798c6f8e917d, type: 3}
+  sprites:
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  paragraphs:
+  - 'COSMO: What the? How am I?- '
+  - "???: Cosmo?? You\u2019re still alive?? What the hell happened out there?"
+  - "COSMO: I don\u2019t know what\u2019s going on either, Aurora. The signal Bastion
+    One was seeking out, it lead to an entire fleet of unknown alien ships. Has anyone
+    else made it back like me?  "
+  - "AURORA: Negative, Cosmo. You\u2019re the first one."
+  - 'COSMO: Damn.'
+  - 'AURORA: I''m sorry, Captain.'
+  - 'COSMO: We must push forward, figure out what these aliens want and destroy them. '
+  - "COSMO: These aliens must have something to do with my second chance at life.
+    I\u2019ll make them regret that. "
+  - 'AURORA: Okay. Where do we start?  '
+  - "COSMO: We\u2019ll go back to the signal\u2019s original location. Pick up where
+    Bastion One left off.  "
+  - "AURORA: Okay Cos, not that I don\u2019t doubt your abilities, but that\u2019s
+    the war zone you just magicked out of. We can bring out one of our fleets to
+    back you up. "
+  - "COSMO: No, I\u2019m not having anyone else\u2019s blood on my hands. Not at
+    least until we figure out what\u2019s going on. They won\u2019t beat me again,
+    Aurora. "
+  - "AURORA: Fine, but I\u2019m staying on comms with you. I\u2019ll be able to tell
+    you where the ships are coming from, if we run into trouble."
+  - 'COSMO: Thanks Aurora, can you do another thing for me? '
+  - "AURORA: What\u2019s that? "
+  - "COSMO: Can you get \u2018him\u2019 on the phone? "
+  - "AURORA: ...I\u2019ll see what I can do. "
+  - "COSMO: Let\u2019s not waste any more time. Let\u2019s get back out there. "
+  - "AURORA: Let\u2019s go, Captain. "

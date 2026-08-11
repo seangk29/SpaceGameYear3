@@ -185,6 +185,8 @@ MonoBehaviour:
   shops: {fileID: 813715082}
   firstActivator: {fileID: 514052944}
   nicosShop: {fileID: 38975506}
+  Ships: {fileID: 0}
+  move: {fileID: 0}
   activatorBool: 0
   nicoBool: 0
   visual: 0
@@ -3559,7 +3561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3300949747444414615, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
       propertyPath: m_Name
-      value: Next area (1)
+      value: Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 3300949747444414615, guid: 8e55a2bb5f677584f9d85d5f8ef1a08d, type: 3}
       propertyPath: m_IsActive

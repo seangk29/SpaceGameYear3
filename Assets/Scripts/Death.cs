@@ -99,11 +99,9 @@ public class Death : MonoBehaviour
         }
 
 
-        if (collider.gameObject.tag == "HealthPack")
+      if(health <= 0)
         {
-            health = health - 50;
-            playerSpawn.numLives = playerSpawn.numLives + 1;
-
+            Destroy(this.gameObject);
         }
     
 
