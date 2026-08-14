@@ -185,6 +185,8 @@ MonoBehaviour:
   shops: {fileID: 0}
   firstActivator: {fileID: 963735300}
   nicosShop: {fileID: 0}
+  Ships: {fileID: 0}
+  move: {fileID: 0}
   activatorBool: 0
   nicoBool: 0
   visual: 0
@@ -869,7 +871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interOBJ: {fileID: 15100748}
   PlayerTrans: {fileID: 0}
-  dialogueText: {fileID: 11400000, guid: e97114de30924bb419c95dfd46d027b7, type: 2}
+  dialogueText: {fileID: 11400000, guid: fa9ceff34b00c0c4f9ba0bf2e815641a, type: 2}
   dialogueController: {fileID: 879928}
 --- !u!61 &499982780
 BoxCollider2D:

@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82745c8fbc5d0b49a445aa993baf045, type: 3}
+  m_Name: Skippy Intro
+  m_EditorClassIdentifier: 
+  speakerClip:
+  - {fileID: 8300000, guid: 1ae26b65f50aa8e4c809c6331495f53f, type: 3}
+  - {fileID: 8300000, guid: f966eec4bea944446b31772f26b4b904, type: 3}
+  - {fileID: 8300000, guid: dfa320ecb771c394d91062997bd7b1b5, type: 3}
+  - {fileID: 8300000, guid: 13f1e3438c06d874d86cefc90097a8d2, type: 3}
+  - {fileID: 8300000, guid: 2218887c2a91fa8429185cb8fc31914f, type: 3}
+  - {fileID: 8300000, guid: 4dd46a535e2cc62468e3b37e72874d54, type: 3}
+  - {fileID: 8300000, guid: 03827d24d795f9d4199c1368b338991c, type: 3}
+  - {fileID: 8300000, guid: 44feb80831666cd49a270528ebe4fb0c, type: 3}
+  - {fileID: 8300000, guid: 8176fdf0a99f043449b620b423d00ee8, type: 3}
+  - {fileID: 8300000, guid: a1c4c216243e2684f9b776f52ae6832d, type: 3}
+  - {fileID: 8300000, guid: e5ff9e090a4ee2a4481aebd9f6b2b320, type: 3}
+  - {fileID: 8300000, guid: 09dfa33a73772464f8113a6a52d1b352, type: 3}
+  - {fileID: 8300000, guid: 3ee9cdfd43b214a4f89a12cfcdd221a2, type: 3}
+  - {fileID: 8300000, guid: e1064732a2b9eae4e802219f0a587187, type: 3}
+  - {fileID: 8300000, guid: c13728c94d96902428ea1f5b826d3fdb, type: 3}
+  - {fileID: 8300000, guid: 843a08fe30e80cc4aa655968037c7706, type: 3}
+  - {fileID: 8300000, guid: f83f1603a2614234697813186537fce7, type: 3}
+  - {fileID: 8300000, guid: 730f98b98446db44ca69010571a15490, type: 3}
+  - {fileID: 8300000, guid: e4a04e79c3ba3fb419c9cac7c8dfabc9, type: 3}
+  - {fileID: 8300000, guid: 6cd7cac97ea21694b91f050f7dbb0094, type: 3}
+  - {fileID: 8300000, guid: b1f0dc69ee20ceb4ca1457971ffb96d5, type: 3}
+  - {fileID: 8300000, guid: 84881bf829257134597e016e4be1c43f, type: 3}
+  - {fileID: 8300000, guid: fff6ddf7aa138ef46ad7eb366b499874, type: 3}
+  - {fileID: 8300000, guid: 488115ff3d861f64dab54d35cc308207, type: 3}
+  - {fileID: 8300000, guid: efdb9fd2be2bd7e4494034d683a866f8, type: 3}
+  - {fileID: 8300000, guid: 6f17f8c3c2f91184d89f568e5c7ef0c1, type: 3}
+  - {fileID: 8300000, guid: 317c97eb28643e248836da5ad64a5591, type: 3}
+  - {fileID: 8300000, guid: 8a18077540ca3dc46826d4729b8c7d01, type: 3}
+  sprites:
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 21300000, guid: feb267bcfa6a3824c8bfa454015aaab5, type: 3}
+  paragraphs:
+  - "AURORA: \u201CThey won\u2019t beat me again, Aurora\u201D That\u2019s what you
+    said right? "
+  - 'COSMO: Hmm, yeah.'
+  - "AURORA: Oh Cos, I\u2019m just joking around. At least now, we know that you
+    coming back to life wasn\u2019t just a one-time thing. "
+  - "COSMO: Right... Well, at least it\u2019s good to know that you wouldn\u2019t
+    make light of my actual death, Aurora."
+  - "AURORA: You don\u2019t know that. "
+  - '*phone rings*'
+  - 'SKIPPY: Gyehaha! You look like you almost died, twice!'
+  - 'COSMO: I did die, twice! '
+  - "SKIPPY: And you came to Ol\u2019 Skippy to finally kill you once and for all."
+  - "COSMO:  What? Oh, don\u2019t be foolish Skippy you old coot. I came to my best
+    pal for help, the \u201Cgreatest\u201D mechanic on the entire \u2018US Space-Corp'. "
+  - "SKIPPY: Shut your trap. I AM the best. That\u2019s why you asked for me ain\u2019t
+    it?"
+  - "AURORA: The captain did ask for you specifically Skippy. Despite the front he\u2019s
+    trying to put on, he really needs your help."
+  - "SKIPPY: That so then... What\u2019d ya need? "
+  - 'COSMO: I need you to fix up the ship. '
+  - 'COSMO: I think the ship is why I keep coming back. Can you investigate it and
+    see what you come up with?'
+  - 'COSMO: And uh...while you''re at it...the ship could use some upgrades.'
+  - "SKIPPY: Oh yeah sure, I\u2019ll even throw in some adult diapers to help the
+    people that do your laundry, so they don\u2019t have wash your piss-stained suit. "
+  - 'AURORA: Wow.'
+  - "COSMO: He\u2019ll do it."
+  - "SKIPPY: Before you go thinking the Space Corp has infinite resources, we don\u2019t.
+    I\u2019m gonna need you to supply some S.C.O.R.E. while you\u2019re out there
+    if you want your upgrades."
+  - 'COSMO: What the hell is S.C.O.R.E? Like in a video game?'
+  - "SKIPPY: No, not like in a video game! This is real life god damn it. S.C.O.R.E.
+    CLEARLY stands for Scrap Collected on Recent Expeditions. Isn\u2019t it obvious? "
+  - "COSMO: That\u2019s so dumb, Skippy. So dumb."
+  - "SKIPPY: Ah whatever. It\u2019s smart and you know it. You try saying \u201CScrap
+    Collected on Recent Expeditions\u201D 10 times in a row. "
+  - 'COSMO: Scrap Collected on Recent Expeditions Scrap Collected on Recent Expeditions
+    Scrap Collected on Recent Expeditions-'
+  - "SKIPPY: Oh whatever, just collect me some S.C.O.R.E. and I\u2019ll have your
+    upgrades sorted lickity split. Come to my workshop if you need anything. "
+  - "COSMO: ...You made this much more difficult than it needed to be. I\u2019ll
+    try and \u201Csettle the score\u201D for you heh heh heh."
+  - "Aurora: Good one, Cos. Glad to know you didn\u2019t lose that quick wit of yours
+    from dying all the time."
