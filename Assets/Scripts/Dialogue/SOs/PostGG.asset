@@ -13,11 +13,35 @@ MonoBehaviour:
   m_Name: PostGG
   m_EditorClassIdentifier: 
   speakerClip:
-  - {fileID: 8300000, guid: 4dd46a535e2cc62468e3b37e72874d54, type: 3}
-  - {fileID: 8300000, guid: 63302d9ecf13daf49aad32edd67d99d9, type: 3}
+  - {fileID: 8300000, guid: dafe50a6b008f1e43880e5e618dd2baf, type: 3}
+  - {fileID: 8300000, guid: 4bcd1e5529d698240b3623f5d6e6f742, type: 3}
+  - {fileID: 8300000, guid: d372a5e3974a5be4fa778febfeb1a70f, type: 3}
+  - {fileID: 8300000, guid: 231357b6e7819714e8cc246fbc1005b4, type: 3}
+  - {fileID: 8300000, guid: 9b189dfbc3fcd0847b5f6723f1822160, type: 3}
+  - {fileID: 8300000, guid: 91a34718b1f0f5846b3e23b463da1892, type: 3}
+  - {fileID: 8300000, guid: dc681f946962cec489d4957323f3f59e, type: 3}
+  - {fileID: 8300000, guid: 98536febde0bdec4eac81f05b25bff73, type: 3}
+  - {fileID: 8300000, guid: e8e7a8c1da64e0a488ab58fb60927003, type: 3}
   sprites:
-  - {fileID: 3391192003638874636, guid: 2fff7170d11fe63498b1ff052142e643, type: 3}
-  - {fileID: 21300000, guid: feb267bcfa6a3824c8bfa454015aaab5, type: 3}
+  - {fileID: -773076659937609671, guid: b682e3ffd7cde064eb81729b8d792d64, type: 3}
+  - {fileID: -773076659937609671, guid: b682e3ffd7cde064eb81729b8d792d64, type: 3}
+  - {fileID: -773076659937609671, guid: b682e3ffd7cde064eb81729b8d792d64, type: 3}
+  - {fileID: -773076659937609671, guid: b682e3ffd7cde064eb81729b8d792d64, type: 3}
+  - {fileID: -773076659937609671, guid: b682e3ffd7cde064eb81729b8d792d64, type: 3}
+  - {fileID: -773076659937609671, guid: b682e3ffd7cde064eb81729b8d792d64, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
   paragraphs:
-  - aurora
-  - aurora blue
+  - 'GENERAL GLORGUS: No... how could I... lose?! '
+  - "COSMO: You were fighting me; don\u2019t worry it happens to everyone. Now tell
+    me why you\u2019re attacking Earth!  "
+  - "GENERAL GLORGUS: They don\u2019t tell me nothing, they just tell me where the
+    fight is and I destroy everything in my way. "
+  - "COSMO: Not this time. Who\u2019s they? "
+  - "GENERAL GLORGUS: You\u2019ll see them real soon. You haven\u2019t heard the
+    last of me either. Where do you think your new tech comes from? Good luck. "
+  - 'GENERAL GLORGUS: AHHHHH'
+  - "COSMO: Damn, I wish I could\u2019ve gotten more information out of him... "
+  - "AURORA: Captain, we\u2019ve picked up a new signal. We should follow it."
+  - "COSMO: Right away Aurora. Let\u2019s get to the bottom of this. "

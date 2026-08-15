@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82745c8fbc5d0b49a445aa993baf045, type: 3}
+  m_Name: How They Met
+  m_EditorClassIdentifier: 
+  speakerClip:
+  - {fileID: 8300000, guid: d1dc05f6acfcc4a48a9190aebfff18b7, type: 3}
+  - {fileID: 8300000, guid: 34bedcd8784d3f24c891ae8ed76f4899, type: 3}
+  - {fileID: 8300000, guid: 850afa84ed269f94daef33a5f246274a, type: 3}
+  - {fileID: 8300000, guid: 24d6efb2452fadd46bf70062ffce76b9, type: 3}
+  - {fileID: 8300000, guid: cc3847c4a8a37de47935d7979fd64515, type: 3}
+  - {fileID: 8300000, guid: b8f5c5be2bcbade4583ef6413ea25c6b, type: 3}
+  - {fileID: 8300000, guid: 704097ca1b7ac6d4cb3781ab4b09e779, type: 3}
+  - {fileID: 8300000, guid: 62347d9f878d10247be534bfb290a839, type: 3}
+  - {fileID: 8300000, guid: 346b4028a020e64458dfee30a0b1a203, type: 3}
+  - {fileID: 8300000, guid: 54870bb3855e74c4aa95e3ade10fe81d, type: 3}
+  - {fileID: 8300000, guid: 40c132c568450044790a0be255ff01db, type: 3}
+  sprites:
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  paragraphs:
+  - 'AURORA: So, Cos, you never did tell me the story of how you and Skippy became
+    friends. '
+  - "COSMO: Hmm, I suppose we\u2019ve got some time to talk about that now. It all
+    goes back to one of my earliest expeditions, Planet Orion."
+  - "AURORA: Oh yes Orion, they\u2019re known for their beaches."
+  - "COSMO: Would\u2019ve been lovely to see that, but I never ended up making it
+    to Orion that day. I suffered my first nasty crash during a meteor storm and
+    was hauled back to base. "
+  - "COSMO: That\u2019s when me and Skippy first started to get to know each other,
+    he was assigned to fix up my ship. "
+  - "AURORA: Meteor storm? I can\u2019t imagine you getting caught in one of those."
+  - 'COSMO: One can only dream Aurora. Rookie mistake trying to fly through that
+    storm solo. Anyways, Skippy was the only person on The Space Corp that saw me
+    as an equal. '
+  - "COSMO: Didn\u2019t treat me differently just because I am Cassandra\u2019s son,
+    thought I could get to know the guy well."
+  - 'AURORA: Must have taken a long time to fix up your ship, huh?  '
+  - 'COSMO: They could have just given me a fresh ready to go ship, but I came up
+    with an excuse to keep that previous ship just so we could keep chatting together
+    whilst he repaired it.'
+  - "AURORA: That\u2019s adorable, thanks for telling me that, Cos. "

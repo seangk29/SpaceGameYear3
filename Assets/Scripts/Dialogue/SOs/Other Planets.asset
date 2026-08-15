@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82745c8fbc5d0b49a445aa993baf045, type: 3}
+  m_Name: Other Planets
+  m_EditorClassIdentifier: 
+  speakerClip:
+  - {fileID: 8300000, guid: 67778cc8b5fa07542bb87032697618ec, type: 3}
+  - {fileID: 8300000, guid: 1c5e57208b4fa2543b38f6d34d1e3ec3, type: 3}
+  - {fileID: 8300000, guid: b775bc5e3be0262469d2ea528a02b548, type: 3}
+  - {fileID: 8300000, guid: fd1c7896d31580946b37d5975a22c8e3, type: 3}
+  - {fileID: 8300000, guid: 059b51fc6851df644b39f9394575bd3b, type: 3}
+  - {fileID: 8300000, guid: 9e314059cff13f54abff12822df41c5a, type: 3}
+  - {fileID: 8300000, guid: 7b1a44f4a755ab14c81464feab1ff3c1, type: 3}
+  sprites:
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  paragraphs:
+  - 'AURORA: Captain, I was wondering...'
+  - 'COSMO: Hmm, what is it, Aurora?'
+  - 'AURORA: Do you ever wonder if there are other planets out there like our own? '
+  - "COSMO: Habitable? We\u2019ve already corporatised Mars, you want to go even
+    further than that?!"
+  - "AURORA: No Cos I mean... friendly? They have some sort of intelligent life.
+    I\u2019m sure they\u2019re not all the murdering kind?"
+  - "COSMO: Doubt it. All \u201Calien species\u201D we\u2019ve had to deal with so
+    far have been nothing but trouble. Don\u2019t go having second thoughts, this
+    \u201CSpecimen X\u201D is no different. "
+  - "AURORA: You\u2019re right Cos, just wishful thinking I suppose."

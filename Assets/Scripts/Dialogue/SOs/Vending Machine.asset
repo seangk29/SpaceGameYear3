@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82745c8fbc5d0b49a445aa993baf045, type: 3}
+  m_Name: Vending Machine
+  m_EditorClassIdentifier: 
+  speakerClip:
+  - {fileID: 8300000, guid: 3d4cbd8f93dc9a340ae09955f94d7297, type: 3}
+  - {fileID: 8300000, guid: 20ef49cec399bd24cbb762b024acfaa3, type: 3}
+  - {fileID: 8300000, guid: d8d16c734a29c8b49b5c8e3f837dd39f, type: 3}
+  - {fileID: 8300000, guid: 6e887797448e90c4e86b59736afe5ed9, type: 3}
+  - {fileID: 8300000, guid: 81226977c6a42d5489dec0aaf603cc9c, type: 3}
+  - {fileID: 8300000, guid: 955bd51ddb04c7a42b40a739b83fab57, type: 3}
+  - {fileID: 8300000, guid: 4bac98cd716f38a4c90aab5f6d18f413, type: 3}
+  sprites:
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  paragraphs:
+  - "AURORA: Just letting you know, even though I shouldn\u2019t, the vending machines
+    on base have been refilled."
+  - 'COSMO: They got my favourite? '
+  - "AURORA: Oh, your \u201Cprotein pack\u201D? "
+  - 'COSMO: There is only so many times I can smuggle them in from Earth, would be
+    nice to have them readily available up here.'
+  - 'AURORA: You never thought to ask General Cassandra to get them in for you? '
+  - "COSMO: I don\u2019t need her help... Probably cheaper to get them in myself
+    anyways. "
+  - "AURORA: ... Well, enjoy your \u201CRaw Eggs in a Can\u201D Captain... "

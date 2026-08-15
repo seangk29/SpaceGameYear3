@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82745c8fbc5d0b49a445aa993baf045, type: 3}
+  m_Name: Changing Ships
+  m_EditorClassIdentifier: 
+  speakerClip:
+  - {fileID: 8300000, guid: f3a2a777e2c58d244ad0e94e4acc084b, type: 3}
+  - {fileID: 8300000, guid: ab25b3a3fc6eb0a49a10e8794b6f8724, type: 3}
+  - {fileID: 8300000, guid: ccfdca5cc24adb34b950309250c21c0e, type: 3}
+  - {fileID: 8300000, guid: dee7f66c20df31f43afb2857a8cd3069, type: 3}
+  sprites:
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  paragraphs:
+  - "AURORA: Tell me Cos, I\u2019ve always wondered why you never stick with the
+    same ship, you\u2019re always changing. Most pilots of your age have their go-to
+    by now. "
+  - "COSMO: You\u2019re right I don\u2019t have a preference. They just put me in
+    the newest models, and I go along with it. It's the man not the machine that
+    makes the pilot."
+  - 'AURORA: I guess that makes sense, makes you adaptable no matter what ship you
+    fly.'
+  - 'COSMO: You never know, could come in handy one day knowing how to operate all
+    these ships. '
