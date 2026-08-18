@@ -26,6 +26,8 @@ public class FindShop : MonoBehaviour
             npcShopable = collision.gameObject;
         }
 
+        
+
     }
 
 }

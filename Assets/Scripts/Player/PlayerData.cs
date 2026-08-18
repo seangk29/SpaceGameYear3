@@ -24,6 +24,7 @@ public class PlayerData : MonoBehaviour
     public int previousMoney = 0;
     public int kills = 0;
 
+    public int cutSceneCounter;
 
     void OnEnable()
     {

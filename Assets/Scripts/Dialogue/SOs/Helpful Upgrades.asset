@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82745c8fbc5d0b49a445aa993baf045, type: 3}
+  m_Name: Helpful Upgrades
+  m_EditorClassIdentifier: 
+  speakerClip:
+  - {fileID: 8300000, guid: 9042bd44bbd5bf741985ea5ba5e787c7, type: 3}
+  - {fileID: 8300000, guid: 75b74295214c058479e090213637f205, type: 3}
+  - {fileID: 8300000, guid: dcd11453eb8851747ab6ead84dbda168, type: 3}
+  - {fileID: 8300000, guid: 9042bd44bbd5bf741985ea5ba5e787c7, type: 3}
+  - {fileID: 8300000, guid: 7cac030958e820c4681b118986a5a754, type: 3}
+  - {fileID: 8300000, guid: 9042bd44bbd5bf741985ea5ba5e787c7, type: 3}
+  sprites:
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
+  paragraphs:
+  - 'SKIPPY: You been enjoying those upgrades Cosmo?'
+  - "COSMO: Yes, they\u2019ve been very helpful. "
+  - 'COSMO: Though I was wondering how you can directly alter the properties of my
+    ship so far away from the base. '
+  - "SKIPPY: I was actually gonna ask you the same thing, must be some more of that
+    strange \u201CSpecimen X\u201D technology that\u2019s embedded throughout your
+    whole ship."
+  - "COSMO: How interesting... Keep up the good work Skippy, more upgrades like that
+    and we\u2019ll be rid of them in no time."
+  - "SKIPPY: Y\u2019know I was starting to think maybe all of them aliens ain\u2019t
+    so bad after all if they\u2019ve got useful technology like this, but I\u2019ll
+    keep at it."

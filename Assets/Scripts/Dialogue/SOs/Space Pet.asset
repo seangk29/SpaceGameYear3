@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82745c8fbc5d0b49a445aa993baf045, type: 3}
+  m_Name: Space Pet
+  m_EditorClassIdentifier: 
+  speakerClip:
+  - {fileID: 8300000, guid: 5bfe0814592faab4c85ec4942ae6dd94, type: 3}
+  - {fileID: 8300000, guid: 571cce061c05d834484712839ea660dc, type: 3}
+  - {fileID: 8300000, guid: 618cb435ec5654c4e8e95a1ace26f0e6, type: 3}
+  - {fileID: 8300000, guid: ecbdae0c836e8274a9594697c7e79930, type: 3}
+  - {fileID: 8300000, guid: dbbeaa6f11e33334889491c5f6edaafe, type: 3}
+  - {fileID: 8300000, guid: 3adbbe3bb1fc4644eba46dbca6906777, type: 3}
+  - {fileID: 8300000, guid: b32c419d2b21cf54c841fd63cd414bd0, type: 3}
+  - {fileID: 8300000, guid: e94149de321d11b4f99ca5015e1ca0ca, type: 3}
+  - {fileID: 8300000, guid: 99b8f2124b5ac7545b49c2060d025201, type: 3}
+  sprites:
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  - {fileID: 8637655934773885371, guid: 8748b879a5d70d34ba5dde8ab0c929ce, type: 3}
+  paragraphs:
+  - "AURORA: Think they\u2019d let us keep a pet aboard the Space Corp Cos? "
+  - 'COSMO: A pet? What kind?'
+  - "AURORA: I\u2019ve always wanted a hamster myself, what do you think of the name
+    Hamson? I think it's the cutest."
+  - 'COSMO: What kind of name is...'
+  - 'AURORA: Like, Samson mixed with hamster? I think it''s really smart.'
+  - 'COSMO: Sure Aurora... you never struck me as the type to want to care for a
+    pet. '
+  - 'AURORA: I guess it is just in my nature? My whole job is basically taking care
+    of you so, just comes naturally.'
+  - 'COSMO: Ah, that makes sense, I guess. Well, I suppose I could slip a good word
+    to the General for you.'
+  - 'AURORA: I appreciate that Cos, thank you.'

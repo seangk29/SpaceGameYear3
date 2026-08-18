@@ -200,7 +200,7 @@ public class ActivePlayerHealth : MonoBehaviour
         }
        
 
-        if (health <= 1)
+        if (health == 1)
         {
             healthFlick.SetActive(true);
             flicker.Play("Flicker");

@@ -187,6 +187,7 @@ MonoBehaviour:
   nicosShop: {fileID: 38975506}
   Ships: {fileID: 0}
   move: {fileID: 0}
+  data: {fileID: 0}
   activatorBool: 0
   nicoBool: 0
   visual: 0
@@ -499,7 +500,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &28166082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -556,6 +557,7 @@ MonoBehaviour:
   spaceMoney: 0
   previousMoney: 0
   kills: 0
+  cutSceneCounter: 0
 --- !u!4 &28166084
 Transform:
   m_ObjectHideFlags: 0
@@ -2391,7 +2393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &575859920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5936,7 +5938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1847853958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6545,7 +6547,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2056015447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7223,13 +7225,13 @@ SceneRoots:
   - {fileID: 52270051}
   - {fileID: 109168980}
   - {fileID: 1970894171}
-  - {fileID: 2056015449}
   - {fileID: 2072027303}
   - {fileID: 963698827}
   - {fileID: 133987105}
   - {fileID: 520451772}
   - {fileID: 1847853962}
   - {fileID: 28166084}
+  - {fileID: 2056015449}
   - {fileID: 19705769}
   - {fileID: 236414874}
   - {fileID: 575859922}

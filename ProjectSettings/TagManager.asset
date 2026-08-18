@@ -49,6 +49,7 @@ TagManager:
   - tutorialManager
   - checkpoint
   - Intro
+  - HubDialogue
   layers:
   - Default
   - TransparentFX

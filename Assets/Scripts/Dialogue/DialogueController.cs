@@ -38,6 +38,7 @@ public class DialogueController : MonoBehaviour
     public GameObject nicosShop;
     public MoveForward Ships;
     public PlayerMovement move;
+    public PlayerData data;
 
     public bool activatorBool = false;
 
@@ -48,6 +49,7 @@ public class DialogueController : MonoBehaviour
     void Start()
     {
         shops = GameObject.FindGameObjectWithTag("Player").GetComponent<FindShop>();
+        data = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
     }
 
      void Update()
@@ -163,6 +165,8 @@ public class DialogueController : MonoBehaviour
             move.enabled = true;
             activatorBool = true;
         }
+
+       
 
         if (shops.npcShopable.CompareTag("Nicos"))
         {
