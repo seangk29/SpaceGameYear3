@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
+
+    public Animator transition;
+    
     public void NextLevel()
     {
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
@@ -44,7 +48,10 @@ public class SceneChanger : MonoBehaviour
     }
 
 
-
+    public void PressPlay()
+    {
+        StartCoroutine(MakeTransition("Intro Scene"));
+    }
 
     // all this is for reseting stats on retry
     void OnEnable()
@@ -85,5 +92,15 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadSceneAsync("NoPDGameplay");
 
         
+    }
+
+    IEnumerator MakeTransition(string sceneName)
+    {
+        transition.SetTrigger("Transition");
+
+        yield return new WaitForSecondsRealtime(1);
+
+        SceneManager.LoadSceneAsync(sceneName);
+
     }
 }

@@ -961,6 +961,7 @@ MonoBehaviour:
   HUD: {fileID: 0}
   healthFlick: {fileID: 0}
   flicker: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &1667372856028613701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2551,6 +2552,7 @@ MonoBehaviour:
   HUD: {fileID: 0}
   healthFlick: {fileID: 0}
   flicker: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &4805046748181273822
 GameObject:
   m_ObjectHideFlags: 0
@@ -4345,6 +4347,7 @@ MonoBehaviour:
   HUD: {fileID: 0}
   healthFlick: {fileID: 0}
   flicker: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &7671036059347274953
 GameObject:
   m_ObjectHideFlags: 0
@@ -6084,6 +6087,7 @@ MonoBehaviour:
   HUD: {fileID: 0}
   healthFlick: {fileID: 0}
   flicker: {fileID: 0}
+  player: {fileID: 7422697933036058719}
 --- !u!114 &5946322690500378483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6102,6 +6106,7 @@ MonoBehaviour:
   maxSpeed: 4
   speedIndicator: 4
   rotationSpeed: 360
+  smokeAnim: {fileID: 0}
   Dodging: 1
   cooldownDodge: 0
   Dtimer: 0

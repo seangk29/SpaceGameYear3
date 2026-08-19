@@ -18,10 +18,12 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed = 4f;
     public float speedIndicator = 4f;
     public float rotationSpeed = 360f;
-   // public int directionNumber = 0;
-   // public int maxDirectionRight = 4;
-   // public int maxDirectionLeft = -4;
+    // public int directionNumber = 0;
+    // public int maxDirectionRight = 4;
+    // public int maxDirectionLeft = -4;
 
+
+    public GameObject smokeAnim;
 
     public bool Dodging;
     public float cooldownDodge = 0f;
@@ -122,6 +124,11 @@ public class PlayerMovement : MonoBehaviour
             cooldownDodge += Time.deltaTime;
         }
 
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            smokeAnim.SetActive(true);
+        }
 
         //float horizontal = Input.GetAxis("Horizontal");
         //float vertical = Input.GetAxis("Vertical");

@@ -19,6 +19,8 @@ public class IntroScript : MonoBehaviour
     public float timer;
     public float timeToShow;
 
+    public MoveForward move;
+
     public int textCounter;
     
     // Start is called before the first frame update
@@ -58,14 +60,12 @@ public class IntroScript : MonoBehaviour
                 case 4:
                     text4.SetActive(false);
                     cosmoSign.SetActive(true);
+                    ships.SetActive(true);
+                    dialogue.SetActive(true);
+                    move.enabled = true;
                     timer = 0;
                     break;
                 case 5:
-                    ships.SetActive(true);
-                    dialogue.SetActive(true);
-                    timer = 0;
-                    break;
-                case 6:
                     timer = 0;
                     break;
                 case 7:

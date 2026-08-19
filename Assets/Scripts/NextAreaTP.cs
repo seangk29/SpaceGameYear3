@@ -14,6 +14,8 @@ public class NextAreaTP : MonoBehaviour
 
     public bool canTeleport;
 
+    public Animator transition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,8 @@ public class NextAreaTP : MonoBehaviour
         gameManager = GameObject.FindGameObjectWithTag("GameMg").GetComponent<GameManager>();
 
         canTeleport = false;
+
+        transition = GameObject.FindGameObjectWithTag("Player3").GetComponent<Animator>();
     }
 
     private void Update()
@@ -94,58 +98,63 @@ public class NextAreaTP : MonoBehaviour
 
                 if (gameManager.currentLevel == 11)
                 {
-                    SceneManager.LoadSceneAsync("PostGG");
+                   StartCoroutine(MakeTransition("PostGG"));
                 }
                 else if (gameManager.currentLevel == 10)
                 {
-                   // Debug.Log("it would load boss here");
-                    SceneManager.LoadSceneAsync("BOSS 1");
+                // Debug.Log("it would load boss here");
+                StartCoroutine(MakeTransition("BOSS 1"));
+                
                 }
                 else if (gameManager.currentLevel == 9)
                 {
-                    SceneManager.LoadSceneAsync("PreGG");
-                }
+                    
+                StartCoroutine(MakeTransition("PreGG"));
+            }
                 else if (gameManager.currentLevel == 0)
                 {
                    // Debug.Log("start gameplay");
-                    SceneManager.LoadSceneAsync("Start Gameplay");
-                }
+                   
+                StartCoroutine(MakeTransition("Start Gameplay"));
+            }
                 else if (gameManager.currentLevel > 0 && gameManager.currentLevel <= 3)
                 {
                    // Debug.Log("it would load here");
-                    SceneManager.LoadSceneAsync("NoPDGameplay");
+
+                    StartCoroutine(MakeTransition("NoPDGameplay"));
                 }
          
 
                 else if (gameManager.currentLevel >= 5 && gameManager.currentLevel <= 7)
                 {
                     // Debug.Log("it would load here");
-                    SceneManager.LoadSceneAsync("Action 2");
+                    StartCoroutine(MakeTransition("Action 2"));
                 }
 
             else if (gameManager.currentLevel >= 8 && gameManager.currentLevel <= 9)
             {
                 // Debug.Log("it would load here");
-                SceneManager.LoadSceneAsync("Action 3");
+                StartCoroutine(MakeTransition("Action 3"));
             }
 
 
             else if (gameManager.currentLevel == 4)
             {
                 // Debug.Log("it would load here");
-                SceneManager.LoadSceneAsync("MidRunShop");
+                StartCoroutine(MakeTransition("MidRunShop"));
             }
 
             else if (gameManager.currentLevel == 9)
             {
                 // Debug.Log("it would load here");
-                SceneManager.LoadSceneAsync("PreGG");
+                StartCoroutine(MakeTransition("PreGG"));
             }
 
             else if (gameManager.currentLevel == 12)
             {
-                // Debug.Log("it would load here");
-                SceneManager.LoadSceneAsync("ResetStats");
+                
+                
+                StartCoroutine(MakeTransition("ResetStats"));
             }
         }
 
@@ -155,7 +164,17 @@ public class NextAreaTP : MonoBehaviour
 
 
         }
+
+    IEnumerator MakeTransition(string sceneName)
+    {
+        transition.SetTrigger("Transition");
+
+        yield return new WaitForSecondsRealtime(1);
+
+        SceneManager.LoadSceneAsync(sceneName);
+
     }
+}
 
 
 

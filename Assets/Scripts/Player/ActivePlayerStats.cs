@@ -45,6 +45,8 @@ public class ActivePlayerHealth : MonoBehaviour
 
     public GameObject healthFlick;
     public Animator flicker;
+    public Animator player;
+    public Animator cam;
 
     private void Start()
     {
@@ -81,6 +83,8 @@ public class ActivePlayerHealth : MonoBehaviour
 
     }
 
+
+    
     private void OnTriggerEnter2D(Collider2D collider)
     {
 
@@ -104,7 +108,7 @@ public class ActivePlayerHealth : MonoBehaviour
         {
             SpRend = true;
 
-          
+            cam.SetTrigger("TakeDamage");
             
             if (shieldHealth <= 0)
             {
@@ -113,6 +117,7 @@ public class ActivePlayerHealth : MonoBehaviour
                 invul = 1f;
                 sprite.gameObject.layer = 8;
                 SpRend = false;
+                cam.SetTrigger("Idle");
             }
 
             if (shieldHealth > 0)
@@ -122,13 +127,16 @@ public class ActivePlayerHealth : MonoBehaviour
                 canRegen = true;
                 sprite.gameObject.layer = 8;
                 SpRend = false;
+                cam.SetTrigger("Idle");
             }
         }
 
         if (collider.gameObject.tag == "EnemyBullet" && dodging == false && playerData != null)
         {
             SpRend = true;
-            
+
+            cam.SetTrigger("TakeDamage");
+
             if (shieldHealth <= 0)
             {
                 playerData.score -= 50;
@@ -136,7 +144,9 @@ public class ActivePlayerHealth : MonoBehaviour
                 invul = 1f;
                 sprite.gameObject.layer = 8;
                 SpRend = false;
-                
+
+                cam.SetTrigger("Idle");
+
             }
 
 
@@ -148,6 +158,7 @@ public class ActivePlayerHealth : MonoBehaviour
                 canRegen = true;
                 SpRend = false;
 
+                cam.SetTrigger("Idle");
 
                 /* if (SpRend && shieldHealth > 0)
                  {
@@ -187,6 +198,15 @@ public class ActivePlayerHealth : MonoBehaviour
     private void Update()
     {
 
+       
+        
+        
+        player = GameObject.FindGameObjectWithTag("Player1").GetComponent<Animator>();
+
+        cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Animator>();
+
+
+
 
         if (invul <= 0)
         {
@@ -204,8 +224,14 @@ public class ActivePlayerHealth : MonoBehaviour
         {
             healthFlick.SetActive(true);
             flicker.Play("Flicker");
+            player.SetTrigger("Damaged");
+            
         }
-        else { healthFlick.SetActive(false); }
+        else 
+        { healthFlick.SetActive(false);
+
+            player.SetTrigger("Idle");
+        }
 
 
 
