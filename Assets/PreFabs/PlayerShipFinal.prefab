@@ -962,6 +962,7 @@ MonoBehaviour:
   healthFlick: {fileID: 0}
   flicker: {fileID: 0}
   player: {fileID: 0}
+  cam: {fileID: 0}
 --- !u!1 &1667372856028613701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2553,6 +2554,7 @@ MonoBehaviour:
   healthFlick: {fileID: 0}
   flicker: {fileID: 0}
   player: {fileID: 0}
+  cam: {fileID: 0}
 --- !u!1 &4805046748181273822
 GameObject:
   m_ObjectHideFlags: 0
@@ -4348,6 +4350,7 @@ MonoBehaviour:
   healthFlick: {fileID: 0}
   flicker: {fileID: 0}
   player: {fileID: 0}
+  cam: {fileID: 0}
 --- !u!1 &7671036059347274953
 GameObject:
   m_ObjectHideFlags: 0
@@ -6088,6 +6091,7 @@ MonoBehaviour:
   healthFlick: {fileID: 0}
   flicker: {fileID: 0}
   player: {fileID: 7422697933036058719}
+  cam: {fileID: 0}
 --- !u!114 &5946322690500378483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6209,10 +6213,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: de36aeae0f1370f40841d0eee9fd8204, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 171a724a8af5a13479274c605b61e5b1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
-  m_Pitch: -2.16
+  m_Volume: 0.1
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0

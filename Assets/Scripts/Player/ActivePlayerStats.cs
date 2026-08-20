@@ -64,7 +64,9 @@ public class ActivePlayerHealth : MonoBehaviour
 
         healthFlick.SetActive(false);
 
-        
+        player = GameObject.FindGameObjectWithTag("Player1").GetComponent<Animator>();
+
+        cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Animator>();
 
         maxHealth = playerStats.maxHealth;
         health = maxHealth;
@@ -106,7 +108,8 @@ public class ActivePlayerHealth : MonoBehaviour
 
         if (collider.gameObject.tag == "Enemy" && dodging == false && playerData != null)
         {
-            SpRend = true;
+
+            Daudio.Play();
 
             cam.SetTrigger("TakeDamage");
             
@@ -116,7 +119,7 @@ public class ActivePlayerHealth : MonoBehaviour
                 health -= 1;
                 invul = 1f;
                 sprite.gameObject.layer = 8;
-                SpRend = false;
+                StartCoroutine(VisualIndicator(Color.red));
                 cam.SetTrigger("Idle");
             }
 
@@ -126,14 +129,14 @@ public class ActivePlayerHealth : MonoBehaviour
                 shieldTimer = 0;
                 canRegen = true;
                 sprite.gameObject.layer = 8;
-                SpRend = false;
+                StartCoroutine(VisualIndicator(Color.cyan));
                 cam.SetTrigger("Idle");
             }
         }
 
         if (collider.gameObject.tag == "EnemyBullet" && dodging == false && playerData != null)
         {
-            SpRend = true;
+            Daudio.Play();
 
             cam.SetTrigger("TakeDamage");
 
@@ -143,7 +146,7 @@ public class ActivePlayerHealth : MonoBehaviour
                 health -= collider.GetComponent<EnemyBulletData>().damage;
                 invul = 1f;
                 sprite.gameObject.layer = 8;
-                SpRend = false;
+                StartCoroutine(VisualIndicator(Color.red));
 
                 cam.SetTrigger("Idle");
 
@@ -153,10 +156,11 @@ public class ActivePlayerHealth : MonoBehaviour
 
             if (shieldHealth > 0)
             {
-                shieldHealth--;
+                shieldHealth -= 1;
                 shieldTimer = 0;
                 canRegen = true;
-                SpRend = false;
+            
+                StartCoroutine(VisualIndicator(Color.cyan));
 
                 cam.SetTrigger("Idle");
 
@@ -201,9 +205,7 @@ public class ActivePlayerHealth : MonoBehaviour
        
         
         
-        player = GameObject.FindGameObjectWithTag("Player1").GetComponent<Animator>();
-
-        cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Animator>();
+        
 
 
 
@@ -223,7 +225,7 @@ public class ActivePlayerHealth : MonoBehaviour
         if (health == 1)
         {
             healthFlick.SetActive(true);
-            flicker.Play("Flicker");
+            flicker.Play("Cosmo Screen Dying 1_Clip");
             player.SetTrigger("Damaged");
             
         }

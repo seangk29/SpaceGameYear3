@@ -4490,7 +4490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &748927537
 Transform:
   m_ObjectHideFlags: 0
@@ -9442,7 +9442,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1569628237
 Transform:
   m_ObjectHideFlags: 0
@@ -13666,6 +13666,8 @@ MonoBehaviour:
   HUD: {fileID: 0}
   healthFlick: {fileID: 0}
   flicker: {fileID: 0}
+  player: {fileID: 0}
+  cam: {fileID: 0}
 --- !u!114 &9200768297206968749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13684,6 +13686,7 @@ MonoBehaviour:
   maxSpeed: 4
   speedIndicator: 4
   rotationSpeed: 360
+  smokeAnim: {fileID: 0}
   Dodging: 0
   cooldownDodge: 0
   Dtimer: 0
