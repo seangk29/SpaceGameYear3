@@ -10,8 +10,9 @@ public class Enemy : NPC, Talkable
 
     [SerializeField] private DialogueText dialogueText;
     [SerializeField] private DialogueController dialogueController;
-    
 
+  
+   
     public override void interact()
     {
         talk(dialogueText);

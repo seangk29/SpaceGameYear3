@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph;
 using UnityEngine;
 
 
@@ -13,10 +14,37 @@ public abstract class NPC : MonoBehaviour, Interactable
 
     private const float Distance = 2f;
 
-  private void Start()
+    PlayerControls controls;
+
+    PlayerShooting shooting;
+
+
+
+    private void Awake()
+    {
+        controls = new PlayerControls();
+
+        controls.Gameplay.Interact.performed += ctx => CheckForInput();
+    }
+
+
+    void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Gameplay.Disable();
+    }
+
+    private void Start()
     {
         //This finds the players location in the scene.
         PlayerTrans = GameObject.FindGameObjectWithTag("Player").transform;
+
+       
+
     }
 
 
@@ -32,6 +60,7 @@ public abstract class NPC : MonoBehaviour, Interactable
 
         //This is used to let the game have a set distance required for the player talk to the NPC.
 
+   
 
         if (Input.GetKeyDown(KeyCode.E) && IsInteractableDistance())
         {
@@ -57,6 +86,7 @@ public abstract class NPC : MonoBehaviour, Interactable
         //This finds the interact distance.
         if (Vector3.Distance(PlayerTrans.position, transform.position) < Distance)
         {
+           
             return true;
         }
         else 
@@ -65,5 +95,17 @@ public abstract class NPC : MonoBehaviour, Interactable
         }
     }
 
+
+    void CheckForInput()
+    {
+        if (IsInteractableDistance())
+
+        {
+
+            
+            interact();
+        }
+        
+    }
 
 }
