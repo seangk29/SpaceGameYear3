@@ -219,6 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884dc4bfaa528b147be89da7c4468616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 0}
 --- !u!224 &448894684 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6013512936792887082, guid: 4951273c7390e1a4ea74ae67f844a696, type: 3}
@@ -534,7 +535,7 @@ MonoBehaviour:
   audioSources:
   - {fileID: 1607562617}
   - {fileID: 1741636879}
-  currentClip: {fileID: 8300000, guid: 55c6a198883e6434895077ef93152db0, type: 3}
+  currentClip: {fileID: 8300000, guid: 41b749be3e0555a46a60ea93ed8e8577, type: 3}
   newClip: {fileID: 0}
   audioToggle: 0
   count: 0
@@ -655,7 +656,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 55c6a198883e6434895077ef93152db0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 41b749be3e0555a46a60ea93ed8e8577, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.25
   m_Pitch: 1
@@ -1518,7 +1519,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 55c6a198883e6434895077ef93152db0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 41b749be3e0555a46a60ea93ed8e8577, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.25
   m_Pitch: 1
