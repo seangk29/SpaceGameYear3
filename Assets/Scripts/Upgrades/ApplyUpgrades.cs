@@ -66,6 +66,9 @@ public class ApplyUpgrades : MonoBehaviour
             case CardEffect.DamageUpgrade:
                 PermaPlayerStats.damageUpgrade(selectedCardValue);
                 break;
+            case CardEffect.DashAttack:
+                PermaPlayerStats.DashAttack();
+                break;
         }
     }
 

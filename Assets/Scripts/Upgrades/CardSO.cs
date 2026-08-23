@@ -57,5 +57,6 @@ public enum CardEffect
     GunBot,
     SpecialUpgrade,
     DamageUpgrade,
+    DashAttack,
     SPBulHP
 }

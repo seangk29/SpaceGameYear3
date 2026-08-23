@@ -40,6 +40,10 @@ public class PermaPlayerStats : MonoBehaviour
     public bool checkObject = false;
     public bool activeSpin = false;
     public bool activeGunBot = false;
+    public bool activeDashAttack;
+
+    public int gunBotCount;
+    public int spinCount;
 
     //all this enable disable scene load part does is check if its the main menu
     //or the quit scene
@@ -250,6 +254,7 @@ public class PermaPlayerStats : MonoBehaviour
        
         specialShotHandler.getSpinShot();
         activeSpin = true;
+        spinCount += 1;
        // playerMovement.CanUseSpecial = true;
        // canUseSpecial = true;
        // activeSpecial = "Spin";
@@ -258,7 +263,14 @@ public class PermaPlayerStats : MonoBehaviour
     public void GunBot()
     {
         specialShotHandler.getGunBot();
+        gunBotCount += 1;
         activeGunBot = true;
+    }
+
+    public void DashAttack()
+    {
+        specialShotHandler.getDashAttack();
+        activeDashAttack = true;
     }
 
     public void resetStats()

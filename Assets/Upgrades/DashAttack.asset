@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
-  m_Name: SpBulHP
+  m_Name: DashAttack
   m_EditorClassIdentifier: 
-  cardImage: {fileID: -2490178017332163790, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
-  headerText: --- SPECIAL ---
-  cardText: Receive +1 Special Shot HP
-  descText: The SPECIAL shot bullet increases durability by ONE.
+  cardImage: {fileID: 756189817976698655, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
+  headerText: --- DASH ---
+  cardText: 'Ship Addition: Dash Attack'
+  descText: The AFTER IMAGE on COSMO'S SHIP flies forward and damages ENEMY ships.
   costs: 
-  effectType: 16
+  effectType: 15
   effectString: {fileID: 0}
-  effectValue: 1
+  effectValue: 0
   effectFloatValue: 0
-  isUnique: 0
-  unlockLevel: 5
+  isUnique: 1
+  unlockLevel: 3

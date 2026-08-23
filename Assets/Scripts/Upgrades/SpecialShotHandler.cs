@@ -18,13 +18,29 @@ public class SpecialShotHandler : MonoBehaviour
     public GameObject explodeShotUpgraded1;
     public GameObject laserShot;
     public GameObject spinShot;
+    public GameObject spinShot1;
     public GameObject gunBot;
+    public GameObject gunBot2;
+    public GameObject gunBot3;
+    public GameObject gunBot4;
+
+    public int gunBotCount;
+   
 
   
     public PlayerShooting currentSpecialPos1;
     public PlayerShooting currentSpecialPos2;
     public PlayerShooting currentSpecialPos3;
     public PlayerShooting currentSpecialPos4;
+
+    public PlayerMovement player;
+
+    public GameObject dashAttack;
+    public GameObject downDashAttack;
+    public GameObject leftDashAttack;
+    public GameObject rightDashAttack;
+
+    public bool activeDashAttack;
 
     private void Start()
     {
@@ -34,6 +50,9 @@ public class SpecialShotHandler : MonoBehaviour
         PlayerShooting currentSpecial = GetComponent<PlayerShooting>();
 
         playerStats = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
+
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+
 
         if (playerStats.canUseSpecial)
         {
@@ -76,12 +95,65 @@ public class SpecialShotHandler : MonoBehaviour
     {
         if (playerStats.activeSpin == true)
         {
-            spinShot.SetActive(true);
+            if (playerStats.spinCount > 2)
+            {
+                playerStats.spinCount = 2;
+            }
+
+            switch (playerStats.spinCount)
+            {
+                case 1:
+                    spinShot.SetActive(true);
+                    break;
+                case 2:
+                    spinShot.SetActive(true);
+                    spinShot1.SetActive(true);
+                    break;
+            }
         }
 
         if (playerStats.activeGunBot == true)
         {
-            gunBot.SetActive(true);
+           
+            if (playerStats.gunBotCount > 4)
+            {
+                playerStats.gunBotCount = 4;
+            }
+            
+            
+            
+            
+            switch(playerStats.gunBotCount)
+                {
+                case 1:
+                    gunBot.SetActive(true);
+                    break;
+                case 2:
+                    gunBot.SetActive(true);
+                    gunBot2.SetActive(true);
+                    break;
+                case 3:
+                    gunBot.SetActive(true);
+                    gunBot2.SetActive(true);
+                    gunBot3.SetActive(true);
+                    
+                    break;
+                case 4:
+                    gunBot.SetActive(true);
+                    gunBot2.SetActive(true);
+                    gunBot3.SetActive(true);
+                    gunBot4.SetActive(true);
+                    break;
+                
+            }
+        }
+
+        if (playerStats.activeDashAttack == true)
+        {
+            player.SpriteUp = dashAttack;
+            player.SpriteDown = downDashAttack;
+            player.SpriteLeft = leftDashAttack;
+            player.SpriteRight = rightDashAttack;
         }
     }
     public void GetSpreadShot()
@@ -187,7 +259,13 @@ public class SpecialShotHandler : MonoBehaviour
 
     public void getGunBot()
     {
-        gunBot.SetActive(true);
-     
+        // gunBot.SetActive(true);
+        gunBotCount += 1;
+    }
+
+    public void getDashAttack()
+    {
+        
+
     }
 }

@@ -48,6 +48,8 @@ public class ActivePlayerHealth : MonoBehaviour
     public Animator player;
     public Animator cam;
 
+    public PlayerMovement playerMove;
+
     private void Start()
     {
 
@@ -65,6 +67,7 @@ public class ActivePlayerHealth : MonoBehaviour
         healthFlick.SetActive(false);
 
         player = GameObject.FindGameObjectWithTag("Player1").GetComponent<Animator>();
+        playerMove = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
 
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Animator>();
 
@@ -218,7 +221,7 @@ public class ActivePlayerHealth : MonoBehaviour
 
         if (health <= 0)
         {
-            Die();
+            StartCoroutine(Die());
         }
        
 
@@ -283,8 +286,14 @@ public class ActivePlayerHealth : MonoBehaviour
         GetComponentInChildren<SpriteRenderer>().color = Color.white;
     }
 
-    public void Die()
+    IEnumerator Die()
     {
+
+        player.SetTrigger("Dead");
+        playerMove.enabled = false;
+
+        yield return new WaitForSeconds(0.5f);
+        
         Destroy(gameObject);
 
         

@@ -215,6 +215,9 @@ public class CardManager : MonoBehaviour
             case CardEffect.GunBot:
                 PermaPlayerStats.GunBot();
                 break;
+            case CardEffect.DashAttack:
+                PermaPlayerStats.DashAttack();
+                break;
         }
 
         // change state back to playing
