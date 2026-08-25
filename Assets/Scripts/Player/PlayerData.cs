@@ -26,6 +26,8 @@ public class PlayerData : MonoBehaviour
 
     public int cutSceneCounter;
 
+    public bool hasMetAuora;
+
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;

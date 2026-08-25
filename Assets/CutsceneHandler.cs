@@ -22,7 +22,7 @@ public class CutsceneHandler : MonoBehaviour
                 cutsceneMusic[0].SetActive(true);
                 data.cutSceneCounter += 1;
                 cutscenes[0].SetActive(true);
-              
+                data.hasMetAuora = true;
                 break;
 
             case 1:
