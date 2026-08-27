@@ -9,7 +9,7 @@ public class UnlockHubItems : MonoBehaviour
     public bool spawned = false;
     public int bossCounts;
 
-    public PauseMenu paus;
+    public GameplayPauseMenu paus;
 
     public DialogueController control;
 

@@ -1,15 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PauseMenu : MonoBehaviour
+public class GameplayPauseMenu : MonoBehaviour
 {
     public static bool gameIsPaused;
 
-  
+    public PlayerShooting shooting;
     public GameObject pMenu;
     public GameObject confirmHubMenu;
     public GameObject confirmMenu;
@@ -19,11 +18,14 @@ public class PauseMenu : MonoBehaviour
 
     private void Start()
     {
-      
+        if (shooting == null)
+        {
+            shooting = GameObject.FindGameObjectWithTag("GunPos").GetComponent<PlayerShooting>();
+        }
     }
     private void Update()
     {
-      
+        shooting = GameObject.FindGameObjectWithTag("GunPos").GetComponent<PlayerShooting>();
 
 
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button9))
@@ -33,16 +35,19 @@ public class PauseMenu : MonoBehaviour
             PauseGame();
             pauseButton.Select();
         }
-        
+
     }
     void PauseGame()
     {
         if (gameIsPaused)
         {
             Time.timeScale = 0f;
-           
-           
-            
+            shooting.enabled = false;
+
+            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button9))
+            {
+
+            }
         }
         else
         {
@@ -50,12 +55,12 @@ public class PauseMenu : MonoBehaviour
             {
                 Time.timeScale = 1f;
                 pMenu.SetActive(false);
-               
+                shooting.enabled = true;
             }
 
             Time.timeScale = 1f;
             pMenu.SetActive(false);
-           
+            shooting.enabled = true;
         }
     }
 
@@ -70,10 +75,10 @@ public class PauseMenu : MonoBehaviour
         confirmHubMenu.SetActive(true);
     }
 
-    public void ConfirmHubExit(string sceneName)
+    public void ConfirmHubExit()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadSceneAsync(sceneName);
+        SceneManager.LoadSceneAsync("Hub");
     }
 
     public void DenyHubExit()

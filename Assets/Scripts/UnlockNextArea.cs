@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UnlockNextArea : MonoBehaviour
 {
-    public PauseMenu paus;
+    public GameplayPauseMenu paus;
     public DialogueController control;
     public GameObject nextArea;
     public GameObject interact;
