@@ -114,7 +114,7 @@ public class ShopButtons : MonoBehaviour
         skippysUI.SetActive(false);
         controller.activatorBool = false;
         unlock.skips.SetActive(true);
-        unlock.paus.shooting.enabled = true;
+       // unlock.paus.shooting.enabled = true;
     }
 
     public void notEnoughMoolaa()
