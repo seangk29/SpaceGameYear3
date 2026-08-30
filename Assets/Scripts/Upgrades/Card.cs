@@ -17,7 +17,6 @@ public class Card : MonoBehaviour
     private CardSO cardInfo;
 
     PlayerControls controls;
-    CardSelector cardSelector;
     GameManager gameManager;
 
 
@@ -97,12 +96,14 @@ public class Card : MonoBehaviour
 
         if (gameManager.currentState == GameManager.GameState.CardSelection)
         {
-            OnSelect();
-
-            select.acceptUpgrade = true;
+            if (currentlySelected)
+            {
+                OnSelect();
+                select.acceptUpgrade = true;
+            }
             
             
-
+            
         }
 
        

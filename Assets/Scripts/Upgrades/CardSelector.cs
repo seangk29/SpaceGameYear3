@@ -132,6 +132,8 @@ public class CardSelector : MonoBehaviour
             c1Animator.SetTrigger("OffScreen");
             c2Animator.SetTrigger("OffScreen");
             c3Animator.SetTrigger("OffScreen");
+
+         
         }
     }
 
