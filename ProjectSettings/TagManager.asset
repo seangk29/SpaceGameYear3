@@ -50,6 +50,7 @@ TagManager:
   - checkpoint
   - Intro
   - HubDialogue
+  - cardSelector
   layers:
   - Default
   - TransparentFX

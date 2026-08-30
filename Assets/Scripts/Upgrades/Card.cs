@@ -20,14 +20,22 @@ public class Card : MonoBehaviour
     CardSelector cardSelector;
     GameManager gameManager;
 
+
+
+
+    public CardSelector select;
+
     private void Awake()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameMg").GetComponent<GameManager>();
+
+        select = GameObject.FindGameObjectWithTag("cardSelector").GetComponent<CardSelector>();
 
         controls = new PlayerControls();
         controls.Gameplay.UIAccept.performed += ctx => AcceptUpgrade();
     }
 
+   
     public void Setup(CardSO card)
     { 
         cardInfo = card;
@@ -90,10 +98,17 @@ public class Card : MonoBehaviour
         if (gameManager.currentState == GameManager.GameState.CardSelection)
         {
             OnSelect();
+
+            select.acceptUpgrade = true;
+            
+            
+
         }
 
-
        
+
+
+
     }
 
 }

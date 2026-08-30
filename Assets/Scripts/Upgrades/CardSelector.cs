@@ -11,14 +11,17 @@ public class CardSelector : MonoBehaviour
     public int currentHovered;
 
     public Card card1;
+    public Animator c1Animator;
     public Card card2;
+    public Animator c2Animator;
     public Card card3;
+    public Animator c3Animator;
 
     public CardManager cardManager;
     public GameManager gameManager;
 
-
-
+    public bool acceptUpgrade = false;
+    public bool animCheck = true;
 
     PlayerControls controls;
 
@@ -44,15 +47,31 @@ public class CardSelector : MonoBehaviour
 
     private void Start()
     {
-        
+        if (card1 == null && card2 == null && card3 == null)
+        {
+            card1 = GameObject.FindGameObjectWithTag("card1").GetComponentInChildren<Card>();
+            c1Animator = GameObject.FindGameObjectWithTag("card1").GetComponentInChildren<Animator>();
 
-        
+            card2 = GameObject.FindGameObjectWithTag("card2").GetComponentInChildren<Card>();
+            c2Animator = GameObject.FindGameObjectWithTag("card2").GetComponentInChildren<Animator>();
+
+            card3 = GameObject.FindGameObjectWithTag("card3").GetComponentInChildren<Card>();
+            c3Animator = GameObject.FindGameObjectWithTag("card3").GetComponentInChildren<Animator>();
+        }
+
+
+        c1Animator.SetTrigger("OffScreen");
+        c2Animator.SetTrigger("OffScreen"); 
+        c3Animator.SetTrigger("OffScreen");
+
     }
 
     private void Update()
     {
         if (gameManager.currentState == GameManager.GameState.CardSelection)
         {
+
+            cardCheck();
             //controls.Gameplay.Enable();
             if (currentHovered <= 0) currentHovered = 3;
             if (currentHovered >= 4) currentHovered = 1;
@@ -63,8 +82,13 @@ public class CardSelector : MonoBehaviour
             if (card1 == null && card2 == null && card3 == null)
             {
                 card1 = GameObject.FindGameObjectWithTag("card1").GetComponentInChildren<Card>();
+                c1Animator = GameObject.FindGameObjectWithTag("card1").GetComponentInChildren<Animator>();
+
                 card2 = GameObject.FindGameObjectWithTag("card2").GetComponentInChildren<Card>();
+                c2Animator = GameObject.FindGameObjectWithTag("card2").GetComponentInChildren<Animator>();
+
                 card3 = GameObject.FindGameObjectWithTag("card3").GetComponentInChildren<Card>();
+                c3Animator = GameObject.FindGameObjectWithTag("card3").GetComponentInChildren<Animator>();
             }
 
             switch (currentHovered)
@@ -74,22 +98,55 @@ public class CardSelector : MonoBehaviour
                     card2.currentlySelected = false;
                     card3.currentlySelected = false;
                     card1.changeSelection();
+                    c1Animator.SetTrigger("Selected");
+                    c2Animator.SetTrigger("Idle");
+                    c3Animator.SetTrigger("Idle");
                     break;
                 case 2:
                     card1.currentlySelected = false;
                     card2.currentlySelected = true;
                     card3.currentlySelected = false;
                     card2.changeSelection();
+                    c1Animator.SetTrigger("Idle");
+                    c2Animator.SetTrigger("Selected");
+                    c3Animator.SetTrigger("Idle");
                     break;
                 case 3:
                     card1.currentlySelected = false;
                     card2.currentlySelected = false;
                     card3.currentlySelected = true;
                     card3.changeSelection();
+                    c1Animator.SetTrigger("Idle");
+                    c2Animator.SetTrigger("Idle");
+                    c3Animator.SetTrigger("Selected");
                     break;
             }
+
+           
+        }
+
+
+        if (acceptUpgrade == true)
+        {
+
+            c1Animator.SetTrigger("OffScreen");
+            c2Animator.SetTrigger("OffScreen");
+            c3Animator.SetTrigger("OffScreen");
         }
     }
+
+    void cardCheck()
+    {
+        if (gameManager.currentState == GameManager.GameState.CardSelection && animCheck)
+        {
+            c1Animator.SetTrigger("Idle");
+            c2Animator.SetTrigger("Idle");
+            c3Animator.SetTrigger("Idle");
+            animCheck = false;
+
+        }
+    }
+
 
     void MoveLeft()
     {
