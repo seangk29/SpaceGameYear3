@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -15,6 +16,25 @@ public class GameplayPauseMenu : MonoBehaviour
 
     public Button pauseButton;
 
+    PlayerControls controls;
+
+
+    void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Gameplay.Disable();
+    }
+
+    private void Awake()
+    {
+        controls = new PlayerControls();
+
+        controls.Gameplay.Pause.performed += ctx => PlayerPausesGame();
+    }
 
     private void Start()
     {
@@ -27,16 +47,23 @@ public class GameplayPauseMenu : MonoBehaviour
     {
         shooting = GameObject.FindGameObjectWithTag("GunPos").GetComponent<PlayerShooting>();
 
+        PlayerPausesGame();
+        
 
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button9))
+    }
+
+    void PlayerPausesGame()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) || controls.Gameplay.Pause.IsPressed())
         {
-            gameIsPaused = !gameIsPaused;
+            gameIsPaused = true;
             pMenu.SetActive(true);
             PauseGame();
             pauseButton.Select();
         }
-
     }
+
+
     void PauseGame()
     {
         if (gameIsPaused)
@@ -44,14 +71,14 @@ public class GameplayPauseMenu : MonoBehaviour
             Time.timeScale = 0f;
             shooting.enabled = false;
 
-            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button9))
+            if (Input.GetKeyDown(KeyCode.Escape) || controls.Gameplay.Pause.IsPressed())
             {
 
             }
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button9))
+            if (Input.GetKeyDown(KeyCode.Escape) || controls.Gameplay.Pause.IsPressed())
             {
                 Time.timeScale = 1f;
                 pMenu.SetActive(false);
@@ -61,6 +88,7 @@ public class GameplayPauseMenu : MonoBehaviour
             Time.timeScale = 1f;
             pMenu.SetActive(false);
             shooting.enabled = true;
+            gameIsPaused = false;
         }
     }
 

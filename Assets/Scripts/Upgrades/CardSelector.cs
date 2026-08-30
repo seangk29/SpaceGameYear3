@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem.LowLevel;
+using UnityEngine.UI;
+
 
 public class CardSelector : MonoBehaviour
 {
@@ -15,12 +17,36 @@ public class CardSelector : MonoBehaviour
     public CardManager cardManager;
     public GameManager gameManager;
 
-    //PlayerControls controls;
+
+
+
+    PlayerControls controls;
 
     private void Awake()
     {
-        //controls = new PlayerControls();
+        controls = new PlayerControls();
+
+        controls.Gameplay.UILeft.performed += ctx => MoveLeft();
+        controls.Gameplay.UIRight.performed += ctx => MoveRight();
+
         gameManager = GameObject.FindGameObjectWithTag("GameMg").GetComponentInChildren<GameManager>();
+    }
+
+    void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Gameplay.Disable();
+    }
+
+    private void Start()
+    {
+        
+
+        
     }
 
     private void Update()
@@ -31,9 +57,8 @@ public class CardSelector : MonoBehaviour
             if (currentHovered <= 0) currentHovered = 3;
             if (currentHovered >= 4) currentHovered = 1;
 
-            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.Joystick1Button7)) currentHovered += 1; /*|| controls.Gameplay.UILeft.IsPressed()) currentHovered += 1;*/
-            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.Joystick1Button6)) currentHovered -= 1; /*|| controls.Gameplay.UIRight.IsPressed()) currentHovered -= 1;*/
-
+            MoveLeft();
+            MoveRight();
 
             if (card1 == null && card2 == null && card3 == null)
             {
@@ -64,6 +89,19 @@ public class CardSelector : MonoBehaviour
                     break;
             }
         }
+    }
+
+    void MoveLeft()
+    {
+       // if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.LeftArrow) || controls.Gameplay.UILeft.IsPressed()) currentHovered += 1;
+        currentHovered -= 1;
+    }
+
+    void MoveRight()
+    {
+        //if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.RightArrow) || controls.Gameplay.UIRight.IsPressed()) currentHovered -= 1;
+        currentHovered += 1;
+
     }
 
     public void disableUIControls()

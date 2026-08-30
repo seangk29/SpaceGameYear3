@@ -139,6 +139,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "a4ed009a-38f5-498e-b9f9-0dd911e7e81e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -366,7 +375,7 @@
                     "name": "",
                     "id": "ef9a1e98-4ae9-4b2b-a0cb-d9b9bdafada8",
                     "path": "<Gamepad>/dpad/left",
-                    "interactions": "",
+                    "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "",
                     "action": "UI Left",
@@ -377,7 +386,7 @@
                     "name": "",
                     "id": "f595857b-d168-4136-9ca8-d105b83889c6",
                     "path": "<Gamepad>/leftStick/left",
-                    "interactions": "",
+                    "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "",
                     "action": "UI Left",
@@ -388,7 +397,7 @@
                     "name": "",
                     "id": "aada370e-b335-4aee-bac5-caed25187520",
                     "path": "<Gamepad>/dpad/right",
-                    "interactions": "",
+                    "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "",
                     "action": "UI Right",
@@ -399,7 +408,7 @@
                     "name": "",
                     "id": "82e05031-48a7-4874-a2f3-d2ec705988ca",
                     "path": "<Gamepad>/leftStick/right",
-                    "interactions": "",
+                    "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "",
                     "action": "UI Right",
@@ -410,7 +419,7 @@
                     "name": "",
                     "id": "31ff0821-799e-4d42-9a48-3f5a24907603",
                     "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
+                    "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "",
                     "action": "UI Accept",
@@ -447,6 +456,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4b028388-05fa-4f25-bf4c-6f6e3cbc04de",
+                    "path": "<Gamepad>/start",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

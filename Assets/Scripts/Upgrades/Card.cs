@@ -23,6 +23,9 @@ public class Card : MonoBehaviour
     private void Awake()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameMg").GetComponent<GameManager>();
+
+        controls = new PlayerControls();
+        controls.Gameplay.UIAccept.performed += ctx => AcceptUpgrade();
     }
 
     public void Setup(CardSO card)
@@ -33,8 +36,17 @@ public class Card : MonoBehaviour
         cardTextRenderer.text = card.cardText;
         cardDescRenderer.text = card.descText;
 
-        //controls = new PlayerControls();
-        //controls.Gameplay.Enable();
+       
+    }
+
+    void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Gameplay.Disable();
     }
 
     private void Update()
@@ -44,11 +56,7 @@ public class Card : MonoBehaviour
         else
             currentlySelectedIndicator.SetActive(false);
 
-        if (gameManager.currentState == GameManager.GameState.CardSelection)
-        {
-            if (currentlySelected && Input.GetKeyDown(KeyCode.Space) || currentlySelected && Input.GetKeyDown(KeyCode.Joystick1Button1)/* || currentlySelected && controls.Gameplay.UIAccept.IsPressed()*/)
-                OnSelect();
-        }
+        
     }
 
     public void OnMouseDown()
@@ -75,4 +83,17 @@ public class Card : MonoBehaviour
         else
             currentlySelectedIndicator.SetActive(false);
     }
+
+    void AcceptUpgrade()
+    {
+
+        if (gameManager.currentState == GameManager.GameState.CardSelection)
+        {
+            OnSelect();
+        }
+
+
+       
+    }
+
 }

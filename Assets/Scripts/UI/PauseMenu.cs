@@ -16,25 +16,50 @@ public class PauseMenu : MonoBehaviour
 
     public Button pauseButton;
 
+    PlayerControls controls;
 
-    private void Start()
+    void OnEnable()
     {
-      
+        controls.Gameplay.Enable();
     }
+
+    void OnDisable()
+    {
+        controls.Gameplay.Disable();
+    }
+
+
+    private void Awake()
+    {
+        controls = new PlayerControls();
+
+        controls.Gameplay.Pause.performed += ctx => PlayerPausesGame();
+    }
+
+
+
     private void Update()
     {
-      
+
+        PlayerPausesGame();
+
+    }
 
 
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button9))
+    void PlayerPausesGame()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) || controls.Gameplay.Pause.IsPressed())
         {
-            gameIsPaused = !gameIsPaused;
+            //gameIsPaused = !gameIsPaused;
+            gameIsPaused = true;
             pMenu.SetActive(true);
             PauseGame();
             pauseButton.Select();
         }
-        
     }
+
+
+
     void PauseGame()
     {
         if (gameIsPaused)
@@ -46,7 +71,7 @@ public class PauseMenu : MonoBehaviour
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button9))
+            if (Input.GetKeyDown(KeyCode.Escape) || controls.Gameplay.Pause.IsPressed())
             {
                 Time.timeScale = 1f;
                 pMenu.SetActive(false);
@@ -55,6 +80,7 @@ public class PauseMenu : MonoBehaviour
 
             Time.timeScale = 1f;
             pMenu.SetActive(false);
+            gameIsPaused = false;
            
         }
     }

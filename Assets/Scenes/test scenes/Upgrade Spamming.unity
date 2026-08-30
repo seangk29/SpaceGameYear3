@@ -172,6 +172,8 @@ MonoBehaviour:
   maxHealth: 5
   shield: 1
   maxShield: 1
+  numLives: 0
+  spawn: {fileID: 0}
   regenShieldTimer: 2
   baseRegenShieldTimer: 2
   speed: 4
@@ -205,7 +207,10 @@ MonoBehaviour:
   bossCount: 0
   score: 0
   spaceMoney: 0
+  previousMoney: 0
   kills: 0
+  cutSceneCounter: 0
+  hasMetAuora: 0
 --- !u!4 &9743552
 Transform:
   m_ObjectHideFlags: 0
@@ -650,6 +655,7 @@ MonoBehaviour:
   oldWaveNumber: 0
   maxWaves: 1
   currentWaveGO: {fileID: 0}
+  alreadySelectedWaves: []
   finalizedWaves:
   - {fileID: 0}
   - {fileID: 0}
@@ -2367,7 +2373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: -2253911629886400664, guid: 0667d67a8e8ca2d4ba85bc9a5d052681, type: 3}
+  m_FirstSelected: {fileID: 1038943919}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1143658477
@@ -2476,7 +2482,13 @@ MonoBehaviour:
   damage: 1
   specialDamage: 2
   spBulletHealth: 1
+  specialIndic: 0
   checkObject: 0
+  activeSpin: 0
+  activeGunBot: 0
+  activeDashAttack: 0
+  gunBotCount: 0
+  spinCount: 0
 --- !u!114 &1183223995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2872,8 +2884,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c98153a10385dc5439e5da7044142958, type: 2}
   - {fileID: 11400000, guid: 5aeead8a0b7b18e42b704cb59a222c5d, type: 2}
   - {fileID: 11400000, guid: ee7272ef21222d346be5ab436af83811, type: 2}
+  cardRemover: {fileID: 0}
   selectedCardType: 0
   selectedCardValue: 0
+  selectedCardFloatValue: 0
+  health: {fileID: 0}
 --- !u!4 &1653525501
 Transform:
   m_ObjectHideFlags: 0

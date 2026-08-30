@@ -5053,6 +5053,7 @@ MonoBehaviour:
   card1: {fileID: 0}
   card2: {fileID: 0}
   card3: {fileID: 0}
+  button: {fileID: 1479115730}
   cardManager: {fileID: 1653525500}
   gameManager: {fileID: 0}
 --- !u!4 &1303106772
@@ -5863,6 +5864,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6863645607111567945, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
   m_PrefabInstance: {fileID: 96879818}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1479115730 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8469039462743692894, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+  m_PrefabInstance: {fileID: 96879818}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1488689673
 GameObject:
   m_ObjectHideFlags: 0

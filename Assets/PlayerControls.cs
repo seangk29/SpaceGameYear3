@@ -161,6 +161,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""a4ed009a-38f5-498e-b9f9-0dd911e7e81e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -388,7 +397,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""ef9a1e98-4ae9-4b2b-a0cb-d9b9bdafada8"",
                     ""path"": ""<Gamepad>/dpad/left"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press(behavior=1)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""UI Left"",
@@ -399,7 +408,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""f595857b-d168-4136-9ca8-d105b83889c6"",
                     ""path"": ""<Gamepad>/leftStick/left"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press(behavior=1)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""UI Left"",
@@ -410,7 +419,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""aada370e-b335-4aee-bac5-caed25187520"",
                     ""path"": ""<Gamepad>/dpad/right"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press(behavior=1)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""UI Right"",
@@ -421,7 +430,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""82e05031-48a7-4874-a2f3-d2ec705988ca"",
                     ""path"": ""<Gamepad>/leftStick/right"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press(behavior=1)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""UI Right"",
@@ -432,7 +441,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""31ff0821-799e-4d42-9a48-3f5a24907603"",
                     ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press(behavior=1)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""UI Accept"",
@@ -471,6 +480,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4b028388-05fa-4f25-bf4c-6f6e3cbc04de"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": ""Press(behavior=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -494,6 +514,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Gameplay_RotateRight = m_Gameplay.FindAction("RotateRight", throwIfNotFound: true);
         m_Gameplay_LeftRotate = m_Gameplay.FindAction("LeftRotate", throwIfNotFound: true);
         m_Gameplay_Interact = m_Gameplay.FindAction("Interact", throwIfNotFound: true);
+        m_Gameplay_Pause = m_Gameplay.FindAction("Pause", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -575,6 +596,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_RotateRight;
     private readonly InputAction m_Gameplay_LeftRotate;
     private readonly InputAction m_Gameplay_Interact;
+    private readonly InputAction m_Gameplay_Pause;
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
@@ -594,6 +616,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         public InputAction @RotateRight => m_Wrapper.m_Gameplay_RotateRight;
         public InputAction @LeftRotate => m_Wrapper.m_Gameplay_LeftRotate;
         public InputAction @Interact => m_Wrapper.m_Gameplay_Interact;
+        public InputAction @Pause => m_Wrapper.m_Gameplay_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -648,6 +671,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -697,6 +723,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -731,5 +760,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnRotateRight(InputAction.CallbackContext context);
         void OnLeftRotate(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }
