@@ -1015,6 +1015,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3859364147477132782, guid: 4951273c7390e1a4ea74ae67f844a696, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 578546172}
+    - target: {fileID: 3859364147477132782, guid: 4951273c7390e1a4ea74ae67f844a696, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1404274391
+      objectReference: {fileID: 0}
     - target: {fileID: 4245743798594365122, guid: 4951273c7390e1a4ea74ae67f844a696, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 102.19998
