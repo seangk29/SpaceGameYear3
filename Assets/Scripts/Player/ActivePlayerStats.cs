@@ -69,8 +69,7 @@ public class ActivePlayerHealth : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player1").GetComponent<Animator>();
         playerMove = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
 
-        cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Animator>();
-
+        
         maxHealth = playerStats.maxHealth;
         health = maxHealth;
 
@@ -205,10 +204,12 @@ public class ActivePlayerHealth : MonoBehaviour
     private void Update()
     {
 
-       
-        
-        
-        
+
+        cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Animator>();
+
+        player = GameObject.FindGameObjectWithTag("Player1").GetComponent<Animator>();
+        playerMove = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+
 
 
 
