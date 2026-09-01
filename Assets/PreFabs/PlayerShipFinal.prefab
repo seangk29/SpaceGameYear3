@@ -959,7 +959,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   enemyBullet: {fileID: 0}
   HUD: {fileID: 0}
-  healthFlick: {fileID: 0}
   flicker: {fileID: 0}
   player: {fileID: 0}
   cam: {fileID: 0}
@@ -2797,7 +2796,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   enemyBullet: {fileID: 0}
   HUD: {fileID: 0}
-  healthFlick: {fileID: 0}
   flicker: {fileID: 0}
   player: {fileID: 0}
   cam: {fileID: 0}
@@ -4839,7 +4837,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   enemyBullet: {fileID: 0}
   HUD: {fileID: 0}
-  healthFlick: {fileID: 0}
   flicker: {fileID: 0}
   player: {fileID: 0}
   cam: {fileID: 0}
@@ -6764,6 +6761,8 @@ GameObject:
   - component: {fileID: 6217109527498254700}
   - component: {fileID: 291641128631099326}
   - component: {fileID: -7203587429984523363}
+  - component: {fileID: 588487549988658814}
+  - component: {fileID: 6979107884334082788}
   m_Layer: 6
   m_Name: PlayerShipFinal
   m_TagString: Player
@@ -6829,7 +6828,6 @@ MonoBehaviour:
   sprite: {fileID: 2913796824387255504}
   enemyBullet: {fileID: 0}
   HUD: {fileID: 0}
-  healthFlick: {fileID: 0}
   flicker: {fileID: 0}
   player: {fileID: 7422697933036058719}
   cam: {fileID: 0}
@@ -7186,6 +7184,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstTutorial: {fileID: 0}
+--- !u!114 &588487549988658814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9036009820611157074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5451ef87f80d4245a7ec9fdd8b116df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondTutorial: {fileID: 0}
+--- !u!114 &6979107884334082788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9036009820611157074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b51545339bddfe4fba289cd8bfd47ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 1469651522427813453}
 --- !u!1001 &59767049634889980
 PrefabInstance:
   m_ObjectHideFlags: 0

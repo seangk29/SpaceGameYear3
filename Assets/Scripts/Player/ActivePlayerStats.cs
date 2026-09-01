@@ -43,7 +43,7 @@ public class ActivePlayerHealth : MonoBehaviour
 
     public GameObject HUD;
 
-    public GameObject healthFlick;
+   // public GameObject healthFlick;
     public Animator flicker;
     public Animator player;
     public Animator cam;
@@ -61,10 +61,10 @@ public class ActivePlayerHealth : MonoBehaviour
 
         HUD = GameObject.FindGameObjectWithTag("HUD").gameObject;
 
-        healthFlick = GameObject.FindGameObjectWithTag("Flicker").gameObject;
+        //healthFlick = GameObject.FindGameObjectWithTag("Flicker").gameObject;
         flicker = GameObject.FindGameObjectWithTag("Flicker").GetComponent<Animator>();
 
-        healthFlick.SetActive(false);
+       // healthFlick.SetActive(false);
 
         player = GameObject.FindGameObjectWithTag("Player1").GetComponent<Animator>();
         playerMove = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
@@ -114,6 +114,7 @@ public class ActivePlayerHealth : MonoBehaviour
             Daudio.Play();
 
             cam.SetTrigger("TakeDamage");
+           
             
             if (shieldHealth <= 0)
             {
@@ -123,6 +124,7 @@ public class ActivePlayerHealth : MonoBehaviour
                 sprite.gameObject.layer = 8;
                 StartCoroutine(VisualIndicator(Color.red));
                 cam.SetTrigger("Idle");
+              
             }
 
             if (shieldHealth > 0)
@@ -133,6 +135,7 @@ public class ActivePlayerHealth : MonoBehaviour
                 sprite.gameObject.layer = 8;
                 StartCoroutine(VisualIndicator(Color.cyan));
                 cam.SetTrigger("Idle");
+              
             }
         }
 
@@ -141,6 +144,7 @@ public class ActivePlayerHealth : MonoBehaviour
             Daudio.Play();
 
             cam.SetTrigger("TakeDamage");
+            
 
             if (shieldHealth <= 0)
             {
@@ -149,7 +153,7 @@ public class ActivePlayerHealth : MonoBehaviour
                 invul = 1f;
                 sprite.gameObject.layer = 8;
                 StartCoroutine(VisualIndicator(Color.red));
-
+               
                 cam.SetTrigger("Idle");
 
             }
@@ -165,6 +169,7 @@ public class ActivePlayerHealth : MonoBehaviour
                 StartCoroutine(VisualIndicator(Color.cyan));
 
                 cam.SetTrigger("Idle");
+              
 
                 /* if (SpRend && shieldHealth > 0)
                  {
@@ -228,14 +233,15 @@ public class ActivePlayerHealth : MonoBehaviour
 
         if (health == 1)
         {
-            healthFlick.SetActive(true);
-            flicker.Play("Cosmo Screen Dying 1_Clip");
+            //healthFlick.SetActive(true);
+          //  flicker.Play("Cosmo Screen Dying 1_Clip");
             player.SetTrigger("Damaged");
-            
-        }
-        else 
-        { healthFlick.SetActive(false);
+            flicker.SetTrigger("AlmostDead");
 
+        }
+        else if (health > 1)
+        {
+            flicker.SetTrigger("HealthGood");
             player.SetTrigger("Idle");
         }
 
@@ -287,7 +293,7 @@ public class ActivePlayerHealth : MonoBehaviour
         GetComponentInChildren<SpriteRenderer>().color = Color.white;
     }
 
-    IEnumerator Die()
+   public  IEnumerator Die()
     {
 
         player.SetTrigger("Dead");
