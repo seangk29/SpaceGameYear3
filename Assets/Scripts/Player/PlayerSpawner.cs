@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerSpawner : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class PlayerSpawner : MonoBehaviour
     public GameObject deathScreen;
     GameObject playerInstance;
     public PlayerData playerData;
+
+    public bool died = false;
+
+    public Button deathScreenButton;
    
 
     float respawnTimer;
@@ -54,11 +59,18 @@ public class PlayerSpawner : MonoBehaviour
             }
 
         }
-        if (playerInstance == null && numLives == 0)
+        if (playerInstance == null && numLives == 0 && died == false)
         {
             deathScreen.SetActive(true);
+            died = true;
             Time.timeScale = 0.25f;
 
+        }
+
+        if (died)
+        {
+            deathScreenButton.Select();
+           
         }
       
     }
