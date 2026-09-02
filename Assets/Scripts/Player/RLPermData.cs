@@ -71,22 +71,22 @@ public class RLPermData : MonoBehaviour
         {
             rlTempData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
         }
-        else
-            return;
+       // else
+          //  return;
 
         if (playerMovement == null)
         {
             playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         }
-        else
-            return;
+       // else
+          //  return;
 
         if (specialShotHandler == null)
         {
             specialShotHandler = GameObject.FindGameObjectWithTag("Player").GetComponent<SpecialShotHandler>();
         }
-        else
-            return;
+       // else
+          //  return;
     }
 
     public void MaxHealthUpgrade(int value)

@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool gameIsPaused;
 
+    //public bool pausePlease = true;
+
   
     public GameObject pMenu;
     public GameObject confirmHubMenu;
@@ -41,7 +43,10 @@ public class PauseMenu : MonoBehaviour
     private void Update()
     {
 
-        PlayerPausesGame();
+       PlayerPausesGame();
+
+
+
 
     }
 
@@ -50,13 +55,14 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) || controls.Gameplay.Pause.IsPressed())
         {
-            //gameIsPaused = !gameIsPaused;
+           //gameIsPaused = !gameIsPaused;
             gameIsPaused = true;
             pMenu.SetActive(true);
             PauseGame();
             pauseButton.Select();
-        }
+               
     }
+}
 
 
 
@@ -75,6 +81,7 @@ public class PauseMenu : MonoBehaviour
             {
                 Time.timeScale = 1f;
                 pMenu.SetActive(false);
+               
                
             }
 

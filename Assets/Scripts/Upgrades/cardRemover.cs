@@ -14,8 +14,8 @@ public class cardRemover : MonoBehaviour
         {
             cardManager = GameObject.FindGameObjectWithTag("cardManager").GetComponent<CardManager>();
         }
-        else
-            return;
+        //else
+           // return;
     }
 
     public void removeCard()
