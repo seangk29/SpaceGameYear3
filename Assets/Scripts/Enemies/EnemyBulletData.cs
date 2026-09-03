@@ -14,10 +14,16 @@ public class EnemyBulletData : MonoBehaviour
 
     public int health;
 
+    public GameObject enemy;
+
+    public GameManager gameMg;
+
 
     private void Start()
     {
         Combat = true;
+
+       gameMg = GameObject.FindGameObjectWithTag("GameMg").GetComponent<GameManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -44,5 +50,13 @@ public class EnemyBulletData : MonoBehaviour
         { 
             Destroy(gameObject);
         }
+
+       if (gameMg.currentState == GameManager.GameState.CardSelection)
+        {
+            Destroy(gameObject);
+        }
+
+        
+        
     }
 }

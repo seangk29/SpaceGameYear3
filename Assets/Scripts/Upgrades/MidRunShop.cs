@@ -71,50 +71,50 @@ public class MidRunShop : MonoBehaviour
         switch (indic)
         {
             case 1:
-                if (PlayerData.score >= 200)
+                if (PlayerData.score >= 2000)
                 {
                     PermaPlayerStats.spinUnlock();
-                    PlayerData.score = PlayerData.score - 200;
+                    PlayerData.score = PlayerData.score - 2000;
                 }
                 else notEnough.SetActive(true);
                 break;
             case 2:
-                if (PlayerData.score >= 200)
+                if (PlayerData.score >= 5000)
                 {
                     PermaPlayerStats.spreadUnlockUpgraded1(1);
-                    PlayerData.score = PlayerData.score - 200;
+                    PlayerData.score = PlayerData.score - 5000;
                 }
                 else notEnough.SetActive(true);
                 break;
             case 3:
-                if (PlayerData.score >= 200)
+                if (PlayerData.score >= 6000)
                 {
                     PermaPlayerStats.explodeUnlockUpgraded1(1);
-                    PlayerData.score = PlayerData.score - 200;
+                    PlayerData.score = PlayerData.score - 6000;
                 }
                 else notEnough.SetActive(true);
                 break;
             case 4:
-                if (PlayerData.score >= 200)
+                if (PlayerData.score >= 1000)
                 {
                     PermaPlayerStats.GunBot();
-                    PlayerData.score = PlayerData.score - 200;
+                    PlayerData.score = PlayerData.score - 1000;
                 }
                 else notEnough.SetActive(true);
                 break;
             case 5:
-                if (PlayerData.score >= 200)
+                if (PlayerData.score >= 1500)
                 {
                     PermaPlayerStats.ricochetUnlockUpgraded1(1); 
-                    PlayerData.score = PlayerData.score - 200;
+                    PlayerData.score = PlayerData.score - 1500;
                 }
                 else notEnough.SetActive(true);
                 break;
             case 6:
-                if (PlayerData.score >= 200)
+                if (PlayerData.score >= 6000)
                 {
                     PermaPlayerStats.explodeUnlockUpgraded1(1);
-                    PlayerData.score = PlayerData.score - 200;
+                    PlayerData.score = PlayerData.score - 6000;
                 }
                 else notEnough.SetActive(true);
                 break;
