@@ -18,12 +18,12 @@ public class SceneChanger : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("DHDHHFHD");
+      //  Debug.Log("DHDHHFHD");
 
         if (Input.GetKey(KeyCode.E))
         {
             NextLevel();
-            Debug.Log("DHDHHFHD");
+            //Debug.Log("DHDHHFHD");
         }
     }
 
@@ -52,6 +52,12 @@ public class SceneChanger : MonoBehaviour
     {
         StartCoroutine(MakeTransition("Intro Scene"));
     }
+
+    public void TransitionToScene(string sceneName)
+    {
+        StartCoroutine(MakeTransition(sceneName));
+    }
+    
 
     // all this is for reseting stats on retry
     void OnEnable()
@@ -94,7 +100,7 @@ public class SceneChanger : MonoBehaviour
         
     }
 
-    IEnumerator MakeTransition(string sceneName)
+     public IEnumerator MakeTransition(string sceneName)
     {
         transition.SetTrigger("Transition");
 

@@ -60,6 +60,9 @@ EditorBuildSettings:
     path: Assets/Scenes/test scenes/IntroFightScene.unity
     guid: a1da49cb5f6570c47a4301ebe972cff2
   - enabled: 1
+    path: Assets/Scenes/Run Overview.unity
+    guid: d06f5f60e1b81334db2ecbe6facff139
+  - enabled: 1
     path: Assets/Scenes/Tutorials/Tutorial_2.unity
     guid: ab1b1c58c7f5280468ddb63e1a0be634
   m_configObjects:

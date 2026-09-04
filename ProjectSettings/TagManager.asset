@@ -52,6 +52,7 @@ TagManager:
   - HubDialogue
   - cardSelector
   - tutorialDeath
+  - runOverview
   layers:
   - Default
   - TransparentFX

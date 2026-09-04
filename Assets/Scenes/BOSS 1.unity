@@ -2901,14 +2901,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1700428162}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: TransitionToScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: ResetStats
+          m_StringArgument: Run Overview
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &742422772
@@ -7845,19 +7845,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7536240902080345780, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7536240902080345780, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7963603724472803769}
+      objectReference: {fileID: 1700428162}
     - target: {fileID: 7536240902080345780, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ConfirmHubExit
+      value: TransitionToScene
       objectReference: {fileID: 0}
     - target: {fileID: 7536240902080345780, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameplayPauseMenu, Assembly-CSharp
+      value: SceneChanger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7536240902080345780, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Run Overview
       objectReference: {fileID: 0}
     - target: {fileID: 8469039462743692894, guid: 5e45fb8d8224478439b0ada3de9e9165, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HUD : MonoBehaviour
@@ -12,6 +13,7 @@ public class HUD : MonoBehaviour
     public PlayerSpawner spawn;
     public PlayerShooting shooting;
     public PermaPlayerStats shotHandler;
+    public RunOverview run;
 
     public TextMeshProUGUI killsTMP;
     public TextMeshProUGUI timerTMP;
@@ -31,9 +33,30 @@ public class HUD : MonoBehaviour
     private int seconds;
     private float miliseconds;
 
+    public GameObject killMe;
+
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Run Overview")
+            Destroy(killMe);
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
 
     private void Start()
     {
+       
+        
         playerData = GameObject.FindGameObjectWithTag("RLPermData").GetComponent<PlayerData>();
         spawn = GameObject.FindGameObjectWithTag("Spawner").GetComponent<PlayerSpawner>();
        
@@ -65,7 +88,13 @@ public class HUD : MonoBehaviour
             shotHandler = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PermaPlayerStats>();
         }
 
-       indic = shotHandler.specialIndic;
+       /* if (run == null)
+        {
+            run = GameObject.FindGameObjectWithTag("runOverview").GetComponent<RunOverview>();
+        }*/
+
+
+        indic = shotHandler.specialIndic;
 
         HPBarUpdate();
         ShieldBarUpdate();
@@ -73,7 +102,12 @@ public class HUD : MonoBehaviour
         AmmoUpdate();
         KillsUpdate();
         TimerUpdate();
+        
 
+        /*if (run.dieHud)
+        {
+            Destroy(gameObject);
+        }*/
 
     }
 

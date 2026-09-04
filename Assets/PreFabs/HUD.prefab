@@ -1518,7 +1518,7 @@ GameObject:
   - component: {fileID: 9006627879433589115}
   m_Layer: 0
   m_Name: HUD Script
-  m_TagString: Untagged
+  m_TagString: HUD
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1555,6 +1555,7 @@ MonoBehaviour:
   spawn: {fileID: 0}
   shooting: {fileID: 0}
   shotHandler: {fileID: 0}
+  run: {fileID: 0}
   killsTMP: {fileID: 6366282475530540817}
   timerTMP: {fileID: 8197274160207096155}
   health:
@@ -1617,6 +1618,7 @@ MonoBehaviour:
   - {fileID: 0}
   indic: 0
   time: 0
+  killMe: {fileID: 1831273251216879474}
 --- !u!1 &4372150613559837283
 GameObject:
   m_ObjectHideFlags: 0
