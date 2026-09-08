@@ -51,6 +51,11 @@ public class RunOverview : MonoBehaviour
       
     }
 
+    public void runCount()
+    {
+        playerData.runCounter += 1;
+    }
+
     // Update is called once per frame
     void Update()
     {

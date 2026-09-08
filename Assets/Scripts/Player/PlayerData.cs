@@ -25,6 +25,7 @@ public class PlayerData : MonoBehaviour
     public int kills = 0;
 
     public int cutSceneCounter;
+    public int runCounter;
 
     public bool hasMetAuora;
 
@@ -56,6 +57,8 @@ public class PlayerData : MonoBehaviour
         }
         score = 0;
     }
+
+   
 
     /*private void Start()
     {

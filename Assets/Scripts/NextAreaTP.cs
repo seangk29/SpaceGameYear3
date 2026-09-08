@@ -154,7 +154,7 @@ public class NextAreaTP : MonoBehaviour
             {
                 
                 
-                StartCoroutine(MakeTransition("ResetStats"));
+                StartCoroutine(MakeTransition("Run Overview"));
             }
         }
 

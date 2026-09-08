@@ -499,6 +499,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &2847606707504165136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -906,6 +908,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &5783822614816386865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1318,6 +1322,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &9032177905724975940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1735,6 +1741,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &8656112976393318902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2142,6 +2150,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &5855310675719587026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2559,6 +2569,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &1670379827650284667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2971,6 +2983,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &7124983513134524215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3383,6 +3397,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &9101737467136631251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3583,7 +3599,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260864631553775174}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -3751,7 +3767,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260864631553775174}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68b60ae0855c73449b6549af14461b68, type: 3}
   m_Name: 
@@ -3800,6 +3816,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!4 &2058856672232373795 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}
@@ -4197,6 +4215,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &3099106588101859706
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -493,6 +493,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &214967060955436364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,6 +902,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &6611150420623634733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1312,6 +1316,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &5130695233456418061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1808,6 +1814,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &1583597834715889716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2220,6 +2228,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &3587924282751430434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2632,6 +2642,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!114 &856913482403502944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2832,7 +2844,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260864631553775174}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -3049,6 +3061,8 @@ MonoBehaviour:
   Combat: 1
   Daudio: {fileID: 0}
   health: 1
+  enemy: {fileID: 0}
+  gameMg: {fileID: 0}
 --- !u!4 &2058856672232373795 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: f06e97949fd0feb4ea513bdc6881cb07, type: 3}

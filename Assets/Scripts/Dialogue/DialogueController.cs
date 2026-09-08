@@ -39,6 +39,8 @@ public class DialogueController : MonoBehaviour
     public MoveForward Ships;
     public PlayerMovement move;
     public PlayerData data;
+    public GameObject bulletForHolt;
+    public GameObject cosmoSign;
 
     public bool activatorBool = false;
 
@@ -164,6 +166,8 @@ public class DialogueController : MonoBehaviour
             Ships.enabled = true;
             move.enabled = true;
             activatorBool = true;
+            bulletForHolt.SetActive(true);
+            cosmoSign.SetActive(false);
         }
 
        
