@@ -114,8 +114,10 @@ public class ActivePlayerHealth : MonoBehaviour
             Daudio.Play();
 
             cam.SetTrigger("TakeDamage");
-           
-            
+            cam.SetTrigger("Idle");
+
+
+
             if (shieldHealth <= 0)
             {
                 playerData.score -= 50;
@@ -144,7 +146,8 @@ public class ActivePlayerHealth : MonoBehaviour
             Daudio.Play();
 
             cam.SetTrigger("TakeDamage");
-            
+            cam.SetTrigger("Idle");
+
 
             if (shieldHealth <= 0)
             {
