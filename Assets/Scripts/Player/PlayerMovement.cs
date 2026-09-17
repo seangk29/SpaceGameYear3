@@ -55,6 +55,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject SpriteRight;
 
 
+    Vector2 move;
+
     public void SpeedUpgrade()
     {
         moveSpeed = moveSpeed + 0.2f;
@@ -73,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
         controls = new PlayerControls();
 
         controls.Gameplay.Move.performed += ctx => MovePlayer();
+        controls.Gameplay.DPad.performed += ctx => move = ctx.ReadValue<Vector2>();
         controls.Gameplay.Dash.performed += ctx => Dash();
        // controls.Gameplay.LeftRotate.performed += ctx => MovePlayer();
        //controls.Gameplay.RotateRight.performed += ctx => MovePlayer();
