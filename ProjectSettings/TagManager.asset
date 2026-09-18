@@ -53,6 +53,7 @@ TagManager:
   - cardSelector
   - tutorialDeath
   - runOverview
+  - generator
   layers:
   - Default
   - TransparentFX

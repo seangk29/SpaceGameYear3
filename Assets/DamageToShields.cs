@@ -35,7 +35,7 @@ public class DamageToShields : MonoBehaviour
         if (shieldHealth <= 0)
         {
             glorg.shieldHealth = glorg.shieldHealth - 50;
-            bringBackGen = true;
+           // bringBackGen = true;
             this.gameObject.SetActive(false);
 
            

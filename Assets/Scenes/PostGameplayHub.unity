@@ -273,7 +273,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is empty text box hmm yes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acb4905b346fd954492c47cbee353ec2, type: 2}
   m_sharedMaterial: {fileID: 5843839986406288293, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -298,8 +298,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_margin: {x: 8.851547, y: 0, z: -28.767944, w: 21.391348}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &17117760
@@ -2583,6 +2583,10 @@ PrefabInstance:
       propertyPath: m_Colors.m_SelectedColor.r
       value: 0.4490565
       objectReference: {fileID: 0}
+    - target: {fileID: 4115083193574487255, guid: 996633934ac96a040b6bbad036244dc8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5081064802379610618, guid: 996633934ac96a040b6bbad036244dc8, type: 3}
       propertyPath: unlock
       value: 
@@ -2702,6 +2706,34 @@ PrefabInstance:
     - target: {fileID: 6666416350583563300, guid: 996633934ac96a040b6bbad036244dc8, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 0.2830189
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101036774144293528, guid: 996633934ac96a040b6bbad036244dc8, type: 3}
+      propertyPath: m_fontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101036774144293528, guid: 996633934ac96a040b6bbad036244dc8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: acb4905b346fd954492c47cbee353ec2, type: 2}
+    - target: {fileID: 7101036774144293528, guid: 996633934ac96a040b6bbad036244dc8, type: 3}
+      propertyPath: m_fontStyle
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101036774144293528, guid: 996633934ac96a040b6bbad036244dc8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101036774144293528, guid: 996633934ac96a040b6bbad036244dc8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4100159475878237023, guid: acb4905b346fd954492c47cbee353ec2, type: 2}
+    - target: {fileID: 7101036774144293528, guid: 996633934ac96a040b6bbad036244dc8, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101036774144293528, guid: 996633934ac96a040b6bbad036244dc8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8638105730680935560, guid: 996633934ac96a040b6bbad036244dc8, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
@@ -6327,7 +6359,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is empty text box hmm yes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acb4905b346fd954492c47cbee353ec2, type: 2}
   m_sharedMaterial: {fileID: 5843839986406288293, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6352,8 +6384,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6391,7 +6423,7 @@ MonoBehaviour:
   m_margin: {x: 8.851547, y: 0, z: -28.767944, w: 21.391348}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &474700447
@@ -7719,7 +7751,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is empty text box hmm yes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acb4905b346fd954492c47cbee353ec2, type: 2}
   m_sharedMaterial: {fileID: 5843839986406288293, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7744,8 +7776,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7783,7 +7815,7 @@ MonoBehaviour:
   m_margin: {x: 8.851547, y: 0, z: -28.767944, w: 21.391348}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &560301171
@@ -14532,7 +14564,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is empty text box hmm yes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acb4905b346fd954492c47cbee353ec2, type: 2}
   m_sharedMaterial: {fileID: 5843839986406288293, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -14557,8 +14589,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -14596,7 +14628,7 @@ MonoBehaviour:
   m_margin: {x: 8.851547, y: 0, z: -28.767944, w: 21.391348}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1122624573
@@ -14802,7 +14834,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is empty text box hmm yes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acb4905b346fd954492c47cbee353ec2, type: 2}
   m_sharedMaterial: {fileID: 5843839986406288293, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -14827,8 +14859,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -14866,7 +14898,7 @@ MonoBehaviour:
   m_margin: {x: 8.851547, y: 0, z: -28.767944, w: 21.391348}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1143658474
@@ -16902,7 +16934,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is empty text box hmm yes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acb4905b346fd954492c47cbee353ec2, type: 2}
   m_sharedMaterial: {fileID: 5843839986406288293, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -16927,8 +16959,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16966,7 +16998,7 @@ MonoBehaviour:
   m_margin: {x: 8.851547, y: 0, z: -28.767944, w: 21.391348}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1350728489
@@ -17854,7 +17886,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is empty text box hmm yes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acb4905b346fd954492c47cbee353ec2, type: 2}
   m_sharedMaterial: {fileID: 5843839986406288293, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -17879,8 +17911,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -17918,7 +17950,7 @@ MonoBehaviour:
   m_margin: {x: 8.851547, y: 0, z: -28.767944, w: 21.391348}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1426026912
@@ -18916,7 +18948,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is empty text box hmm yes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acb4905b346fd954492c47cbee353ec2, type: 2}
   m_sharedMaterial: {fileID: 5843839986406288293, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -18941,8 +18973,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -18980,7 +19012,7 @@ MonoBehaviour:
   m_margin: {x: 8.851547, y: 0, z: -28.767944, w: 21.391348}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1511378486
@@ -19134,7 +19166,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is empty text box hmm yes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acb4905b346fd954492c47cbee353ec2, type: 2}
   m_sharedMaterial: {fileID: 5843839986406288293, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -19159,8 +19191,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -19198,7 +19230,7 @@ MonoBehaviour:
   m_margin: {x: 8.851547, y: 0, z: -28.767944, w: 21.391348}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1512095530
@@ -21088,7 +21120,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is empty text box hmm yes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acb4905b346fd954492c47cbee353ec2, type: 2}
   m_sharedMaterial: {fileID: 5843839986406288293, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -21113,8 +21145,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -21152,7 +21184,7 @@ MonoBehaviour:
   m_margin: {x: 8.851547, y: 0, z: -28.767944, w: 21.391348}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1653780533
@@ -21650,7 +21682,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is empty text box hmm yes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acb4905b346fd954492c47cbee353ec2, type: 2}
   m_sharedMaterial: {fileID: 5843839986406288293, guid: 7bfa5b394631b5e4b9809592085ad0d7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -21675,8 +21707,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -21714,7 +21746,7 @@ MonoBehaviour:
   m_margin: {x: 8.851547, y: 0, z: -28.767944, w: 21.391348}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1683667564

@@ -60,6 +60,14 @@ public class GlorgusPhase1 : MonoBehaviour
 
             glorgusAttack = false;
 
+            face.enabled = false;
+
+            Quaternion rot = transform.rotation;
+
+            rot = Quaternion.Euler(0, 0, 180);
+
+            transform.rotation = rot;
+
             Atimer += Time.deltaTime;
 
             if (Atimer >= timeToShield)
@@ -69,6 +77,13 @@ public class GlorgusPhase1 : MonoBehaviour
                 glorgShield.SetActive(true);
                 glorgusAttack = true;
                 glorg.shieldHealth = 100;
+                face.enabled = true;
+
+                gen1.SetActive(true);
+                damage1.shieldHealth = 25;
+
+                gen2.SetActive(true);
+                damage2.shieldHealth = 25;
             }
 
         }
@@ -123,7 +138,7 @@ public class GlorgusPhase1 : MonoBehaviour
             phase2.enabled = true;
         }
 
-        if (damage1.bringBackGen)
+       /* if (damage1.bringBackGen)
         {
             genTimer += Time.deltaTime;
             
@@ -147,7 +162,7 @@ public class GlorgusPhase1 : MonoBehaviour
                 damage2.bringBackGen = false;
                 genTimer = 0;
             }
-        }
+        }*/
 
     }
 

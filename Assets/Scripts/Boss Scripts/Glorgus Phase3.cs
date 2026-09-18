@@ -68,20 +68,27 @@ public class GlorgusPhase3 : MonoBehaviour
 
         transform.rotation = rot;
 
-        face.enabled = true;
+       
         move.enabled = false;
 
         gen1.SetActive(true);
+        damage1.shieldHealth = 25;
+
         gen2.SetActive(true);
+        damage2.shieldHealth = 25;
+
         gen3.SetActive(true);
+        damage3.shieldHealth = 25;
+
         gen4.SetActive(true);
+        damage4.shieldHealth = 25;
 
         gun1.SetActive(false);
         gun2.SetActive(false);
         gun3.SetActive(false);
 
         glorgShield.SetActive(true);
-        glorg.shieldHealth = 100;
+        glorg.shieldHealth = 200;
         
 
     }
@@ -94,6 +101,15 @@ public class GlorgusPhase3 : MonoBehaviour
 
             glorgusAttack = false;
 
+            face.enabled = false;
+
+            Quaternion rot = transform.rotation;
+
+            rot = Quaternion.Euler(0, 0, 180);
+
+            transform.rotation = rot;
+
+
             Atimer += Time.deltaTime;
 
             if (Atimer >= timeToShield)
@@ -102,13 +118,28 @@ public class GlorgusPhase3 : MonoBehaviour
                 Atimer = 0;
                 glorgShield.SetActive(true);
                 glorgusAttack = true;
-                glorg.shieldHealth = 100;
+                glorg.shieldHealth = 200;
+
+                gen1.SetActive(true);
+                damage1.shieldHealth = 25;
+
+                gen2.SetActive(true);
+                damage2.shieldHealth = 25;
+
+                gen3.SetActive(true);
+                damage3.shieldHealth = 25;
+
+                gen4.SetActive(true);
+                damage4.shieldHealth = 25;
             }
 
         }
 
         if (glorgusAttack)
         {
+
+            face.enabled = true;
+
             Btimer += Time.deltaTime;
 
             if (Btimer >= timeToAttack)
@@ -151,57 +182,6 @@ public class GlorgusPhase3 : MonoBehaviour
         }
 
 
-        if (damage1.bringBackGen)
-        {
-            genTimer += Time.deltaTime;
-
-            if (genTimer >= genBack)
-            {
-                gen1.SetActive(true);
-                damage1.shieldHealth = 25;
-                damage1.bringBackGen = false;
-                genTimer = 0;
-            }
-        }
-
-        if (damage2.bringBackGen)
-        {
-            genTimer += Time.deltaTime;
-
-            if (genTimer >= genBack)
-            {
-                gen2.SetActive(true);
-                damage2.shieldHealth = 25;
-                damage2.bringBackGen = false;
-                genTimer = 0;
-            }
-        }
-
-        if (damage3.bringBackGen)
-        {
-            genTimer += Time.deltaTime;
-
-            if (genTimer >= genBack)
-            {
-                gen3.SetActive(true);
-                damage3.shieldHealth = 25;
-                damage3.bringBackGen = false;
-
-                genTimer = 0;
-            }
-        }
-
-        if (damage4.bringBackGen)
-        {
-            genTimer += Time.deltaTime;
-
-            if (genTimer >= genBack)
-            {
-                gen4.SetActive(true);
-                damage4.shieldHealth = 25;
-                damage4.bringBackGen = false;
-                genTimer = 0;
-            }
-        }
+       
     }
 }
