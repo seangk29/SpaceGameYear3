@@ -535,7 +535,7 @@ MonoBehaviour:
   audioSources:
   - {fileID: 1607562617}
   - {fileID: 1741636879}
-  currentClip: {fileID: 8300000, guid: 41b749be3e0555a46a60ea93ed8e8577, type: 3}
+  currentClip: {fileID: 8300000, guid: 3e3191487a5ada845a741964593b881a, type: 3}
   newClip: {fileID: 0}
   audioToggle: 0
   count: 0
@@ -656,7 +656,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 41b749be3e0555a46a60ea93ed8e8577, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3e3191487a5ada845a741964593b881a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.25
   m_Pitch: 1
@@ -1535,7 +1535,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 41b749be3e0555a46a60ea93ed8e8577, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3e3191487a5ada845a741964593b881a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.25
   m_Pitch: 1
