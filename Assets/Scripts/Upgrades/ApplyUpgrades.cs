@@ -69,6 +69,12 @@ public class ApplyUpgrades : MonoBehaviour
             case CardEffect.DashAttack:
                 PermaPlayerStats.DashAttack();
                 break;
+            case CardEffect.DualShot:
+                PermaPlayerStats.dualShotUnlock(selectedCardValue);
+                break;
+            case CardEffect.TriShot:
+                PermaPlayerStats.triShotUnlock();
+                break;
         }
     }
 

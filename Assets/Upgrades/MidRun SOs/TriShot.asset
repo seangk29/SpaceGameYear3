@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58f692336c37b914893ee8ae86c7448b, type: 3}
-  m_Name: LaserUnlock
+  m_Name: TriShot
   m_EditorClassIdentifier: 
-  cardImage: {fileID: -2720308378927398957, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
-  headerText: --- LASER ---
-  cardText: 'Receive Special Shot: Laser'
-  descText: Unlock a SPECIAL SHOT that fires a LASER that fires through multiple
-    ENEMY ships.
-  costs: 0
-  effectType: 10
-  effectString: {fileID: 0}
+  cardImage: {fileID: 7843752175946602825, guid: 84b5e29c136925e4ab2cc2dca0be08f3, type: 3}
+  headerText: --- SB UPGRADE ---
+  cardText: Tri Fire for STANDARD BULLET
+  descText: Obtain Tri Firing for the STANDARD BULLET
+  costs: 5000
+  effectType: 17
+  effectString: {fileID: 11400000}
   effectValue: 1
   effectFloatValue: 0
   isUnique: 1
-  unlockLevel: 2
+  unlockLevel: 0

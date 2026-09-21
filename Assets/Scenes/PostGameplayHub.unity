@@ -23095,6 +23095,9 @@ MonoBehaviour:
   activeDashAttack: 0
   gunBotCount: 0
   spinCount: 0
+  shooting: {fileID: 0}
+  dualShot: {fileID: 1260864631553775174, guid: 8222752802b131a4daac12fe90bae389, type: 3}
+  triShot: {fileID: 1260864631553775174, guid: 521c1f76c64b47c4f8d94d05a35792ec, type: 3}
 --- !u!114 &1847853961
 MonoBehaviour:
   m_ObjectHideFlags: 0

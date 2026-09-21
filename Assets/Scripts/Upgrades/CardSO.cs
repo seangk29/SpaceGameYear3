@@ -58,5 +58,7 @@ public enum CardEffect
     SpecialUpgrade,
     DamageUpgrade,
     DashAttack,
+    DualShot,
+    TriShot,
     SPBulHP
 }

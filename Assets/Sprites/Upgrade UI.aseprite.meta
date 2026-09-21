@@ -145,7 +145,7 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: Upgrade UI_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -165,7 +165,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -185,7 +185,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -205,7 +205,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_3
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -225,7 +225,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_4
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -245,7 +245,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_5
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -265,7 +265,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_6
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -285,7 +285,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_7
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -305,7 +305,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_8
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -325,7 +325,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_9
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -345,7 +345,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_10
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -365,7 +365,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_11
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -385,7 +385,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_12
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -405,7 +405,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_13
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -425,7 +425,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_14
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -445,7 +445,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_15
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -465,7 +465,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_16
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -485,7 +485,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Upgrade UI_17
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -495,6 +495,26 @@ ScriptedImporter:
       width: 39
       height: 38
     spriteID: 20b8e2a7fe7a35049b30c051402a562c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Upgrade UI_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 7
+      width: 15
+      height: 35
+    spriteID: 68eee85e05c71894b8d59f6335b45f07
     spriteBone: []
     spriteOutline: []
     vertices: []

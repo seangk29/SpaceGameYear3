@@ -45,6 +45,12 @@ public class PermaPlayerStats : MonoBehaviour
     public int gunBotCount;
     public int spinCount;
 
+    public PlayerShooting shooting;
+    public GameObject dualShot;
+    public GameObject triShot;
+    public bool dualShotUnlocked;
+    public bool triShotUnlocked;
+
     //all this enable disable scene load part does is check if its the main menu
     //or the quit scene
     //and deletes all player data for that run
@@ -96,8 +102,25 @@ public class PermaPlayerStats : MonoBehaviour
             else
                 return;
 
- 
-        
+
+        if (shooting == null)
+        {
+            shooting = GameObject.FindGameObjectWithTag("GunPos").GetComponent<PlayerShooting>();
+        }
+        else
+            return;
+
+        if (triShotUnlocked)
+        {
+            shooting.SbulletPrefab = triShot;
+        }
+
+        if (dualShotUnlocked)
+        {
+            dualShotUnlocked = true;
+        }
+
+
     }
 
     void OnDisable()
@@ -150,6 +173,22 @@ public class PermaPlayerStats : MonoBehaviour
     {
         damage += value;
        // Debug.Log("Standard Damage Upgraded");
+    }
+
+    public void dualShotUnlock(int value)
+    {
+        shooting.SbulletPrefab = dualShot;
+        dualShotUnlocked = true;
+        damage = 1;
+
+    }
+
+    public void triShotUnlock()
+    {
+        
+        shooting.SbulletPrefab = triShot;
+        triShotUnlocked = true;
+       
     }
 
     public void spDmgUpgrade(int value)

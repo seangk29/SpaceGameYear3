@@ -71,10 +71,10 @@ public class MidRunShop : MonoBehaviour
         switch (indic)
         {
             case 1:
-                if (PlayerData.score >= 2000)
+                if (PlayerData.score >= 5000)
                 {
-                    PermaPlayerStats.spinUnlock();
-                    PlayerData.score = PlayerData.score - 2000;
+                    PermaPlayerStats.triShotUnlock();
+                    PlayerData.score = PlayerData.score - 5000;
                 }
                 else notEnough.SetActive(true);
                 break;
@@ -95,10 +95,10 @@ public class MidRunShop : MonoBehaviour
                 else notEnough.SetActive(true);
                 break;
             case 4:
-                if (PlayerData.score >= 1000)
+                if (PlayerData.score >= 5000)
                 {
-                    PermaPlayerStats.GunBot();
-                    PlayerData.score = PlayerData.score - 1000;
+                    PermaPlayerStats.dualShotUnlock(1);
+                    PlayerData.score = PlayerData.score - 5000;
                 }
                 else notEnough.SetActive(true);
                 break;
@@ -111,10 +111,18 @@ public class MidRunShop : MonoBehaviour
                 else notEnough.SetActive(true);
                 break;
             case 6:
-                if (PlayerData.score >= 6000)
+                if (PlayerData.score >= 5000)
                 {
-                    PermaPlayerStats.explodeUnlockUpgraded1(1);
-                    PlayerData.score = PlayerData.score - 6000;
+                    PermaPlayerStats.dualShotUnlock(1);
+                    PlayerData.score = PlayerData.score - 5000;
+                }
+                break;
+
+            case 7:
+                if (PlayerData.score >= 5000)
+                {
+                    PermaPlayerStats.triShotUnlock();
+                    PlayerData.score = PlayerData.score - 5000;
                 }
                 else notEnough.SetActive(true);
                 break;

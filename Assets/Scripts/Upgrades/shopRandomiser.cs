@@ -17,25 +17,25 @@ public class shopRandomiser : MonoBehaviour
     {
         for (int i = 0; i < randomNumbers.Length; i++)
         {
-         randomNumbers[i] = Random.Range(1, 6);
+         randomNumbers[i] = Random.Range(1, 7);
             
         }
 
         if (randomNumbers[0] == randomNumbers[1])
         {
-            randomNumbers[1] = Random.Range(1, 6);
+            randomNumbers[1] = Random.Range(1, 7);
         }
         else if (randomNumbers[1] == randomNumbers[2])
         {
-            randomNumbers[2] = Random.Range(1, 6);
+            randomNumbers[2] = Random.Range(1, 7);
         }
         else if (randomNumbers[2] == randomNumbers[1])
         {
-            randomNumbers[2] = Random.Range(1, 6);
+            randomNumbers[2] = Random.Range(1, 7);
         }
         else if (randomNumbers[0] == randomNumbers[2])
         {
-            randomNumbers[2] = Random.Range(1, 6);
+            randomNumbers[2] = Random.Range(1, 7);
         }
 
         for (int i = 0; i < randomNumbers.Length; i++)
