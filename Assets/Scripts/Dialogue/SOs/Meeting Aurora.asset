@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Meeting Aurora
   m_EditorClassIdentifier: 
   speakerClip:
-  - {fileID: 8300000, guid: de36aeae0f1370f40841d0eee9fd8204, type: 3}
+  - {fileID: 8300000, guid: 9e2406c984120eb42899aa9f89c8e264, type: 3}
   - {fileID: 8300000, guid: 47100668d0c3fd2459b7bce8f1c9b84b, type: 3}
   - {fileID: 8300000, guid: 4a4d2275fd0c09c47b02c8cb437b4b8a, type: 3}
   - {fileID: 8300000, guid: 408b90c6dc98f0848a8e5bfca2a15579, type: 3}
-  - {fileID: 8300000, guid: 0b8a68715c79c654aad8f1fcb5382d1f, type: 3}
+  - {fileID: 8300000, guid: 03163ea9a3bde354a9f67e5249ed5e5e, type: 3}
   - {fileID: 8300000, guid: d4232c85710734342a26bd4621772a52, type: 3}
   - {fileID: 8300000, guid: 0b8a68715c79c654aad8f1fcb5382d1f, type: 3}
   - {fileID: 8300000, guid: dfd498d5e1f0ed5448264629b9ffe2bb, type: 3}

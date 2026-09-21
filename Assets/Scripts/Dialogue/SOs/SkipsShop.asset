@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: SkipsShop
   m_EditorClassIdentifier: 
   speakerClip:
-  - {fileID: 8300000, guid: b398f3d0f0acc544aa8ed6340778e0c1, type: 3}
-  - {fileID: 8300000, guid: 66bacd1f11748b741bb33c887444045b, type: 3}
+  - {fileID: 8300000, guid: 9042bd44bbd5bf741985ea5ba5e787c7, type: 3}
+  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
   sprites:
   - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
   - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
