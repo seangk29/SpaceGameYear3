@@ -19,6 +19,8 @@ public class MidRunShop : MonoBehaviour
 
     public int indic;
 
+    public int shopInt;
+
     public GameObject skippysUI;
 
     public UnlockHubItems unlock;
@@ -28,6 +30,9 @@ public class MidRunShop : MonoBehaviour
     public TextMeshProUGUI conTxt;
     public TextMeshProUGUI upgTxt;
     public TextMeshProUGUI costTxt;
+
+    public GameObject[] buttons;
+
 
     private void Start()
     {
@@ -45,6 +50,7 @@ public class MidRunShop : MonoBehaviour
         upgTxt.text = shopRandomiser.randomizedCards[0].descText;
         costTxt.text = shopRandomiser.randomizedCards[0].costs;
         indic = shopRandomiser.retainnumbers[0];
+        shopInt = 1;
 
     }
 
@@ -55,6 +61,7 @@ public class MidRunShop : MonoBehaviour
         upgTxt.text = shopRandomiser.randomizedCards[1].descText;
         costTxt.text = shopRandomiser.randomizedCards[1].costs;
         indic = shopRandomiser.retainnumbers[1];
+        shopInt = 2;
     }
     public void upgradeButton3()
     {
@@ -63,6 +70,7 @@ public class MidRunShop : MonoBehaviour
         upgTxt.text = shopRandomiser.randomizedCards[2].descText;
         costTxt.text = shopRandomiser.randomizedCards[2].costs;
         indic = shopRandomiser.retainnumbers[2];
+        shopInt = 3;
     }
 
     public void confirmUpgrade()
@@ -73,24 +81,25 @@ public class MidRunShop : MonoBehaviour
             case 1:
                 if (PlayerData.score >= 5000)
                 {
-                    PermaPlayerStats.triShotUnlock();
+                    PermaPlayerStats.triShotUnlock(1);
                     PlayerData.score = PlayerData.score - 5000;
+
                 }
                 else notEnough.SetActive(true);
                 break;
             case 2:
                 if (PlayerData.score >= 5000)
                 {
-                    PermaPlayerStats.spreadUnlockUpgraded1(1);
+                    PermaPlayerStats.triShotUnlock(1);
                     PlayerData.score = PlayerData.score - 5000;
                 }
                 else notEnough.SetActive(true);
                 break;
             case 3:
-                if (PlayerData.score >= 6000)
+                if (PlayerData.score >= 5000)
                 {
-                    PermaPlayerStats.explodeUnlockUpgraded1(1);
-                    PlayerData.score = PlayerData.score - 6000;
+                    PermaPlayerStats.dualShotUnlock(1);
+                    PlayerData.score = PlayerData.score - 5000;
                 }
                 else notEnough.SetActive(true);
                 break;
@@ -103,28 +112,41 @@ public class MidRunShop : MonoBehaviour
                 else notEnough.SetActive(true);
                 break;
             case 5:
-                if (PlayerData.score >= 1500)
+                if (PlayerData.score >= 6000)
                 {
-                    PermaPlayerStats.ricochetUnlockUpgraded1(1); 
-                    PlayerData.score = PlayerData.score - 1500;
+                    PermaPlayerStats.explodeUnlockUpgraded1(1);
+                    PlayerData.score = PlayerData.score - 6000;
                 }
                 else notEnough.SetActive(true);
                 break;
             case 6:
                 if (PlayerData.score >= 5000)
                 {
-                    PermaPlayerStats.dualShotUnlock(1);
+                    PermaPlayerStats.spreadUnlockUpgraded1(1);
                     PlayerData.score = PlayerData.score - 5000;
                 }
                 break;
 
             case 7:
-                if (PlayerData.score >= 5000)
+                if (PlayerData.score >= 1500)
                 {
-                    PermaPlayerStats.triShotUnlock();
-                    PlayerData.score = PlayerData.score - 5000;
+                    PermaPlayerStats.ricochetUnlockUpgraded1(1);
+                    PlayerData.score = PlayerData.score - 1500;
                 }
                 else notEnough.SetActive(true);
+                break;
+        }
+
+        switch (shopInt)
+        {
+            case 1:
+                buttons[0].SetActive(false);
+                break;
+            case 2:
+                buttons[1].SetActive(false);
+                break;
+            case 3:
+                buttons[2].SetActive(false);
                 break;
         }
 

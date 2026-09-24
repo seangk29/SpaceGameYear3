@@ -555,7 +555,7 @@ MonoBehaviour:
   currentSpecialPos3: {fileID: 0}
   currentSpecialPos4: {fileID: 0}
   bossCount: 0
-  score: 0
+  score: 100000
   spaceMoney: 0
   previousMoney: 0
   kills: 0
@@ -7325,6 +7325,11 @@ MonoBehaviour:
   activeDashAttack: 0
   gunBotCount: 0
   spinCount: 0
+  shooting: {fileID: 0}
+  dualShot: {fileID: 1260864631553775174, guid: 8222752802b131a4daac12fe90bae389, type: 3}
+  triShot: {fileID: 1260864631553775174, guid: 521c1f76c64b47c4f8d94d05a35792ec, type: 3}
+  dualShotUnlocked: 0
+  triShotUnlocked: 0
 --- !u!114 &1847853961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8310,7 +8315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c5a89d14b0de134289e730951569e1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevel: 0
+  currentLevel: 4
   currentState: 3
 --- !u!4 &2056015449
 Transform:

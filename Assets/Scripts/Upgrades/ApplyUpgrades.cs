@@ -73,7 +73,7 @@ public class ApplyUpgrades : MonoBehaviour
                 PermaPlayerStats.dualShotUnlock(selectedCardValue);
                 break;
             case CardEffect.TriShot:
-                PermaPlayerStats.triShotUnlock();
+                PermaPlayerStats.triShotUnlock(selectedCardValue);
                 break;
         }
     }

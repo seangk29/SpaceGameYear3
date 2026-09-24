@@ -110,14 +110,14 @@ public class PermaPlayerStats : MonoBehaviour
         else
             return;
 
-        if (triShotUnlocked)
+        if (triShotUnlocked == true)
         {
-            shooting.SbulletPrefab = triShot;
+            shooting.bulletPrefab = triShot;
         }
 
-        if (dualShotUnlocked)
+        if (dualShotUnlocked == true)
         {
-            dualShotUnlocked = true;
+            shooting.bulletPrefab = dualShot;
         }
 
 
@@ -177,18 +177,18 @@ public class PermaPlayerStats : MonoBehaviour
 
     public void dualShotUnlock(int value)
     {
-        shooting.SbulletPrefab = dualShot;
+        shooting.bulletPrefab = dualShot;
         dualShotUnlocked = true;
-        damage = 1;
+        damage = value;
 
     }
 
-    public void triShotUnlock()
+    public void triShotUnlock(int value)
     {
         
-        shooting.SbulletPrefab = triShot;
+        shooting.bulletPrefab = triShot;
         triShotUnlocked = true;
-       
+        damage = value;
     }
 
     public void spDmgUpgrade(int value)
