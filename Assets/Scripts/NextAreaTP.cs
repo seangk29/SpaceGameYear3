@@ -96,17 +96,17 @@ public class NextAreaTP : MonoBehaviour
         {
 
 
-                if (gameManager.currentLevel == 11)
+                if (gameManager.currentLevel == 13)
                 {
                    StartCoroutine(MakeTransition("PostGG"));
                 }
-                else if (gameManager.currentLevel == 10)
+                else if (gameManager.currentLevel == 12)
                 {
                 // Debug.Log("it would load boss here");
                 StartCoroutine(MakeTransition("BOSS 1"));
                 
                 }
-                else if (gameManager.currentLevel == 9)
+                else if (gameManager.currentLevel == 11)
                 {
                     
                 StartCoroutine(MakeTransition("PreGG"));
@@ -131,7 +131,7 @@ public class NextAreaTP : MonoBehaviour
                     StartCoroutine(MakeTransition("Action 2"));
                 }
 
-            else if (gameManager.currentLevel >= 8 && gameManager.currentLevel <= 9)
+            else if (gameManager.currentLevel >= 8 && gameManager.currentLevel <= 10)
             {
                 // Debug.Log("it would load here");
                 StartCoroutine(MakeTransition("Action 3"));
@@ -144,13 +144,7 @@ public class NextAreaTP : MonoBehaviour
                 StartCoroutine(MakeTransition("MidRunShop"));
             }
 
-            else if (gameManager.currentLevel == 9)
-            {
-                // Debug.Log("it would load here");
-                StartCoroutine(MakeTransition("PreGG"));
-            }
-
-            else if (gameManager.currentLevel == 12)
+            else if (gameManager.currentLevel == 14)
             {
                 
                 

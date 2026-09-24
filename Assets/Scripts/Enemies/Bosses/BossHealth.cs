@@ -27,6 +27,8 @@ public class BossHealth : MonoBehaviour
 
     PlayerData playerData;
     GameManager gameManager;
+
+    public Animator anim;
     //  float cooldownTimer = 0;
    
 
@@ -42,6 +44,8 @@ public class BossHealth : MonoBehaviour
         Combat = true;
         correctLayer = gameObject.layer;
         gameManager.currentLevel++;
+
+        anim = gameObject.GetComponent<Animator>();
         //Wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<EnemyWaveHandler>();
     }
 
@@ -90,17 +94,19 @@ public class BossHealth : MonoBehaviour
 
    public void Die()
     {
-        if (gameObject.tag == "Enemy")
-        {
-            //Wave.enemyCount = Wave.enemyCount + 1;
-            Debug.Log("Shot!");
-            //Debug.Log(Wave.enemyCount);
-        }
-        Destroy(gameObject);
+        
+
+        StartCoroutine(glorgDead());
+        
         GameManager.Instance.changeState(GameManager.GameState.NextArea);
     }
 
-
+    IEnumerator glorgDead()
+    {
+        anim.SetTrigger("GlorgDead");
+        yield return new WaitForSeconds(0.5f);
+        Destroy(gameObject);
+    }
     public void ExitCombat()
     {
         Combat = false;

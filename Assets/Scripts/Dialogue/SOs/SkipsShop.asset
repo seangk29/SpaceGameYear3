@@ -13,12 +13,8 @@ MonoBehaviour:
   m_Name: SkipsShop
   m_EditorClassIdentifier: 
   speakerClip:
-  - {fileID: 8300000, guid: 9042bd44bbd5bf741985ea5ba5e787c7, type: 3}
-  - {fileID: 8300000, guid: c3ae703a0229016458a322225607115c, type: 3}
+  - {fileID: 8300000, guid: 93e31c33bab0fa141bffd05692c09b37, type: 3}
   sprites:
   - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
-  - {fileID: 617708236899014977, guid: 2041ca8289a170647a7513a050a848ff, type: 3}
   paragraphs:
-  - "SKIPPY: Looking for some upgrades, Cosmo? I\u2019ll fix your ship up and give
-    you a chance against these Specimen X guys."
-  - "COSMO: What\u2019ve you got for me, Skippy? "
+  - 'SKIPPY: Heya Cos, What can I do for ya?'

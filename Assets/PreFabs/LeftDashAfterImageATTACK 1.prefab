@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 579640716636574977}
   - component: {fileID: 4536412505025206617}
   - component: {fileID: 7647498381402392204}
-  m_Layer: 0
+  - component: {fileID: -3997170959757220808}
+  m_Layer: 6
   m_Name: LeftDashAfterImageATTACK 1
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -44,7 +45,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3120131613522761200}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7a038e063aec8749893f1290707b40c, type: 3}
   m_Name: 
@@ -146,6 +147,33 @@ MonoBehaviour:
   movingBackwards: 0
   movingLeft: 1
   movingRight: 0
+--- !u!50 &-3997170959757220808
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3120131613522761200}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &6378607691903290322
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5305206152119694988}
   - component: {fileID: 8059106521427366493}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DashAfterImage_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
