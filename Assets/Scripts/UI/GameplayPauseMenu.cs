@@ -72,7 +72,7 @@ public class GameplayPauseMenu : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Escape) || controls.Gameplay.Pause.IsPressed())
             {
-
+                
             }
         }
         else
@@ -95,6 +95,7 @@ public class GameplayPauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         pMenu.SetActive(false);
+        shooting.enabled = true;
     }
 
     public void Hub()
