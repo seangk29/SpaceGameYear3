@@ -23,11 +23,12 @@ public class DisplayWaveNames : MonoBehaviour
         {
             wave = GameObject.FindGameObjectWithTag("EnemySpawner").GetComponent<NewWaveManager>();
         }
-        
-        
-       
+        else return;
 
 
-        waveTMP.text = "WAVE:  " + wave.currentWave.waveName;
+
+
+
+            waveTMP.text = "WAVE:  " + wave.currentWave.waveName;
     }
 }

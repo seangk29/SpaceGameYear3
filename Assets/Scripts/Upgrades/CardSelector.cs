@@ -25,15 +25,7 @@ public class CardSelector : MonoBehaviour
 
     PlayerControls controls;
 
-    private void Awake()
-    {
-        controls = new PlayerControls();
-
-        controls.Gameplay.UILeft.performed += ctx => MoveLeft();
-        controls.Gameplay.UIRight.performed += ctx => MoveRight();
-
-        gameManager = GameObject.FindGameObjectWithTag("GameMg").GetComponentInChildren<GameManager>();
-    }
+   
 
     void OnEnable()
     {
@@ -45,8 +37,22 @@ public class CardSelector : MonoBehaviour
         controls.Gameplay.Disable();
     }
 
+
+    private void Awake()
+    {
+        controls = new PlayerControls();
+
+        controls.Gameplay.UILeft.performed += ctx => MoveLeft();
+        controls.Gameplay.UIRight.performed += ctx => MoveRight();
+
+        gameManager = GameObject.FindGameObjectWithTag("GameMg").GetComponentInChildren<GameManager>();
+    }
+
+
+
     private void Start()
     {
+        
         if (card1 == null && card2 == null && card3 == null)
         {
             card1 = GameObject.FindGameObjectWithTag("card1").GetComponentInChildren<Card>();

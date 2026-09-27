@@ -49,11 +49,15 @@ public class Card : MonoBehaviour
     void OnEnable()
     {
         controls.Gameplay.Enable();
+
+        //controls.Gameplay.UIAccept.performed += ctx => AcceptUpgrade();
     }
 
     void OnDisable()
     {
         controls.Gameplay.Disable();
+
+        //controls.Gameplay.UIAccept.performed -= ctx => AcceptUpgrade();
     }
 
     private void Update()
@@ -99,6 +103,8 @@ public class Card : MonoBehaviour
             if (currentlySelected)
             {
                 OnSelect();
+
+                Debug.Log("FUUUUUCK");
                 select.acceptUpgrade = true;
             }
             

@@ -3111,6 +3111,7 @@ MonoBehaviour:
   shops: {fileID: 1453280694}
   firstActivator: {fileID: 2072027304}
   nicosShop: {fileID: 0}
+  skipButton: {fileID: 0}
   Ships: {fileID: 0}
   move: {fileID: 1453280695}
   data: {fileID: 0}
@@ -5303,6 +5304,7 @@ MonoBehaviour:
   shops: {fileID: 1453280694}
   firstActivator: {fileID: 2072027304}
   nicosShop: {fileID: 0}
+  skipButton: {fileID: 0}
   Ships: {fileID: 0}
   move: {fileID: 1453280695}
   data: {fileID: 0}
@@ -7353,6 +7355,7 @@ MonoBehaviour:
   shops: {fileID: 1453280694}
   firstActivator: {fileID: 2072027304}
   nicosShop: {fileID: 0}
+  skipButton: {fileID: 0}
   Ships: {fileID: 0}
   move: {fileID: 1453280695}
   data: {fileID: 0}
@@ -8498,6 +8501,7 @@ MonoBehaviour:
   shops: {fileID: 1453280694}
   firstActivator: {fileID: 2072027304}
   nicosShop: {fileID: 0}
+  skipButton: {fileID: 0}
   Ships: {fileID: 0}
   move: {fileID: 1453280695}
   data: {fileID: 0}
@@ -9280,6 +9284,7 @@ MonoBehaviour:
   shops: {fileID: 1453280694}
   firstActivator: {fileID: 2072027304}
   nicosShop: {fileID: 0}
+  skipButton: {fileID: 0}
   Ships: {fileID: 0}
   move: {fileID: 1453280695}
   data: {fileID: 0}
@@ -13388,6 +13393,7 @@ MonoBehaviour:
   shops: {fileID: 0}
   firstActivator: {fileID: 1476054918}
   nicosShop: {fileID: 38975506}
+  skipButton: {fileID: 666097282}
   Ships: {fileID: 0}
   move: {fileID: 0}
   data: {fileID: 0}
@@ -14269,6 +14275,7 @@ MonoBehaviour:
   shops: {fileID: 1453280694}
   firstActivator: {fileID: 2072027304}
   nicosShop: {fileID: 0}
+  skipButton: {fileID: 0}
   Ships: {fileID: 0}
   move: {fileID: 1453280695}
   data: {fileID: 0}
@@ -15274,6 +15281,7 @@ MonoBehaviour:
   shops: {fileID: 1453280694}
   firstActivator: {fileID: 2072027304}
   nicosShop: {fileID: 0}
+  skipButton: {fileID: 0}
   Ships: {fileID: 0}
   move: {fileID: 1453280695}
   data: {fileID: 0}
@@ -15383,6 +15391,7 @@ MonoBehaviour:
   shops: {fileID: 1453280694}
   firstActivator: {fileID: 2072027304}
   nicosShop: {fileID: 0}
+  skipButton: {fileID: 0}
   Ships: {fileID: 0}
   move: {fileID: 1453280695}
   data: {fileID: 0}
@@ -21789,6 +21798,7 @@ MonoBehaviour:
   shops: {fileID: 1453280694}
   firstActivator: {fileID: 2072027304}
   nicosShop: {fileID: 0}
+  skipButton: {fileID: 0}
   Ships: {fileID: 0}
   move: {fileID: 1453280695}
   data: {fileID: 0}
@@ -23098,6 +23108,8 @@ MonoBehaviour:
   shooting: {fileID: 0}
   dualShot: {fileID: 1260864631553775174, guid: 8222752802b131a4daac12fe90bae389, type: 3}
   triShot: {fileID: 1260864631553775174, guid: 521c1f76c64b47c4f8d94d05a35792ec, type: 3}
+  dualShotUnlocked: 0
+  triShotUnlocked: 0
 --- !u!114 &1847853961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23877,6 +23889,7 @@ MonoBehaviour:
   shops: {fileID: 1453280694}
   firstActivator: {fileID: 2072027304}
   nicosShop: {fileID: 0}
+  skipButton: {fileID: 0}
   Ships: {fileID: 0}
   move: {fileID: 1453280695}
   data: {fileID: 0}

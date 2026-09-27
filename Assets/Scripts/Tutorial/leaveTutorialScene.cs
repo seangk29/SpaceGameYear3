@@ -7,7 +7,13 @@ public class leaveTutorialScene : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene("PostGameplayHub");
+        
+        
+              SceneManager.LoadScene("PostGameplayHub");
+        
+        
+        
+        
     }
 
 }

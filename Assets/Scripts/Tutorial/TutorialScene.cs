@@ -8,6 +8,10 @@ public class TutorialScene : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-            SceneManager.LoadScene("Tutorial_1");
+        
+             SceneManager.LoadScene("Tutorial_1");
+        
+        
+       
     }
 }

@@ -36,6 +36,8 @@ public class DialogueController : MonoBehaviour
 
     public GameObject firstActivator;
     public GameObject nicosShop;
+    public Button skipButton;
+
     public MoveForward Ships;
     public PlayerMovement move;
     public PlayerData data;
@@ -153,6 +155,7 @@ public class DialogueController : MonoBehaviour
         {
             firstActivator.SetActive(true);
             activatorBool = true;
+            skipButton.Select();
         }
         else if (shops.npcShopable.CompareTag("Activator"))
         {
